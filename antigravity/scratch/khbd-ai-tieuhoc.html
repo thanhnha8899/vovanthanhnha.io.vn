@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KHBD tích hợp AI – Tiểu học | VOVANTHANHNHA.IO.VN</title>
+    <meta name="description" content="Soạn kế hoạch bài dạy tích hợp giáo dục trí tuệ nhân tạo cho học sinh tiểu học">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* ===== Design Tokens ===== */
+        :root {
+            --primary: #6366f1; --primary-dark: #4f46e5; --primary-light: #eef2ff;
+            --primary-gradient: linear-gradient(135deg, #6366f1, #818cf8);
+            --navy: #1e293b; --navy-light: #334155;
+            --text-primary: #1e293b; --text-secondary: #64748b; --text-light: #94a3b8;
+            --bg-white: #ffffff; --bg-light: #f8fafc; --bg-lighter: #f1f5f9; --bg-page: #f0f2f8;
+            --cyan: #06b6d4; --cyan-light: #ecfeff; --cyan-gradient: linear-gradient(135deg, #06b6d4, #22d3ee);
+            --teal: #14b8a6; --teal-light: #f0fdfa;
+            --blue: #3b82f6; --blue-light: #eff6ff;
+            --green: #22c55e; --green-light: #f0fdf4;
+            --orange: #f59e0b; --orange-light: #fffbeb;
+            --purple: #8b5cf6; --purple-light: #f5f3ff;
+            --red: #ef4444; --red-light: #fef2f2;
+            --rose: #f43f5e; --indigo: #6366f1;
+            --shadow-sm: 0 1px 2px 0 rgba(0,0,0,0.05);
+            --shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+            --radius-sm: 8px; --radius: 12px; --radius-lg: 16px; --radius-xl: 20px; --radius-full: 9999px;
+            --transition: 0.3s ease; --transition-fast: 0.15s ease;
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-primary); background: var(--bg-page);
+            line-height: 1.6; -webkit-font-smoothing: antialiased; min-height: 100vh;
+        }
+        a { text-decoration: none; color: inherit; }
+        button { cursor: pointer; border: none; background: none; font-family: inherit; }
+        input, select, textarea { font-family: inherit; outline: none; }
+
+        /* ===== Page Header ===== */
+        .page-header {
+            background: var(--bg-white); border-bottom: 1px solid rgba(0,0,0,0.06);
+            padding: 16px 24px; position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow-sm);
+        }
+        .page-header-inner { max-width: 1200px; margin: 0 auto; }
+        .page-header-top { display: flex; align-items: center; gap: 16px; }
+        .back-btn {
+            width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;
+            border-radius: var(--radius-sm); color: var(--text-primary); font-size: 18px;
+            transition: all var(--transition); flex-shrink: 0;
+        }
+        .back-btn:hover { background: var(--bg-lighter); color: var(--primary); }
+        .page-title-group h1 {
+            font-size: 20px; font-weight: 700; color: var(--navy);
+            display: flex; align-items: center; gap: 10px;
+        }
+        .page-title-group h1 .subject-icon {
+            width: 32px; height: 32px; background: var(--cyan-gradient);
+            border-radius: var(--radius-sm); display: flex; align-items: center;
+            justify-content: center; color: white; font-size: 15px;
+        }
+        .page-title-group p { font-size: 12px; color: var(--text-light); margin-top: 2px; }
+        .header-badge {
+            margin-left: auto; display: inline-flex; align-items: center; gap: 6px;
+            padding: 6px 14px; background: var(--cyan-light); color: var(--cyan);
+            border-radius: var(--radius-full); font-size: 12px; font-weight: 700;
+        }
+
+        /* ===== Main Layout ===== */
+        .main-content {
+            max-width: 1200px; margin: 0 auto; padding: 24px;
+            display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+            animation: fadeInUp 0.5s ease;
+        }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+        .main-content .full-width { grid-column: 1 / -1; }
+
+        /* ===== Cards ===== */
+        .card {
+            background: var(--bg-white); border-radius: var(--radius-lg);
+            border: 1px solid rgba(0,0,0,0.06); overflow: hidden; transition: box-shadow var(--transition);
+        }
+        .card:hover { box-shadow: var(--shadow-md); }
+        .card-header { display: flex; align-items: center; gap: 12px; padding: 20px 24px 16px; }
+        .card-step {
+            width: 32px; height: 32px; background: var(--cyan-gradient); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            color: white; font-size: 14px; font-weight: 700; flex-shrink: 0;
+        }
+        .card-header-info h3 { font-size: 15px; font-weight: 700; color: var(--navy); }
+        .card-header-info p { font-size: 11px; color: var(--text-light); margin-top: 1px; }
+        .card-body { padding: 0 24px 24px; }
+
+        /* ===== Form Fields ===== */
+        .info-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+        .info-grid.col-2 { grid-template-columns: repeat(2, 1fr); }
+        .form-field { display: flex; flex-direction: column; gap: 6px; }
+        .form-field.full { grid-column: 1 / -1; }
+        .form-field label {
+            font-size: 11px; font-weight: 600; color: var(--text-light);
+            text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .form-field input, .form-field select, .form-field textarea {
+            padding: 10px 14px; background: var(--bg-white); border: 1.5px solid #e2e8f0;
+            border-radius: var(--radius-sm); font-size: 14px; color: var(--text-primary);
+            font-weight: 500; transition: all var(--transition); height: 42px;
+        }
+        .form-field textarea { height: 100px; resize: vertical; line-height: 1.5; }
+        .form-field input:focus, .form-field select:focus, .form-field textarea:focus {
+            border-color: var(--cyan); box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.1);
+        }
+        .form-field select {
+            appearance: none; cursor: pointer;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2364748b' d='M2.5 4.5L6 8l3.5-3.5'/%3E%3C/svg%3E");
+            background-repeat: no-repeat; background-position: right 12px center; padding-right: 32px;
+        }
+
+        /* ===== AI Topic Selector ===== */
+        .topic-group { margin-bottom: 20px; }
+        .topic-group-header {
+            display: flex; align-items: center; gap: 10px; padding: 10px 12px;
+            background: var(--bg-lighter); border-radius: var(--radius-sm); margin-bottom: 8px;
+            cursor: pointer; transition: all var(--transition); user-select: none;
+        }
+        .topic-group-header:hover { background: var(--cyan-light); }
+        .topic-group-header .group-icon {
+            width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center;
+            justify-content: center; color: white; font-size: 13px; flex-shrink: 0;
+        }
+        .topic-group-header .group-title { font-size: 13px; font-weight: 700; color: var(--navy); flex: 1; }
+        .topic-group-header .group-count {
+            font-size: 11px; font-weight: 700; color: var(--text-light);
+            background: var(--bg-white); padding: 2px 8px; border-radius: var(--radius-full);
+        }
+        .topic-group-header .group-toggle { font-size: 12px; color: var(--text-light); transition: transform var(--transition); }
+        .topic-group.collapsed .group-toggle { transform: rotate(-90deg); }
+        .topic-group.collapsed .topic-list { display: none; }
+
+        .topic-list { padding-left: 8px; }
+        .topic-item {
+            display: flex; align-items: flex-start; gap: 10px; padding: 9px 10px;
+            border-radius: var(--radius-sm); transition: all var(--transition-fast);
+            cursor: pointer; user-select: none;
+        }
+        .topic-item:hover { background: var(--bg-lighter); }
+        .topic-item.selected { background: var(--cyan-light); }
+        .topic-checkbox {
+            width: 18px; height: 18px; border: 2px solid #cbd5e1; border-radius: 4px;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0; margin-top: 1px; transition: all var(--transition-fast);
+        }
+        .topic-item.selected .topic-checkbox { background: var(--cyan); border-color: var(--cyan); }
+        .topic-checkbox i { font-size: 10px; color: white; opacity: 0; transition: opacity var(--transition-fast); }
+        .topic-item.selected .topic-checkbox i { opacity: 1; }
+        .topic-name { font-size: 13px; font-weight: 500; color: var(--text-primary); flex: 1; line-height: 1.4; }
+
+        /* ===== Selected Topics Summary ===== */
+        .selected-summary {
+            padding: 12px 14px; background: var(--cyan-light); border-radius: var(--radius-sm);
+            margin-bottom: 16px; display: flex; align-items: center; gap: 8px;
+        }
+        .selected-summary i { color: var(--cyan); font-size: 14px; }
+        .selected-summary span { font-size: 12px; color: var(--cyan); font-weight: 600; }
+        .selected-summary strong { color: var(--navy); }
+
+        /* ===== Format Options ===== */
+        .format-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 20px; }
+        .format-option {
+            padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: var(--radius);
+            cursor: pointer; transition: all var(--transition); display: flex; align-items: center; gap: 10px;
+        }
+        .format-option:hover { border-color: var(--cyan); }
+        .format-option.active { border-color: var(--cyan); background: var(--cyan-light); }
+        .format-option .format-radio {
+            width: 18px; height: 18px; border: 2px solid #cbd5e1; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+            transition: all var(--transition-fast);
+        }
+        .format-option.active .format-radio { border-color: var(--cyan); }
+        .format-option.active .format-radio::after {
+            content: ''; width: 8px; height: 8px; background: var(--cyan); border-radius: 50%;
+        }
+        .format-option .format-icon { font-size: 18px; }
+        .format-option .format-info { flex: 1; }
+        .format-option .format-name { font-size: 13px; font-weight: 600; color: var(--navy); display: block; }
+        .format-option .format-desc { font-size: 11px; color: var(--text-light); display: block; }
+
+        /* ===== Generate Button ===== */
+        .generate-btn {
+            width: 100%; padding: 14px 24px; background: var(--cyan-gradient); color: white;
+            border: none; border-radius: var(--radius); font-size: 15px; font-weight: 700;
+            cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px;
+            transition: all var(--transition); box-shadow: 0 4px 14px rgba(6, 182, 212, 0.35);
+        }
+        .generate-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(6, 182, 212, 0.4); }
+        .generate-btn:active { transform: translateY(0); }
+        .generate-btn .cost-badge {
+            background: rgba(255,255,255,0.25); padding: 3px 10px;
+            border-radius: var(--radius-full); font-size: 12px; font-weight: 600;
+        }
+
+        /* ===== Output Area ===== */
+        .output-area {
+            min-height: 300px; padding: 20px; background: var(--bg-light);
+            border-radius: var(--radius); border: 1.5px dashed #e2e8f0;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            text-align: center; color: var(--text-light); transition: all var(--transition);
+        }
+        .output-area.has-content { border-style: solid; border-color: var(--cyan); align-items: stretch; text-align: left; }
+        .output-area .placeholder-icon { font-size: 48px; margin-bottom: 12px; opacity: 0.3; }
+        .output-area .placeholder-text { font-size: 14px; font-weight: 500; }
+        .output-area .placeholder-desc { font-size: 12px; margin-top: 4px; }
+
+        .output-toolbar {
+            display: flex; align-items: center; gap: 8px; margin-bottom: 16px;
+            padding-bottom: 12px; border-bottom: 1px solid #e2e8f0;
+        }
+        .output-toolbar button {
+            display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px;
+            border-radius: var(--radius-sm); font-size: 12px; font-weight: 600;
+            border: 1.5px solid #e2e8f0; color: var(--text-secondary);
+            transition: all var(--transition); background: var(--bg-white);
+        }
+        .output-toolbar button:hover { border-color: var(--cyan); color: var(--cyan); }
+        .output-toolbar button.primary { background: var(--cyan); color: white; border-color: var(--cyan); }
+        .output-toolbar button.primary:hover { background: var(--primary-dark); }
+        .output-content { font-size: 14px; line-height: 1.7; color: var(--text-primary); }
+        .output-content h1, .output-content h2, .output-content h3 { color: var(--navy); margin: 16px 0 8px; }
+        .output-content table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+        .output-content th, .output-content td { padding: 8px 12px; border: 1px solid #e2e8f0; font-size: 13px; }
+        .output-content th { background: var(--bg-lighter); font-weight: 600; }
+
+        /* ===== Loading ===== */
+        .loading-overlay {
+            display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.5); z-index: 999; align-items: center; justify-content: center;
+        }
+        .loading-overlay.active { display: flex; }
+        .loading-card {
+            background: white; padding: 40px 50px; border-radius: var(--radius-xl);
+            text-align: center; box-shadow: var(--shadow-lg);
+        }
+        .loading-spinner {
+            width: 48px; height: 48px; border: 4px solid var(--bg-lighter);
+            border-top-color: var(--cyan); border-radius: 50%;
+            animation: spin 0.8s linear infinite; margin: 0 auto 16px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .loading-card p { font-size: 14px; font-weight: 600; color: var(--navy); }
+        .loading-card small { font-size: 12px; color: var(--text-light); }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 900px) {
+            .main-content { grid-template-columns: 1fr; }
+            .info-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 600px) {
+            .info-grid { grid-template-columns: 1fr; }
+            .format-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page Header -->
+    <header class="page-header" id="page-header">
+        <div class="page-header-inner">
+            <div class="page-header-top">
+                <a href="index.html" class="back-btn" title="Quay lại"><i class="fas fa-arrow-left"></i></a>
+                <div class="page-title-group">
+                    <h1>
+                        <span class="subject-icon"><i class="fas fa-child"></i></span>
+                        KHBD tích hợp AI – Tiểu học
+                    </h1>
+                    <p>Soạn kế hoạch bài dạy tích hợp giáo dục trí tuệ nhân tạo cho HS tiểu học</p>
+                </div>
+                <span class="header-badge"><i class="fas fa-robot"></i> Giáo dục AI</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <!-- Card 1: Thông tin bài dạy -->
+        <div class="card full-width" id="card-info">
+            <div class="card-header">
+                <div class="card-step">1</div>
+                <div class="card-header-info">
+                    <h3>Thông tin bài dạy</h3>
+                    <p>Nhập thông tin môn học, lớp và tên bài dạy</p>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="info-grid">
+                    <div class="form-field">
+                        <label>Môn học</label>
+                        <select id="select-mon">
+                            <option value="">-- Chọn môn --</option>
+                            <option value="Toán">Toán</option>
+                            <option value="Tiếng Việt">Tiếng Việt</option>
+                            <option value="Tự nhiên và Xã hội">Tự nhiên và Xã hội</option>
+                            <option value="Khoa học">Khoa học</option>
+                            <option value="Tin học">Tin học</option>
+                            <option value="Công nghệ">Công nghệ</option>
+                            <option value="Đạo đức">Đạo đức</option>
+                            <option value="Âm nhạc">Âm nhạc</option>
+                            <option value="Mĩ thuật">Mĩ thuật</option>
+                            <option value="Giáo dục thể chất">Giáo dục thể chất</option>
+                            <option value="Hoạt động trải nghiệm">Hoạt động trải nghiệm</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label>Lớp</label>
+                        <select id="select-lop">
+                            <option value="">-- Chọn lớp --</option>
+                            <option value="1">Lớp 1</option>
+                            <option value="2">Lớp 2</option>
+                            <option value="3">Lớp 3</option>
+                            <option value="4">Lớp 4</option>
+                            <option value="5">Lớp 5</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label>Số tiết</label>
+                        <select id="select-tiet">
+                            <option value="1">1 tiết (35 phút)</option>
+                            <option value="2" selected>2 tiết (70 phút)</option>
+                            <option value="3">3 tiết (105 phút)</option>
+                        </select>
+                    </div>
+                    <div class="form-field full">
+                        <label>Tên bài dạy / Chủ đề</label>
+                        <input type="text" id="input-baiday" placeholder="Ví dụ: Phép cộng trong phạm vi 100">
+                    </div>
+                    <div class="form-field full">
+                        <label>Mục tiêu bổ sung (không bắt buộc)</label>
+                        <textarea id="input-muctieu" placeholder="Nhập yêu cầu cụ thể cho giáo án, ví dụ: Tích hợp hoạt động nhóm, sử dụng đồ dùng trực quan..."></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2: Chọn nội dung AI tích hợp -->
+        <div class="card" id="card-ai-topics">
+            <div class="card-header">
+                <div class="card-step">2</div>
+                <div class="card-header-info">
+                    <h3>Chọn nội dung AI tích hợp</h3>
+                    <p>Chọn chủ đề giáo dục trí tuệ nhân tạo phù hợp</p>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="selected-summary" id="selected-summary">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Đã chọn: <strong id="selected-count">0</strong> chủ đề AI</span>
+                </div>
+
+                <!-- Group 1: Làm quen với AI -->
+                <div class="topic-group" id="group-lamquen">
+                    <div class="topic-group-header" onclick="toggleGroup('group-lamquen')">
+                        <div class="group-icon" style="background: var(--cyan-gradient)"><i class="fas fa-hand-wave"></i></div>
+                        <span class="group-title">Làm quen với AI</span>
+                        <span class="group-count">5 chủ đề</span>
+                        <i class="fas fa-chevron-down group-toggle"></i>
+                    </div>
+                    <div class="topic-list">
+                        <div class="topic-item" onclick="toggleTopic(this)" data-topic="AI là gì? – Giới thiệu đơn giản về trí tuệ nhân tạo">
+                            <div class="topic-checkbox"><i class="fas fa-check"></i></div>
+                            <span class="topic-name">AI là gì? – Giới thiệu đơn giản về trí tuệ nhân tạo</span>
+                        </div>
+                        <div class="topic-item" onclick="toggleTopic(this)" data-topic="AI xung quanh em – Nhận biết AI trong đời sống hằng ngày">
+                            <div class="topic-checkbox"><i class="fas fa-check"></i></div>
+                            <span class="topic-name">AI xung quanh em – Nhận biết AI trong đời sống hằng ngày</span>
+                        </div>
+                        <div class="topic-item" onclick="toggleTopic(this)" data-topic="Máy tính học như thế nào? – Khái niệm Machine Learning cho trẻ em">
+                            <div class="topic-checkbox"><i class="fas fa-check"></i></div>
+                            <span class="topic-name">Máy tính học như thế nào? – Khái niệm Machine Learning cho trẻ em</span>
+                        </div>
+                        <div class="topic-item" onclick="toggleTopic(this)" data-topic="Robot bạn của em – Tương tác với trợ lý AI đơn giản">
+                            <div class="topic-checkbox"><i class="fas fa-check"></i></div>
+                            <span class="topic-name">Robot bạn của em – Tương tác với trợ lý AI đơn giản</span>
+                        </div>
+                        <div class="topic-item" onclick="toggleTopic(this)" data-topic="Phân biệt AI và con người – Điều gì AI làm được và chưa làm được">
+                            <div class="topic-checkbox"><i class="fas fa-check"></i></div>
+                            <span class="topic-name">Phân biệt AI và con người – Điều gì AI làm được và chưa làm được</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 2: Tư duy thuật toán -->
+                <div class="topic-group" id="group-thuat-toan">
+                    <div class="topic-group-header" onclick="toggleGroup('group-thuat-toan')">
+                        <div class="group-icon" style="background: linear-gradient(135deg, #3b82f6, #60a5fa)"><i class="fas fa-code"></i></div>
+                        <span class="group-title">Tư duy thuật toán & Giải quyết vấn đề</span>
+                        <span class="group-count">5 chủ đề</span>
+                        <i class="fas fa-chevron-down group-toggle"></i>
+                    </div>
+                    <div class="topic-list">
+                        <div class="topic-item" onclick="toggleTopic(this)" data-topic="Sắp xếp & phân loại – Tư duy logic cơ bản">
+                            <div class="topic-checkbox"><i class="fas fa-check"></i></div>
+                            <span class="topic-name">Sắp xếp & phân loại – Tư duy logic cơ bản</span>
+                        </div>
+                        <div class="topic-item" onclick="toggleTopic(this)" data-topic="Quy tắc & mẫu (Pattern) – Nhận dạng khuôn mẫu">
+                            <div class="topic-checkbox"><i class="fas fa-check"></i></div>
+                            <span class="topic-name">Quy tắc & mẫu (Pattern) – Nhận dạng khuôn mẫu</span>
+                        </div>
+                        <div class="topic-item" onclick="toggleTopic(this)" data-topic="Thuật toán đơn giản – Viết hướng dẫn từng bước">
+                            <div class="topic-checkbox"><i class="fas fa-check"></i></div>
+                            <span class="topic-name">Thuật toán đơn giản – Viết hướng dẫn từng bước</span>
+                        </div>
+                        <div class="topic-item" onclick="toggleTopic(this)" data-topic="Lập trình không cần code – Scratch Jr, Code.org">
+                            <div class="topic-checkbox"><i class="fas fa-check"></i></div>
+                            <span class="topic-name">Lập trình không cần code – Scratch Jr, Code.org</span>
+                        </div>
+                        <div class="topic-item" onclick="toggleTopic(this)" data-topic="Giải quyết vấn đề sáng tạo – Chia nhỏ vấn đề lớn">
+                            <div class="topic-checkbox"><i class="fas fa-check"></i></div>
+                            <span class="topic-name">Giải quyết vấn đề sáng tạo – Chia nhỏ vấn đề lớn</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 3: An toàn số & Đạo đức AI -->
+                <div class="topic-group" id="group-an-toan">
+                    <div class="topic-group-header" onclick="toggleGroup('group-an-toan')">
+                        <div class="group-icon" style="background: linear-gradient(135deg, #22c55e, #4ade80)"><i class="fas fa-shield-halved"></i></div>
+                        <span class="group-title">An toàn số & Đạo đức AI</span>
+                        <span class="group-count">4 chủ đề</span>
+                        <i class="fas fa-chevron-down group-toggle"></i>
+                    </div>
+                    <div class="topic-list">
+                        <div class="topic-item" onclick="toggleTopic(this)" data-topic="An toàn khi sử dụng thiết bị số – Bảo vệ bản thân trên Internet">
+                            <div class="topic-checkbox"><i class="fas fa-check"></i></div>
+                            <span class="topic-name">An toàn khi sử dụng thiết bị số – Bảo vệ bản thân trên Internet</span>
+                        </div>
+                        <div class="topic-item" onclick="toggleTopic(this)" data-topic="Thông tin đúng – sai – AI có thể sai không?">
+                            <div class="topic-checkbox"><i class="fas fa-check"></i></div>
+                            <span class="topic-name">Thông tin đúng – sai – AI có thể sai không?</span>
+                        </div>
+                        <div class="topic-item" onclick="toggleTopic(this)" data-topic="Sử dụng AI có trách nhiệm – Tôn trọng bản quyền">
+                            <div class="topic-checkbox"><i class="fas fa-check"></i></div>
+                            <span class="topic-name">Sử dụng AI có trách nhiệm – Tôn trọng bản quyền</span>
+                        </div>
+                        <div class="topic-item" onclick="toggleTopic(this)" data-topic="Quyền riêng tư – Không chia sẻ thông tin cá nhân cho AI">
+                            <div class="topic-checkbox"><i class="fas fa-check"></i></div>
+                            <span class="topic-name">Quyền riêng tư – Không chia sẻ thông tin cá nhân cho AI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 4: Ứng dụng AI trong học tập -->
+                <div class="topic-group" id="group-ung-dung">
+                    <div class="topic-group-header" onclick="toggleGroup('group-ung-dung')">
+                        <div class="group-icon" style="background: linear-gradient(135deg, #f59e0b, #fbbf24)"><i class="fas fa-graduation-cap"></i></div>
+                        <span class="group-title">Ứng dụng AI trong học tập</span>
+                        <span class="group-count">4 chủ đề</span>
+                        <i class="fas fa-chevron-down group-toggle"></i>
+                    </div>
+                    <div class="topic-list">
+                        <div class="topic-item" onclick="toggleTopic(this)" data-topic="AI giúp em học tốt hơn – Ứng dụng AI kiểm tra chính tả, dịch thuật">
+                            <div class="topic-checkbox"><i class="fas fa-check"></i></div>
+                            <span class="topic-name">AI giúp em học tốt hơn – Ứng dụng AI kiểm tra chính tả, dịch thuật</span>
+                        </div>
+                        <div class="topic-item" onclick="toggleTopic(this)" data-topic="Vẽ và sáng tạo với AI – Sử dụng AI tạo hình ảnh">
+                            <div class="topic-checkbox"><i class="fas fa-check"></i></div>
+                            <span class="topic-name">Vẽ và sáng tạo với AI – Sử dụng AI tạo hình ảnh</span>
+                        </div>
+                        <div class="topic-item" onclick="toggleTopic(this)" data-topic="Kể chuyện cùng AI – AI giúp viết câu chuyện sáng tạo">
+                            <div class="topic-checkbox"><i class="fas fa-check"></i></div>
+                            <span class="topic-name">Kể chuyện cùng AI – AI giúp viết câu chuyện sáng tạo</span>
+                        </div>
+                        <div class="topic-item" onclick="toggleTopic(this)" data-topic="Dự án STEM + AI – Kết hợp AI vào hoạt động trải nghiệm">
+                            <div class="topic-checkbox"><i class="fas fa-check"></i></div>
+                            <span class="topic-name">Dự án STEM + AI – Kết hợp AI vào hoạt động trải nghiệm</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3: Định dạng & Tạo KHBD -->
+        <div class="card" id="card-format">
+            <div class="card-header">
+                <div class="card-step">3</div>
+                <div class="card-header-info">
+                    <h3>Định dạng KHBD & Tạo giáo án</h3>
+                    <p>Chọn mẫu KHBD và bấm tạo</p>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="format-grid">
+                    <div class="format-option active" onclick="selectFormat(this, '2345')" data-format="2345">
+                        <div class="format-radio"></div>
+                        <i class="fas fa-table-columns format-icon" style="color: var(--green)"></i>
+                        <div class="format-info">
+                            <span class="format-name">KHBD 3 Cột (CV 2345)</span>
+                            <span class="format-desc">Chuẩn Phụ lục 3 mọi cấp</span>
+                        </div>
+                    </div>
+                    <div class="format-option" onclick="selectFormat(this, '5512')" data-format="5512">
+                        <div class="format-radio"></div>
+                        <i class="fas fa-pen-nib format-icon" style="color: var(--indigo)"></i>
+                        <div class="format-info">
+                            <span class="format-name">KHBD CV 5512</span>
+                            <span class="format-desc">Chuẩn Công văn 5512</span>
+                        </div>
+                    </div>
+                    <div class="format-option" onclick="selectFormat(this, '1001')" data-format="1001">
+                        <div class="format-radio"></div>
+                        <i class="fas fa-shield-halved format-icon" style="color: var(--teal)"></i>
+                        <div class="format-info">
+                            <span class="format-name">KHBD DGNL 1001</span>
+                            <span class="format-desc">Đánh giá năng lực</span>
+                        </div>
+                    </div>
+                    <div class="format-option" onclick="selectFormat(this, 'custom')" data-format="custom">
+                        <div class="format-radio"></div>
+                        <i class="fas fa-sliders format-icon" style="color: var(--orange)"></i>
+                        <div class="format-info">
+                            <span class="format-name">Tùy chỉnh</span>
+                            <span class="format-desc">Theo yêu cầu riêng</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="generate-btn" id="btn-generate" onclick="generateKHBD()">
+                    <i class="fas fa-wand-magic-sparkles"></i>
+                    Tạo KHBD tích hợp AI
+                    <span class="cost-badge">4 <i class="fas fa-star"></i></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Card 4: Kết quả -->
+        <div class="card full-width" id="card-output">
+            <div class="card-header">
+                <div class="card-step"><i class="fas fa-file-lines"></i></div>
+                <div class="card-header-info">
+                    <h3>Kết quả KHBD</h3>
+                    <p>Giáo án sẽ hiển thị tại đây sau khi AI tạo xong</p>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="output-area" id="output-area">
+                    <i class="fas fa-robot placeholder-icon"></i>
+                    <span class="placeholder-text">Chưa có kết quả</span>
+                    <span class="placeholder-desc">Điền thông tin và bấm "Tạo KHBD tích hợp AI" để bắt đầu</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loading-card">
+            <div class="loading-spinner"></div>
+            <p>AI đang soạn KHBD...</p>
+            <small>Vui lòng đợi trong giây lát</small>
+        </div>
+    </div>
+
+    <script>
+        // ===== Topic Selection =====
+        function toggleGroup(groupId) {
+            document.getElementById(groupId).classList.toggle('collapsed');
+        }
+
+        function toggleTopic(el) {
+            el.classList.toggle('selected');
+            updateSelectedCount();
+        }
+
+        function updateSelectedCount() {
+            const count = document.querySelectorAll('.topic-item.selected').length;
+            document.getElementById('selected-count').textContent = count;
+        }
+
+        // ===== Format Selection =====
+        let selectedFormat = '2345';
+        function selectFormat(el, format) {
+            document.querySelectorAll('.format-option').forEach(o => o.classList.remove('active'));
+            el.classList.add('active');
+            selectedFormat = format;
+        }
+
+        // ===== Generate KHBD =====
+        function generateKHBD() {
+            const mon = document.getElementById('select-mon').value;
+            const lop = document.getElementById('select-lop').value;
+            const baiDay = document.getElementById('input-baiday').value.trim();
+            const selectedTopics = Array.from(document.querySelectorAll('.topic-item.selected'))
+                .map(el => el.getAttribute('data-topic'));
+
+            if (!mon) return alert('Vui lòng chọn môn học!');
+            if (!lop) return alert('Vui lòng chọn lớp!');
+            if (!baiDay) return alert('Vui lòng nhập tên bài dạy!');
+            if (selectedTopics.length === 0) return alert('Vui lòng chọn ít nhất 1 chủ đề AI để tích hợp!');
+
+            // Show loading
+            document.getElementById('loading-overlay').classList.add('active');
+
+            // Simulate AI generation
+            setTimeout(() => {
+                document.getElementById('loading-overlay').classList.remove('active');
+                const outputArea = document.getElementById('output-area');
+                outputArea.classList.add('has-content');
+                outputArea.innerHTML = `
+                    <div class="output-toolbar">
+                        <button class="primary"><i class="fas fa-download"></i> Tải .docx</button>
+                        <button><i class="fas fa-copy"></i> Sao chép</button>
+                        <button><i class="fas fa-print"></i> In</button>
+                        <button><i class="fas fa-rotate-right"></i> Tạo lại</button>
+                    </div>
+                    <div class="output-content">
+                        <h2>KẾ HOẠCH BÀI DẠY</h2>
+                        <h3>(Tích hợp giáo dục trí tuệ nhân tạo)</h3>
+                        <p><strong>Môn:</strong> ${mon} | <strong>Lớp:</strong> ${lop} | <strong>Thời lượng:</strong> ${document.getElementById('select-tiet').value} tiết</p>
+                        <p><strong>Bài dạy:</strong> ${baiDay}</p>
+                        <p><strong>Nội dung AI tích hợp:</strong> ${selectedTopics.join('; ')}</p>
+                        <p><strong>Mẫu KHBD:</strong> ${selectedFormat === '2345' ? 'CV 2345 (3 cột)' : selectedFormat === '5512' ? 'CV 5512' : selectedFormat === '1001' ? 'DGNL 1001' : 'Tùy chỉnh'}</p>
+                        <hr style="margin: 16px 0; border: none; border-top: 1px solid #e2e8f0;">
+                        <p style="color: var(--text-light); font-style: italic;">
+                            <i class="fas fa-info-circle"></i> 
+                            Đây là bản xem trước. Để sử dụng đầy đủ với Gemini AI, vui lòng cấu hình API Key.
+                        </p>
+                    </div>
+                `;
+                outputArea.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 2000);
+        }
+    </script>
+</body>
+</html>

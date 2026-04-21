@@ -1,0 +1,82 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (494,0)<a class='fullscreen-button' href='/fullScreen'>Xem toàn màn hình />
+[1] (259,152)<button class='toolbarButton' id='viewThumbnail' role='radio' title='Show Thumbnails'>Thumbnails />
+	Thumbnails
+[2] (281,152)<button class='toolbarButton toggled' id='viewOutline' role='radio' title='Show Document Outline (double-click to expand/collapse all items)'>Document Outline />
+	Document Outline
+Attachments
+[3] (327,152)<button class='toolbarButton' id='viewLayers' role='radio' title='Show Layers (double-click to reset all layers to the default state)'>Layers />
+	Layers
+[4] (390,152)<button class='toolbarButton' id='currentOutlineItem' title='Find Current Outline Item'>Current Outline Item />
+	Current Outline Item
+[5] (325,206)<a >COVER />
+[6] (325,246)<a href='#%5B%7B%22num%22%3A1%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22FitH%22%7D%2C798%5D'>A4 />
+[7] (406,472)<div  />
+[8] (259,96)<button class='toolbarButton toggled' id='sidebarToggleButton' title='Toggle Sidebar (document contains outline/attachments/layers)'>Toggle Sidebar />
+	Toggle Sidebar
+[9] (282,96)<button class='toolbarButton' id='viewFindButton' title='Find in Document'>Find />
+	Find
+[10] (315,96)<input class='toolbarField loading' id='pageNumber' title='Page' />
+of ⁨60⁩
+[11] (428,96)<button class='toolbarButton' id='zoomOutButton' title='Zoom Out'>Zoom Out />
+	Zoom Out
+[12] (452,96)<button class='toolbarButton' id='zoomInButton' title='Zoom In'>Zoom In />
+	Zoom In
+[13] (519,96)<select id='scaleSelect' title='Zoom' />
+[14] (635,96)<button class='toolbarButton' id='editorHighlightButton' role='radio' title='Highlight'>Highlight />
+	Highlight
+[15] (657,96)<button class='toolbarButton' id='editorFreeTextButton' role='radio' title='Text'>Text />
+	Text
+[16] (680,96)<button class='toolbarButton' id='editorInkButton' role='radio' title='Draw'>Draw />
+	Draw
+[17] (702,96)<button class='toolbarButton' id='editorStampButton' role='radio' title='Add or edit images'>Add or edit images />
+	Add or edit images
+[18] (730,96)<button class='toolbarButton' id='secondaryToolbarToggleButton' title='Tools'>Tools />
+	Tools
+[19] (494,471)<div id='viewerContainer' scrollable='true' />
+	[20] (418,374)<span role='presentation'>Hướng dẫn sử dụng trí tuệ nhân tạo trong dạy và học />
+	[21] (410,449)<span role='presentation'>1.2.1. Các công cụ sử dụng chức năng AI />
+	[22] (486,449)<span role='presentation' />
+	[23] (571,449)<span role='presentation'>được sử dụng để tự động hóa một số tác vụ />
+	[24] (486,471)<span role='presentation'>nhất định trong dạy và học mà không liên quan đến việc tạo ra nội dung mới. Các công />
+	[25] (486,494)<span role='presentation'>cụ này có thể chia thành các nhóm nhỏ hơn dựa theo đối tượng sử dụng là người dạy hay />
+	[26] (337,517)<span role='presentation'>người học. />
+	[27] (495,551)<span role='presentation'>Công cụ sử dụng chức năng AI hỗ trợ người dạy trong việc giảng dạy và quản lý việc />
+	[28] (336,573)<span role='presentation'>giảng dạy />
+	[29] (499,615)<span role='presentation'>Công cụ AI được ứng dụng để thực hiện các công việc tự động trong giảng dạy sau: />
+	[30] (332,644)<span role='presentation'>• />
+	[31] (336,644)<span role='presentation' />
+	[32] (405,644)<span role='presentation'>Chấm điểm và đánh giá tự động />
+	[33] (468,644)<span role='presentation' />
+	[34] (469,640)<span role='presentation'>(9) />
+	[35] (563,644)<span role='presentation'>: Một số công cụ AI hiện nay có khả năng đọc và />
+	[36] (500,673)<span role='presentation'>phân tích bài tự luận để đưa ra đánh giá cũng như chấm điểm tự động. Ví dụ, Grade- />
+	[37] (355,703)<span role='presentation'>scope />
+	[38] (371,699)<span role='presentation'>(10) />
+	[39] (375,699)<span role='presentation' />
+	[40] (506,703)<span role='presentation'>được ứng dụng để chấm bài thi tự luận và lập trình, trong khi Turnitin />
+	[41] (640,699)<span role='presentation'>(11) />
+	[42] (645,699)<span role='presentation' />
+	[43] (650,703)<span role='presentation'>có />
+	[44] (500,732)<span role='presentation'>khả năng đánh giá và phân tích nội dung bài viết. Cụ thể, Gradescope dựa vào bảng />
+	[45] (500,762)<span role='presentation'>điểm (rubric) mà người dạy cung cấp với các tiêu chí cụ thể cho từng câu hỏi để định />
+	[46] (500,791)<span role='presentation'>hình cách chấm điểm cho các bài học. Sau đó, Gradescope tự động phân loại và />
+	[47] (500,821)<span role='presentation'>nhóm các bài làm có cấu trúc hoặc cách trình bày tương tự nhau nhờ các thuật toán />
+	[48] (500,850)<span role='presentation'>máy học để giúp giáo viên có thể chấm điểm cho một nhóm bài cùng lúc, đảm bảo />
+	[49] (500,880)<span role='presentation'>sự nhất quán và tiết kiệm thời gian. Giáo viên cũng có thể có thể trực tiếp đánh dấu, />
+	[50] (449,909)<span role='presentation'>ghi chú và đưa ra phản hồi cho bài làm trên Gradescope. />
+	[51] (332,939)<span role='presentation'>• />
+	[52] (336,939)<span role='presentation' />
+	[53] (449,939)<span role='presentation'>Kiểm tra đạo văn và đánh giá tính trung thực của bài viết />
+	[54] (558,935)<span role='presentation'>(12) />
+	[55] (608,939)<span role='presentation'>: Các công cụ AI có thể tự />
+	[56] (500,968)<span role='presentation'>động so sánh và kiểm tra các bài viết, từ đó đánh giá tỉ lệ trùng lặp về nội dung và />
+	[57] (500,998)<span role='presentation'>phát hiện các trường hợp đạo văn. Một công cụ tiêu biểu là TurnItIn có một cơ sở dữ />
+	[58] (500,1027)<span role='presentation'>liệu khổng lồ, bao gồm các bài viết học thuật, nội dung trên internet và các bài nộp />
+	[59] (500,1056)<span role='presentation'>lên nó trước đó. TurnItIn sử dụng các thuật toán phân tích ngôn ngữ để nhận diện />
+GỬI GÓP Ý CHO TÀI LIỆU
+
+</current_dom>

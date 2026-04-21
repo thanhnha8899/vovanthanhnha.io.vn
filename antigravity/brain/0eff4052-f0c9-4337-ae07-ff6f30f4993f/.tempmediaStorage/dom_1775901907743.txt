@@ -1,0 +1,93 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (33,73)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (33,73)<i  />
+Đề thi THPT – Tin học
+Công cụ tạo đề thi PPKT THPT
+[2] (65,183)<div  />
+	[3] (40,183)<i  />
+	[4] (74,183)<span >Cấu hình />
+[5] (159,183)<div  />
+	[6] (137,183)<i  />
+	[7] (167,183)<span >Ma trận />
+[8] (246,183)<div  />
+	[9] (227,183)<i  />
+	[10] (254,183)<span >Đặc tả />
+[11] (327,183)<div  />
+	[12] (310,183)<i  />
+	[13] (334,183)<span >Đề thi />
+[14] (915,183)<div  />
+	[15] (871,183)<i  />
+	[16] (924,183)<span >Nguồn ứng dụng />
+1.
+Khi sử dụng phần mềm soạn thảo văn bản, việc sử dụng phông chữ và kích thước chữ sẽ giúp cho văn bản của bạn trở nên đẹp và dễ đọc hơn. Trong Microsoft Word, bạn có thể thay đổi phông chữ và kích thước chữ bằng cách sử dụng nhóm chức năng nào?
+| A. Home |
+B.
+Font | C. Paragraph | D. Insert |
+2.
+Trong một bảng tính, nếu bạn muốn cộng tất cả các số liệu trong một cột, bạn có thể sử dụng hàm nào trong Excel?
+| A. SUMIF |
+B.
+SUM | C. AVERAGE | D. COUNT |
+3.
+Để tạo một trình chiếu mới trong PowerPoint, bạn nên thực hiện các bước nào sau đây?
+| A. Mở PowerPoint và chọn mẫu trình chiếu |
+B.
+Mở PowerPoint và chọn tạo trình chiếu mới | C. Mở PowerPoint và chọn file trình chiếu đã có | D. Mở PowerPoint và chọn chỉnh sửa trình chiếu |
+4.
+Phần mềm học tập nào dưới đây được sử dụng để giúp học sinh học tập và ôn luyện hiệu quả?
+| A. Microsoft Word | B. Microsoft Excel |
+C.
+Duolingo | D. Google Classroom |
+5.
+Thuật toán sắp xếp nào dưới đây là một thuật toán sắp xếp đơn giản và hiệu quả?
+| A. Sắp xếp nổi bọt |
+B.
+Sắp xếp chọn lọc | C. Sắp xếp chèn | D. Sắp xếp trộn |
+6.
+Để tìm kiếm một từ khóa trong văn bản, bạn có thể sử dụng hàm tìm kiếm nào trong Microsoft Word?
+| A. Find |
+B.
+Search | C. Replace | D. Go To |
+7.
+Mạng máy tính là hệ thống nào dưới đây?
+| A. Hệ thống máy tính độc lập |
+B.
+Hệ thống máy tính kết nối với nhau | C. Hệ thống máy tính ảo | D. Hệ thống máy tính cục bộ |
+8.
+Để đảm bảo an toàn trên Internet, bạn nên thực hiện các biện pháp nào sau đây?
+| A. Sử dụng mật khẩu mạnh |
+B.
+Cập nhật phần mềm thường xuyên | C. Sử dụng tường lửa | D. Tất cả các biện pháp trên |
+9.
+Trong Internet, giao thức nào dưới đây được sử dụng để truyền tải dữ liệu?
+| A. HTTP |
+B.
+TCP/IP | C. FTP | D. SMTP |
+10.
+Để tạo một trang web mới, bạn nên sử dụng phần mềm nào dưới đây?
+| A. Microsoft Word | B. Microsoft Excel |
+C.
+Adobe Dreamweaver | D. Google Sites |
+11.
+Thuật toán tìm kiếm nào dưới đây là một thuật toán tìm kiếm hiệu quả?
+| A. Tìm kiếm tuyến tính |
+B.
+Tìm kiếm nhị phân | C. Tìm kiếm tuần tự | D. Tìm kiếm ngẫu nhiên |
+12.
+Để đánh giá thuật toán, bạn nên xem xét các yếu tố nào sau đây?
+| A. Thời gian thực hiện |
+B.
+Không gian lưu trữ | C. Độ phức tạp | D. Tất cả các yếu tố trên |
+Phần II. Câu trắc nghiệm đúng sai (4.0 điểm)
+(Thí sinh trả lời từ câu 13 đến câu 28. Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh chọn đúng hoặc sai)
+13.
+Trong một mạng máy tính, việc sử dụng địa chỉ IP sẽ giúp cho các máy tính có thể kết nối với nhau. 
+a) Sử dụng địa chỉ IP sẽ giúp cho các máy tính có thể kết nối với nhau qua Internet. (Đúng/Sai)
+b) Địa chỉ IP là một địa chỉ duy nhất được gán cho mỗi máy tính trong mạng. (Đúng/Sai)
+c) Việc sử dụng địa chỉ IP sẽ giúp cho các máy tính có thể kết nối với nhau mà không cần đến tên miền. (Đúng/Sai)
+d) Địa chỉ IP có thể được sử dụng để kết nối với các máy tính trong mạng LAN. (Đúng/Sai)
+
+</current_dom>

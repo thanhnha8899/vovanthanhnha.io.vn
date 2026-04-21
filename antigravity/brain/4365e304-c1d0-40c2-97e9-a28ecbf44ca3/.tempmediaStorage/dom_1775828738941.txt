@@ -1,0 +1,168 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (46,54)<a class='flex items-center h-[32px] ml-1 sm:ml-0 mr-3 mt-1' href='/home' />
+	[1] (46,54)<img  />
+[2] (550,48)<a class='inline-flex items-center gap-1 transition-colors duration-200 font-header text-muted-foreground hover:text-primaryaccent data-[state=active]:text-primaryaccent text-sm font-normal data-[state=active]:font-medium min-h-10 pl-0 pr-6' href='/playground' />
+	[3] (540,48)<span >Playground />
+[4] (630,48)<a class='inline-flex items-center gap-1 transition-colors duration-200 font-header text-muted-foreground hover:text-primaryaccent data-[state=active]:text-primaryaccent text-sm font-normal data-[state=active]:font-medium min-h-10 pl-0 pr-6' href='/keys' />
+	[5] (620,48)<span >API Keys />
+[6] (708,48)<a class='inline-flex items-center gap-1 transition-colors duration-200 font-header text-muted-foreground hover:text-primaryaccent data-[state=active]:text-primaryaccent text-sm font-normal data-[state=active]:font-medium min-h-10 pl-0 pr-6' href='/dashboard' />
+	[7] (698,48)<span >Dashboard />
+[8] (777,48)<a class='inline-flex items-center gap-1 transition-colors duration-200 font-header text-muted-foreground hover:text-primaryaccent data-[state=active]:text-primaryaccent text-sm font-normal data-[state=active]:font-medium min-h-10 pl-0 pr-6' href='/docs' />
+	[9] (767,48)<span >Docs />
+[10] (826,48)<a class='inline-flex items-center gap-1 transition-colors duration-200 font-header text-muted-foreground hover:text-primaryaccent data-[state=active]:text-primaryaccent text-sm font-normal data-[state=active]:font-medium min-h-10 pl-0 pr-6' href='/settings' />
+	[11] (816,48)<span  />
+[12] (915,50)<a class='justify-between pt-[6px] flex-1 overflow-hidden rounded-[18px] h-9 text-ellipsis bg-accent w-[130px] lg:w-[170px] border border-input dark:border-gray-500 text-center text-sm font-normal font-header' href='/login'>Log In />
+[13] (93,149)<button aria-label='Search (Ctrl+K)' class='DocSearch DocSearch-Button' />
+	[14] (52,149)<span  />
+		[15] (67,149)<span >Search />
+	[16] (128,149)<span  />
+		[17] (138,150)<kbd  />
+		[18] (151,150)<kbd >K />
+[19] (31,221)<a class='inline-flex items-center gap-1 transition-colors duration-200 font-header hover:text-primaryaccent data-[state=active]:text-primaryaccent text-sm font-normal data-[state=active]:font-medium data-[state=active]:border-b data-[state=active]:border-current pb-[4px] data-[state=active]:pb-[3px] text-muted-foreground' href='/docs/overview'>Docs />
+[20] (108,221)<a class='inline-flex items-center gap-1 transition-colors duration-200 font-header hover:text-primaryaccent data-[state=active]:text-primaryaccent text-sm font-normal data-[state=active]:font-medium data-[state=active]:border-b data-[state=active]:border-current pb-[4px] data-[state=active]:pb-[3px] text-muted-foreground' href='/docs/api-reference'>API Reference />
+[21] (101,620)<div class='absolute inset-0 overflow-auto' scrollable='true' />
+	Getting Started
+	[22] (95,344)<a class='inline-flex items-center gap-1 transition-colors duration-200 font-header text-muted-foreground hover:text-primaryaccent data-[state=active]:text-primaryaccent text-sm font-normal data-[state=active]:font-medium p-0 min-h-7' href='/docs/overview' />
+		[23] (42,344)<span >Overview />
+	[24] (95,393)<a class='inline-flex items-center gap-1 transition-colors duration-200 font-header text-muted-foreground hover:text-primaryaccent data-[state=active]:text-primaryaccent text-sm font-normal data-[state=active]:font-medium p-0 min-h-7' href='/docs/quickstart' />
+		[25] (47,393)<span >Quickstart />
+	[26] (95,443)<a class='inline-flex items-center gap-1 transition-colors duration-200 font-header text-muted-foreground hover:text-primaryaccent data-[state=active]:text-primaryaccent text-sm font-normal data-[state=active]:font-medium p-0 min-h-7' href='/docs/models' />
+		[27] (37,443)<span >Models />
+	[28] (95,493)<a class='inline-flex items-center gap-1 transition-colors duration-200 font-header text-muted-foreground hover:text-primaryaccent data-[state=active]:text-primaryaccent text-sm font-normal data-[state=active]:font-medium p-0 min-h-7' href='/docs/openai' />
+		[29] (77,493)<span >OpenAI Compatibility />
+	[30] (95,543)<a class='inline-flex items-center gap-1 transition-colors duration-200 font-header text-muted-foreground hover:text-primaryaccent data-[state=active]:text-primaryaccent text-sm font-normal data-[state=active]:font-medium p-0 min-h-7' href='/docs/rate-limits' />
+		[31] (48,543)<span >Rate Limits />
+	[32] (95,593)<a class='inline-flex items-center gap-1 transition-colors duration-200 font-header text-muted-foreground hover:text-primaryaccent data-[state=active]:text-primaryaccent text-sm font-normal data-[state=active]:font-medium p-0 min-h-7' href='/docs/examples' />
+		[33] (46,593)<span >Templates />
+	[34] (95,642)<a class='inline-flex items-center gap-1 transition-colors duration-200 font-header text-muted-foreground hover:text-primaryaccent data-[state=active]:text-primaryaccent text-sm font-normal data-[state=active]:font-medium p-0 min-h-7' href='/docs/api-reference' />
+		[35] (56,642)<span >API Reference />
+	Core Features
+	[36] (95,774)<a class='inline-flex items-center gap-1 transition-colors duration-200 font-header text-muted-foreground hover:text-primaryaccent data-[state=active]:text-primaryaccent text-sm font-normal data-[state=active]:font-medium p-0 min-h-7' href='/docs/text-chat' />
+		[37] (62,774)<span >Text Generation />
+	[38] (95,824)<a class='inline-flex items-center gap-1 transition-colors duration-200 font-header text-muted-foreground hover:text-primaryaccent data-[state=active]:text-primaryaccent text-sm font-normal data-[state=active]:font-medium p-0 min-h-7' href='/docs/speech-to-text' />
+		[39] (60,824)<span >Speech to Text />
+	[40] (95,874)<a class='inline-flex items-center gap-1 transition-colors duration-200 font-header text-muted-foreground hover:text-primaryaccent data-[state=active]:text-primaryaccent text-sm font-normal data-[state=active]:font-medium p-0 min-h-7' href='/docs/text-to-speech' />
+		[41] (60,874)<span >Text to Speech />
+	[42] (95,933)<a class='inline-flex items-center gap-1 transition-colors duration-200 font-header text-muted-foreground hover:text-primaryaccent data-[state=active]:text-primaryaccent text-sm font-normal data-[state=active]:font-medium p-0 min-h-7' href='/docs/vision' />
+		[43] (95,933)<span >OCR and Image Recognition />
+	Reasoning
+[44] (588,549)<div class='absolute inset-0 overflow-auto pt-8' id='docs-scrollable' scrollable='true' />
+	~450 tps
+	~500 tps
+	[45] (276,175)<a class='anchor-link' href='#production-models'>Production Models />
+	Note:
+	Production models are intended for use in your production environments. They meet or exceed our high standards for speed, quality, and reliability. Read more
+	[46] (567,263)<a class='inline-flex items-center gap-1 transition-colors duration-200 font-inter text-foreground underline underline-offset-2 hover:text-primaryaccent text-sm' href='/docs/deprecations'>here />
+	.
+	MODEL ID
+	SPEED
+(T/SEC)
+	PRICE PER
+1M TOKENS
+	RATE LIMITS
+(DEVELOPER PLAN)
+	CONTEXT WINDOW
+(TOKENS)
+	MAX
+COMPLETION TOKENS
+	MAX FILE
+SIZE
+	[47] (256,441)<a class='inline-flex items-center gap-1 transition-colors duration-200 font-inter text-foreground underline underline-offset-2 hover:text-primaryaccent text-sm font-medium py-0.5' href='/docs/model/llama-3.1-8b-instant'>Llama 3.1 8B />
+		[48] (211,441)<img  />
+	llama-3.1-8b-instant
+	[49] (329,466)<button class='invisible group-hover:visible rounded p-1 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-200 z-10 relative flex-shrink-0' title='Copy to clipboard' />
+	560
+	$0.05
+	input
+	$0.08
+	output
+	250K
+	TPM
+	1K
+	RPM
+	131,072
+	131,072
+	-
+	[50] (264,529)<a class='inline-flex items-center gap-1 transition-colors duration-200 font-inter text-foreground underline underline-offset-2 hover:text-primaryaccent text-sm font-medium py-0.5' href='/docs/model/llama-3.3-70b-versatile'>Llama 3.3 70B />
+		[51] (211,529)<img  />
+	llama-3.3-70b-versatile
+	280
+	$0.59
+	input
+	$0.79
+	output
+	300K
+	TPM
+	1K
+	RPM
+	131,072
+	32,768
+	-
+	[52] (254,621)<a class='inline-flex items-center gap-1 transition-colors duration-200 font-inter text-foreground underline underline-offset-2 hover:text-primaryaccent text-sm font-medium py-0.5' href='/docs/model/openai/gpt-oss-120b'>GPT OSS 120B />
+		[53] (211,621)<img  />
+	openai/gpt-oss-120b
+	500
+	$0.15
+	input
+	$0.60
+	output
+	250K
+	TPM
+	1K
+	RPM
+	131,072
+	65,536
+	-
+	[54] (252,715)<a class='inline-flex items-center gap-1 transition-colors duration-200 font-inter text-foreground underline underline-offset-2 hover:text-primaryaccent text-sm font-medium py-0.5' href='/docs/model/openai/gpt-oss-20b'>GPT OSS 20B />
+		[55] (211,715)<img  />
+	openai/gpt-oss-20b
+	1000
+	$0.075
+	input
+	$0.30
+	output
+	250K
+	TPM
+	1K
+	RPM
+	131,072
+	65,536
+	-
+	[56] (245,809)<a class='inline-flex items-center gap-1 transition-colors duration-200 font-inter text-foreground underline underline-offset-2 hover:text-primaryaccent text-sm font-medium py-0.5' href='/docs/model/whisper-large-v3'>Whisper />
+		[57] (211,809)<img  />
+	whisper-large-v3
+	-
+	$0.111
+	per hour
+	200K
+	ASH
+	300
+	RPM
+	-
+	-
+	100 MB
+	[58] (265,916)<a class='inline-flex items-center gap-1 transition-colors duration-200 font-inter text-foreground underline underline-offset-2 hover:text-primaryaccent text-sm font-medium py-0.5' href='/docs/model/whisper-large-v3-turbo'>Whisper Large V3 Turbo />
+		[59] (211,916)<img  />
+	whisper-large-v3-turbo
+	-
+	$0.04
+	per hour
+	400K
+	ASH
+	400
+	RPM
+	-
+	-
+	-
+	On this page
+	[60] (890,236)<a class='block text-sm tracking-tight transition-colors duration-200 hover:text-primary focus:outline-none focus:text-primary relative text-muted-foreground' href='#featured-models-and-systems'>Featured Models and Systems />
+	[61] (890,295)<a class='block text-sm tracking-tight transition-colors duration-200 hover:text-primary focus:outline-none focus:text-primary relative text-primary font-medium' href='#production-models'>Production Models />
+	[62] (890,339)<a class='block text-sm tracking-tight transition-colors duration-200 hover:text-primary focus:outline-none focus:text-primary relative text-muted-foreground' href='#production-systems'>Production Systems />
+	[63] (890,382)<a class='block text-sm tracking-tight transition-colors duration-200 hover:text-primary focus:outline-none focus:text-primary relative text-muted-foreground' href='#preview-models'>Preview Models />
+	[64] (890,426)<a class='block text-sm tracking-tight transition-colors duration-200 hover:text-primary focus:outline-none focus:text-primary relative text-muted-foreground' href='#deprecated-models'>Deprecated Models />
+	[65] (890,469)<a class='block text-sm tracking-tight transition-colors duration-200 hover:text-primary focus:outline-none focus:text-primary relative text-muted-foreground' href='#get-all-available-models'>Get All Available Models />
+
+</current_dom>

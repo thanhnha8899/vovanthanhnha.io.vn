@@ -1,0 +1,131 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+Skip to main content
+Accessibility help
+Accessibility feedback
+[0] (106,90)<a aria-label='Go to Google Home' href='https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwijm5C1xOSTAxWByjgGHTeiItEQPAgJ' id='logo' title='Go to Google Home' />
+[1] (397,88)<textarea aria-label='Search' class='gLFyf' id='APjFqb' role='combobox' />
+[2] (622,88)<div  />
+	[3] (620,88)<div aria-label='Clear' class='vOY7J M2vV3' role='button' />
+		[4] (620,88)<span  />
+	[5] (639,88)<span  />
+[6] (658,88)<div aria-label='Search by voice' class='XDyW0e' role='button' />
+[7] (689,88)<div aria-label='Search by image' class='nDcEnd' role='button' />
+[8] (725,88)<button aria-label='Search' class='HZVG1b Tg7LZd' />
+	[9] (720,88)<div  />
+		[10] (720,88)<span  />
+[11] (863,89)<div aria-label='Settings' class='fLciMb' id='og-te' role='button' />
+	[12] (863,92)<div  />
+		[13] (863,89)<span  />
+[14] (899,89)<a aria-label='Google apps' class='gb_B' href='https://www.google.com.vn/intl/en/about/products?tab=wh' role='button' />
+[15] (951,89)<a aria-label='Sign in' class='gb_A' href='https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3Dsite%253Ahcm.edu.vn%2B%25222487%252FSGD%25C4%2590T-GDPT%2522%2Bph%25E1%25BB%25A5%2Bl%25E1%25BB%25A5c%2Bkem%2Btheo&ec=futura_srp_og_si_72236_p'>Sign in />
+	Sign in
+[16] (91,195)<a class='XVMlrc C6AK7c' href='/search?q=site:hcm.edu.vn+%222487/SGD%C4%90T-GDPT%22+ph%E1%BB%A5+l%E1%BB%A5c+kem+theo&sca_esv=d2a5470d2e85f15e&udm=50&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3o6iwGk6Iv1tRbZIBNIVs-6lto6-3aNUADBtReCZUIrpthDUBDTaaidXW0KfItnW7cOY1B_7bST_0xMC_AwXjih_2TZ-mM4ZAnC7pZ5tEqxhJCOkrfKY7VhoUhJQRp98O8mom9-FwOTGd_b_Y0T_HUNX1BgSfzPicC7mpqXZk0Rpz3hP4g&aep=1&ntc=1&sa=X&ved=2ahUKEwijm5C1xOSTAxWByjgGHTeiItEQ2J8OegQIEBAE' />
+	[17] (91,195)<div  />
+		[18] (91,210)<div  />
+			[19] (91,201)<span >AI Mode />
+[20] (136,195)<a class='C6AK7c' role='link' />
+	All
+[21] (179,195)<a class='C6AK7c' href='/search?sca_esv=d2a5470d2e85f15e&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3o6iwGk6Iv1tRbZIBNIVs-6lto6-3aNUADBtReCZUIrpthDUBDTaaidXW0KfItnW7cOY1B_7bST_0xMC_AwXjih_2TZ-mM4ZAnC7pZ5tEqxhJCOkrfKY7VhoUhJQRp98O8mom9-FwOTGd_b_Y0T_HUNX1BgSfzPicC7mpqXZk0Rpz3hP4g&q=site:hcm.edu.vn+%222487/SGD%C4%90T-GDPT%22+ph%E1%BB%A5+l%E1%BB%A5c+kem+theo&sa=X&ved=2ahUKEwijm5C1xOSTAxWByjgGHTeiItEQtKgLegQIFhAB' />
+	[22] (179,195)<div  />
+		[23] (179,210)<span >Images />
+[24] (238,195)<a class='C6AK7c' href='/search?sca_esv=d2a5470d2e85f15e&udm=28&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3o6iwGk6Iv1tRbZIBNIVs-6lto6-3aNUADBtReCZUIrpthDUBDTaaidXW0KfItnW7cOY1B_7bST_0xMC_AwXjih_2TZ-mM4ZAnC7pZ5tEqxhJCOkrfKY7VhoUhJQRp98O8mom9-FwOTGd_b_Y0T_HUNX1BgSfzPicC7mpqXZk0Rpz3hP4g&q=site:hcm.edu.vn+%222487/SGD%C4%90T-GDPT%22+ph%E1%BB%A5+l%E1%BB%A5c+kem+theo&ved=1t:220175&ictx=111' />
+	[25] (238,195)<div  />
+		[26] (238,210)<span >Shopping />
+[27] (294,195)<a class='C6AK7c' href='/search?sca_esv=d2a5470d2e85f15e&q=site:hcm.edu.vn+%222487/SGD%C4%90T-GDPT%22+ph%E1%BB%A5+l%E1%BB%A5c+kem+theo&tbm=nws&source=lnms&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3o6iwGk6Iv1tRbZIBNIVs-6lto6-3aNUADBtReCZUIrpthDUBDTaaidXW0KfItnW7cOY1B_7bST_0xMC_AwXjih_2TZ-mM4ZAnC7pZ5tEqxhJCOkrfKY7VhoUhJQRp98O8mom9-FwOTGd_b_Y0T_HUNX1BgSfzPicC7mpqXZk0Rpz3hP4g&sa=X&ved=2ahUKEwijm5C1xOSTAxWByjgGHTeiItEQ0pQJegQIFBAB' />
+	[28] (294,195)<div  />
+		[29] (294,210)<span >News />
+[30] (343,195)<a class='C6AK7c' href='/search?sca_esv=d2a5470d2e85f15e&udm=7&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3o6iwGk6Iv1tRbZIBNIVs-6lto6-3aNUADBtReCZUIrpthDUBDTaaidXW0KfItnW7cOY1B_7bST_0xMC_AwXjih_2TZ-mM4ZAnC7pZ5tEqxhJCOkrfKY7VhoUhJQRp98O8mom9-FwOTGd_b_Y0T_HUNX1BgSfzPicC7mpqXZk0Rpz3hP4g&q=site:hcm.edu.vn+%222487/SGD%C4%90T-GDPT%22+ph%E1%BB%A5+l%E1%BB%A5c+kem+theo&sa=X&ved=2ahUKEwijm5C1xOSTAxWByjgGHTeiItEQtKgLegQIExAB' />
+	[31] (343,195)<div  />
+		[32] (343,210)<span >Videos />
+[33] (409,195)<a class='C6AK7c' href='/search?sca_esv=d2a5470d2e85f15e&udm=39&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3o6iwGk6Iv1tRbZIBNIVs-6lto6-3aNUADBtReCZUIrpthDUBDTaaidXW0KfItnW7cOY1B_7bST_0xMC_AwXjih_2TZ-mM4ZAnC7pZ5tEqxhJCOkrfKY7VhoUhJQRp98O8mom9-FwOTGd_b_Y0T_HUNX1BgSfzPicC7mpqXZk0Rpz3hP4g&q=site:hcm.edu.vn+%222487/SGD%C4%90T-GDPT%22+ph%E1%BB%A5+l%E1%BB%A5c+kem+theo&sa=X&ved=2ahUKEwijm5C1xOSTAxWByjgGHTeiItEQs6gLegQIFRAB' />
+	[34] (409,195)<div  />
+		[35] (409,210)<span >Short videos />
+[36] (477,195)<div class='mTpL7c' role='button' />
+	[37] (477,195)<div  />
+		[38] (477,210)<div  />
+			[39] (470,201)<span >More />
+			[40] (490,201)<span  />
+[41] (535,195)<div class='mOKdDc' id='hdtb-tls' role='button' />
+	[42] (535,195)<div  />
+		[43] (535,210)<div  />
+			[44] (528,201)<span >Tools />
+			[45] (548,201)<span  />
+Search Results
+Kết quả trên web
+[46] (280,346)<a class='zReHs' href='https://adminthpt.hcm.edu.vn/Data/doc//2025/thptnguyenthuonghien/admin/2025_11/21/0ke-hoach-kiem-tra-cuoi-ky-nam-hoc-2025-2026_211120257.pdf' />
+	[47] (280,379)<h3 >KẾ HOẠCH Kiểm tra đánh giá cuối học kỳ I - Năm học: 2025 />
+	[48] (189,320)<div  />
+		[49] (189,320)<div  />
+			[50] (81,320)<span  />
+				[51] (81,320)<div  />
+					[52] (81,320)<img  />
+			[53] (205,320)<div  />
+				[54] (205,304)<div  />
+					[55] (205,304)<span >Hcm.edu.vn />
+				[56] (205,337)<div  />
+					[57] (205,337)<cite class='qLRx3b tjvcx GvPZzd dTxz9 cHaqb' role='text'>https://adminthpt.hcm.edu.vn />
+						[58] (250,336)<span class='ylgVCe ob9lvb' role='text'>› doc › admin />
+PDF
+[59] (331,335)<div aria-label='About this result' class='MJ8UF iTPLzd rNSxBe eY4mx lUn2nc' role='button' />
+	[60] (331,335)<span  />
+		[61] (331,337)<span  />
+Nov 21, 2025
+—
+Căn cứ văn bản số
+2487/SGDĐT-GDPT
+ngày 18 tháng 9 năm 2025 của Sở Giáo dục và. Đào tạo về việc hướng dẫn tổ chức kiểm tra, đánh giá học sinh ...
+[62] (439,467)<a class='vzmbzf' href='https://adminthpt.hcm.edu.vn/Data/doc//2025/thptnguyenthuonghien/admin/2025_11/21/0ke-hoach-kiem-tra-cuoi-ky-nam-hoc-2025-2026_211120257.pdf#:~:text=C%C4%83n%20c%E1%BB%A9%20v%C4%83n%20b%E1%BA%A3n%20s%E1%BB%91,t%E1%BB%AB%20n%C4%83m%20h%E1%BB%8Dc%202025%20%E2%80%93' />
+	[63] (439,467)<span >Read more />
+6 pages
+[64] (277,629)<a class='zReHs' href='https://filethpt.hcm.edu.vn/data/doc/2025/thptannghia/2025_9/25/461161-kh-kiem-tra-danh-gia-thuong-xuyen-dinh-ky-kiem-tra-lai-2025-2026-kem-quy_259202513.pdf' />
+	[65] (277,666)<h3 >Đánh giá thường xuyên, định kỳ, kiểm tra lại Năm học 2025 />
+	[66] (194,607)<div  />
+		[67] (194,607)<div  />
+			[68] (81,607)<span  />
+				[69] (81,607)<div  />
+					[70] (81,607)<span  />
+			[71] (210,607)<div  />
+				[72] (210,591)<div  />
+					[73] (210,591)<span >Hcm.edu.vn />
+				[74] (210,624)<div  />
+					[75] (210,624)<cite class='qLRx3b tjvcx GvPZzd dTxz9 cHaqb' role='text'>https://filethpt.hcm.edu.vn />
+						[76] (248,623)<span class='ylgVCe ob9lvb' role='text'>› doc › thptannghia />
+PDF
+[77] (342,622)<div aria-label='About this result' class='MJ8UF iTPLzd rNSxBe eY4mx lUn2nc' role='button' />
+	[78] (342,622)<span  />
+		[79] (342,624)<span  />
+Sep 22, 2025
+—
+Căn cứ Văn bản số
+2487/SGDĐT-GDPT
+ngày ngày 18 tháng 9 năm 2025 của Sở Giáo dục và Đào tạo Thành phố Hồ Chí Minh về hướng dẫn tổ chức kiểm.
+[80] (437,754)<a class='vzmbzf' href='https://filethpt.hcm.edu.vn/data/doc/2025/thptannghia/2025_9/25/461161-kh-kiem-tra-danh-gia-thuong-xuyen-dinh-ky-kiem-tra-lai-2025-2026-kem-quy_259202513.pdf#:~:text=C%C4%83n%20c%E1%BB%A9%20V%C4%83n%20b%E1%BA%A3n%20s%E1%BB%91,h%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20t%E1%BB%95%20ch%E1%BB%A9c%20ki%E1%BB%83m' />
+	[81] (437,754)<span >Read more />
+[82] (262,879)<a class='zReHs' href='https://filethpt.hcm.edu.vn/data/doc/2026/thptletrongtan/2026_4/1/139-kh-kt-cuoi-ky-2-25-26-1_14202622.pdf' />
+	[83] (262,915)<h3 >Hạnh phúc KẾ HOẠCH Kiểm tra đánh giá cuối học kỳ II />
+	[84] (198,856)<div  />
+		[85] (198,856)<div  />
+			[86] (81,856)<span  />
+				[87] (81,856)<div  />
+					[88] (81,856)<span  />
+			[89] (214,856)<div  />
+				[90] (214,841)<div  />
+					[91] (214,841)<span >Hcm.edu.vn />
+				[92] (214,874)<div  />
+					[93] (214,874)<cite class='qLRx3b tjvcx GvPZzd dTxz9 cHaqb' role='text'>https://filethpt.hcm.edu.vn />
+						[94] (252,873)<span class='ylgVCe ob9lvb' role='text'>› doc › thptletrongtan />
+PDF
+[95] (350,872)<div aria-label='About this result' class='MJ8UF iTPLzd rNSxBe eY4mx lUn2nc' role='button' />
+	[96] (350,872)<span  />
+		[97] (350,874)<span  />
+Apr 1, 2026
+—
+Căn cứ công văn số
+2487/SGDĐT–GDPT
+ngày 18 tháng 9 năm 2025 của. Sở Giáo dục và Đào tạo về việc hướng dẫn tổ chức kiểm tra, đánh giá học sinh.
+Read more
+
+</current_dom>

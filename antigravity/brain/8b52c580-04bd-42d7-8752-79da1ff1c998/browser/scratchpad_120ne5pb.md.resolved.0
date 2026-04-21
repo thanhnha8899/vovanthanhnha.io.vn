@@ -1,0 +1,9 @@
+# Task Checklist
+
+- [ ] Navigate to `http://127.0.0.1:8080/de-thi-hoahoc.html`
+- [ ] Take a screenshot of Section 2 (Cấu trúc đề & Tỉ lệ)
+- [ ] Test the auto-calculate feature (change 12 to 16 for TN nhiều lựa chọn)
+- [ ] Take a screenshot of the updated calculations
+- [ ] Navigate to `http://127.0.0.1:8080/de-thi-toan.html` and take a screenshot
+- [ ] Navigate to `http://127.0.0.1:8080/de-thi-tinhoc.html` and take a screenshot
+- [ ] Report all findings and screenshots

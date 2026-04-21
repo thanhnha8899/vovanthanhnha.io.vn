@@ -1,0 +1,27 @@
+[0] (131,55)<a class='logo' href='#' id='logo' />
+	[1] (68,55)<div  />
+		[2] (68,55)<i  />
+	[3] (153,55)<div  />
+		[4] (153,42)<span >VOVANTHANHNHA />
+		[5] (153,70)<span >Nền tảng AI Giáo dục />
+[6] (364,55)<a class='nav-link' href='#products' id='nav-products'>Sản phẩm />
+[7] (465,55)<a class='nav-link' href='#company' id='nav-company'>Doanh nghiệp />
+[8] (570,55)<a class='nav-link' href='#policy' id='nav-policy'>Chính sách />
+[9] (788,55)<a class='phone-link' href='tel:0943265527' id='phone-link' />
+	[10] (748,55)<i  />
+	[11] (796,55)<span >0943 265 527 />
+[12] (904,55)<button class='btn-logout' id='btn-logout' title='Đăng xuất' />
+	[13] (876,55)<i  />
+	[14] (911,55)<span >Đăng xuất />
+AI-Powered Education Platform
+Nền tảng
+AI Giáo dục
+cho Giáo viên Việt Nam
+Ứng dụng trí tuệ nhân tạo hỗ trợ giáo viên soạn giáo án, tạo sáng kiến 
+                    và phát triển tài liệu giảng dạy chuyên nghiệp.
+1,000+
+Giáo viên tin dùng
+24/7
+Bảo mật an toàn
+2018
+Chuẩn CTGDPT

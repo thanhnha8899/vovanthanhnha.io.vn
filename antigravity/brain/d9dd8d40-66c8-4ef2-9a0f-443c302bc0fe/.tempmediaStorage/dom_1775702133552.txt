@@ -1,0 +1,95 @@
+[0] (154,49)<a class='logo' href='#' id='logo' />
+	[1] (92,49)<div  />
+		[2] (92,49)<i  />
+	[3] (176,49)<div  />
+		[4] (176,35)<span >VOVANTHANHNHA />
+		[5] (176,64)<span >Nền tảng AI Giáo dục />
+[6] (305,49)<a class='dash-nav-link active' href='#' id='nav-home' />
+	[7] (278,49)<i  />
+	[8] (313,49)<span >Trang chủ />
+[9] (396,49)<a class='dash-nav-link' href='#' id='nav-huongdan' />
+	[10] (367,49)<i  />
+	[11] (403,49)<span >Hướng dẫn />
+[12] (489,49)<a class='dash-nav-link' href='#' id='nav-congdong' />
+	[13] (460,49)<i  />
+	[14] (498,49)<span >Cộng đồng />
+[15] (583,49)<a class='dash-nav-link' href='#' id='nav-zalo' />
+	[16] (554,49)<i  />
+	[17] (592,49)<span >Hỗ trợ Zalo />
+[18] (691,49)<a class='topup-btn' href='#' id='nav-napdiem' />
+	[19] (668,49)<i  />
+	[20] (698,49)<span >Nạp điểm />
+0
+điểm
+[21] (824,49)<button class='notif-btn' id='notif-btn' title='Thông báo' />
+	[22] (824,49)<i  />
+	[23] (831,36)<span  />
+[24] (859,49)<div  />
+	[25] (859,49)<div  />
+		[26] (859,49)<span >A />
+		[27] (869,68)<span  />
+[28] (908,49)<button class='btn-logout' id='btn-logout' title='Đăng xuất' />
+	[29] (908,49)<i  />
+Tích hợp năng lực số
+Thêm NLS vào giáo án có sẵn
+4
+[30] (285,173)<a class='tile' href='#' id='tool-nangluc-auto' />
+	[31] (121,173)<div  />
+		[32] (121,173)<i  />
+	[33] (290,173)<div  />
+		[34] (290,159)<span >Tự động NLS vào giáo án />
+		[35] (290,190)<span >AI tự tích hợp hoàn tất />
+	[36] (454,173)<span >4 />
+		[37] (459,173)<i  />
+Đề thi 7991 THPT
+8 bộ môn
+[38] (194,476)<a class='subject-card' href='#' id='tool-dt-toan' />
+	[39] (194,436)<div  />
+		[40] (194,436)<i  />
+	[41] (194,498)<span >Toán />
+	[42] (194,538)<span >5★ />
+[43] (399,476)<a class='subject-card' href='de-thi-vatli.html' id='tool-dt-vatli' />
+	[44] (399,436)<div  />
+		[45] (399,436)<i  />
+	[46] (399,498)<span >Vật Lí />
+	[47] (399,538)<span >5★ />
+[48] (604,476)<a class='subject-card' href='#' id='tool-dt-hoahoc' />
+	[49] (604,436)<div  />
+		[50] (604,436)<i  />
+	[51] (604,498)<span >Hóa học />
+	[52] (604,538)<span >5★ />
+[53] (809,476)<a class='subject-card' href='#' id='tool-dt-sinhhoc' />
+	[54] (809,436)<div  />
+		[55] (809,436)<i  />
+	[56] (809,498)<span >Sinh Học />
+	[57] (809,538)<span >5★ />
+[58] (194,694)<a class='subject-card' href='#' id='tool-dt-nguvan' />
+	[59] (194,654)<div  />
+		[60] (194,654)<i  />
+	[61] (194,715)<span >Ngữ Văn />
+	[62] (194,755)<span >5★ />
+[63] (399,694)<a class='subject-card' href='#' id='tool-dt-lichsu' />
+	[64] (399,654)<div  />
+		[65] (399,654)<i  />
+	[66] (399,715)<span >Lịch Sử />
+	[67] (399,755)<span >5★ />
+[68] (604,694)<a class='subject-card' href='#' id='tool-dt-diali' />
+	[69] (604,654)<div  />
+		[70] (604,654)<i  />
+	[71] (604,715)<span >Địa Lí />
+	[72] (604,755)<span >5★ />
+[73] (809,694)<a class='subject-card' href='#' id='tool-dt-ktpl' />
+	[74] (809,654)<div  />
+		[75] (809,654)<i  />
+	[76] (809,715)<span >KT – PL />
+	[77] (809,755)<span >5★ />
+Đề thi 7991 THCS & Tiểu học
+Chuẩn CV 7991
+[78] (285,996)<a class='tile' href='#' id='tool-7991-sgk'>10 />
+	[79] (121,996)<div  />
+		[80] (121,996)<i  />
+	[81] (288,996)<div  />
+		[82] (288,982)<span >TH & THCS từ SGK />
+	10
+[83] (958,917)<button aria-label='Về đầu trang' class='back-to-top visible' id='back-to-top' />
+	[84] (958,917)<i  />

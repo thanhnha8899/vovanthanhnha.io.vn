@@ -1,0 +1,64 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+Nội dung bồi dưỡng học sinh giỏi cấp THCS bao gồm các chủ đề lịch sử từ thế kỷ X đến thế kỷ XVIII cho khối 7-8 và các chủ đề về thế giới và Việt Nam từ 1918 ...
+Read more
+AI Overview
++3
+Tài liệu này
+cung cấp hướng dẫn chi tiết về ma trận, đặc tả và cấu trúc đề kiểm tra định kỳ cho các khối lớp 6-12 (năm học 2025-2026)
+. Nội dung bao gồm phân bổ tỷ lệ câu hỏi, các mức độ đánh giá (nhận biết, thông hiểu, vận dụng), và hướng dẫn thực hiện kiểm tra đánh giá theo định hướng phát triển năng lực.
+[0] (305,294)<button aria-label='View related links' class='rBl3me' />
+	[1] (305,294)<span  />
+Nội dung chính:
+Ma trận & Đặc tả:
+Quy định khung cấu trúc đề kiểm tra (trắc nghiệm, tự luận) cho từng môn học.
+Phân bổ mức độ:
+Đảm bảo tỷ lệ hợp lý giữa các mức độ nhận thức.
+Phạm vi:
+Áp dụng cho kiểm tra định kỳ, kiểm tra nội bộ theo CV 5870/BGDĐT hoặc hướng dẫn cụ thể của Sở GD-ĐT.
+Các thông tin liên quan năm học 2025-2026:
+Kiểm tra nội bộ (THPT):
+Kế hoạch chi tiết từ tháng 9/2025.
+Thi tuyển sinh 10:
+Hướng dẫn cấu trúc đề thi, chỉ tiêu, và mẫu phụ lục.
+Nghiên cứu KHKT:
+Hướng dẫn hoạt động KHKT cho THPT.
+Hcm.edu.vn
++2
+Bạn có thể tìm thấy chi tiết phụ lục trên và để tham khảo các mẫu ma trận đề thi cụ thể.
+[2] (325,687)<div aria-label='Show more AI Overview' class='Jzkafd' role='button' />
+	[3] (317,687)<div  />
+		[4] (317,687)<div >Show more />
+			Show more
+			[5] (348,687)<span  />
+Kết quả trên web
+[6] (238,896)<a class='zReHs' href='https://filethpt.hcm.edu.vn/data/doc/2025/thptannghia/413413-kh-kiem-tra-noi-bo-25-26-theo-cv-2136-moi_159202521.pdf' />
+	[7] (238,933)<h3 >KẾ HOẠCH Kiểm tra nội bộ năm học 2025-2026 />
+	[8] (194,874)<div  />
+		[9] (194,874)<div  />
+			[10] (81,874)<span  />
+				[11] (81,874)<div  />
+					[12] (81,874)<span  />
+			[13] (210,874)<div  />
+				[14] (210,859)<div  />
+					[15] (210,859)<span >Hcm.edu.vn />
+				[16] (210,891)<div  />
+					[17] (210,891)<cite class='qLRx3b tjvcx GvPZzd dTxz9 cHaqb' role='text'>https://filethpt.hcm.edu.vn />
+						[18] (248,891)<span class='ylgVCe ob9lvb' role='text'>› doc › thptannghia />
+PDF
+[19] (342,889)<div aria-label='About this result' class='MJ8UF iTPLzd rNSxBe eY4mx lUn2nc' role='button' />
+	[20] (342,889)<span  />
+		[21] (342,891)<span  />
+Sep 15, 2025
+—
+NỘI DUNG KẾ HOẠCH
+KIỂM TRA
+(Nội dung
+chi tiết
+có
+phụ lục kèm theo
+). - Về chuyên môn:
+
+</current_dom>

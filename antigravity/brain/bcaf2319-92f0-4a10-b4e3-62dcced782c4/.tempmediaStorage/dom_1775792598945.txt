@@ -1,0 +1,128 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+Skip to main content
+Accessibility help
+Accessibility feedback
+[0] (106,90)<a aria-label='Go to Google Home' href='https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwinl9mZreKTAxWdVPEDHdZEIfEQPAgJ' id='logo' title='Go to Google Home' />
+[1] (397,88)<textarea aria-label='Search' class='gLFyf' id='APjFqb' role='combobox' />
+[2] (622,88)<div  />
+	[3] (620,88)<div aria-label='Clear' class='vOY7J M2vV3' role='button' />
+		[4] (620,88)<span  />
+	[5] (639,88)<span  />
+[6] (658,88)<div aria-label='Search by voice' class='XDyW0e' role='button' />
+[7] (689,88)<div aria-label='Search by image' class='nDcEnd' role='button' />
+[8] (725,88)<button aria-label='Search' class='HZVG1b Tg7LZd' />
+	[9] (720,88)<div  />
+		[10] (720,88)<span  />
+[11] (863,89)<div aria-label='Settings' class='fLciMb' id='og-te' role='button' />
+	[12] (863,92)<div  />
+		[13] (863,89)<span  />
+[14] (899,89)<a aria-label='Google apps' class='gb_B' href='https://www.google.com.vn/intl/en/about/products?tab=wh' role='button' />
+[15] (951,89)<a aria-label='Sign in' class='gb_A' href='https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3D%2522260201%2522%2Bgi%25C3%25A1o%2Bd%25E1%25BB%25A5c%2Btr%25C3%25AD%2Btu%25E1%25BB%2587%2Bnh%25C3%25A2n%2Bt%25E1%25BA%25A1o&ec=futura_srp_og_si_72236_p'>Sign in />
+	Sign in
+[16] (91,195)<a class='XVMlrc C6AK7c' href='/search?q=%22260201%22+gi%C3%A1o+d%E1%BB%A5c+tr%C3%AD+tu%E1%BB%87+nh%C3%A2n+t%E1%BA%A1o&sca_esv=01708ebf1111ed47&udm=50&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3jljrY5CkLlk8Dq3IvwBz-Qg9gdZYJriKd9fBMKKfwqZsp5a2Z8RykAyI8QON1GKtCr4VT6OCYPo9szQYqtZwk7b1IdjhhypaYKEvL3a3az9oJEwtR9fyXPT7ybdvqXtdoKNPa-4DlTyEl6zlJkmnfQS92CUYknTpzg_Gi9hGFLDXohBAQ&aep=1&ntc=1&sa=X&ved=2ahUKEwinl9mZreKTAxWdVPEDHdZEIfEQ2J8OegQIDxAE' />
+	[17] (91,195)<div  />
+		[18] (91,210)<div  />
+			[19] (91,201)<span >AI Mode />
+[20] (136,195)<a class='C6AK7c' role='link' />
+	All
+[21] (179,195)<a class='C6AK7c' href='/search?sca_esv=01708ebf1111ed47&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3jljrY5CkLlk8Dq3IvwBz-Qg9gdZYJriKd9fBMKKfwqZsp5a2Z8RykAyI8QON1GKtCr4VT6OCYPo9szQYqtZwk7b1IdjhhypaYKEvL3a3az9oJEwtR9fyXPT7ybdvqXtdoKNPa-4DlTyEl6zlJkmnfQS92CUYknTpzg_Gi9hGFLDXohBAQ&q=%22260201%22+gi%C3%A1o+d%E1%BB%A5c+tr%C3%AD+tu%E1%BB%87+nh%C3%A2n+t%E1%BA%A1o&sa=X&ved=2ahUKEwinl9mZreKTAxWdVPEDHdZEIfEQtKgLegQIFRAB' />
+	[22] (179,195)<div  />
+		[23] (179,210)<span >Images />
+[24] (232,195)<a class='C6AK7c' href='/search?sca_esv=01708ebf1111ed47&udm=7&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3jljrY5CkLlk8Dq3IvwBz-Qg9gdZYJriKd9fBMKKfwqZsp5a2Z8RykAyI8QON1GKtCr4VT6OCYPo9szQYqtZwk7b1IdjhhypaYKEvL3a3az9oJEwtR9fyXPT7ybdvqXtdoKNPa-4DlTyEl6zlJkmnfQS92CUYknTpzg_Gi9hGFLDXohBAQ&q=%22260201%22+gi%C3%A1o+d%E1%BB%A5c+tr%C3%AD+tu%E1%BB%87+nh%C3%A2n+t%E1%BA%A1o&sa=X&ved=2ahUKEwinl9mZreKTAxWdVPEDHdZEIfEQtKgLegQIFBAB' />
+	[25] (232,195)<div  />
+		[26] (232,210)<span >Videos />
+[27] (281,195)<a class='C6AK7c' href='/search?sca_esv=01708ebf1111ed47&q=%22260201%22+gi%C3%A1o+d%E1%BB%A5c+tr%C3%AD+tu%E1%BB%87+nh%C3%A2n+t%E1%BA%A1o&tbm=nws&source=lnms&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3jljrY5CkLlk8Dq3IvwBz-Qg9gdZYJriKd9fBMKKfwqZsp5a2Z8RykAyI8QON1GKtCr4VT6OCYPo9szQYqtZwk7b1IdjhhypaYKEvL3a3az9oJEwtR9fyXPT7ybdvqXtdoKNPa-4DlTyEl6zlJkmnfQS92CUYknTpzg_Gi9hGFLDXohBAQ&sa=X&ved=2ahUKEwinl9mZreKTAxWdVPEDHdZEIfEQ0pQJegQIExAB' />
+	[28] (281,195)<div  />
+		[29] (281,210)<span >News />
+[30] (337,195)<a class='C6AK7c' href='/search?sca_esv=01708ebf1111ed47&udm=28&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3jljrY5CkLlk8Dq3IvwBz-Qg9gdZYJriKd9fBMKKfwqZsp5a2Z8RykAyI8QON1GKtCr4VT6OCYPo9szQYqtZwk7b1IdjhhypaYKEvL3a3az9oJEwtR9fyXPT7ybdvqXtdoKNPa-4DlTyEl6zlJkmnfQS92CUYknTpzg_Gi9hGFLDXohBAQ&q=%22260201%22+gi%C3%A1o+d%E1%BB%A5c+tr%C3%AD+tu%E1%BB%87+nh%C3%A2n+t%E1%BA%A1o&ved=1t:220175&ictx=111' />
+	[31] (337,195)<div  />
+		[32] (337,210)<span >Shopping />
+[33] (409,195)<a class='C6AK7c' href='/search?sca_esv=01708ebf1111ed47&udm=39&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3jljrY5CkLlk8Dq3IvwBz-Qg9gdZYJriKd9fBMKKfwqZsp5a2Z8RykAyI8QON1GKtCr4VT6OCYPo9szQYqtZwk7b1IdjhhypaYKEvL3a3az9oJEwtR9fyXPT7ybdvqXtdoKNPa-4DlTyEl6zlJkmnfQS92CUYknTpzg_Gi9hGFLDXohBAQ&q=%22260201%22+gi%C3%A1o+d%E1%BB%A5c+tr%C3%AD+tu%E1%BB%87+nh%C3%A2n+t%E1%BA%A1o&sa=X&ved=2ahUKEwinl9mZreKTAxWdVPEDHdZEIfEQs6gLegQIERAB' />
+	[34] (409,195)<div  />
+		[35] (409,210)<span >Short videos />
+[36] (477,195)<div class='mTpL7c' role='button' />
+	[37] (477,195)<div  />
+		[38] (477,210)<div  />
+			[39] (470,201)<span >More />
+			[40] (490,201)<span  />
+[41] (535,195)<div class='mOKdDc' id='hdtb-tls' role='button' />
+	[42] (535,195)<div  />
+		[43] (535,210)<div  />
+			[44] (528,201)<span >Tools />
+			[45] (548,201)<span  />
+Search Results
+Kết quả trên web
+[46] (173,346)<a class='zReHs' href='https://www.scribd.com/document/1016274325/260201-Tai-Li%E1%BB%87u-Thpt' />
+	[47] (171,379)<h3 >260201 - Tài Liệu Thpt | PDF />
+	[48] (173,320)<div  />
+		[49] (173,320)<div  />
+			[50] (81,320)<span  />
+				[51] (81,320)<div  />
+					[52] (81,320)<img  />
+			[53] (189,320)<div  />
+				[54] (189,304)<div  />
+					[55] (189,304)<span >Scribd />
+				[56] (189,337)<div  />
+					[57] (189,337)<cite class='qLRx3b tjvcx GvPZzd dTxz9 cHaqb' role='text'>https://www.scribd.com />
+						[58] (222,336)<span class='ylgVCe ob9lvb' role='text'>› document />
+·
+[59] (298,337)<a class='dEEN8c' href='https://www.scribd.com/document/1016274325/260201-Tai-Li%E1%BB%87u-Thpt' />
+	[60] (298,336)<span >Translate this page />
+[61] (355,335)<div aria-label='About this result' class='MJ8UF iTPLzd rNSxBe eY4mx lUn2nc' role='button' />
+	[62] (355,335)<span  />
+		[63] (355,337)<span  />
+260201
+- Tài Liệu Thpt. Uploaded by. Trần Nhật Tân. Copyright. © © All Rights ... Ở cấp Trung học phổ thông, việc tích hợp
+giáo dục trí tuệ nhân tạo
+(AI) được ...
+[64] (391,467)<a class='vzmbzf' href='https://www.scribd.com/document/1016274325/260201-Tai-Li%E1%BB%87u-Thpt#:~:text=260201%20%2D%20T%C3%A0i%20Li%E1%BB%87u%20Thpt,%C2%A9%20%C2%A9%20All%20Rights%20Reserved&text=%E1%BB%9E%20c%E1%BA%A5p%20Trung%20h%E1%BB%8Dc%20ph%E1%BB%95,nh%C3%A2n%20t%E1%BA%A1o%20(AI)%20%C4%91%C6%B0%E1%BB%A3c%20tri%E1%BB%83n' />
+	[65] (391,467)<span >Read more />
+[66] (283,596)<a class='zReHs' href='https://www.facebook.com/tranquocnghiabd/posts/t%C3%A0i-li%E1%BB%87u-t%E1%BA%ADp-hu%E1%BA%A5nhd-th%E1%BB%B1c-hi%E1%BB%87n-th%C3%AD-%C4%91i%E1%BB%83mn%E1%BB%99i-dung-gi%C3%A1o-d%E1%BB%A5c-ailink-t%E1%BA%A3i-%E1%BB%9F-conment/26335572999432716/' />
+	[67] (283,628)<h3 >Tài Liệu Tập Huấn HD thực hiện thí điểmnội dung giáo dục ... />
+	[68] (156,569)<div  />
+		[69] (156,569)<div  />
+			[70] (81,569)<span  />
+				[71] (81,569)<div  />
+					[72] (81,569)<img  />
+			[73] (172,569)<div  />
+				[74] (172,554)<div  />
+					[75] (172,554)<span >Facebook · Trần Quốc Nghĩa />
+				[76] (172,586)<div  />
+					[77] (157,586)<cite class='qLRx3b tjvcx GvPZzd cHaqb' role='text'>10+ reactions  ·  1 week ago />
+[78] (258,585)<div aria-label='About this result' class='MJ8UF iTPLzd rNSxBe eY4mx lUn2nc' role='button' />
+	[79] (258,585)<span  />
+		[80] (258,586)<span  />
+Tài Liệu Tập Huấn HD thực hiện thí điểmnội dung
+giáo dục
+AI Link tải ở conment. ...
+260201
+- Tài liệu THPT.pdf. 1d. Recent Posts. Trần Quốc ...
+[81] (308,716)<a class='vzmbzf' href='https://www.facebook.com/tranquocnghiabd/posts/t%C3%A0i-li%E1%BB%87u-t%E1%BA%ADp-hu%E1%BA%A5nhd-th%E1%BB%B1c-hi%E1%BB%87n-th%C3%AD-%C4%91i%E1%BB%83mn%E1%BB%99i-dung-gi%C3%A1o-d%E1%BB%A5c-ailink-t%E1%BA%A3i-%E1%BB%9F-conment/26335572999432716/#:~:text=260201%20%2D%20T%C3%A0i%20li%E1%BB%87u%20THPT.pdf,Tr%E1%BA%A7n%20Qu%E1%BB%91c%20Ngh%C4%A9a' />
+	[82] (308,716)<span >Read more />
+[83] (283,846)<a class='zReHs' href='https://www.facebook.com/tranquocnghiabd/photos/t%C3%A0i-li%E1%BB%87u-t%E1%BA%ADp-hu%E1%BA%A5nhd-th%E1%BB%B1c-hi%E1%BB%87n-th%C3%AD-%C4%91i%E1%BB%83mn%E1%BB%99i-dung-gi%C3%A1o-d%E1%BB%A5c-ailink-t%E1%BA%A3i-%E1%BB%9F-conment/26335572716099411/' />
+	[84] (283,878)<h3 >Tài Liệu Tập Huấn HD thực hiện thí điểmnội dung giáo dục ... />
+	[85] (156,819)<div  />
+		[86] (156,819)<div  />
+			[87] (81,819)<span  />
+				[88] (81,819)<div  />
+					[89] (81,819)<img  />
+			[90] (172,819)<div  />
+				[91] (172,803)<div  />
+					[92] (172,803)<span >Facebook · Trần Quốc Nghĩa />
+				[93] (172,836)<div  />
+					[94] (157,836)<cite class='qLRx3b tjvcx GvPZzd cHaqb' role='text'>10+ reactions  ·  1 week ago />
+[95] (258,834)<div aria-label='About this result' class='MJ8UF iTPLzd rNSxBe eY4mx lUn2nc' role='button' />
+	[96] (258,834)<span  />
+		[97] (258,836)<span  />
+Tài Liệu Tập Huấn HD thực hiện thí điểmnội dung
+giáo dục
+AI Link tải ở conment. ...
+260201
+- Tài liệu THPT.pdf. 3d. Recent Posts. Trần Quốc Nghĩa ...
+[98] (340,966)<a class='vzmbzf' href='https://www.facebook.com/tranquocnghiabd/photos/t%C3%A0i-li%E1%BB%87u-t%E1%BA%ADp-hu%E1%BA%A5nhd-th%E1%BB%B1c-hi%E1%BB%87n-th%C3%AD-%C4%91i%E1%BB%83mn%E1%BB%99i-dung-gi%C3%A1o-d%E1%BB%A5c-ailink-t%E1%BA%A3i-%E1%BB%9F-conment/26335572716099411/#:~:text=260201%20%2D%20T%C3%A0i%20li%E1%BB%87u%20THPT.pdf,Tr%C6%B0%E1%BB%9Dng%20Th%C3%A0nh%20Ph%E1%BB%91%20D%C4%A9%20An.' />
+	[99] (340,966)<span >Read more />
+
+</current_dom>

@@ -1,0 +1,14 @@
+# Task: Verify "Đề thi" tab in de-thi-tinhoc.html
+
+## Checklist
+- [ ] Open `de-thi-tinhoc.html` in the browser
+- [ ] Verify page load and initial state
+- [ ] Click on "Đề thi" tab
+- [ ] Verify UI components in "Đề thi" tab
+    - [ ] Title
+    - [ ] Buttons (Create Exam, Export Word)
+    - [ ] Placeholder area for exam content
+- [ ] Report findings
+
+## Progress Notes
+- Task started.

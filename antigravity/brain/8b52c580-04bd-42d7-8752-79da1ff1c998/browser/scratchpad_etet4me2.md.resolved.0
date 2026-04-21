@@ -1,0 +1,9 @@
+# Task Checklist
+1. [ ] Navigate to http://127.0.0.1:8080/index.html
+2. [ ] Login as 'admin' / 'Nha12345'
+3. [ ] Wait for dashboard transition
+4. [ ] Capture top section screenshot
+5. [ ] Scroll and capture middle (categories) screenshot
+6. [ ] Scroll and capture middle (exams/marketplace) screenshot
+7. [ ] Scroll and capture middle (pricing) screenshot
+8. [ ] Scroll and capture bottom (footer) screenshot

@@ -1,0 +1,89 @@
+[0] (35,66)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (35,66)<i  />
+Đề thi THPT – Tin học
+Công cụ tạo đề thi PPKT THPT
+[2] (71,166)<div  />
+	[3] (44,166)<i  />
+	[4] (79,166)<span >Cấu hình />
+[5] (171,166)<div  />
+	[6] (148,166)<i  />
+	[7] (180,166)<span >Ma trận />
+[8] (265,166)<div  />
+	[9] (245,166)<i  />
+	[10] (274,166)<span >Đặc tả />
+[11] (353,166)<div  />
+	[12] (335,166)<i  />
+	[13] (361,166)<span >Đề thi />
+[14] (909,166)<div  />
+	[15] (861,166)<i  />
+	[16] (917,166)<span >Nguồn ứng dụng />
+1
+Thông tin đề thi
+Trường, kỳ thi, môn học, thời gian
+[17] (151,377)<label >Tên trường />
+[18] (151,433)<input id='ten-truong' placeholder='Nhập tên trường' />
+[19] (384,377)<label >Tổ chuyên môn />
+[20] (384,433)<input id='to-chuyen-mon' placeholder='Nhập tổ chuyên môn' />
+[21] (616,377)<label >Tên đề kiểm tra />
+[22] (616,433)<input id='ten-de' placeholder='Nhập tên đề' />
+[23] (849,377)<label >Môn học />
+[24] (849,433)<select id='mon-hoc' />
+[25] (151,504)<label >Năm học />
+[26] (151,560)<input id='nam-hoc' placeholder='VD: NĂM HỌC 2026 - 2027' />
+[27] (384,504)<label >Thời gian (phút) />
+[28] (384,560)<input id='thoi-gian' />
+[29] (616,504)<label >Khối lớp />
+[30] (616,560)<select id='khoi-lop' />
+[31] (849,504)<label >Kỳ kiểm tra />
+[32] (849,560)<select id='ky-kiem-tra' />
+2
+Cấu trúc đề & Tỉ lệ
+Loại câu, điểm, mức độ nhận thức
+[33] (155,800)<label >ĐỘ KHÓ ĐỀ THI />
+[34] (155,855)<select id='do-kho' />
+Loại câu
+Số câu
+Điểm/câu
+Trắc nghiệm nhiều lựa chọn
+3
+Chọn nội dung kiểm tra
+Mạch – Đơn vị kiến thức · Đã chọn:
+1
+[35] (862,724)<input id='search-topic' placeholder='Lọc mạch...' />
+MẠCH NỘI DUNG
+[36] (478,866)<div  />
+	[37] (347,863)<div  />
+		[38] (347,863)<i  />
+	[39] (365,863)<div  />
+	[40] (468,862)<span >Máy tính và xã hội tri thức />
+	[41] (580,866)<span >4 />
+	[42] (607,863)<span  />
+		[43] (607,863)<i  />
+[44] (478,932)<div  />
+	[45] (347,929)<div  />
+		[46] (347,929)<i  />
+	[47] (365,929)<div  />
+	[48] (468,927)<span >Mạng máy tính và Internet />
+	[49] (580,932)<span >3 />
+	[50] (607,929)<span  />
+		[51] (607,929)<i  />
+[52] (347,994)<div  />
+	[53] (347,994)<i  />
+[54] (365,994)<div  />
+Đạo đức và pháp luật trong CNTT
+3
+[55] (607,994)<span  />
+	[56] (607,994)<i  />
+Cơ sở dữ liệu
+[57] (809,860)<div  />
+	[58] (677,861)<div  />
+		[59] (677,861)<i  />
+	[60] (820,860)<span >Khái niệm CSDL />
+[61] (809,914)<div  />
+	[62] (677,914)<div  />
+		[63] (677,914)<i  />
+	[64] (820,914)<span >Hệ quản trị CSDL />
+[65] (809,967)<div  />
+	[66] (677,968)<div  />
+		[67] (677,968)<i  />
+	[68] (820,967)<span >Bảng và mối quan hệ />

@@ -1,0 +1,6 @@
+{
+  "artifactType": "ARTIFACT_TYPE_OTHER",
+  "summary": "Tổng hợp chi tiết nội dung kiểm tra định kỳ (giữa kỳ, cuối kỳ) cho 3 môn Tin học 7, 8, 10 năm học 2025-2026. Bao gồm:\n- Tin học 7: 4 bài kiểm tra (giữa/cuối HK1, giữa/cuối HK2)\n- Tin học 8: 4 bài kiểm tra\n- Tin học 10: 4 bài kiểm tra\nMỗi bài kiểm tra liệt kê rõ: bài học nằm trong phạm vi, tuần thực hiện, số tiết, và yêu cầu cần đạt (nội dung kiểm tra cụ thể) theo phân phối chương trình. Cuối cùng có bảng tổng hợp phạm vi kiểm tra tất cả các kỳ.",
+  "updatedAt": "2026-04-12T16:30:27.420037200Z",
+  "requestFeedback": true
+}

@@ -1,0 +1,75 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (500,500)<div  />
+[1] (172,54)<a class='flex items-center' href='/' />
+	[2] (172,54)<img  />
+[3] (334,54)<button class='lg:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/10 transition-colors' />
+[4] (200,457)<nav class='flex-1 px-3 py-4 overflow-y-auto' scrollable='true' />
+	API Reference
+	Chat Completions
+	[5] (188,132)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/embeddings' />
+		[6] (143,132)<span >Embeddings />
+	[7] (188,190)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/video-generation' />
+		[8] (168,190)<span >Video Generation />
+	[9] (188,248)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/image-generation' />
+		[10] (170,248)<span >Image Generation />
+	[11] (188,307)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/models' />
+		[12] (142,307)<span >Text Models />
+	[13] (188,365)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/api-usage' />
+		[14] (132,365)<span >API Usage />
+	[15] (188,423)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/error-handling' />
+		[16] (153,423)<span >Error Handling />
+	[17] (188,481)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/management-api' />
+		[18] (167,481)<span >Management API />
+	Integrations
+	[19] (188,595)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/beesynapse-integrations' />
+		[20] (143,595)<span >BeeSynapse />
+	[21] (188,653)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/openclaw-9router' />
+		[22] (50,653)<span >🦞 />
+		[23] (208,653)<span >Cấu hình Bee API với OpenClaw />
+	[24] (188,711)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/opencode' />
+		[25] (50,711)<img  />
+		[26] (134,711)<span >OpenCode />
+	[27] (188,770)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/claude-code' />
+		[28] (50,770)<img  />
+		[29] (146,770)<span >Claude Code />
+	Troubleshooting
+	Troubleshoot OAuth
+	🦞
+	OpenClaw Troubleshoot
+[30] (200,868)<a class='flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-lg bg-gray-900 dark:bg-white text-white dark:text-black text-sm font-medium hover:bg-gray-800 dark:hover:bg-gray-200 transition-all duration-200' href='/login'>Đăng nhập />
+Đăng nhập để sử dụng API và quản lý tài khoản
+Tài liệu Beeknoee
+Đăng nhập
+[31] (500,548)<main class='flex-1 overflow-y-auto p-4 lg:p-6' scrollable='true' />
+	{
+  "id": "chatcmpl-abc123",
+  "object": "chat.completion",
+  "created": 1706731000,
+  "model": "deepseek-chat",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Xin chào! Tôi có thể giúp gì cho bạn?"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 15,
+    "total_tokens": 25,
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 10
+  }
+}
+	Response Fields
+	[32] (488,1259)<table scrollable='true' />
+		Field
+		Description
+
+</current_dom>

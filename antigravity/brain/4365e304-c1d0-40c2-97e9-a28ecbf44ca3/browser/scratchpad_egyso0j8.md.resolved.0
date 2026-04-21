@@ -1,0 +1,13 @@
+# Task Plan: Testing "Tạo đề thi" on de-thi-tinhoc.html
+
+## Checklist:
+- [ ] Load de-thi-tinhoc.html with cache-busting (?v=2)
+- [ ] Select a topic in section 3
+- [ ] Switch to "Đề thi" tab
+- [ ] Click "Tạo đề thi (trừ 2 điểm)"
+- [ ] Wait for AI response (up to 40s)
+- [ ] Verify result and capture screenshot
+
+## Findings:
+- API Key updated: `AIzaSyBnerY4nm2RBngHpNCDii4ava2vTeEmOTY`
+- Model changed to: `gemini-2.0-flash-lite`

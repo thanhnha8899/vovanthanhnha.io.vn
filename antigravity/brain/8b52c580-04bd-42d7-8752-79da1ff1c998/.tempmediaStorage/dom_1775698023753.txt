@@ -1,0 +1,127 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (33,66)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (33,66)<i  />
+Đề thi THPT – Vật Lí
+Công cụ tạo đề thi PPKT THPT
+[2] (65,166)<div  />
+	[3] (40,166)<i  />
+	[4] (73,166)<span >Cấu hình />
+[5] (158,166)<div  />
+	[6] (136,166)<i  />
+	[7] (166,166)<span >Ma trận />
+[8] (245,166)<div  />
+	[9] (227,166)<i  />
+	[10] (253,166)<span >Đặc tả />
+[11] (327,166)<div  />
+	[12] (309,166)<i  />
+	[13] (334,166)<span >Đề thi />
+[14] (916,166)<div  />
+	[15] (872,166)<i  />
+	[16] (924,166)<span >Nguồn ứng dụng />
+Loại câu
+Số câu
+Điểm/câu
+Trắc nghiệm nhiều lựa chọn
+Trắc nghiệm Đúng/Sai
+Trả lời ngắn
+[17] (153,255)<input id='tln-socau' />
+[18] (218,255)<input id='tln-diem' />
+Tự luận
+[19] (153,333)<input id='tl-socau' />
+—
+Tổng điểm TNKQ
+6
+Điểm tự luận
+4
+MỨC ĐỘ NHẬN THỨC (%)
+[20] (74,637)<label >Biết />
+[21] (74,684)<input id='biet' />
+[22] (155,637)<label >Hiểu />
+[23] (155,684)<input id='hieu' />
+[24] (237,637)<label >Vận dụng />
+[25] (237,684)<input id='vandung' />
+Tổng nên bằng 100% (tự chuẩn hoá nếu khác)
+Ma trận tự động hình thành theo cấu hình trên và danh sách đơn vị đã chọn.
+[26] (143,929)<button class='generate-btn' id='btn-generate' />
+	[27] (71,929)<i  />
+	[28] (119,929)<span >Tạo ma trận />
+	[29] (192,929)<span >trừ 2 điểm />
+[30] (462,297)<div class='topic-list' id='topic-list' scrollable='true' />
+	Biến dạng nén và biến dạng kéo
+	4
+	Bảo toàn động lượng
+	5
+	Chuyển động biến đổi
+	4
+	Cân bằng lực, moment lực
+	4
+	[31] (459,283)<div  />
+		[32] (321,280)<div  />
+			[33] (321,280)<i  />
+		[34] (337,280)<div  />
+		[35] (450,278)<span >Công suất và hiệu suất />
+		[36] (571,283)<span >4 />
+		[37] (596,280)<span  />
+			[38] (596,280)<i  />
+	[39] (459,348)<div  />
+		[40] (321,345)<div  />
+			[41] (321,345)<i  />
+		[42] (337,345)<div  />
+		[43] (450,344)<span >Công và năng lượng />
+		[44] (571,348)<span >5 />
+		[45] (596,345)<span  />
+			[46] (596,345)<i  />
+	[47] (459,414)<div  />
+		[48] (321,411)<div  />
+			[49] (321,411)<i  />
+		[50] (337,411)<div  />
+		[51] (450,409)<span >Gia tốc hướng tâm và lực hướng tâ... />
+		[52] (571,414)<span >4 />
+		[53] (596,411)<span  />
+			[54] (596,411)<i  />
+	[55] (459,479)<div  />
+		[56] (321,476)<div  />
+			[57] (321,476)<i  />
+		[58] (337,476)<div  />
+		[59] (450,474)<span >Khối lượng riêng, áp suất chất lỏng />
+		[60] (571,479)<span >5 />
+		[61] (596,476)<span  />
+			[62] (596,476)<i  />
+	[63] (459,544)<div  />
+		[64] (321,541)<div  />
+			[65] (321,541)<i  />
+		[66] (337,541)<div  />
+		[67] (450,540)<span >Mô tả chuyển động />
+		[68] (571,544)<span >4 />
+		[69] (596,541)<span  />
+			[70] (596,541)<i  />
+	[71] (459,610)<div  />
+		[72] (321,606)<div  />
+			[73] (321,606)<i  />
+		[74] (337,606)<div  />
+		[75] (450,605)<span >Một số lực trong thực tiễn />
+		[76] (571,610)<span >4 />
+		[77] (596,606)<span  />
+			[78] (596,606)<i  />
+	Định luật Hooke
+	4
+	Định nghĩa động lượng
+	3
+	Động học các chuyển động tròn đ...
+	4
+	Động lượng và va chạm
+	4
+	Động năng và thế năng
+	5
+Định luật II Newton
+Định luật III Newton
+Lực hấp dẫn và gia tốc rơi tự do
+Chuyển động ném ngang
+Chuyển động tròn đều
+Đã chọn:
+Ba định luật Newton và chuyển động
+
+</current_dom>

@@ -1,0 +1,6 @@
+# Task: Capture screenshot of the hero section without login form
+
+## Plan
+- [/] Take screenshot of the current active page (index.html)
+- [ ] Save screenshot as an artifact
+- [ ] Provide the file path to the user

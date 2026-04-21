@@ -1,0 +1,11 @@
+# Task: Verify Redesigned Dashboard
+
+## Checklist
+- [ ] Navigate to http://127.0.0.1:8080/index.html
+- [ ] Log in with admin/Nha12345
+- [ ] Verify transition to dashboard
+- [ ] Screenshot 1: Top (Header + Hero)
+- [ ] Screenshot 2: Middle 1 (Tool categories)
+- [ ] Screenshot 3: Middle 2 (Exam subjects + Coming Soon)
+- [ ] Screenshot 4: Bottom (Footer)
+- [ ] Final report

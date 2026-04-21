@@ -1,0 +1,10 @@
+# Task Checklist
+- [x] Open `de-thi-hoahoc.html` in browser (Opened at http://127.0.0.1:8080/de-thi-hoahoc.html)
+- [x] Open `de-thi-hoahoc.html` in browser (Opened at http://127.0.0.1:8080/de-thi-hoahoc.html)
+- [x] Select topics in "Cấu hình" tab (Selected topics index 43, 51 and units 108, 112)
+- [x] Take screenshot of topics selection (Captured `topics_selection`)
+- [x] Switch to "Ma trận" tab (Tab switched successfully)
+- [x] Take screenshot of matrix table (Captured `matran_tab`)
+- [x] Verify title, buttons, table headers, footer rows, and footnotes (Verified: title "1. MA TRẬN ĐỀ KIỂM TRA ĐỊNH KÌ", buttons present, table structure correct, footnotes present)
+- [x] Check for console errors (Console is empty)
+- [x] Report findings (Everything is working correctly as per requirements)

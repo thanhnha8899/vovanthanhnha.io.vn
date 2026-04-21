@@ -1,0 +1,65 @@
+[0] (100,67)<a class='logo' href='index.html' id='logo' />
+	[1] (38,67)<div  />
+		[2] (38,67)<i  />
+	[3] (122,67)<div  />
+		[4] (122,52)<span >VOVANTHANHNHA />
+		[5] (122,83)<span >Nền tảng AI Giáo dục />
+[6] (247,67)<a class='dash-nav-link' href='index.html' id='nav-home' />
+	[7] (218,67)<i  />
+	[8] (256,67)<span >Trang chủ />
+[9] (349,67)<a class='dash-nav-link active' href='nap-diem.html' id='nav-napdiem-link' />
+	[10] (321,67)<i  />
+	[11] (357,67)<span >Nạp điểm />
+[12] (452,67)<a class='dash-nav-link' href='#' />
+	[13] (420,67)<i  />
+	[14] (460,67)<span >Hướng dẫn />
+[15] (560,67)<a class='dash-nav-link' href='#' />
+	[16] (528,67)<i  />
+	[17] (569,67)<span >Cộng đồng />
+[18] (686,67)<a class='dash-nav-link' href='#' />
+	[19] (638,67)<i  />
+	[20] (695,67)<span >Nhóm Zalo hỗ trợ />
+0
+điểm
+[21] (866,67)<button class='notif-btn' title='Thông báo' />
+	[22] (866,67)<i  />
+	[23] (872,53)<span  />
+[24] (905,67)<div  />
+	[25] (905,67)<div  />
+		[26] (905,67)<span >A />
+		[27] (916,91)<span  />
+[28] (949,67)<button class='btn-logout' id='btn-logout' title='Đăng xuất' />
+	[29] (949,67)<i  />
+09/04/2026 · 09:45
+Đề thi THPT – Toán
+Đề kiểm tra Đại số 11 – Chương Tổ hợp & Xác suất
+−5 ★
+08/04/2026 · 16:30
+SKKN Tự động
+Ứng dụng CNTT trong dạy học Vật Lí THPT
+−15 ★
+07/04/2026 · 11:00
+Đề thi THPT – Vật Lí
+Đề kiểm tra Vật lí 12 – Chương Dao động cơ
+−5 ★
+VOVANTHANHNHA
+.IO.VN
+Hệ sinh thái AI đồng hành cùng giáo viên Việt Nam.
+Sản phẩm
+[30] (397,625)<a href='#'>Soạn giáo án AI />
+[31] (397,680)<a href='#'>Trợ lý giáo viên />
+[32] (397,736)<a href='#'>Kho học liệu số />
+[33] (397,791)<a href='#'>Cộng đồng giáo viên />
+Hỗ trợ
+[34] (632,625)<a href='#'>Hướng dẫn sử dụng />
+[35] (632,680)<a href='#'>Câu hỏi thường gặp />
+[36] (632,736)<a href='#'>Liên hệ hỗ trợ />
+[37] (632,791)<a href='#'>Chính sách sử dụng />
+Thông tin liên hệ
+Hotline:
+0943 265 527
+Phụ trách:
+Thầy Giới
+Địa chỉ:
+Tổ 8 Hùng Vương, P. Phúc Yên, TP. Phú Thọ
+© 2026 VOVANTHANHNHA.IO.VN — Bản quyền thuộc về VÕ VĂN THANH NHÃ.

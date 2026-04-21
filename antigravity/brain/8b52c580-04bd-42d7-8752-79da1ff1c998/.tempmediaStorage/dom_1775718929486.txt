@@ -1,0 +1,116 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (33,73)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (33,73)<i  />
+Đề thi THPT – Hóa học
+Công cụ tạo đề thi PPKT THPT
+[2] (65,183)<div  />
+	[3] (40,183)<i  />
+	[4] (74,183)<span >Cấu hình />
+[5] (159,183)<div  />
+	[6] (137,183)<i  />
+	[7] (167,183)<span >Ma trận />
+[8] (246,183)<div  />
+	[9] (227,183)<i  />
+	[10] (254,183)<span >Đặc tả />
+[11] (327,183)<div  />
+	[12] (310,183)<i  />
+	[13] (334,183)<span >Đề thi />
+[14] (915,183)<div  />
+	[15] (871,183)<i  />
+	[16] (924,183)<span >Nguồn ứng dụng />
+ĐỘ KHÓ ĐỀ THI
+Loại câu
+Số câu
+Điểm/câu
+Trắc nghiệm nhiều lựa chọn
+[17] (153,270)<input id='tn-socau' />
+[18] (218,270)<input id='tn-diem' />
+Trắc nghiệm Đúng/Sai
+[19] (153,356)<input id='ds-socau' />
+[20] (218,356)<input id='ds-diem' />
+Trả lời ngắn
+[21] (153,442)<input id='tln-socau' />
+[22] (218,442)<input id='tln-diem' />
+Tự luận
+[23] (153,528)<input id='tl-socau' />
+—
+Tổng điểm TNKQ
+5
+Điểm tự luận
+5
+MỨC ĐỘ NHẬN THỨC (%)
+[24] (74,862)<label >Biết />
+[25] (74,914)<input id='biet' />
+[26] (156,862)<label >Hiểu />
+[27] (156,914)<input id='hieu' />
+[28] (237,862)<label >Vận dụng />
+[29] (237,914)<input id='vandung' />
+Tổng nên bằng 100% (tự chuẩn hoá nếu khác)
+MẠCH NỘI DUNG
+Bảng tuần hoàn các nguyên tố hoá học
+3
+Cấu tạo nguyên tử
+4
+[30] (461,257)<div  />
+	[31] (322,254)<div  />
+		[32] (322,254)<i  />
+	[33] (338,254)<div  />
+	[34] (452,253)<span >Liên kết hoá học />
+	[35] (574,257)<span >4 />
+	[36] (599,254)<span  />
+		[37] (599,254)<i  />
+[38] (461,329)<div  />
+	[39] (322,326)<div  />
+		[40] (322,326)<i  />
+	[41] (338,326)<div  />
+	[42] (452,324)<span >Phản ứng oxi hoá – khử />
+	[43] (574,329)<span >3 />
+	[44] (599,326)<span  />
+		[45] (599,326)<i  />
+[46] (461,401)<div  />
+	[47] (322,398)<div  />
+		[48] (322,398)<i  />
+	[49] (338,398)<div  />
+	[50] (452,396)<span >Năng lượng hoá học />
+	[51] (574,401)<span >3 />
+	[52] (599,398)<span  />
+		[53] (599,398)<i  />
+[54] (461,473)<div  />
+	[55] (322,469)<div  />
+		[56] (322,469)<i  />
+	[57] (338,469)<div  />
+	[58] (452,468)<span >Tốc độ phản ứng hoá học />
+	[59] (574,473)<span >3 />
+	[60] (599,469)<span  />
+		[61] (599,469)<i  />
+[62] (461,545)<div  />
+	[63] (322,541)<div  />
+		[64] (322,541)<i  />
+	[65] (338,541)<div  />
+	[66] (452,540)<span >Nguyên tố nhóm VIIA (Halogen) />
+	[67] (574,545)<span >4 />
+	[68] (599,541)<span  />
+		[69] (599,541)<i  />
+[70] (461,616)<div  />
+	[71] (322,613)<div  />
+		[72] (322,613)<i  />
+	[73] (338,613)<div  />
+	[74] (452,612)<span >Chuyên đề 10 />
+	[75] (574,616)<span >3 />
+	[76] (599,613)<span  />
+		[77] (599,613)<i  />
+Liên kết hoá học
+Quy tắc octet
+Liên kết ion
+Liên kết cộng hoá trị
+[78] (804,283)<div  />
+	[79] (664,283)<div  />
+		[80] (664,283)<i  />
+	[81] (815,283)<span >Liên kết hydrogen và van der Waals />
+Đã chọn:
+Phản ứng oxi hoá – khử, Tốc độ phản ứng hoá học, Bảng tuần hoàn các nguyên tố hoá học, Cấu tạo nguyên tử, Liên kết hoá học
+
+</current_dom>

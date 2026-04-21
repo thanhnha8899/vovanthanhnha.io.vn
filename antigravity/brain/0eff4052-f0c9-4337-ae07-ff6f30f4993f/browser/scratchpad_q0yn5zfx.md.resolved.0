@@ -1,0 +1,10 @@
+# Exam Format Verification Checklist
+
+- [ ] Navigate to de-thi-tinhoc.html
+- [ ] Log in if required (admin / Nha12345)
+- [ ] Select topics and navigate to "Đề thi" tab
+- [ ] Click "Tạo đề thi" and wait for generation
+- [ ] Verify 2-column header
+- [ ] Verify student info box
+- [ ] Verify correct answers are red and bold
+- [ ] Document findings and take screenshots

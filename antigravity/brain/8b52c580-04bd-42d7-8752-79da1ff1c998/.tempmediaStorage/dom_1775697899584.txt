@@ -1,0 +1,45 @@
+[0] (45,74)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (45,74)<i  />
+Đề thi THPT – Vật Lí
+Công cụ tạo đề thi PPKT THPT
+[2] (90,185)<div  />
+	[3] (56,185)<i  />
+	[4] (101,185)<span >Cấu hình />
+[5] (218,185)<div  />
+	[6] (188,185)<i  />
+	[7] (229,185)<span >Ma trận />
+[8] (338,185)<div  />
+	[9] (312,185)<i  />
+	[10] (349,185)<span >Đặc tả />
+[11] (450,185)<div  />
+	[12] (426,185)<i  />
+	[13] (460,185)<span >Đề thi />
+[14] (884,185)<div  />
+	[15] (823,185)<i  />
+	[16] (895,185)<span >Nguồn ứng dụng />
+Khối lớp
+Kỳ kiểm tra
+2
+Cấu trúc đề & Tỉ lệ
+Loại câu, điểm, mức độ nhận thức
+[17] (500,333)<label >ĐỘ KHÓ ĐỀ THI />
+[18] (500,394)<select id='do-kho' />
+Loại câu
+Số câu
+Điểm/câu
+Trắc nghiệm nhiều lựa chọn
+[19] (816,565)<input id='tn-socau' />
+[20] (905,565)<input id='tn-diem' />
+Trắc nghiệm Đúng/Sai
+[21] (816,651)<input id='ds-socau' />
+[22] (905,651)<input id='ds-diem' />
+Trả lời ngắn
+[23] (816,738)<input id='tln-socau' />
+[24] (905,738)<input id='tln-diem' />
+Tự luận
+[25] (816,824)<input id='tl-socau' />
+—
+Tổng điểm TNKQ
+6
+Điểm tự luận
+4

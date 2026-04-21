@@ -1,0 +1,149 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+Skip to main content
+Accessibility help
+Accessibility feedback
+[0] (106,90)<a aria-label='Go to Google Home' href='https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwj-hKS4xOSTAxUwxjgGHbD3CWwQPAgJ' id='logo' title='Go to Google Home' />
+[1] (397,88)<textarea aria-label='Search' class='gLFyf' id='APjFqb' role='combobox' />
+[2] (622,88)<div  />
+	[3] (620,88)<div aria-label='Clear' class='vOY7J M2vV3' role='button' />
+		[4] (620,88)<span  />
+	[5] (639,88)<span  />
+[6] (658,88)<div aria-label='Search by voice' class='XDyW0e' role='button' />
+[7] (689,88)<div aria-label='Search by image' class='nDcEnd' role='button' />
+[8] (725,88)<button aria-label='Search' class='HZVG1b Tg7LZd' />
+	[9] (720,88)<div  />
+		[10] (720,88)<span  />
+[11] (863,89)<div aria-label='Settings' class='fLciMb' id='og-te' role='button' />
+	[12] (863,92)<div  />
+		[13] (863,89)<span  />
+[14] (899,89)<a aria-label='Google apps' class='gb_B' href='https://www.google.com.vn/intl/en/about/products?tab=wh' role='button' />
+[15] (951,89)<a aria-label='Sign in' class='gb_A' href='https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3DC%25C3%25B4ng%2Bv%25C4%2583n%2B2487%252FSGD%25C4%2590T-GDPT%2Bsite%253Ahcm.edu.vn&ec=futura_srp_og_si_72236_p'>Sign in />
+	Sign in
+[16] (91,195)<a class='XVMlrc C6AK7c' href='/search?q=C%C3%B4ng+v%C4%83n+2487/SGD%C4%90T-GDPT+site:hcm.edu.vn&sca_esv=d2a5470d2e85f15e&udm=50&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3vMboekt2cKC3pTSxvmRKdBH1tOmdyHeywNECeu_1ugRhkAtIkb-H90aQ8XzPj9jTpdfhSySjuWGfgv1HrLAzZ3l8zTri-nes0lQCfF8V_NaSxl3tUV-2EGJsGpLnVtH7ZpIIO1oAtJGN-4uCQi-uDkGeU4dqxwhvCLjNyidj5uHVI3NvA&aep=1&ntc=1&sa=X&ved=2ahUKEwj-hKS4xOSTAxUwxjgGHbD3CWwQ2J8OegQIEBAE' />
+	[17] (91,195)<div  />
+		[18] (91,210)<div  />
+			[19] (91,201)<span >AI Mode />
+[20] (138,195)<a class='C6AK7c' role='link' />
+	All
+[21] (182,195)<a class='C6AK7c' href='/search?sca_esv=d2a5470d2e85f15e&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3vMboekt2cKC3pTSxvmRKdBH1tOmdyHeywNECeu_1ugRhkAtIkb-H90aQ8XzPj9jTpdfhSySjuWGfgv1HrLAzZ3l8zTri-nes0lQCfF8V_NaSxl3tUV-2EGJsGpLnVtH7ZpIIO1oAtJGN-4uCQi-uDkGeU4dqxwhvCLjNyidj5uHVI3NvA&q=C%C3%B4ng+v%C4%83n+2487/SGD%C4%90T-GDPT+site:hcm.edu.vn&sa=X&ved=2ahUKEwj-hKS4xOSTAxUwxjgGHbD3CWwQtKgLegQIFhAB' />
+	[22] (182,195)<div  />
+		[23] (182,210)<span >Images />
+[24] (233,195)<a class='C6AK7c' href='/search?sca_esv=d2a5470d2e85f15e&q=C%C3%B4ng+v%C4%83n+2487/SGD%C4%90T-GDPT+site:hcm.edu.vn&tbm=nws&source=lnms&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3vMboekt2cKC3pTSxvmRKdBH1tOmdyHeywNECeu_1ugRhkAtIkb-H90aQ8XzPj9jTpdfhSySjuWGfgv1HrLAzZ3l8zTri-nes0lQCfF8V_NaSxl3tUV-2EGJsGpLnVtH7ZpIIO1oAtJGN-4uCQi-uDkGeU4dqxwhvCLjNyidj5uHVI3NvA&sa=X&ved=2ahUKEwj-hKS4xOSTAxUwxjgGHbD3CWwQ0pQJegQIEhAB' />
+	[25] (233,195)<div  />
+		[26] (233,210)<span >News />
+[27] (290,195)<a class='C6AK7c' href='/search?sca_esv=d2a5470d2e85f15e&udm=28&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3vMboekt2cKC3pTSxvmRKdBH1tOmdyHeywNECeu_1ugRhkAtIkb-H90aQ8XzPj9jTpdfhSySjuWGfgv1HrLAzZ3l8zTri-nes0lQCfF8V_NaSxl3tUV-2EGJsGpLnVtH7ZpIIO1oAtJGN-4uCQi-uDkGeU4dqxwhvCLjNyidj5uHVI3NvA&q=C%C3%B4ng+v%C4%83n+2487/SGD%C4%90T-GDPT+site:hcm.edu.vn&ved=1t:220175&ictx=111' />
+	[28] (290,195)<div  />
+		[29] (290,210)<span >Shopping />
+[30] (351,195)<a class='C6AK7c' href='/search?sca_esv=d2a5470d2e85f15e&udm=7&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3vMboekt2cKC3pTSxvmRKdBH1tOmdyHeywNECeu_1ugRhkAtIkb-H90aQ8XzPj9jTpdfhSySjuWGfgv1HrLAzZ3l8zTri-nes0lQCfF8V_NaSxl3tUV-2EGJsGpLnVtH7ZpIIO1oAtJGN-4uCQi-uDkGeU4dqxwhvCLjNyidj5uHVI3NvA&q=C%C3%B4ng+v%C4%83n+2487/SGD%C4%90T-GDPT+site:hcm.edu.vn&sa=X&ved=2ahUKEwj-hKS4xOSTAxUwxjgGHbD3CWwQtKgLegQIFBAB' />
+	[31] (351,195)<div  />
+		[32] (351,210)<span >Videos />
+[33] (419,195)<a class='C6AK7c' href='/search?sca_esv=d2a5470d2e85f15e&udm=39&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3vMboekt2cKC3pTSxvmRKdBH1tOmdyHeywNECeu_1ugRhkAtIkb-H90aQ8XzPj9jTpdfhSySjuWGfgv1HrLAzZ3l8zTri-nes0lQCfF8V_NaSxl3tUV-2EGJsGpLnVtH7ZpIIO1oAtJGN-4uCQi-uDkGeU4dqxwhvCLjNyidj5uHVI3NvA&q=C%C3%B4ng+v%C4%83n+2487/SGD%C4%90T-GDPT+site:hcm.edu.vn&sa=X&ved=2ahUKEwj-hKS4xOSTAxUwxjgGHbD3CWwQs6gLegQIFRAB' />
+	[34] (419,195)<div  />
+		[35] (419,210)<span >Short videos />
+[36] (491,195)<div class='mTpL7c' role='button' />
+	[37] (491,195)<div  />
+		[38] (491,210)<div  />
+			[39] (484,201)<span >More />
+			[40] (504,201)<span  />
+[41] (550,195)<div class='mOKdDc' id='hdtb-tls' role='button' />
+	[42] (550,195)<div  />
+		[43] (550,210)<div  />
+			[44] (543,201)<span >Tools />
+			[45] (564,201)<span  />
+Search Results
+Kết quả trên web
+[46] (272,347)<a class='zReHs' href='https://thcsduongbatrac.hcm.edu.vn/van-ban-tu-so-giao-duc-va-dao-tao-tphcm/cong-van-so-2487sgddt-gdpt-ngay-1892025-cua-so-gddt-ve-viec-huong-dan-to-chuc-k/vbctmb/34230/716121' />
+	[47] (272,379)<h3 >Công văn số 2487/SGDĐT-GDPT ngày 18/9/2025 của Sở ... />
+	[48] (183,320)<div  />
+		[49] (183,320)<div  />
+			[50] (81,320)<span  />
+				[51] (81,320)<div  />
+					[52] (81,320)<img  />
+			[53] (198,320)<div  />
+				[54] (198,304)<div  />
+					[55] (198,304)<span >THCS Dương Bá Trạc />
+				[56] (198,337)<div  />
+					[57] (198,337)<cite class='qLRx3b tjvcx GvPZzd dTxz9 cHaqb' role='text'>https://thcsduongbatrac.hcm.edu.vn />
+						[58] (258,336)<span class='ylgVCe ob9lvb' role='text'>› ... />
+·
+[59] (317,337)<a class='dEEN8c' href='https://thcsduongbatrac.hcm.edu.vn/van-ban-tu-so-giao-duc-va-dao-tao-tphcm/cong-van-so-2487sgddt-gdpt-ngay-1892025-cua-so-gddt-ve-viec-huong-dan-to-chuc-k/vbctmb/34230/716121' />
+	[60] (317,336)<span >Translate this page />
+[61] (374,335)<div aria-label='About this result' class='MJ8UF iTPLzd rNSxBe eY4mx lUn2nc' role='button' />
+	[62] (374,335)<span  />
+		[63] (374,337)<span  />
+Sep 18, 2025
+—
+Công văn số 2487/SGDĐT-GDPT ngày 18/9/2025 của Sở GD&ĐT
+về việc hướng dẫn tổ chức kiểm tra, đánh giá học sinh THCS, THPT từ năm học 2025 - ...
+[64] (445,467)<a class='vzmbzf' href='https://thcsduongbatrac.hcm.edu.vn/van-ban-tu-so-giao-duc-va-dao-tao-tphcm/cong-van-so-2487sgddt-gdpt-ngay-1892025-cua-so-gddt-ve-viec-huong-dan-to-chuc-k/vbctmb/34230/716121#:~:text=C%C3%B4ng%20v%C4%83n%20s%E1%BB%91%202487%2FSGD%C4%90T%2DGDPT%20ng%C3%A0y,n%C4%83m%20h%E1%BB%8Dc%202025%20%2D%202026' />
+	[65] (445,467)<span >Read more />
+[66] (268,597)<a class='zReHs' href='https://thpthiepbinh.hcm.edu.vn/cv-cua-so-giao-duc/cong-van-so-2487sgddt-gdpt-ve-viec-huong-dan-to-chuc-kiem-tra-danh-gia-hoc-sinh/vbctmb/36204/537951' />
+	[67] (268,628)<h3 >Công văn số 2487/SGDĐT-GDPT về việc hướng dẫn tổ ... />
+	[68] (174,569)<div  />
+		[69] (174,569)<div  />
+			[70] (81,569)<span  />
+				[71] (81,569)<div  />
+					[72] (81,569)<img  />
+			[73] (189,569)<div  />
+				[74] (189,554)<div  />
+					[75] (189,554)<span >THPT HIỆP BÌNH />
+				[76] (189,586)<div  />
+					[77] (189,586)<cite class='qLRx3b tjvcx GvPZzd dTxz9 cHaqb' role='text'>https://thpthiepbinh.hcm.edu.vn />
+						[78] (239,586)<span class='ylgVCe ob9lvb' role='text'>› ... />
+·
+[79] (299,586)<a class='dEEN8c' href='https://thpthiepbinh.hcm.edu.vn/cv-cua-so-giao-duc/cong-van-so-2487sgddt-gdpt-ve-viec-huong-dan-to-chuc-kiem-tra-danh-gia-hoc-sinh/vbctmb/36204/537951' />
+	[80] (299,586)<span >Translate this page />
+[81] (356,585)<div aria-label='About this result' class='MJ8UF iTPLzd rNSxBe eY4mx lUn2nc' role='button' />
+	[82] (356,585)<span  />
+		[83] (356,586)<span  />
+Sep 18, 2025
+—
+Công văn
+số
+2487
+/
+SGDĐT
+-
+GDPT
+về việc hướng dẫn tổ chức kiểm tra, đánh giá học sinh THCS, THPT từ năm học 2025-2026. Số/Ký hiệu:
+2487
+/
+SGDĐT
+-
+GDPT
+.
+[84] (472,716)<a class='vzmbzf' href='https://thpthiepbinh.hcm.edu.vn/cv-cua-so-giao-duc/cong-van-so-2487sgddt-gdpt-ve-viec-huong-dan-to-chuc-kiem-tra-danh-gia-hoc-sinh/vbctmb/36204/537951#:~:text=C%C3%B4ng%20v%C4%83n%20s%E1%BB%91%202487%2FSGD%C4%90T%2DGDPT%20v%E1%BB%81,2487%2FSGD%C4%90T%2DGDPT' />
+	[85] (472,716)<span >Read more />
+[86] (268,846)<a class='zReHs' href='https://thcsbachdangq3.hcm.edu.vn/cong-khai/van-ban-2487sgddt-gdpt-huong-dan-to-chuc-kiem-tra-danh-gia-hoc-sinh-thcs-thpt-t/ctmb/94035/715888' />
+	[87] (268,878)<h3 >VĂN BẢN 2487/SGDĐT-GDPT HƯỚNG DẪN TỔ CHỨC ... />
+	[88] (183,819)<div  />
+		[89] (183,819)<div  />
+			[90] (81,819)<span  />
+				[91] (81,819)<div  />
+					[92] (81,819)<img  />
+			[93] (198,819)<div  />
+				[94] (198,803)<div  />
+					[95] (198,803)<span >THCS Bạch Đằng />
+				[96] (198,836)<div  />
+					[97] (198,836)<cite class='qLRx3b tjvcx GvPZzd dTxz9 cHaqb' role='text'>https://thcsbachdangq3.hcm.edu.vn />
+						[98] (257,835)<span class='ylgVCe ob9lvb' role='text'>› ... />
+·
+[99] (317,836)<a class='dEEN8c' href='https://thcsbachdangq3.hcm.edu.vn/cong-khai/van-ban-2487sgddt-gdpt-huong-dan-to-chuc-kiem-tra-danh-gia-hoc-sinh-thcs-thpt-t/ctmb/94035/715888' />
+	[100] (317,835)<span >Translate this page />
+[101] (374,834)<div aria-label='About this result' class='MJ8UF iTPLzd rNSxBe eY4mx lUn2nc' role='button' />
+	[102] (374,834)<span  />
+		[103] (374,836)<span  />
+VĂN
+BẢN
+2487
+/
+SGDĐT
+-
+GDPT
+HƯỚNG DẪN TỔ CHỨC KIỂM TRA ĐÁNH GIÁ HỌC SINH THCS, THPT TỪ NĂM HỌC 2025-2026. Thứ sáu, 19/9/2025, 13:32. Lượt đọc: 51 ...
+Read more
+
+</current_dom>

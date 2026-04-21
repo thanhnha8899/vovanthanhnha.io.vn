@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - VOVANTHANHNHA.IO.VN</title>
+    <meta name="description" content="Dashboard - Nền tảng AI Giáo dục cho Giáo viên">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <!-- Dashboard Header -->
+    <header class="dash-header" id="dash-header">
+        <div class="dash-container dash-header-inner">
+            <a href="dashboard.html" class="dash-logo">
+                <div class="dash-logo-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="dash-logo-text">
+                    <span class="dash-logo-name">VOVANTHANHNHA</span>
+                    <span class="dash-logo-tagline">Nền tảng AI Giáo dục</span>
+                </div>
+            </a>
+            <nav class="dash-nav">
+                <a href="dashboard.html" class="dash-nav-link active">
+                    <i class="fas fa-home"></i> Trang chủ
+                </a>
+                <a href="#" class="dash-nav-link nav-recharge" id="nav-recharge">
+                    <i class="fas fa-coins"></i> Nạp điểm
+                </a>
+                <a href="#" class="dash-nav-link">
+                    <i class="fas fa-book"></i> Hướng dẫn
+                </a>
+            </nav>
+            <div class="dash-header-right">
+                <div class="dash-points" id="dash-points">
+                    <i class="fas fa-star"></i>
+                    <span id="points-display">100</span> điểm
+                </div>
+                <div class="dash-user" id="dash-user">
+                    <div class="dash-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <span class="dash-username">Admin</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="dash-user-menu" id="dash-user-menu">
+                    <a href="#" class="menu-item"><i class="fas fa-user-cog"></i> Thông tin tài khoản</a>
+                    <a href="#" class="menu-item"><i class="fas fa-history"></i> Lịch sử sử dụng</a>
+                    <div class="menu-divider"></div>
+                    <a href="#" class="menu-item menu-logout" id="btn-logout-dash"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="dash-main">
+        <div class="dash-container">
+            <!-- Hero Banner -->
+            <div class="dash-hero">
+                <div class="dash-hero-content">
+                    <h1>Hệ sinh thái <span>AI Giáo dục</span></h1>
+                    <p>Giải pháp trí tuệ nhân tạo chuyên biệt dành cho Thầy/Cô</p>
+                </div>
+                <a href="#" class="dash-free-tools" id="btn-free-tools">
+                    <i class="fas fa-gift"></i> Công cụ miễn phí
+                </a>
+            </div>
+
+            <!-- Tool Section: SKKN -->
+            <section class="tool-section" id="section-skkn">
+                <div class="tool-section-header">
+                    <div class="tool-section-icon skkn"><i class="fas fa-lightbulb"></i></div>
+                    <div class="tool-section-info">
+                        <h2>SÁNG KIẾN KINH NGHIỆM</h2>
+                        <p>Viết sáng kiến kinh nghiệm 4 chương chuẩn</p>
+                    </div>
+                </div>
+                <div class="tool-grid">
+                    <a href="tool.html?tool=skkn-auto" class="tool-card">
+                        <div class="tool-icon orange"><i class="fas fa-bolt"></i></div>
+                        <span class="tool-cost">-15 <i class="fas fa-star"></i></span>
+                        <span class="tool-name">SKKN (Tự động)</span>
+                    </a>
+                    <a href="tool.html?tool=skkn-outline" class="tool-card">
+                        <div class="tool-icon green"><i class="fas fa-pen-fancy"></i></div>
+                        <span class="tool-cost">-15 <i class="fas fa-star"></i></span>
+                        <span class="tool-name">SKKN (Dàn ý riêng)</span>
+                    </a>
+                    <a href="tool.html?tool=skkn-tt18" class="tool-card">
+                        <div class="tool-icon red"><i class="fas fa-file-lines"></i></div>
+                        <span class="tool-cost">-15 <i class="fas fa-star"></i></span>
+                        <span class="tool-name">SKKN (TT 18/BKHCN)</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Tool Section: Mầm non -->
+            <section class="tool-section" id="section-mamnon">
+                <div class="tool-section-header">
+                    <div class="tool-section-icon mamnon"><i class="fas fa-face-smile"></i></div>
+                    <div class="tool-section-info">
+                        <h2>GIÁO ÁN MẦM NON</h2>
+                        <p>Biên soạn giáo án tích hợp cho các lứa tuổi mầm non</p>
+                    </div>
+                </div>
+                <div class="tool-grid">
+                    <a href="tool.html?tool=mn-giaoan" class="tool-card">
+                        <div class="tool-icon pink"><i class="fas fa-baby"></i></div>
+                        <span class="tool-cost">-4 <i class="fas fa-star"></i></span>
+                        <span class="tool-name">Giáo án Mầm non</span>
+                    </a>
+                    <a href="tool.html?tool=mn-hoatdonghoc" class="tool-card">
+                        <div class="tool-icon blue"><i class="fas fa-chalkboard-user"></i></div>
+                        <span class="tool-cost">-2 <i class="fas fa-star"></i></span>
+                        <span class="tool-name">Hoạt động học</span>
+                    </a>
+                    <a href="tool.html?tool=mn-ngoaitroi" class="tool-card">
+                        <div class="tool-icon teal"><i class="fas fa-sun"></i></div>
+                        <span class="tool-cost">-2 <i class="fas fa-star"></i></span>
+                        <span class="tool-name">Hoạt động ngoài trời</span>
+                    </a>
+                    <a href="tool.html?tool=mn-goc" class="tool-card">
+                        <div class="tool-icon purple"><i class="fas fa-puzzle-piece"></i></div>
+                        <span class="tool-cost">-2 <i class="fas fa-star"></i></span>
+                        <span class="tool-name">Hoạt động góc</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Tool Section: Giáo án Tiểu học, THCS, THPT -->
+            <section class="tool-section" id="section-giaoan">
+                <div class="tool-section-header">
+                    <div class="tool-section-icon giaoan"><i class="fas fa-book-open"></i></div>
+                    <div class="tool-section-info">
+                        <h2>Soạn giáo án tiểu học, THCS, THPT</h2>
+                        <p>Chuẩn Công văn 5512, 2345, 1001</p>
+                    </div>
+                </div>
+                <div class="tool-grid">
+                    <a href="tool.html?tool=khbd-2345" class="tool-card">
+                        <div class="tool-icon teal"><i class="fas fa-table-columns"></i></div>
+                        <span class="tool-cost">-4 <i class="fas fa-star"></i></span>
+                        <span class="tool-name">KHBD 3 Cột (2345)</span>
+                    </a>
+                    <a href="tool.html?tool=khbd-5512" class="tool-card">
+                        <div class="tool-icon blue"><i class="fas fa-file-signature"></i></div>
+                        <span class="tool-cost">-4 <i class="fas fa-star"></i></span>
+                        <span class="tool-name">KHBD Trung học 5512</span>
+                    </a>
+                    <a href="tool.html?tool=khbd-1001" class="tool-card">
+                        <div class="tool-icon green"><i class="fas fa-clipboard-check"></i></div>
+                        <span class="tool-cost">-4 <i class="fas fa-star"></i></span>
+                        <span class="tool-name">KHBD DGNL 1001</span>
+                    </a>
+                    <a href="tool.html?tool=khbd-nangluc" class="tool-card">
+                        <div class="tool-icon orange"><i class="fas fa-layer-group"></i></div>
+                        <span class="tool-cost">-4 <i class="fas fa-star"></i></span>
+                        <span class="tool-name">Tích hợp năng lực</span>
+                    </a>
+                    <a href="tool.html?tool=khbd-auto" class="tool-card">
+                        <div class="tool-icon purple"><i class="fas fa-wand-magic-sparkles"></i></div>
+                        <span class="tool-cost">-4 <i class="fas fa-star"></i></span>
+                        <span class="tool-name">Tự động tích hợp NL</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Tool Section: Đề thi 7991 THPT -->
+            <section class="tool-section" id="section-dethi-thpt">
+                <div class="tool-section-header">
+                    <div class="tool-section-icon dethi"><i class="fas fa-file-pen"></i></div>
+                    <div class="tool-section-info">
+                        <h2>CÔNG CỤ TẠO ĐỀ THI 7991 THPT</h2>
+                        <p>8 bộ môn: Toán, Vật Lí, Hóa học, Sinh Học, Ngữ Văn, Lịch Sử, Địa Lí, KTPL</p>
+                    </div>
+                </div>
+                <div class="tool-grid">
+                    <a href="tool.html?tool=dethi-toan" class="tool-card">
+                        <div class="tool-icon blue"><i class="fas fa-square-root-variable"></i></div>
+                        <span class="tool-cost">-5 <i class="fas fa-star"></i></span>
+                        <span class="tool-name">Đề thi THPT – Toán</span>
+                    </a>
+                    <a href="tool.html?tool=dethi-vatli" class="tool-card">
+                        <div class="tool-icon green"><i class="fas fa-atom"></i></div>
+                        <span class="tool-cost">-5 <i class="fas fa-star"></i></span>
+                        <span class="tool-name">Đề thi THPT – Vật Lí</span>
+                    </a>
+                    <a href="tool.html?tool=dethi-hoahoc" class="tool-card">
+                        <div class="tool-icon orange"><i class="fas fa-flask"></i></div>
+                        <span class="tool-cost">-5 <i class="fas fa-star"></i></span>
+                        <span class="tool-name">Đề thi THPT – Hóa học</span>
+                    </a>
+                    <a href="tool.html?tool=dethi-sinhhoc" class="tool-card">
+                        <div class="tool-icon teal"><i class="fas fa-leaf"></i></div>
+                        <span class="tool-cost">-5 <i class="fas fa-star"></i></span>
+                        <span class="tool-name">Đề thi THPT – Sinh Học</span>
+                    </a>
+                    <a href="tool.html?tool=dethi-nguvan" class="tool-card">
+                        <div class="tool-icon purple"><i class="fas fa-pen-nib"></i></div>
+                        <span class="tool-cost">-5 <i class="fas fa-star"></i></span>
+                        <span class="tool-name">Đề thi THPT – Ngữ Văn</span>
+                    </a>
+                    <a href="tool.html?tool=dethi-lichsu" class="tool-card">
+                        <div class="tool-icon red"><i class="fas fa-landmark"></i></div>
+                        <span class="tool-cost">-5 <i class="fas fa-star"></i></span>
+                        <span class="tool-name">Đề thi THPT – Lịch Sử</span>
+                    </a>
+                    <a href="tool.html?tool=dethi-diali" class="tool-card">
+                        <div class="tool-icon blue"><i class="fas fa-globe-asia"></i></div>
+                        <span class="tool-cost">-5 <i class="fas fa-star"></i></span>
+                        <span class="tool-name">Đề thi THPT – Địa Lí</span>
+                    </a>
+                    <a href="tool.html?tool=dethi-ktpl" class="tool-card">
+                        <div class="tool-icon orange"><i class="fas fa-scale-balanced"></i></div>
+                        <span class="tool-cost">-5 <i class="fas fa-star"></i></span>
+                        <span class="tool-name">Đề thi THPT – KTPL</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Tool Section: Đề thi THCS & Tiểu học -->
+            <section class="tool-section" id="section-dethi-thcs">
+                <div class="tool-section-header">
+                    <div class="tool-section-icon dethi2"><i class="fas fa-clipboard-list"></i></div>
+                    <div class="tool-section-info">
+                        <h2>CÔNG CỤ TẠO ĐỀ THI 7991 THCS VÀ TIỂU HỌC</h2>
+                        <p>Tự động sinh đề thi theo ma trận chuẩn Công văn 7991</p>
+                    </div>
+                </div>
+                <div class="tool-grid">
+                    <a href="tool.html?tool=7991-sgk" class="tool-card">
+                        <div class="tool-icon green"><i class="fas fa-book"></i></div>
+                        <span class="tool-cost">-10 <i class="fas fa-star"></i></span>
+                        <span class="tool-name">7991 TH & THCS từ SGK</span>
+                    </a>
+                    <a href="tool.html?tool=7991-english" class="tool-card">
+                        <div class="tool-icon blue"><i class="fas fa-language"></i></div>
+                        <span class="tool-cost">-10 <i class="fas fa-star"></i></span>
+                        <span class="tool-name">7991 English Exam</span>
+                    </a>
+                    <a href="tool.html?tool=7991-decuong" class="tool-card">
+                        <div class="tool-icon teal"><i class="fas fa-list-ol"></i></div>
+                        <span class="tool-cost">-8 <i class="fas fa-star"></i></span>
+                        <span class="tool-name">Tạo đề thi từ đề cương</span>
+                    </a>
+                    <a href="tool.html?tool=7991-matran" class="tool-card">
+                        <div class="tool-icon purple"><i class="fas fa-table-cells"></i></div>
+                        <span class="tool-cost">-8 <i class="fas fa-star"></i></span>
+                        <span class="tool-name">Tạo đề thi từ ma trận</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Tool Section: Sắp ra mắt -->
+            <section class="tool-section section-coming-soon" id="section-coming-soon">
+                <div class="tool-section-header">
+                    <div class="tool-section-icon coming"><i class="fas fa-clock"></i></div>
+                    <div class="tool-section-info">
+                        <h2>SẮP RA MẮT</h2>
+                        <p>Các công cụ đang được phát triển</p>
+                    </div>
+                </div>
+                <div class="tool-grid">
+                    <div class="tool-card disabled">
+                        <div class="tool-icon gray"><i class="fas fa-list-check"></i></div>
+                        <span class="tool-name">Tạo bài trắc nghiệm</span>
+                    </div>
+                    <div class="tool-card disabled">
+                        <div class="tool-icon gray"><i class="fas fa-ship"></i></div>
+                        <span class="tool-name">Đưa thuyền rồng</span>
+                    </div>
+                    <div class="tool-card disabled">
+                        <div class="tool-icon gray"><i class="fas fa-file-circle-plus"></i></div>
+                        <span class="tool-name">Tạo phiếu bài tập</span>
+                    </div>
+                    <div class="tool-card disabled">
+                        <div class="tool-icon gray"><i class="fas fa-chart-bar"></i></div>
+                        <span class="tool-name">Tạo bảng đánh giá</span>
+                    </div>
+                    <div class="tool-card disabled">
+                        <div class="tool-icon gray"><i class="fas fa-file-powerpoint"></i></div>
+                        <span class="tool-name">Tóm tắt bài giảng</span>
+                    </div>
+                    <div class="tool-card disabled">
+                        <div class="tool-icon gray"><i class="fas fa-comment-dots"></i></div>
+                        <span class="tool-name">Nhận xét tự động TT22</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="dash-footer">
+        <div class="dash-container">
+            <div class="dash-footer-grid">
+                <div>
+                    <div class="dash-footer-brand">VOVANTHANHNHA <span>.IO.VN</span></div>
+                    <p>Hệ sinh thái AI đồng hành cùng giáo viên Việt Nam.</p>
+                </div>
+                <div>
+                    <h4>SẢN PHẨM</h4>
+                    <a href="#">Soạn giáo án AI</a>
+                    <a href="#">Trợ lý giáo viên</a>
+                    <a href="#">Kho học liệu số</a>
+                </div>
+                <div>
+                    <h4>HỖ TRỢ</h4>
+                    <a href="#">Hướng dẫn sử dụng</a>
+                    <a href="#">Câu hỏi thường gặp</a>
+                    <a href="#">Liên hệ hỗ trợ</a>
+                </div>
+                <div>
+                    <h4>THÔNG TIN LIÊN HỆ</h4>
+                    <p><strong>Hotline:</strong> 0943 265 527</p>
+                    <p><strong>Email:</strong> contact@vovanthanhnha.io.vn</p>
+                </div>
+            </div>
+            <div class="dash-footer-bottom">
+                <p>&copy; 2026 VOVANTHANHNHA.IO.VN. Đồng hành cùng giáo viên Việt Nam.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Recharge Modal -->
+    <div class="modal-overlay" id="recharge-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close-recharge"><i class="fas fa-times"></i></button>
+            <h2><i class="fas fa-coins"></i> Nạp điểm</h2>
+            <p class="modal-desc">Chọn gói điểm để nạp vào tài khoản</p>
+            <div class="recharge-grid">
+                <button class="recharge-option" data-points="50" data-price="50000">
+                    <span class="recharge-points">50 điểm</span>
+                    <span class="recharge-price">50.000đ</span>
+                </button>
+                <button class="recharge-option popular" data-points="100" data-price="90000">
+                    <span class="recharge-badge">Phổ biến</span>
+                    <span class="recharge-points">100 điểm</span>
+                    <span class="recharge-price">90.000đ</span>
+                </button>
+                <button class="recharge-option" data-points="200" data-price="160000">
+                    <span class="recharge-points">200 điểm</span>
+                    <span class="recharge-price">160.000đ</span>
+                </button>
+                <button class="recharge-option" data-points="500" data-price="350000">
+                    <span class="recharge-badge">Tiết kiệm</span>
+                    <span class="recharge-points">500 điểm</span>
+                    <span class="recharge-price">350.000đ</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

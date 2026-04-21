@@ -1,0 +1,16 @@
+# Task: Test OpenAI API integration for exam generation
+
+## Checklist
+- [x] Navigate to `de-thi-tinhoc.html`
+- [x] Select a topic in Section 3
+- [x] Switch to "Đề thi" tab
+- [ ] Click "Tạo đề thi (trừ 2 điểm)" (Encountering difficulties with clicking)
+- [ ] Wait for API response (up to 60s)
+- [ ] Capture screenshot and console logs
+- [ ] Verify exam generation
+
+## Notes
+- URL: `file:///C:/Users/thanh/.gemini/antigravity/scratch/de-thi-tinhoc.html`
+- The page has a responsive sidebar that makes elements hard to target.
+- I've tried clicking X=500, Y=850 and Y=950 but no feedback of "Generating..." yet.
+- I'll try clicking the giant plus icon which seems to be the button.

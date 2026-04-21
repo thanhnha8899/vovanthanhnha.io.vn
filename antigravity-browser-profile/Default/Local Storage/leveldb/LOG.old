@@ -1,0 +1,18 @@
+2026/04/09-01:26:39.729 6da8 Reusing MANIFEST C:\Users\thanh\.gemini\antigravity-browser-profile\Default\Local Storage\leveldb/MANIFEST-000001
+2026/04/09-01:26:39.781 6da8 Recovering log #3
+2026/04/09-01:26:39.783 6da8 Reusing old log C:\Users\thanh\.gemini\antigravity-browser-profile\Default\Local Storage\leveldb/000003.log 
+2026/04/10-10:13:39.058 6da8 Level-0 table #5: started
+2026/04/10-10:13:39.069 6da8 Level-0 table #5: 40013 bytes OK
+2026/04/10-10:13:39.074 6da8 Delete type=0 #3
+2026/04/10-20:46:27.214 6e88 Level-0 table #7: started
+2026/04/10-20:46:27.221 6e88 Level-0 table #7: 35401 bytes OK
+2026/04/10-20:46:27.225 6e88 Delete type=0 #4
+2026/04/10-21:19:39.439 6e88 Level-0 table #9: started
+2026/04/10-21:19:39.470 6e88 Level-0 table #9: 16685 bytes OK
+2026/04/10-21:19:39.474 6e88 Delete type=0 #6
+2026/04/11-00:12:22.392 6e88 Level-0 table #11: started
+2026/04/11-00:12:22.398 6e88 Level-0 table #11: 16631 bytes OK
+2026/04/11-00:12:22.402 6e88 Delete type=0 #8
+2026/04/11-07:10:52.693 6e88 Level-0 table #13: started
+2026/04/11-07:10:52.709 6e88 Level-0 table #13: 20514 bytes OK
+2026/04/11-07:10:52.744 6e88 Delete type=0 #10

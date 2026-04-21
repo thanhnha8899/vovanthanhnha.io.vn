@@ -1,0 +1,123 @@
+[0] (153,54)<a class='logo' href='#' id='logo' />
+	[1] (91,54)<div  />
+		[2] (91,54)<i  />
+	[3] (175,54)<div  />
+		[4] (175,39)<span >VOVANTHANHNHA />
+		[5] (175,70)<span >Nền tảng AI Giáo dục />
+[6] (305,54)<a class='dash-nav-link active' href='#' id='nav-home' />
+	[7] (278,54)<i  />
+	[8] (313,54)<span >Trang chủ />
+[9] (395,54)<a class='dash-nav-link' href='#' id='nav-huongdan' />
+	[10] (366,54)<i  />
+	[11] (403,54)<span >Hướng dẫn />
+[12] (489,54)<a class='dash-nav-link' href='#' id='nav-congdong' />
+	[13] (459,54)<i  />
+	[14] (497,54)<span >Cộng đồng />
+[15] (583,54)<a class='dash-nav-link' href='#' id='nav-zalo' />
+	[16] (554,54)<i  />
+	[17] (592,54)<span >Hỗ trợ Zalo />
+[18] (692,54)<a class='topup-btn' href='nap-diem.html' id='nav-napdiem' />
+	[19] (668,54)<i  />
+	[20] (698,54)<span >Nạp điểm />
+0
+điểm
+[21] (825,54)<button class='notif-btn' id='notif-btn' title='Thông báo' />
+	[22] (825,54)<i  />
+	[23] (831,39)<span  />
+[24] (860,54)<div  />
+	[25] (860,54)<div  />
+		[26] (860,54)<span >A />
+		[27] (870,75)<span  />
+[28] (908,54)<button class='btn-logout' id='btn-logout' title='Đăng xuất' />
+	[29] (908,54)<i  />
+Hoạt động góc
+Các góc chơi & khám phá
+2
+Soạn giáo án TH / THCS / THPT
+CV 5512, 2345, 1001
+[30] (284,335)<a class='tile' href='#' id='tool-khbd-2345' />
+	[31] (120,335)<div  />
+		[32] (120,335)<i  />
+	[33] (290,335)<div  />
+		[34] (290,319)<span >KHBD 3 Cột (2345) />
+		[35] (290,354)<span >Chuẩn Phụ lục 3 mọi cấp />
+	[36] (454,335)<span >4 />
+		[37] (459,335)<i  />
+[38] (284,453)<a class='tile' href='#' id='tool-khbd-5512' />
+	[39] (120,453)<div  />
+		[40] (120,453)<i  />
+	[41] (290,453)<div  />
+		[42] (290,437)<span >KHBD Trung học 5512 />
+		[43] (290,471)<span >Chuẩn Công văn 5512 />
+	[44] (454,453)<span >4 />
+		[45] (459,453)<i  />
+[46] (284,570)<a class='tile' href='#' id='tool-khbd-1001' />
+	[47] (120,570)<div  />
+		[48] (120,570)<i  />
+	[49] (290,570)<div  />
+		[50] (290,554)<span >KHBD DGNL 1001 />
+		[51] (290,589)<span >Đánh giá năng lực />
+	[52] (454,570)<span >4 />
+		[53] (459,570)<i  />
+[54] (284,687)<a class='tile' href='#' id='tool-nangluc-tichop' />
+	[55] (120,687)<div  />
+		[56] (120,687)<i  />
+	[57] (290,687)<div  />
+		[58] (290,672)<span >Tích hợp năng lực số />
+		[59] (290,706)<span >Thêm NLS vào giáo án có sẵn />
+	[60] (454,687)<span >4 />
+		[61] (459,687)<i  />
+[62] (284,805)<a class='tile' href='#' id='tool-nangluc-auto' />
+	[63] (120,805)<div  />
+		[64] (120,805)<i  />
+	[65] (290,805)<div  />
+		[66] (290,789)<span >Tự động NLS vào giáo án />
+		[67] (290,824)<span >AI tự tích hợp hoàn tất />
+	[68] (454,805)<span >4 />
+		[69] (459,805)<i  />
+Giáo dục AI vào KHBD
+Mới 🚀
+[70] (719,335)<a class='tile' href='#' id='tool-ai-khbd-tieuhoc' />
+	[71] (554,335)<div  />
+		[72] (554,335)<i  />
+	[73] (724,335)<div  />
+		[74] (724,319)<span >KHBD tích hợp AI – Tiểu học />
+		[75] (724,354)<span >Làm quen AI, tư duy thuật toán cho HS tiểu học />
+	[76] (889,335)<span >4 />
+		[77] (893,335)<i  />
+[78] (719,453)<a class='tile' href='#' id='tool-ai-khbd-thcs' />
+	[79] (554,453)<div  />
+		[80] (554,453)<i  />
+	[81] (724,453)<div  />
+		[82] (724,437)<span >KHBD tích hợp AI – THCS />
+		[83] (724,471)<span >Ứng dụng AI trong học tập & năng lực số THCS />
+	[84] (889,453)<span >4 />
+		[85] (893,453)<i  />
+[86] (719,570)<a class='tile' href='#' id='tool-ai-khbd-thpt' />
+	[87] (554,570)<div  />
+		[88] (554,570)<i  />
+	[89] (724,570)<div  />
+		[90] (724,554)<span >KHBD tích hợp AI – THPT />
+		[91] (724,589)<span >Machine Learning, Generative AI & đạo đức AI />
+	[92] (889,570)<span >4 />
+		[93] (893,570)<i  />
+[94] (719,687)<a class='tile' href='#' id='tool-ai-khbd-upload' />
+	[95] (554,687)<div  />
+		[96] (554,687)<i  />
+	[97] (724,687)<div  />
+		[98] (724,672)<span >Tích hợp AI vào KHBD có sẵn />
+		[99] (724,706)<span >Tải KHBD lên, AI tự thêm nội dung giáo dục AI />
+	[100] (889,687)<span >4 />
+		[101] (893,687)<i  />
+[102] (719,805)<a class='tile' href='#' id='tool-ai-khbd-auto' />
+	[103] (554,805)<div  />
+		[104] (554,805)<i  />
+	[105] (724,805)<div  />
+		[106] (724,789)<span >AI tự động soạn KHBD giáo dục AI />
+		[107] (724,824)<span >AI soạn giáo án giáo dục trí tuệ nhân tạo hoàn chỉnh />
+	[108] (889,805)<span >4 />
+		[109] (893,805)<i  />
+PPT bài dạy
+Mới 🚀
+[110] (958,908)<button aria-label='Về đầu trang' class='back-to-top visible' id='back-to-top' />
+	[111] (958,908)<i  />

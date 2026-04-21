@@ -1,0 +1,11 @@
+# Task: Verify "Đề thi" tab on de-thi-tinhoc.html
+
+## Steps
+- [ ] Open `file:///C:/Users/thanh/.gemini/antigravity/scratch/de-thi-tinhoc.html`
+- [ ] Click "Đề thi" tab (element `.tab-item[data-tab="dethi"]`)
+- [ ] Verify UI components:
+    - [ ] Title "Đề thi Tin học lớp 10"
+    - [ ] Button "Tạo đề thi"
+    - [ ] Button "Quay lại cấu hình"
+    - [ ] Placeholder "Chưa có đề thi"
+- [ ] Take screenshot for verification

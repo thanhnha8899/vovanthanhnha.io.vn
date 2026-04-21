@@ -1,0 +1,68 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (35,66)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (35,66)<i  />
+Đề thi THPT – Tin học
+Công cụ tạo đề thi PPKT THPT
+[2] (71,166)<div  />
+	[3] (44,166)<i  />
+	[4] (79,166)<span >Cấu hình />
+[5] (171,166)<div  />
+	[6] (148,166)<i  />
+	[7] (180,166)<span >Ma trận />
+[8] (265,166)<div  />
+	[9] (245,166)<i  />
+	[10] (274,166)<span >Đặc tả />
+[11] (353,166)<div  />
+	[12] (335,166)<i  />
+	[13] (361,166)<span >Đề thi />
+[14] (909,166)<div  />
+	[15] (861,166)<i  />
+	[16] (917,166)<span >Nguồn ứng dụng />
+Máy tính có thể tự động hóa các quy trình sản xuất. (Đúng/Sai)
+---HẾT---
+PHẦN III: TRẮC NGHIỆM LỰA CHỌN
+Để biểu diễn thông tin dưới dạng số, chúng ta sử dụng:
+a) Hệ thập phân
+b) Hệ nhị phân
+c) Hệ bát phân
+d) Hệ thập lục phân
+Đơn vị đo thông tin nào sau đây lớn hơn Byte?
+a) Bit
+b) Byte
+c) Kilobyte
+d) Megabyte
+Loại phần mềm nào sau đây负责 quản lý và điều hành máy tính?
+a) Phần mềm ứng dụng
+b) Phần mềm hệ thống
+c) Hệ điều hành
+d) Phần cứng máy tính
+Thiết bị nào sau đây là thiết bị vào của máy tính?
+a) Màn hình
+b) Bàn phím
+c) Máy in
+d) Loa
+Mạng máy tính nào sau đây có phạm vi toàn cầu?
+a) LAN
+b) WAN
+c) Internet
+d) Intranet
+Để đảm bảo an toàn và bảo mật thông tin, chúng ta nên:
+a) Sử dụng mật khẩu mạnh
+b) Cập nhật phần mềm thường xuyên
+c) Sử dụng phần mềm diệt virus
+d) Tất cả các ý trên
+---HẾT---
+PHẦN IV: TỰ LUẬN
+(1.5 điểm) Hãy giải thích sự khác biệt giữa thông tin và dữ liệu. Cho ví dụ về cách dữ liệu được chuyển đổi thành thông tin.
+(1.5 điểm) Hãy mô tả hệ thống số nhị phân và cách nó được sử dụng trong máy tính. Cho ví dụ về cách biểu diễn số thập phân dưới dạng nhị phân.
+---HẾT---
+ĐÁP ÁN
+PHẦN I: TRẮC NGHIỆM
+a) Dữ liệu đã được xử lý và có ý nghĩa
+d) Thông tin chưa được xử lý
+a) 2 số 0 và 1
+
+</current_dom>

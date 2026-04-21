@@ -1,0 +1,52 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (500,500)<div  />
+[1] (172,54)<a class='flex items-center' href='/' />
+	[2] (172,54)<img  />
+[3] (334,54)<button class='lg:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/10 transition-colors' />
+[4] (200,457)<nav class='flex-1 px-3 py-4 overflow-y-auto' scrollable='true' />
+	[5] (188,168)<a class='flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm font-semibold transition-all duration-200 mb-2 text-gray-700 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-white/5' href='/docs'>Trung tâm Hướng dẫn />
+	Bắt đầu
+	[6] (188,299)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/introduction' />
+		[7] (127,299)<span >Giới thiệu />
+	[8] (188,357)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/getting-started' />
+		[9] (153,357)<span >Bắt đầu nhanh />
+	[10] (188,415)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/authentication' />
+		[11] (153,415)<span >Authentication />
+	[12] (188,473)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/faqs' />
+		[13] (105,473)<span >FAQs />
+	API Reference
+	[14] (188,587)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/chat-completions' />
+		[15] (171,587)<span >Chat Completions />
+	[16] (188,646)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/embeddings' />
+		[17] (143,646)<span >Embeddings />
+	[18] (188,704)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/video-generation' />
+		[19] (168,704)<span >Video Generation />
+	[20] (188,762)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/image-generation' />
+		[21] (170,762)<span >Image Generation />
+	Text Models
+	API Usage
+	Error Handling
+	Management API
+[22] (200,868)<a class='flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-lg bg-gray-900 dark:bg-white text-white dark:text-black text-sm font-medium hover:bg-gray-800 dark:hover:bg-gray-200 transition-all duration-200' href='/login'>Đăng nhập />
+Đăng nhập để sử dụng API và quản lý tài khoản
+Tài liệu Beeknoee
+Đăng nhập
+[23] (500,548)<main class='flex-1 overflow-y-auto p-4 lg:p-6' scrollable='true' />
+	Hướng dẫn
+	Cấu hình Bee API với OpenClaw
+	HƯỚNG DẪN CẤU HÌNH BEE API VỚI OPENCLAW
+	9Router là gì?
+	9Router
+	là một AI proxy miễn phí giúp kết nối OpenClaw với các provider AI (bao gồm Beeknoee) thông qua giao diện Dashboard trực quan —
+	không cần sửa file JSON tay
+	.
+	Yêu cầu
+	Windows:
+	Windows 10 (Build 19041+) hoặc Windows 11, có WSL2 + Ubuntu
+	macOS:
+	macOS 14 trở lên
+
+</current_dom>

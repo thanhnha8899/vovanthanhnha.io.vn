@@ -1,0 +1,67 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (33,73)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (33,73)<i  />
+Đề thi THPT – Tin học
+Công cụ tạo đề thi PPKT THPT
+[2] (65,183)<div  />
+	[3] (40,183)<i  />
+	[4] (74,183)<span >Cấu hình />
+[5] (159,183)<div  />
+	[6] (137,183)<i  />
+	[7] (167,183)<span >Ma trận />
+[8] (246,183)<div  />
+	[9] (227,183)<i  />
+	[10] (254,183)<span >Đặc tả />
+[11] (327,183)<div  />
+	[12] (310,183)<i  />
+	[13] (334,183)<span >Đề thi />
+[14] (915,183)<div  />
+	[15] (871,183)<i  />
+	[16] (924,183)<span >Nguồn ứng dụng />
+1
+Thông tin đề thi
+Trường, kỳ thi, môn học, thời gian
+[17] (149,452)<label >Tên trường />
+[18] (149,513)<input id='ten-truong' placeholder='Nhập tên trường' />
+[19] (383,452)<label >Tổ chuyên môn />
+[20] (383,513)<input id='to-chuyen-mon' placeholder='Nhập tổ chuyên môn' />
+[21] (617,452)<label >Tên đề kiểm tra />
+[22] (617,513)<input id='ten-de' placeholder='Nhập tên đề' />
+[23] (851,452)<label >Môn học />
+[24] (851,513)<select id='mon-hoc' />
+[25] (149,591)<label >Năm học />
+[26] (149,652)<input id='nam-hoc' placeholder='VD: NĂM HỌC 2026 - 2027' />
+[27] (383,591)<label >Thời gian (phút) />
+[28] (383,652)<input id='thoi-gian' />
+[29] (617,591)<label >Khối lớp />
+[30] (617,652)<select id='khoi-lop' />
+[31] (851,591)<label >Kỳ kiểm tra />
+[32] (851,652)<select id='ky-kiem-tra' />
+2
+Cấu trúc đề & Tỉ lệ
+Loại câu, điểm, mức độ nhận thức
+[33] (144,916)<label >ĐỘ KHÓ ĐỀ THI />
+[34] (144,977)<select id='do-kho' />
+3
+Chọn nội dung kiểm tra
+Mạch – Đơn vị kiến thức · Đã chọn:
+1
+[35] (872,833)<input id='search-topic' placeholder='Lọc mạch...' />
+MẠCH NỘI DUNG
+[36] (322,986)<div  />
+	[37] (322,986)<i  />
+[38] (338,986)<div  />
+Máy tính và xã hội tri thức
+4
+[39] (599,986)<span  />
+	[40] (599,986)<i  />
+Máy tính và xã hội tri thức
+[41] (804,983)<div  />
+	[42] (664,984)<div  />
+		[43] (664,984)<i  />
+	[44] (815,983)<span >Thông tin và dữ liệu />
+
+</current_dom>

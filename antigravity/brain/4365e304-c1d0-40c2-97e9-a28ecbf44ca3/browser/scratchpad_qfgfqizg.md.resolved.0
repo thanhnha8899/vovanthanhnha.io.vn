@@ -1,0 +1,13 @@
+# Task: Verify "Đề thi" tab UI in de-thi-tinhoc.html
+
+## Checklist
+- [ ] Navigate to page and wait for load
+- [ ] Find and click "Đề thi" tab
+- [ ] Take screenshot of "Đề thi" tab
+- [ ] Verify buttons: "Tạo đề thi", "Quay lại cấu hình", "Tải về .docx"
+- [ ] Verify placeholder message
+- [ ] Report findings
+
+## Notes
+- URL: file:///C:/Users/thanh/.gemini/antigravity/scratch/de-thi-tinhoc.html
+- Looking for specific buttons and layout as per user request.

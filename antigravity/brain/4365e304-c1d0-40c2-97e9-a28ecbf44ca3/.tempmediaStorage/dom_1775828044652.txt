@@ -1,0 +1,51 @@
+Đề thi THPT – Tin học
+Công cụ tạo đề thi PPKT THPT
+Cấu hình
+Ma trận
+Đặc tả
+Đề thi
+Nguồn ứng dụng
+Năm học
+Thời gian (phút)
+Khối lớp
+Kỳ kiểm tra
+2
+Cấu trúc đề & Tỉ lệ
+Loại câu, điểm, mức độ nhận thức
+ĐỘ KHÓ ĐỀ THI
+Loại câu
+Số câu
+Điểm/câu
+Trắc nghiệm nhiều lựa chọn
+Trắc nghiệm Đúng/Sai
+(1 câu = 4 lệnh hỏi)
+Trả lời ngắn
+Tự luận
+—
+Tổng điểm TNKQ
+8.5
+Điểm tự luận
+1.5
+3
+Chọn nội dung kiểm tra
+Mạch – Đơn vị kiến thức · Đã chọn:
+0
+MẠCH NỘI DUNG
+Máy tính và xã hội tri thức
+4
+Mạng máy tính và Internet
+3
+Đạo đức và pháp luật trong CNTT
+3
+Ứng dụng tin học
+4
+Giải quyết vấn đề với máy tính
+4
+Lập trình cơ bản (Python)
+7
+Cơ sở dữ liệu
+4
+Hướng nghiệp với Tin học
+3
+CHỌN MẠCH BÊN TRÁI
+Chọn một mạch nội dung bên trái để hiện đơn vị kiến thức.

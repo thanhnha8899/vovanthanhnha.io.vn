@@ -1,0 +1,44 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (45,74)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (45,74)<i  />
+Đề thi THPT – Vật Lí
+Công cụ tạo đề thi PPKT THPT
+[2] (90,185)<div  />
+	[3] (56,185)<i  />
+	[4] (101,185)<span >Cấu hình />
+[5] (218,185)<div  />
+	[6] (188,185)<i  />
+	[7] (229,185)<span >Ma trận />
+[8] (338,185)<div  />
+	[9] (312,185)<i  />
+	[10] (349,185)<span >Đặc tả />
+[11] (450,185)<div  />
+	[12] (426,185)<i  />
+	[13] (460,185)<span >Đề thi />
+[14] (884,185)<div  />
+	[15] (823,185)<i  />
+	[16] (895,185)<span >Nguồn ứng dụng />
+1
+Thông tin đề thi
+Trường, kỳ thi, môn học, thời gian
+[17] (272,445)<label >Tên trường />
+[18] (272,507)<input id='ten-truong' placeholder='Nhập tên trường' />
+[19] (728,445)<label >Tổ chuyên môn />
+[20] (728,507)<input id='to-chuyen-mon' placeholder='Nhập tổ chuyên môn' />
+[21] (272,586)<label >Tên đề kiểm tra />
+[22] (272,648)<input id='ten-de' placeholder='Nhập tên đề' />
+[23] (728,586)<label >Môn học />
+[24] (728,648)<select id='mon-hoc' />
+[25] (272,728)<label >Năm học />
+[26] (272,790)<input id='nam-hoc' placeholder='VD: NĂM HỌC 2026 - 2027' />
+[27] (728,728)<label >Thời gian (phút) />
+[28] (728,790)<input id='thoi-gian' />
+[29] (272,869)<label >Khối lớp />
+[30] (272,931)<select id='khoi-lop' />
+[31] (728,869)<label >Kỳ kiểm tra />
+[32] (728,931)<select id='ky-kiem-tra' />
+
+</current_dom>

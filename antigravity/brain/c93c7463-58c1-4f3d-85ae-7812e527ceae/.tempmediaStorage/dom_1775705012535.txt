@@ -1,0 +1,110 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (154,49)<a class='logo' href='#' id='logo' />
+	[1] (92,49)<div  />
+		[2] (92,49)<i  />
+	[3] (176,49)<div  />
+		[4] (176,35)<span >VOVANTHANHNHA />
+		[5] (176,64)<span >Nền tảng AI Giáo dục />
+[6] (305,49)<a class='dash-nav-link active' href='#' id='nav-home' />
+	[7] (278,49)<i  />
+	[8] (313,49)<span >Trang chủ />
+[9] (396,49)<a class='dash-nav-link' href='#' id='nav-huongdan' />
+	[10] (367,49)<i  />
+	[11] (403,49)<span >Hướng dẫn />
+[12] (489,49)<a class='dash-nav-link' href='#' id='nav-congdong' />
+	[13] (460,49)<i  />
+	[14] (498,49)<span >Cộng đồng />
+[15] (583,49)<a class='dash-nav-link' href='#' id='nav-zalo' />
+	[16] (554,49)<i  />
+	[17] (592,49)<span >Hỗ trợ Zalo />
+[18] (691,49)<a class='topup-btn' href='#' id='nav-napdiem' />
+	[19] (668,49)<i  />
+	[20] (698,49)<span >Nạp điểm />
+0
+điểm
+[21] (824,49)<button class='notif-btn' id='notif-btn' title='Thông báo' />
+	[22] (824,49)<i  />
+	[23] (831,36)<span  />
+[24] (859,49)<div  />
+	[25] (859,49)<div  />
+		[26] (859,49)<span >A />
+		[27] (869,68)<span  />
+[28] (908,47)<button class='btn-logout' id='btn-logout' title='Đăng xuất' />
+	[29] (908,47)<i  />
+Tùy chỉnh dàn ý theo ý tưởng của bạn
+15
+[30] (285,105)<a class='tile' href='#' id='tool-skkn-tt18' />
+	[31] (121,105)<div  />
+		[32] (121,105)<i  />
+	[33] (288,105)<div >SKKN TT 18/BKHCN />
+		SKKN TT 18/BKHCN
+		[34] (288,122)<span >Theo chuẩn Thông tư 18/BKHCN />
+	[35] (453,105)<span >15 />
+		[36] (459,105)<i  />
+Thiết kế hoạt động học tập
+2
+[37] (718,105)<a class='tile' href='#' id='tool-mn-ngoaitroi' />
+	[38] (554,105)<div  />
+		[39] (554,105)<i  />
+	[40] (724,105)<div >Hoạt động ngoài trời />
+		Hoạt động ngoài trời
+		[41] (724,122)<span >Ngoại khóa & trải nghiệm />
+	[42] (888,105)<span >2 />
+		[43] (892,105)<i  />
+[44] (718,211)<a class='tile' href='#' id='tool-mn-goc' />
+	[45] (554,211)<div  />
+		[46] (554,211)<i  />
+	[47] (724,211)<div  />
+		[48] (724,197)<span >Hoạt động góc />
+		[49] (724,228)<span >Các góc chơi & khám phá />
+	[50] (888,211)<span >2 />
+		[51] (892,211)<i  />
+Soạn giáo án TH / THCS / THPT
+CV 5512, 2345, 1001
+[52] (285,460)<a class='tile' href='#' id='tool-khbd-2345' />
+	[53] (121,460)<div  />
+		[54] (121,460)<i  />
+	[55] (290,460)<div  />
+		[56] (290,446)<span >KHBD 3 Cột (2345) />
+		[57] (290,477)<span >Chuẩn Phụ lục 3 mọi cấp />
+	[58] (454,460)<span >4 />
+		[59] (459,460)<i  />
+[60] (285,567)<a class='tile' href='#' id='tool-khbd-5512' />
+	[61] (121,567)<div  />
+		[62] (121,567)<i  />
+	[63] (290,567)<div  />
+		[64] (290,553)<span >KHBD Trung học 5512 />
+		[65] (290,584)<span >Chuẩn Công văn 5512 />
+	[66] (454,567)<span >4 />
+		[67] (459,567)<i  />
+[68] (285,674)<a class='tile' href='#' id='tool-khbd-1001' />
+	[69] (121,674)<div  />
+		[70] (121,674)<i  />
+	[71] (290,674)<div  />
+		[72] (290,660)<span >KHBD DGNL 1001 />
+		[73] (290,691)<span >Đánh giá năng lực />
+	[74] (454,674)<span >4 />
+		[75] (459,674)<i  />
+[76] (285,781)<a class='tile' href='#' id='tool-nangluc-tichop' />
+	[77] (121,781)<div  />
+		[78] (121,781)<i  />
+	[79] (290,781)<div  />
+		[80] (290,767)<span >Tích hợp năng lực số />
+		[81] (290,798)<span >Thêm NLS vào giáo án có sẵn />
+	[82] (454,781)<span >4 />
+		[83] (459,781)<i  />
+[84] (285,888)<a class='tile' href='#' id='tool-nangluc-auto' />
+	[85] (121,888)<div  />
+		[86] (121,888)<i  />
+	[87] (290,888)<div  />
+		[88] (290,873)<span >Tự động NLS vào giáo án />
+		[89] (290,905)<span >AI tự tích hợp hoàn tất />
+	[90] (454,888)<span >4 />
+		[91] (459,888)<i  />
+[92] (958,917)<button aria-label='Về đầu trang' class='back-to-top visible' id='back-to-top' />
+	[93] (958,917)<i  />
+
+</current_dom>

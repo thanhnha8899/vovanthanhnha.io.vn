@@ -1,0 +1,110 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (35,66)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (35,66)<i  />
+Đề thi THPT – Tin học
+Công cụ tạo đề thi PPKT THPT
+[2] (71,166)<div  />
+	[3] (44,166)<i  />
+	[4] (79,166)<span >Cấu hình />
+[5] (171,166)<div  />
+	[6] (148,166)<i  />
+	[7] (180,166)<span >Ma trận />
+[8] (265,166)<div  />
+	[9] (245,166)<i  />
+	[10] (274,166)<span >Đặc tả />
+[11] (353,166)<div  />
+	[12] (335,166)<i  />
+	[13] (361,166)<span >Đề thi />
+[14] (909,166)<div  />
+	[15] (861,166)<i  />
+	[16] (917,166)<span >Nguồn ứng dụng />
+Số câu hỏi phân bổ cần đó theo từng đơn vị kiến thức (theo ma trận).
+Yêu cầu cần đạt: mỗi đơn vị kiến thức chỉ một ý (trích từ khung), thuộc mức có nhiều câu nhất trên hàng ma trận; hoa đó ưu tiên Biết → Hiểu → Vận dụng. Không ghi nhãn «Biết», «Hiểu», «Vận dụng» trong ô.
+Chuyển sang tab Đề thi
+Tải về .docx
+TT
+Chủ đề/Chương
+Nội dung/đơn vị kiến thức
+Yêu cầu cần đạt
+Số câu hỏi ở các mức độ đánh giá
+Tổng
+TNKQ
+Tự luận
+Nhiều lựa chọn
+“Đúng – Sai”
+Trả lời ngắn
+Tự luận
+Biết
+Hiểu
+Vận dụng
+Biết
+Hiểu
+Vận dụng
+Biết
+Hiểu
+Vận dụng
+Biết
+Hiểu
+Vận dụng
+1
+Máy tính và xã hội tri thức
+Thông tin và dữ liệu, Biểu diễn thông tin, Hệ nhị phân, Đơn vị đo thông tin
+Khái niệm, gọi tên, đặc điểm cấu tạo
+5
+4
+3
+6
+5
+5
+2
+2
+2
+1
+1
+36
+Tổng số câu
+5
+4
+3
+6
+5
+5
+2
+2
+2
+1
+1
+36
+Tổng số điểm
+1.25
+1
+0.75
+1.50
+1.25
+1.25
+0.50
+0.50
+0.50
+0.75
+0.75
+10
+Tỉ lệ %
+13
+10
+8
+15
+13
+13
+5
+5
+5
+8
+8
+100
+6
+Có ở trong một số ô của bản đặc tả, ghi tắt tên của năng lực (đã được quy định trong chương trình môn học/hoạt động giáo dục).
+
+</current_dom>

@@ -1,0 +1,72 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (53,66)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (53,66)<i  />
+Đề thi THPT – Tin học
+Công cụ tạo đề thi PPKT THPT
+[2] (106,171)<div  />
+	[3] (59,171)<i  />
+	[4] (122,171)<span >Cấu hình />
+[5] (265,171)<div  />
+	[6] (224,171)<i  />
+	[7] (281,171)<span >Ma trận />
+[8] (413,171)<div  />
+	[9] (377,171)<i  />
+	[10] (429,171)<span >Đặc tả />
+[11] (550,171)<div  />
+	[12] (517,171)<i  />
+	[13] (564,171)<span >Đề thi />
+[14] (858,171)<div  />
+	[15] (776,171)<i  />
+	[16] (875,171)<span >Nguồn ứng dụng />
+MỨC ĐỘ NHẬN THỨC (%)
+Biết
+Hiểu
+Vận dụng
+Tổng nên bằng 100% (tự chuẩn hoá nếu khác)
+Ma trận tự động hình thành theo cấu hình trên và danh sách đơn vị đã chọn.
+[17] (500,427)<button class='generate-btn' id='btn-generate' />
+	[18] (354,427)<i  />
+	[19] (451,427)<span >Tạo ma trận />
+	[20] (597,427)<span >trừ 2 điểm />
+3
+Chọn nội dung kiểm tra
+Mạch – Đơn vị kiến thức · Đã chọn:
+2
+[21] (756,620)<input id='search-topic' placeholder='Lọc mạch...' />
+MẠCH NỘI DUNG
+[22] (497,777)<div  />
+	[23] (94,773)<div  />
+		[24] (94,773)<i  />
+	[25] (126,773)<div  />
+	[26] (480,772)<span >Máy tính và xã hội tri thức />
+	[27] (848,777)<span >4 />
+	[28] (899,773)<span  />
+		[29] (899,773)<i  />
+[30] (497,848)<div  />
+	[31] (94,845)<div  />
+		[32] (94,845)<i  />
+	[33] (126,845)<div  />
+	[34] (480,843)<span >Mạng máy tính và Internet />
+	[35] (848,848)<span >3 />
+	[36] (899,845)<span  />
+		[37] (899,845)<i  />
+[38] (497,920)<div  />
+	[39] (94,917)<div  />
+		[40] (94,917)<i  />
+	[41] (126,917)<div  />
+	[42] (480,915)<span >Đạo đức và pháp luật trong CNTT />
+	[43] (848,920)<span >3 />
+	[44] (899,917)<span  />
+		[45] (899,917)<i  />
+[46] (94,989)<div  />
+	[47] (94,989)<i  />
+[48] (126,989)<div  />
+Ứng dụng tin học
+[49] (848,992)<span >4 />
+[50] (899,989)<span  />
+	[51] (899,989)<i  />
+
+</current_dom>

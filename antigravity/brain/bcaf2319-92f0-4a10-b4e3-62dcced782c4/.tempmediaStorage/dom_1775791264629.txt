@@ -1,0 +1,78 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (500,0)<a class='fullscreen-button' href='/fullScreen'>Xem toàn màn hình />
+[1] (262,152)<button class='toolbarButton' id='viewThumbnail' role='radio' title='Show Thumbnails'>Thumbnails />
+	Thumbnails
+[2] (284,152)<button class='toolbarButton toggled' id='viewOutline' role='radio' title='Show Document Outline (double-click to expand/collapse all items)'>Document Outline />
+	Document Outline
+Attachments
+[3] (330,152)<button class='toolbarButton' id='viewLayers' role='radio' title='Show Layers (double-click to reset all layers to the default state)'>Layers />
+	Layers
+[4] (393,152)<button class='toolbarButton' id='currentOutlineItem' title='Find Current Outline Item'>Current Outline Item />
+	Current Outline Item
+[5] (328,206)<a >COVER />
+[6] (328,246)<a href='#%5B%7B%22num%22%3A1%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22FitH%22%7D%2C798%5D'>A4 />
+[7] (409,472)<div  />
+[8] (262,96)<button class='toolbarButton toggled' id='sidebarToggleButton' title='Toggle Sidebar (document contains outline/attachments/layers)'>Toggle Sidebar />
+	Toggle Sidebar
+[9] (285,96)<button class='toolbarButton' id='viewFindButton' title='Find in Document'>Find />
+	Find
+[10] (318,96)<input class='toolbarField' id='pageNumber' title='Page' />
+of ⁨60⁩
+[11] (434,96)<button class='toolbarButton' id='zoomOutButton' title='Zoom Out'>Zoom Out />
+	Zoom Out
+[12] (458,96)<button class='toolbarButton' id='zoomInButton' title='Zoom In'>Zoom In />
+	Zoom In
+[13] (525,96)<select id='scaleSelect' title='Zoom' />
+[14] (643,96)<button class='toolbarButton' id='editorHighlightButton' role='radio' title='Highlight'>Highlight />
+	Highlight
+[15] (666,96)<button class='toolbarButton' id='editorFreeTextButton' role='radio' title='Text'>Text />
+	Text
+[16] (689,96)<button class='toolbarButton' id='editorInkButton' role='radio' title='Draw'>Draw />
+	Draw
+[17] (711,96)<button class='toolbarButton' id='editorStampButton' role='radio' title='Add or edit images'>Add or edit images />
+	Add or edit images
+[18] (738,96)<button class='toolbarButton' id='secondaryToolbarToggleButton' title='Tools'>Tools />
+	Tools
+[19] (500,471)<div id='viewerContainer' scrollable='true' />
+	[20] (662,160)<span role='presentation'>5 />
+	[21] (362,72)<span role='presentation'>PHỤ LỤC />
+	[22] (381,72)<span role='presentation' />
+	[23] (521,72)<span role='presentation'>...................................................................................................................58 />
+	[24] (452,109)<span role='presentation'>THAM KHẢO MỘT SỐ CÔNG CỤ AI HỖ TRỢ DẠY VÀ HỌC />
+	[25] (610,109)<span role='presentation'>......................................58 />
+	[26] (424,305)<span role='presentation'>Hướng dẫn sử dụng trí tuệ nhân tạo trong dạy và học />
+	[27] (431,552)<span role='presentation'>Phần I. Giới thiệu chung />
+	[28] (330,683)<span role='presentation'>1.1. />
+	[29] (338,683)<span role='presentation' />
+	[30] (414,682)<span role='presentation'>TRÍ TUỆ NHÂN TẠO TRONG GIÁO DỤC />
+	[31] (498,725)<span role='presentation'>Trí tuệ nhân tạo (Artificial Intelligence – AI) là chương trình máy tính có khả năng />
+	[32] (492,755)<span role='presentation'>thực hiện các công việc vốn đòi hỏi trí tuệ ngang bằng hoặc vượt trội hơn trí tuệ của />
+	[33] (492,784)<span role='presentation'>con người. Các công việc mà trí tuệ nhân tạo có thể thực hiện gồm có học tập, suy luận, />
+	[34] (492,814)<span role='presentation'>giải toán, chơi cờ, ra quyết định, vẽ tranh, … Sau đây để đơn giản, trí tuệ nhân tạo sẽ được />
+	[35] (491,843)<span role='presentation'>viết tắt là AI. Đặc trưng của AI là khả năng học hỏi từ dữ liệu để linh hoạt thích nghi mà />
+	[36] (396,872)<span role='presentation'>không chỉ dựa vào các quy tắc cố định. />
+	[37] (377,902)<span role='presentation'>Thập niên 1950-1960. />
+	[38] (419,902)<span role='presentation' />
+	[39] (505,902)<span role='presentation'>Mô hình AI phổ biến là các hệ thống chuyên gia />
+	[40] (594,902)<span role='presentation' />
+	[41] (595,898)<span role='presentation'>(1) />
+	[42] (599,898)<span role='presentation' />
+	[43] (630,902)<span role='presentation'>(expert systems) />
+	[44] (492,931)<span role='presentation'>vốn được lập trình dựa trên các quy tắc logic “nếu-thì”. Các mô hình này đòi hỏi phải đặt ra />
+	[45] (492,960)<span role='presentation'>rất nhiều quy tắc và không thể tự học để thích nghi với môi trường thay đổi hay tự cập nhật />
+	[46] (342,990)<span role='presentation'>kiến thức. />
+	[47] (371,1013)<span role='presentation'>Thập niên 1980. />
+	[48] (403,1013)<span role='presentation' />
+	[49] (533,1013)<span role='presentation'>Khi khả năng lưu trữ và xử lý dữ liệu của máy tính mạnh hơn, các />
+	[50] (357,1037)<span role='presentation'>mô hình học máy />
+	[51] (392,1037)<span role='presentation' />
+	[52] (394,1033)<span role='presentation'>(2) />
+	[53] (397,1033)<span role='presentation' />
+	[54] (530,1037)<span role='presentation'>(machine learning) trở nên phổ biến hơn. Các mô hình học máy học />
+	[55] (492,1060)<span role='presentation'>từ dữ liệu thực tế để cải thiện độ chính xác trong việc dự đoán và đưa ra quyết định. Một />
+GỬI GÓP Ý CHO TÀI LIỆU
+
+</current_dom>

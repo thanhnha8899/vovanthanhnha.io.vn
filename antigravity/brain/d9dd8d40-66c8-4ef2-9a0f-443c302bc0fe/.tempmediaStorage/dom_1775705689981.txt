@@ -1,0 +1,133 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (33,73)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (33,73)<i  />
+Đề thi THPT – Toán
+Công cụ tạo đề thi PPKT THPT
+[2] (65,183)<div  />
+	[3] (40,183)<i  />
+	[4] (74,183)<span >Cấu hình />
+[5] (159,183)<div  />
+	[6] (137,183)<i  />
+	[7] (167,183)<span >Ma trận />
+[8] (246,183)<div  />
+	[9] (227,183)<i  />
+	[10] (254,183)<span >Đặc tả />
+[11] (327,183)<div  />
+	[12] (310,183)<i  />
+	[13] (334,183)<span >Đề thi />
+[14] (915,183)<div  />
+	[15] (871,183)<i  />
+	[16] (924,183)<span >Nguồn ứng dụng />
+2
+Cấu trúc đề & Tỉ lệ
+Loại câu, điểm, mức độ nhận thức
+ĐỘ KHÓ ĐỀ THI
+[17] (144,281)<select id='do-kho' />
+Loại câu
+Số câu
+Điểm/câu
+Trắc nghiệm nhiều lựa chọn
+[18] (153,450)<input id='tn-socau' />
+[19] (218,450)<input id='tn-diem' />
+Trắc nghiệm Đúng/Sai
+[20] (153,536)<input id='ds-socau' />
+[21] (218,536)<input id='ds-diem' />
+Trả lời ngắn
+[22] (153,622)<input id='tln-socau' />
+[23] (218,622)<input id='tln-diem' />
+Tự luận
+[24] (153,708)<input id='tl-socau' />
+—
+Tổng điểm TNKQ
+5.5
+Điểm tự luận
+4.5
+MỨC ĐỘ NHẬN THỨC (%)
+3
+Chọn nội dung kiểm tra
+Mạch – Đơn vị kiến thức · Đã chọn:
+0
+MẠCH NỘI DUNG
+[25] (463,668)<div class='topic-list' id='topic-list' scrollable='true' />
+	[26] (459,294)<div  />
+		[27] (322,291)<div  />
+			[28] (322,291)<i  />
+		[29] (338,291)<div  />
+		[30] (451,289)<span >Mệnh đề và tập hợp />
+		[31] (571,294)<span >5 />
+		[32] (596,291)<span  />
+			[33] (596,291)<i  />
+	[34] (459,366)<div  />
+		[35] (322,362)<div  />
+			[36] (322,362)<i  />
+		[37] (338,362)<div  />
+		[38] (451,361)<span >Bất phương trình bậc nhất hai ẩn />
+		[39] (571,366)<span >4 />
+		[40] (596,362)<span  />
+			[41] (596,362)<i  />
+	[42] (459,438)<div  />
+		[43] (322,434)<div  />
+			[44] (322,434)<i  />
+		[45] (338,434)<div  />
+		[46] (451,433)<span >Hàm số bậc hai />
+		[47] (571,438)<span >4 />
+		[48] (596,434)<span  />
+			[49] (596,434)<i  />
+	[50] (459,509)<div  />
+		[51] (322,506)<div  />
+			[52] (322,506)<i  />
+		[53] (338,506)<div  />
+		[54] (451,504)<span >Phương trình bậc hai />
+		[55] (571,509)<span >4 />
+		[56] (596,506)<span  />
+			[57] (596,506)<i  />
+	[58] (459,581)<div  />
+		[59] (322,578)<div  />
+			[60] (322,578)<i  />
+		[61] (338,578)<div  />
+		[62] (451,576)<span >Hệ phương trình bậc nhất />
+		[63] (571,581)<span >4 />
+		[64] (596,578)<span  />
+			[65] (596,578)<i  />
+	[66] (459,653)<div  />
+		[67] (322,650)<div  />
+			[68] (322,650)<i  />
+		[69] (338,650)<div  />
+		[70] (451,648)<span >Bất đẳng thức và bất phương trình />
+		[71] (571,653)<span >4 />
+		[72] (596,650)<span  />
+			[73] (596,650)<i  />
+	[74] (322,721)<div  />
+		[75] (322,721)<i  />
+	[76] (338,721)<div  />
+	Thống kê
+	5
+	[77] (322,793)<div  />
+		[78] (322,793)<i  />
+	[79] (338,793)<div  />
+	Xác suất
+	5
+	[80] (459,868)<div  />
+		[81] (322,865)<div  />
+			[82] (322,865)<i  />
+		[83] (338,865)<div  />
+		[84] (451,863)<span >Dãy số, cấp số cộng, cấp số nhân />
+		[85] (571,868)<span >5 />
+		[86] (596,865)<span  />
+			[87] (596,865)<i  />
+	[88] (459,940)<div  />
+		[89] (322,937)<div  />
+			[90] (322,937)<i  />
+		[91] (338,937)<div  />
+		[92] (451,935)<span >Lượng giác và hàm số lượng giác />
+		[93] (571,940)<span >5 />
+		[94] (596,937)<span  />
+			[95] (596,937)<i  />
+	Vectơ
+CHỌN MẠCH BÊN TRÁI
+Chọn một mạch nội dung bên trái để hiện đơn vị kiến thức.
+
+</current_dom>

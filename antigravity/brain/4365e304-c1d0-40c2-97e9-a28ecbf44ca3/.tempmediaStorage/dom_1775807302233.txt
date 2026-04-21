@@ -1,0 +1,55 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (500,500)<div  />
+[1] (7,54)<a class='flex items-center' href='/' />
+	[2] (7,54)<img  />
+[3] (169,54)<button class='lg:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/10 transition-colors' />
+[4] (35,457)<nav class='flex-1 px-3 py-4 overflow-y-auto' scrollable='true' />
+	API Reference
+	Chat Completions
+	[5] (23,132)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/embeddings'>Embeddings />
+		Embeddings
+	[6] (23,190)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/video-generation' />
+		[7] (3,190)<span >Video Generation />
+	[8] (23,248)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/image-generation' />
+		[9] (5,248)<span >Image Generation />
+	[10] (23,307)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 bg-[#dfdfdf] dark:bg-[#3a3c3e] text-gray-900 dark:text-gray-100 font-medium' href='/docs/models'>Text Models />
+		Text Models
+	[11] (23,365)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/api-usage'>API Usage />
+		API Usage
+	[12] (23,423)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/error-handling'>Error Handling />
+		Error Handling
+	[13] (23,481)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/management-api' />
+		[14] (2,481)<span >Management API />
+	Integrations
+	[15] (23,595)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/beesynapse-integrations'>BeeSynapse />
+		BeeSynapse
+	[16] (23,653)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/openclaw-9router' />
+		[17] (43,653)<span >Cấu hình Bee API với OpenClaw />
+	[18] (23,711)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/opencode'>OpenCode />
+		OpenCode
+	[19] (23,770)<a class='flex items-center gap-2.5 px-3 py-1.5 rounded-lg text-sm transition-all duration-200 text-gray-600 hover:bg-gray-50 dark:hover:bg-white/5 hover:text-gray-900 dark:text-gray-100' href='/docs/claude-code'>Claude Code />
+		Claude Code
+	Troubleshooting
+	Troubleshoot OAuth
+	OpenClaw Troubleshoot
+[20] (35,868)<a class='flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-lg bg-gray-900 dark:bg-white text-white dark:text-black text-sm font-medium hover:bg-gray-800 dark:hover:bg-gray-200 transition-all duration-200' href='/login'>Đăng nhập />
+Đăng nhập để sử dụng API và quản lý tài khoản
+Tài liệu Beeknoee
+Đăng nhập
+[21] (500,548)<main class='flex-1 overflow-y-auto p-4 lg:p-6' scrollable='true' />
+	Phù hợp cho:
+	Document analysis, coding assistant, enterprise applications, long-form content
+	✨ Claude Opus 4.6 và Sonnet 4.6 hỗ trợ Antigravity — dùng miễn phí qua BeeSynapse Integrations
+	OpenAI (GPT)
+	GPT là dòng model phổ biến nhất thế giới của OpenAI, với hệ sinh thái rộng lớn và khả năng multimodal.
+	Các model:
+	GPT-5.4, GPT-5.2 Pro, GPT-5.2, GPT-5, GPT-5 Mini, GPT-5 Nano
+	Ưu điểm:
+	Hệ sinh thái lớn, documentation đầy đủ
+	Multimodal native (text, image, audio, video)
+	Nhiều tier giá phù hợp mọi nhu cầu
+
+</current_dom>

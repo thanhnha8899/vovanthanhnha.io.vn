@@ -1,0 +1,17 @@
+[0] (53,47)<button class='lg:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/10 transition-colors' />
+Tài liệu Beeknoee
+[1] (884,47)<a class='flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gray-900 dark:bg-white text-white dark:text-black text-sm font-medium hover:bg-gray-800 dark:hover:bg-gray-200 transition-all' href='/login'>Đăng nhập />
+[2] (500,548)<main class='flex-1 overflow-y-auto p-4 lg:p-6' scrollable='true' />
+	[3] (96,140)<a class='text-sm text-gray-400 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-400 transition-colors flex items-center gap-1' href='/docs'>Hướng dẫn />
+	Cấu hình Bee API với OpenClaw
+	HƯỚNG DẪN CẤU HÌNH BEE API VỚI OPENCLAW
+	9Router là gì?
+	9Router
+	là một AI proxy miễn phí giúp kết nối OpenClaw với các provider AI (bao gồm Beeknoee) thông qua giao diện Dashboard trực quan —
+	không cần sửa file JSON tay
+	.
+	Yêu cầu
+	Windows:
+	Windows 10 (Build 19041+) hoặc Windows 11, có WSL2 + Ubuntu
+	macOS:
+	macOS 14 trở lên

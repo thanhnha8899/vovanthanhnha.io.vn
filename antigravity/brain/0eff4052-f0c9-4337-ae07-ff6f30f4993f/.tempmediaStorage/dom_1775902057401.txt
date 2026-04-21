@@ -1,0 +1,47 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (33,73)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (33,73)<i  />
+Đề thi THPT – Tin học
+Công cụ tạo đề thi PPKT THPT
+[2] (65,183)<div  />
+	[3] (40,183)<i  />
+	[4] (74,183)<span >Cấu hình />
+[5] (159,183)<div  />
+	[6] (137,183)<i  />
+	[7] (167,183)<span >Ma trận />
+[8] (246,183)<div  />
+	[9] (227,183)<i  />
+	[10] (254,183)<span >Đặc tả />
+[11] (327,183)<div  />
+	[12] (310,183)<i  />
+	[13] (334,183)<span >Đề thi />
+[14] (915,183)<div  />
+	[15] (871,183)<i  />
+	[16] (924,183)<span >Nguồn ứng dụng />
+Đề thi Tin học 10
+[17] (120,460)<button class='dethi-btn-create' id='btn-generate-exam'>Tạo đề thi (trừ 2 điểm) />
+	[18] (62,460)<i  />
+[19] (275,460)<button class='dethi-btn-secondary' id='btn-back-cauhinh'>Quay lại cấu hình />
+	[20] (230,460)<i  />
+[21] (406,460)<button class='dethi-btn-secondary' id='btn-download-exam-docx'>Tải về .docx />
+	[22] (373,460)<i  />
+Hãy tải đề thi trước khi tạo đề thi khác; khi quay lại sẽ không thể tải đề thi này. Mỗi lần bấm "Tạo đề thi (trừ 2 điểm)" trừ 2 điểm.
+SỞ GD&ĐT TP.CẦN THƠ
+ĐỀ KIỂM TRA TIN HỌC 10
+TRƯỜNG THPT
+MÔN: Tin học - Tin học 10
+TỔ CHUYÊN MÔN
+Thời gian làm bài: 45 phút không kể thời gian phát đề
+(Đề thi có ... trang)
+NĂM HỌC 2026 - 2027
+Họ và tên thí sinh:
+……………………………………………………
+Mã đề: ĐỀ GỐC
+Số BD:
+……………………………………………………
+Đề thi đã được tạo thành công!
+
+</current_dom>

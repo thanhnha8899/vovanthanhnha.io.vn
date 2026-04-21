@@ -1,0 +1,5 @@
+{
+  "artifactType": "ARTIFACT_TYPE_WALKTHROUGH",
+  "summary": "Walkthrough documenting the update of generateYeuCau function across 7 subject HTML files (Chemistry, Biology, Literature, History, Geography, KTPL, IT). Each file's yeuCauMap was changed from Physics topic IDs to subject-specific IDs matching the physicsTopics data array, ensuring the 'Yêu cầu cần đạt' column in specification tables displays correct curriculum-aligned content.",
+  "updatedAt": "2026-04-09T08:25:25.718884900Z"
+}

@@ -1,0 +1,9 @@
+# Verification Checklist for 3D Periodic Table
+
+- [x] Login to http://127.0.0.1:8080/ (admin/Nha12345)
+- [x] Verify "Mô phỏng" section on dashboard (with screenshot)
+- [x] Verify tiles (3 tiles, "Bảng tuần hoàn hóa học 3D" active)
+- [x] Navigate to mo-phong.html
+- [x] Verify 118 elements load (with screenshot)
+- [x] Verify element detail panel opens on click (with screenshot)
+- [x] Verify 3D toggle functionality (with screenshot)

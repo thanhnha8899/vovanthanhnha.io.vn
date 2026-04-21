@@ -1,0 +1,91 @@
+[0] (33,73)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (33,73)<i  />
+Đề thi THPT – Hóa học
+Công cụ tạo đề thi PPKT THPT
+[2] (65,183)<div  />
+	[3] (40,183)<i  />
+	[4] (74,183)<span >Cấu hình />
+[5] (159,183)<div  />
+	[6] (137,183)<i  />
+	[7] (167,183)<span >Ma trận />
+[8] (246,183)<div  />
+	[9] (227,183)<i  />
+	[10] (254,183)<span >Đặc tả />
+[11] (327,183)<div  />
+	[12] (310,183)<i  />
+	[13] (334,183)<span >Đề thi />
+[14] (915,183)<div  />
+	[15] (871,183)<i  />
+	[16] (924,183)<span >Nguồn ứng dụng />
+Loại câu
+Số câu
+Điểm/câu
+Trắc nghiệm nhiều lựa chọn
+Trắc nghiệm Đúng/Sai
+[17] (153,249)<input id='ds-socau' />
+[18] (218,249)<input id='ds-diem' />
+Trả lời ngắn
+[19] (153,335)<input id='tln-socau' />
+[20] (218,335)<input id='tln-diem' />
+Tự luận
+[21] (153,421)<input id='tl-socau' />
+—
+Tổng điểm TNKQ
+6
+Điểm tự luận
+4
+MỨC ĐỘ NHẬN THỨC (%)
+[22] (74,755)<label >Biết />
+[23] (74,807)<input id='biet' />
+[24] (156,755)<label >Hiểu />
+[25] (156,807)<input id='hieu' />
+[26] (237,755)<label >Vận dụng />
+[27] (237,807)<input id='vandung' />
+Tổng nên bằng 100% (tự chuẩn hoá nếu khác)
+Ma trận tự động hình thành theo cấu hình trên và danh sách đơn vị đã chọn.
+Bảng tuần hoàn các nguyên tố hoá học
+3
+Cấu tạo nguyên tử
+4
+Liên kết hoá học
+4
+Phản ứng oxi hoá – khử
+3
+[28] (461,294)<div  />
+	[29] (322,291)<div  />
+		[30] (322,291)<i  />
+	[31] (338,291)<div  />
+	[32] (452,289)<span >Năng lượng hoá học />
+	[33] (574,294)<span >3 />
+	[34] (599,291)<span  />
+		[35] (599,291)<i  />
+[36] (461,366)<div  />
+	[37] (322,362)<div  />
+		[38] (322,362)<i  />
+	[39] (338,362)<div  />
+	[40] (452,361)<span >Tốc độ phản ứng hoá học />
+	[41] (574,366)<span >3 />
+	[42] (599,362)<span  />
+		[43] (599,362)<i  />
+[44] (461,438)<div  />
+	[45] (322,434)<div  />
+		[46] (322,434)<i  />
+	[47] (338,434)<div  />
+	[48] (452,433)<span >Nguyên tố nhóm VIIA (Halogen) />
+	[49] (574,438)<span >4 />
+	[50] (599,434)<span  />
+		[51] (599,434)<i  />
+[52] (461,509)<div  />
+	[53] (322,506)<div  />
+		[54] (322,506)<i  />
+	[55] (338,506)<div  />
+	[56] (452,504)<span >Chuyên đề 10 />
+	[57] (574,509)<span >3 />
+	[58] (599,506)<span  />
+		[59] (599,506)<i  />
+Thành phần nguyên tử
+Nguyên tố hoá học
+Cấu trúc lớp vỏ electron
+Cấu hình electron nguyên tử
+Đã chọn:
+Bảng tuần hoàn các nguyên tố hoá học, Cấu tạo nguyên tử

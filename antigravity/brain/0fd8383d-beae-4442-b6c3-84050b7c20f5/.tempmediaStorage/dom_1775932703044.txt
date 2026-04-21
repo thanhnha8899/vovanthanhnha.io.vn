@@ -1,0 +1,98 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (153,54)<a class='logo' href='#' id='logo' />
+	[1] (91,54)<div  />
+		[2] (91,54)<i  />
+	[3] (175,54)<div  />
+		[4] (175,39)<span >VOVANTHANHNHA />
+		[5] (175,70)<span >Nền tảng AI Giáo dục />
+[6] (305,54)<a class='dash-nav-link active' href='#' id='nav-home' />
+	[7] (278,54)<i  />
+	[8] (313,54)<span >Trang chủ />
+[9] (395,54)<a class='dash-nav-link' href='#' id='nav-huongdan' />
+	[10] (366,54)<i  />
+	[11] (403,54)<span >Hướng dẫn />
+[12] (487,54)<a class='dash-nav-link' href='https://www.facebook.com/share/g/18P1cQjhou/' id='nav-congdong' />
+	[13] (458,54)<i  />
+	[14] (495,54)<span >Cộng đồng />
+[15] (581,54)<a class='dash-nav-link' href='https://zalo.me/g/ioouc1kyhugjrtwmij5k' id='nav-zalo' />
+	[16] (552,54)<i  />
+	[17] (590,54)<span >Hỗ trợ Zalo />
+[18] (692,54)<a class='topup-btn' href='nap-diem.html' id='nav-napdiem' />
+	[19] (668,54)<i  />
+	[20] (698,54)<span >Nạp điểm />
+0
+điểm
+[21] (825,54)<button class='notif-btn' id='notif-btn' title='Thông báo' />
+	[22] (825,54)<i  />
+	[23] (831,39)<span  />
+[24] (860,54)<div  />
+	[25] (860,54)<div  />
+		[26] (860,54)<span >A />
+		[27] (870,75)<span  />
+[28] (908,54)<button class='btn-logout' id='btn-logout' title='Đăng xuất' />
+	[29] (908,54)<i  />
+Kho tài liệu mẫu
+Marketplace
+[30] (173,208)<a class='market-card' href='#' id='market-giaoan' />
+	[31] (173,147)<div  />
+		[32] (173,147)<i  />
+	[33] (173,229)<div  />
+		[34] (173,214)<span >Mẫu giáo án />
+		[35] (173,247)<span >120+ mẫu />
+	[36] (173,291)<span >2
+/mẫu />
+		[37] (164,291)<i  />
+[38] (337,208)<a class='market-card' href='#' id='market-skkn' />
+	[39] (337,147)<div  />
+		[40] (337,147)<i  />
+	[41] (337,229)<div  />
+		[42] (337,214)<span >Mẫu SKKN />
+		[43] (337,247)<span >50+ mẫu />
+	[44] (337,291)<span >5
+/mẫu />
+		[45] (329,291)<i  />
+[46] (502,208)<a class='market-card' href='#' id='market-dethi' />
+	[47] (502,147)<div  />
+		[48] (502,147)<i  />
+	[49] (502,229)<div  />
+		[50] (502,214)<span >Mẫu đề thi />
+		[51] (502,247)<span >200+ đề />
+	[52] (502,291)<span >3
+/đề />
+		[53] (497,291)<i  />
+[54] (666,208)<a class='market-card' href='#' id='market-slide' />
+	[55] (666,147)<div  />
+		[56] (666,147)<i  />
+	[57] (666,229)<div  />
+		[58] (666,214)<span >Mẫu Slide />
+		[59] (666,247)<span >80+ mẫu />
+	[60] (666,291)<span >3
+/mẫu />
+		[61] (658,291)<i  />
+[62] (831,208)<a class='market-card' href='#' id='market-phieu' />
+	[63] (831,147)<div  />
+		[64] (831,147)<i  />
+	[65] (831,229)<div  />
+		[66] (831,214)<span >Phiếu bài tập />
+		[67] (831,247)<span >150+ phiếu />
+	[68] (831,291)<span >1
+/phiếu />
+		[69] (819,291)<i  />
+Sắp ra mắt
+Đang phát triển
+Đưa thuyền rồng
+Prompt Veo3
+Prompt Sora
+Chatbot trợ lý GV
+OCR nhận diện đề thi
+Tiết kiệm hơn
+Gói thành viên VIP
+Nạp gói để tiết kiệm chi phí, nhận ưu đãi & hỗ trợ ưu tiên
+Phổ biến nhất
+[70] (958,908)<button aria-label='Về đầu trang' class='back-to-top visible' id='back-to-top' />
+	[71] (958,908)<i  />
+
+</current_dom>

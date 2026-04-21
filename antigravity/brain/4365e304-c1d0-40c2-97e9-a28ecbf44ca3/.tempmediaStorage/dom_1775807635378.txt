@@ -1,0 +1,85 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (53,66)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (53,66)<i  />
+Đề thi THPT – Tin học
+Công cụ tạo đề thi PPKT THPT
+[2] (106,171)<div  />
+	[3] (59,171)<i  />
+	[4] (122,171)<span >Cấu hình />
+[5] (265,171)<div  />
+	[6] (224,171)<i  />
+	[7] (281,171)<span >Ma trận />
+[8] (413,171)<div  />
+	[9] (377,171)<i  />
+	[10] (429,171)<span >Đặc tả />
+[11] (550,171)<div  />
+	[12] (517,171)<i  />
+	[13] (564,171)<span >Đề thi />
+[14] (858,171)<div  />
+	[15] (776,171)<i  />
+	[16] (875,171)<span >Nguồn ứng dụng />
+Máy tính và xã hội tri thức
+3
+Mạng máy tính và Internet
+3
+Đạo đức và pháp luật trong CNTT
+3
+[17] (497,229)<div >Ứng dụng tin học />
+	Ứng dụng tin học
+	[18] (848,229)<span >4 />
+[19] (497,301)<div  />
+	[20] (94,297)<div  />
+		[21] (94,297)<i  />
+	[22] (126,297)<div  />
+	[23] (480,296)<span >Giải quyết vấn đề với máy tính />
+	[24] (848,301)<span >4 />
+	[25] (899,297)<span  />
+		[26] (899,297)<i  />
+[27] (497,372)<div  />
+	[28] (94,369)<div  />
+		[29] (94,369)<i  />
+	[30] (126,369)<div  />
+	[31] (480,367)<span >Lập trình cơ bản (Python) />
+	[32] (848,372)<span >7 />
+	[33] (899,369)<span  />
+		[34] (899,369)<i  />
+[35] (497,444)<div  />
+	[36] (94,441)<div  />
+		[37] (94,441)<i  />
+	[38] (126,441)<div  />
+	[39] (480,439)<span >Cơ sở dữ liệu />
+	[40] (848,444)<span >4 />
+	[41] (899,441)<span  />
+		[42] (899,441)<i  />
+[43] (497,516)<div  />
+	[44] (94,513)<div  />
+		[45] (94,513)<i  />
+	[46] (126,513)<div  />
+	[47] (480,511)<span >Hướng nghiệp với Tin học />
+	[48] (848,516)<span >3 />
+	[49] (899,513)<span  />
+		[50] (899,513)<i  />
+Máy tính và xã hội tri thức
+[51] (497,691)<div  />
+	[52] (92,692)<div  />
+		[53] (92,692)<i  />
+	[54] (517,691)<span >Thông tin và dữ liệu />
+[55] (497,749)<div  />
+	[56] (92,750)<div  />
+		[57] (92,750)<i  />
+	[58] (517,749)<span >Biểu diễn thông tin />
+[59] (497,808)<div  />
+	[60] (92,809)<div  />
+		[61] (92,809)<i  />
+	[62] (517,808)<span >Hệ nhị phân />
+[63] (497,867)<div  />
+	[64] (92,867)<div  />
+		[65] (92,867)<i  />
+	[66] (517,867)<span >Đơn vị đo thông tin />
+Đã chọn:
+Máy tính và xã hội tri thức, Mạng máy tính và Internet
+
+</current_dom>

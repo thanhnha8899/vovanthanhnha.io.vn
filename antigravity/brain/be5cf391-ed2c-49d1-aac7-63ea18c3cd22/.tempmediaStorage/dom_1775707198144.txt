@@ -1,0 +1,95 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (238,41)<a class='logo' href='index.html' id='logo' />
+	[1] (196,41)<div  />
+		[2] (196,41)<i  />
+	[3] (252,41)<div  />
+		[4] (252,32)<span >VOVANTHANHNHA />
+		[5] (252,51)<span >Nền tảng AI Giáo dục />
+[6] (335,41)<a class='dash-nav-link' href='index.html' id='nav-home' />
+	[7] (316,41)<i  />
+	[8] (341,41)<span >Trang chủ />
+[9] (403,41)<a class='dash-nav-link active' href='nap-diem.html' id='nav-napdiem-link' />
+	[10] (384,41)<i  />
+	[11] (408,41)<span >Nạp điểm />
+[12] (471,41)<a class='dash-nav-link' href='#' />
+	[13] (450,41)<i  />
+	[14] (477,41)<span >Hướng dẫn />
+[15] (543,41)<a class='dash-nav-link' href='#' />
+	[16] (522,41)<i  />
+	[17] (550,41)<span >Cộng đồng />
+[18] (627,41)<a class='dash-nav-link' href='#' />
+	[19] (595,41)<i  />
+	[20] (634,41)<span >Nhóm Zalo hỗ trợ />
+0
+điểm
+[21] (747,41)<button class='notif-btn' title='Thông báo' />
+	[22] (747,41)<i  />
+	[23] (752,33)<span  />
+[24] (773,41)<div  />
+	[25] (773,41)<div  />
+		[26] (773,41)<span >A />
+		[27] (781,56)<span  />
+[28] (803,41)<button class='btn-logout' id='btn-logout' title='Đăng xuất' />
+	[29] (803,41)<i  />
+Trung tâm hoạt động
+Quản lý nội dung đã tạo và lịch sử giao dịch điểm.
+[30] (236,254)<button class='tab-btn'>Lịch sử tạo nội dung />
+[31] (332,254)<button class='tab-btn active'>Ví điểm & Giao dịch />
+Số dư hiện tại
+0
+điểm
+[32] (303,532)<button class='btn-recharge' id='btn-open-recharge'>Nạp thêm điểm />
+	[33] (272,532)<i  />
+Thông tin quy đổi
+1.000
+VNĐ
+= 1 ĐIỂM HỆ THỐNG
+Soạn giáo án:
+5 điểm
+/ bài
+Tạo dàn ý SKKN:
+2 điểm
+/ lần
+Soạn tự động SKKN:
+15 điểm
+/ bài
+Tạo đề thi THPT:
+5 điểm
+/ đề
+Chọn gói nạp điểm
+[34] (260,924)<div class='package-card' />
+	[35] (260,837)<div  />
+		[36] (260,837)<i  />
+	[37] (260,904)<div >50 />
+		[38] (273,909)<small >điểm />
+	[39] (260,944)<div >50.000đ />
+	[40] (260,975)<div >1.000đ / điểm />
+[41] (420,924)<div class='package-card popular' />
+	[42] (420,783)<div >Phổ biến />
+	[43] (420,837)<div  />
+		[44] (420,837)<i  />
+	[45] (420,904)<div >100
+điểm />
+		điểm
+	[46] (420,944)<div >90.000đ />
+	[47] (420,975)<div >Tiết kiệm 10% · 900đ / điểm />
+[48] (580,924)<div class='package-card' />
+	[49] (580,837)<div  />
+		[50] (580,837)<i  />
+	[51] (580,904)<div >200 />
+		[52] (599,909)<small >điểm />
+	[53] (580,944)<div >160.000đ />
+	[54] (580,975)<div >Tiết kiệm 20% · 800đ / điểm />
+[55] (740,924)<div class='package-card' />
+	[56] (740,782)<div >Tiết kiệm nhất />
+	[57] (740,836)<div  />
+		[58] (740,836)<i  />
+	[59] (740,903)<div >500 />
+		[60] (759,908)<small >điểm />
+	[61] (740,943)<div >350.000đ />
+	[62] (740,974)<div >Tiết kiệm 30% · 700đ / điểm />
+
+</current_dom>

@@ -1,0 +1,21 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+Index of C:\Users\thanh\Downloads\MÃ Hóa\
+[0] (60,149)<a class='icon up' href='/C:/Users/thanh/Downloads/M%C3%83%20H%C3%B3a/..' id='parentDirLink' />
+	[1] (69,149)<span >[parent directory] />
+[2] (194,217)<th id='nameColumnHeader' role='button'>Name />
+[3] (414,217)<th class='detailsColumn' id='sizeColumnHeader' role='button'>Size />
+[4] (513,217)<th class='detailsColumn' id='dateColumnHeader' role='button'>Date modified />
+[5] (175,250)<a class='icon file' href='/C:/Users/thanh/Downloads/M%C3%83%20H%C3%B3a/00-TapHuanKTDG-TrienKhaiNhiemVuChuyenMon-THPT.pdf'>00-TapHuanKTDG-TrienKhaiNhiemVuChuyenMon-THPT.pdf />
+3.6 MB
+09/04/2026, 20:43:55
+[6] (194,285)<a class='icon file' href='/C:/Users/thanh/Downloads/M%C3%83%20H%C3%B3a/Ph%E1%BB%A5%20l%E1%BB%A5c%20kem%20theo_CV%20huong%20dan%20chi%20tiet%20kiem%20tra%20danh%20gia%2025_26.docx'>Phụ lục kem theo_CV huong dan chi tiet kiem tra danh gia 25_26.docx />
+3.8 MB
+09/04/2026, 20:39:59
+[7] (190,319)<a class='icon file' href='/C:/Users/thanh/Downloads/M%C3%83%20H%C3%B3a/Ph%E1%BB%A5%20l%E1%BB%A5c%20kem%20theo_CV%20huong%20dan%20chi%20tiet%20kiem%20tra%20danh%20gia%2025_26.pdf'>Phụ lục kem theo_CV huong dan chi tiet kiem tra danh gia 25_26.pdf />
+268 kB
+09/04/2026, 20:51:18
+
+</current_dom>

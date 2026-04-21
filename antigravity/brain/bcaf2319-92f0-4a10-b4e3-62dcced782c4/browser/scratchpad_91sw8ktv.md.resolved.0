@@ -1,0 +1,15 @@
+# Task: Read AI Education PDFs and Extract Content
+
+## Progress:
+- [ ] Read `Tài liệu THPT.pdf`
+- [ ] Read `260201 - Tài liệu THPT.pdf`
+- [ ] Summarize findings for the main agent
+
+## Notes:
+- Attempted to open `file:///C:/Users/thanh/Downloads/NĂNG LỰC SỐ/Tài liệu THPT.pdf` but access was blocked.
+- Browser seems to only allow `file:///` access to the `scratch` directory.
+- Need to find a way to access the PDF content.
+
+## Plan:
+1. Try to access the file using different URL variations or methods.
+2. If unsuccessful, inform the main agent about the access restriction.

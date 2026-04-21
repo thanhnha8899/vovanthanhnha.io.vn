@@ -1,0 +1,37 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+TÀI LIỆU HƯỚNG DẪN
+SỬ DỤNG TRÍ TUỆ NHÂN TẠO
+TRONG DẠY VÀ HỌC
+[0] (494,429)<a class='fullscreen-button' href='/fullScreen'>Xem toàn màn hình />
+[1] (260,534)<button class='toolbarButton toggled' id='viewThumbnail' role='radio' />
+[2] (275,534)<button class='toolbarButton' id='viewOutline' role='radio' />
+[3] (291,534)<button class='toolbarButton' id='viewAttachments' role='radio' />
+[4] (306,534)<button class='toolbarButton' id='viewLayers' role='radio' />
+[5] (260,596)<button class='toolbarButton' id='sidebarToggleButton' />
+[6] (260,627)<button class='toolbarButton' id='viewFindButton' />
+[7] (320,652)<input class='toolbarField' id='findInput' />
+[8] (260,694)<button class='toolbarButton' id='findPreviousButton' />
+[9] (260,725)<button class='toolbarButton' id='findNextButton' />
+[10] (261,748)<input id='findHighlightAll' />
+[11] (261,782)<input id='findMatchCase' />
+[12] (261,816)<input id='findMatchDiacritics' />
+[13] (261,850)<input id='findEntireWord' />
+[14] (260,892)<button class='toolbarButton' id='previous' />
+[15] (260,923)<button class='toolbarButton' id='next' />
+[16] (320,948)<input class='toolbarField' id='pageNumber' />
+[17] (260,990)<button class='toolbarButton' id='zoomOutButton' />
+[18] (260,1021)<button class='toolbarButton' id='zoomInButton' />
+[19] (262,1044)<select id='scaleSelect' />
+[20] (305,1107)<input class='editorParamsSlider' id='editorFreeHighlightThickness' />
+[21] (260,1151)<button class='toggle-button' id='editorHighlightShowAll' />
+[22] (273,1212)<input class='editorParamsColor' id='editorFreeTextColor' />
+[23] (305,1252)<input class='editorParamsSlider' id='editorFreeTextFontSize' />
+[24] (273,1326)<input class='editorParamsColor' id='editorInkColor' />
+[25] (305,1366)<input class='editorParamsSlider' id='editorInkThickness' />
+[26] (305,1404)<input class='editorParamsSlider' id='editorInkOpacity' />
+[27] (260,1479)<button class='toolbarButton labeled' id='editorStampAddImage' />
+
+</current_dom>

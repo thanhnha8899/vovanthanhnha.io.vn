@@ -1,0 +1,97 @@
+<html><head><meta charset="UTF-8"><title>Patch Tool</title></head>
+<body>
+<h2>Patch Remaining Exam Files</h2>
+<p>Open each file URL, read content, patch, and save via download.</p>
+<div id="status"></div>
+<button onclick="patchAll()">Start Patching</button>
+<script>
+const files = ['de-thi-toan.html','de-thi-hoahoc.html','de-thi-sinhhoc.html','de-thi-diali.html','de-thi-lichsu.html','de-thi-nguvan.html','de-thi-ktpl.html'];
+
+const cssBlock = `
+        .exam-header-table { width: 100%; border-collapse: collapse; margin-bottom: 12px; border: none !important; }
+        .exam-header-table td { border: none !important; padding: 2px 8px; vertical-align: top; font-family: 'Times New Roman', serif; font-size: 12pt; }
+        .exam-header-table .col-left { width: 45%; text-align: center; }
+        .exam-header-table .col-right { width: 55%; text-align: center; }
+        .dap-an-dung { color: #dc2626 !important; font-weight: 700 !important; }
+        .exam-student-info { border: 1px solid #000; padding: 8px 14px; margin: 10px 0; font-size: 12pt; }`;
+
+const buildHeaderFunc = `
+    function buildExamHeader(html) {
+        const tenTruong = document.getElementById('ten-truong')?.value || 'TR\\u01af\\u1edcNG THPT';
+        const tenDe = document.getElementById('ten-de')?.value || '\\u0110\\u1ec0 KI\\u1ec2M TRA';
+        const monHoc = document.getElementById('mon-hoc');
+        const monText = monHoc ? monHoc.options[monHoc.selectedIndex].text : '';
+        const khoiLop = document.getElementById('khoi-lop');
+        const lopText = khoiLop ? khoiLop.options[khoiLop.selectedIndex].text : '';
+        const thoiGian = document.getElementById('thoi-gian')?.value || '45';
+        const namHoc = document.getElementById('nam-hoc')?.value || 'N\\u0102M H\\u1eccC 2026 - 2027';
+        const toCM = document.getElementById('to-chuyen-mon')?.value || 'T\\u1ed4 CHUY\\u00caN M\\u00d4N';
+        const header = '<table class="exam-header-table"><tr><td class="col-left"><strong>S\\u1ede GD&\\u0110T TP.C\\u1ea6N TH\\u01a0</strong></td><td class="col-right"><strong>'+tenDe.toUpperCase()+'</strong></td></tr><tr><td class="col-left"><strong>'+tenTruong.toUpperCase()+'</strong></td><td class="col-right"><strong>M\\u00d4N: '+monText+' '+(lopText?'- '+lopText:'')+'</strong></td></tr><tr><td class="col-left"><strong>'+toCM.toUpperCase()+'</strong></td><td class="col-right"><em>Th\\u1eddi gian l\\u00e0m b\\u00e0i: '+thoiGian+' ph\\u00fat kh\\u00f4ng k\\u1ec3 TGPD</em></td></tr><tr><td class="col-left"><em>(\\u0110\\u1ec1 thi c\\u00f3 ... trang)</em></td><td class="col-right"><strong>'+namHoc+'</strong></td></tr></table><div class="exam-student-info"><strong>H\\u1ecd v\\u00e0 t\\u00ean th\\u00ed sinh:</strong> \\u2026\\u2026\\u2026\\u2026\\u2026\\u2026\\u2026\\u2026\\u2026\\u2026 &nbsp;&nbsp;&nbsp;<strong>M\\u00e3 \\u0111\\u1ec1: \\u0110\\u1ec0 G\\u1ed0C</strong><br><strong>S\\u1ed1 BD:</strong> \\u2026\\u2026\\u2026\\u2026\\u2026\\u2026\\u2026\\u2026\\u2026\\u2026</div><hr>';
+        const idx = html.search(/Ph\\u1ea7n\\s+I|PH\\u1ea6N\\s+I|<strong>Ph|<h[23]>Ph|C\\u00e2u\\s+1\\.|<strong>C\\u00e2u\\s+1/);
+        if (idx > 0) return header + html.substring(idx);
+        const hr = html.indexOf('<hr>');
+        if (hr > 0) return header + html.substring(hr + 4);
+        return header + html;
+    }`;
+
+async function patchAll() {
+    const st = document.getElementById('status');
+    for (const f of files) {
+        st.innerHTML += '<p>Processing: ' + f + '...</p>';
+        try {
+            const resp = await fetch('http://127.0.0.1:8080/' + f);
+            let content = await resp.text();
+            
+            // 1. Add CSS
+            if (!content.includes('.exam-header-table')) {
+                content = content.replace(
+                    /\.exam-rendered blockquote \{[^}]+\}/,
+                    match => match + cssBlock
+                );
+            }
+            
+            // 2. Replace renderExamContent 
+            if (!content.includes('buildExamHeader')) {
+                // Replace the render function
+                content = content.replace(
+                    /function renderExamContent\(md\) \{[\s\S]*?el\.style\.display = 'block';[^}]*document\.getElementById\('dethi-placeholder'\)\.style\.display = 'none';\s*\}/,
+                    `function renderExamContent(md) {
+        const el = document.getElementById('exam-rendered');
+        let html;
+        if (typeof marked !== 'undefined') { html = marked.parse(md); }
+        else { let h = md; h = h.replace(/^#### (.+)$/gm, '<h4>$1</h4>'); h = h.replace(/^### (.+)$/gm, '<h3>$1</h3>'); h = h.replace(/^## (.+)$/gm, '<h2>$1</h2>'); h = h.replace(/^# (.+)$/gm, '<h1>$1</h1>'); h = h.replace(/^---+$/gm, '<hr>'); h = h.replace(/\\*\\*\\*(.+?)\\*\\*\\*/g, '<strong><em>$1</em></strong>'); h = h.replace(/\\*\\*(.+?)\\*\\*/g, '<strong>$1</strong>'); h = h.replace(/\\*(.+?)\\*/g, '<em>$1</em>'); h = h.replace(/\\n\\n/g, '</p><p>'); h = h.replace(/\\n/g, '<br>'); html = '<p>' + h + '</p>'; }
+        html = html.replace(/<strong>([A-D])\\.\\s*<\\/strong>\\s*(.+?)(?=<br|<\\/p|<\\/li|$)/g, '<span class="dap-an-dung"><strong>$1.</strong> $2</span>');
+        html = html.replace(/<strong>([A-D])\\.<\\/strong>\\s*(.+?)(?=<br|<\\/p|<\\/li|$)/g, '<span class="dap-an-dung"><strong>$1.</strong> $2</span>');
+        html = buildExamHeader(html);
+        el.innerHTML = '<div class="exam-document">' + html + '</div>';
+        if (!document.getElementById('exam-render-css')) { const s = document.createElement('style'); s.id = 'exam-render-css'; s.textContent = '.exam-document{font-family:"Times New Roman",serif;font-size:12pt;color:#000;line-height:1.4;max-width:800px;margin:0 auto;padding:20px}.exam-document h2{font-size:14pt;margin:16px 0 6px;border-bottom:1px solid #ccc;padding-bottom:4px}.exam-document p{margin:4px 0;text-align:justify}.exam-document hr{border:none;border-top:1px solid #999;margin:12px 0}.exam-document table{width:100%;border-collapse:collapse;margin:4px 0}.exam-document td,.exam-document th{padding:3px 8px;font-size:12pt;font-family:"Times New Roman",serif}.exam-document ul,.exam-document ol{margin:4px 0;padding-left:24px}.exam-document li{margin:2px 0;text-align:justify}.dap-an-dung{color:#dc2626!important;font-weight:700!important}'; document.head.appendChild(s); }
+        el.style.display = 'block'; document.getElementById('dethi-placeholder').style.display = 'none';
+    }`
+                );
+                
+                // Add buildExamHeader before exportExamToDocx
+                content = content.replace(
+                    /(\s+async function exportExamToDocx\(\))/,
+                    buildHeaderFunc + '\n    $1'
+                );
+            }
+            
+            // Download the patched file
+            const blob = new Blob([content], {type: 'text/html; charset=utf-8'});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = f;
+            a.click();
+            URL.revokeObjectURL(url);
+            
+            st.innerHTML += '<p style="color:green">✅ ' + f + ' - DONE</p>';
+            await new Promise(r => setTimeout(r, 1000)); // delay between downloads
+        } catch(e) {
+            st.innerHTML += '<p style="color:red">❌ ' + f + ' - ERROR: ' + e.message + '</p>';
+        }
+    }
+    st.innerHTML += '<h3>All done! Move downloaded files to scratch folder.</h3>';
+}
+</script>
+</body></html>

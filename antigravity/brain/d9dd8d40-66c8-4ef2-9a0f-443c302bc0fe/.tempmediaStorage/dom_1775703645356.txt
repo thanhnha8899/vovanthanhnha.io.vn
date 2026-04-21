@@ -1,0 +1,75 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (33,66)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (33,66)<i  />
+Đề thi THPT – Toán
+Công cụ tạo đề thi PPKT THPT
+[2] (65,166)<div  />
+	[3] (40,166)<i  />
+	[4] (73,166)<span >Cấu hình />
+[5] (158,166)<div  />
+	[6] (136,166)<i  />
+	[7] (166,166)<span >Ma trận />
+[8] (245,166)<div  />
+	[9] (227,166)<i  />
+	[10] (253,166)<span >Đặc tả />
+[11] (327,166)<div  />
+	[12] (309,166)<i  />
+	[13] (334,166)<span >Đề thi />
+[14] (916,166)<div  />
+	[15] (872,166)<i  />
+	[16] (924,166)<span >Nguồn ứng dụng />
+1
+Thông tin đề thi
+Trường, kỳ thi, môn học, thời gian
+[17] (149,400)<label >Tên trường />
+[18] (149,456)<input id='ten-truong' placeholder='Nhập tên trường' />
+[19] (383,400)<label >Tổ chuyên môn />
+[20] (383,456)<input id='to-chuyen-mon' placeholder='Nhập tổ chuyên môn' />
+[21] (617,400)<label >Tên đề kiểm tra />
+[22] (617,456)<input id='ten-de' placeholder='Nhập tên đề' />
+[23] (851,400)<label >Môn học />
+[24] (851,456)<select id='mon-hoc' />
+[25] (149,527)<label >Năm học />
+[26] (149,583)<input id='nam-hoc' placeholder='VD: NĂM HỌC 2026 - 2027' />
+[27] (383,527)<label >Thời gian (phút) />
+[28] (383,583)<input id='thoi-gian' />
+[29] (617,527)<label >Khối lớp />
+[30] (617,583)<select id='khoi-lop' />
+[31] (851,527)<label >Kỳ kiểm tra />
+[32] (851,583)<select id='ky-kiem-tra' />
+2
+Cấu trúc đề & Tỉ lệ
+Loại câu, điểm, mức độ nhận thức
+[33] (143,823)<label >ĐỘ KHÓ ĐỀ THI />
+[34] (143,878)<select id='do-kho' />
+Loại câu
+Số câu
+Điểm/câu
+3
+Chọn nội dung kiểm tra
+Mạch – Đơn vị kiến thức · Đã chọn:
+0
+[35] (873,747)<input id='search-topic' placeholder='Lọc mạch...' />
+MẠCH NỘI DUNG
+[36] (462,1230)<div class='topic-list' id='topic-list' scrollable='true' />
+	[37] (459,890)<div  />
+		[38] (321,886)<div  />
+			[39] (321,886)<i  />
+		[40] (337,886)<div  />
+		[41] (450,885)<span >Mệnh đề và tập hợp />
+		[42] (571,890)<span >5 />
+		[43] (596,886)<span  />
+			[44] (596,886)<i  />
+	[45] (321,952)<div  />
+		[46] (321,952)<i  />
+	[47] (337,952)<div  />
+	Bất phương trình bậc nhất hai ẩn
+	[48] (571,955)<span >4 />
+	[49] (596,952)<span  />
+		[50] (596,952)<i  />
+CHỌN MẠCH BÊN TRÁI
+
+</current_dom>

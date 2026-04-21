@@ -1,0 +1,12 @@
+# Task: Test AI Exam Generation in de-thi-tinhoc.html
+
+## Plan
+- [ ] Navigate to the file and wait 3s
+- [ ] Select a topic in the "Cấu hình" tab
+- [ ] Go to "Đề thi" tab and click "Tạo đề thi"
+- [ ] Wait 40s for AI response
+- [ ] Capture screenshot and console logs
+- [ ] Report results
+
+## Observations
+- 

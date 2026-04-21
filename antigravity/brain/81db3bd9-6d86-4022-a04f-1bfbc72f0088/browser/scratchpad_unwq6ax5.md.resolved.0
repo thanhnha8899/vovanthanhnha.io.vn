@@ -1,0 +1,10 @@
+# Task: Review local website http://127.0.0.1:8080/index.html
+
+## Checklist
+- [ ] Navigate to http://127.0.0.1:8080/index.html
+- [ ] Observe Hero section (Header, Logo, Login Form)
+- [ ] Review Products section (Sản phẩm & Dịch vụ)
+- [ ] Review Company section (Doanh nghiệp)
+- [ ] Review Policy section (Chính sách)
+- [ ] Review CTA section and Footer
+- [ ] Report findings and any issues

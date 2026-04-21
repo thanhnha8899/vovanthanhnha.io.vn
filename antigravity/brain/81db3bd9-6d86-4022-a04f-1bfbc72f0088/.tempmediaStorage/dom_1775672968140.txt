@@ -1,0 +1,48 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+school
+HOC8.COM
+Nền tảng AI Giáo dục
+[0] (548,65)<button class='text-sm font-semibold text-slate-700 hover:text-bal-teal transition-colors'>Sản phẩm />
+[1] (665,65)<button class='text-sm font-semibold text-slate-700 hover:text-bal-teal transition-colors'>Doanh nghiệp />
+[2] (785,65)<button class='text-sm font-semibold text-slate-700 hover:text-bal-teal transition-colors'>Chính sách />
+[3] (913,65)<a class='text-sm font-bold text-bal-teal flex items-center gap-1' href='tel:0972300864'>0972 300 864 />
+	[4] (860,65)<span >call />
+Chính sách minh bạch
+Bảo vệ quyền lợi khách hàng, tuân thủ pháp luật Việt Nam
+payments
+Chính sách giá
+check_circle
+Niêm yết công khai: 1 điểm = 1.000đ
+check_circle
+Không phát sinh chi phí ẩn
+check_circle
+Thông báo rõ ràng trước khi sử dụng
+check_circle
+VD: Giáo án 4đ, SKKN 2đ/phần
+account_balance
+Thanh toán
+check_circle
+Chuyển khoản qua Vietcombank
+check_circle
+Ví điện tử: Momo, ZaloPay
+check_circle
+Quét mã QR tự động cập nhật
+check_circle
+Bảo mật SSL 256-bit
+rocket_launch
+Giao nhận
+check_circle
+Cấp điểm tự động trong 1-5 phút
+check_circle
+File .docx gửi email ngay lập tức
+security
+Bảo mật
+check_circle
+Bảo mật tuyệt đối thông tin cá nhân
+check_circle
+Không chia sẻ cho bên thứ ba
+
+</current_dom>

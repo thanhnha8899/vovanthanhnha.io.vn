@@ -1,0 +1,13 @@
+# PDF Analysis: BẢN ĐẶC TẢ & Mã chỉ báo
+
+## Task Checklist
+- [ ] Locate "BẢN ĐẶC TẢ" tables in TapHuan PDF (`00-TapHuanKTDG-TrienKhaiNhiemVuChuyenMon-THPT.pdf`).
+- [ ] Identify Tin học specific tables.
+- [ ] Capture screenshots of tables.
+- [ ] Extract "Yêu cầu cần đạt" text and "Mã chỉ báo" (e.g., TD1.2, GQ3.1, 1.1.1).
+- [ ] Document the placement/format of indicator codes.
+- [ ] Find at least 3 examples.
+
+## Initial Observations
+- PDF URL: `file:///C:/Users/thanh/Downloads/M%C3%83%20H%C3%B3a/00-TapHuanKTDG-TrienKhaiNhiemVuChuyenMon-THPT.pdf`
+- Page ID: `B78FC254533DF3ECACF2D8935DC31C11`

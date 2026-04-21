@@ -1,0 +1,17 @@
+# Task: Verify generateYeuCau fix in de-thi-tinhoc.html
+
+## Plan
+1. [x] Open `http://127.0.0.1:8080/de-thi-tinhoc.html?v=2` in a new page.
+2. [x] Wait for page load and take a screenshot.
+3. [x] Execute JS to select topics (Used UI interaction instead).
+4. [x] Wait 2 seconds and take a screenshot.
+5. [x] Scroll down and take screenshots of the "Đặc tả" table.
+6. [/] Verify "Yêu cầu cần đạt" text (Testing with topics to trigger fallback).
+7. [ ] Report findings.
+
+## Discoveries
+- Previous attempts suggests caching issues or tab switching JS failures.
+- Server is reported to be running with `--no-cache`.
+- Successfully navigated to `?v=2`.
+- "Đặc tả" tab is active. Table content shows specific requirements for 'may-tinh-xa-hoi' and 'mang-may-tinh'.
+- Need to find a topic that triggers the fallback text to verify the fix.

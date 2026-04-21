@@ -1,0 +1,11 @@
+# Task: Verify vovanthanhnha.io.vn website changes
+
+## Checklist
+- [ ] Navigate to http://127.0.0.1:8080/index.html
+- [ ] Verify header/hero section (Logo, Phone, Login labels)
+- [ ] Test login with WRONG credentials
+- [ ] Test login with CORRECT credentials
+- [ ] Verify footer text
+
+## Observations
+- 

@@ -1,0 +1,70 @@
+[0] (35,66)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (35,66)<i  />
+Đề thi THPT – Tin học
+Công cụ tạo đề thi PPKT THPT
+[2] (71,166)<div  />
+	[3] (44,166)<i  />
+	[4] (79,166)<span >Cấu hình />
+[5] (171,166)<div  />
+	[6] (148,166)<i  />
+	[7] (180,166)<span >Ma trận />
+[8] (265,166)<div  />
+	[9] (245,166)<i  />
+	[10] (274,166)<span >Đặc tả />
+[11] (353,166)<div  />
+	[12] (335,166)<i  />
+	[13] (361,166)<span >Đề thi />
+[14] (909,166)<div  />
+	[15] (861,166)<i  />
+	[16] (917,166)<span >Nguồn ứng dụng />
+Trắc nghiệm nhiều lựa chọn
+Trắc nghiệm Đúng/Sai
+(1 câu = 4 lệnh hỏi)
+Trả lời ngắn
+Tự luận
+[17] (166,292)<input id='tl-socau' />
+—
+Tổng điểm TNKQ
+8.5
+Điểm tự luận
+1.5
+MỨC ĐỘ NHẬN THỨC (%)
+[18] (80,596)<label >Biết />
+[19] (80,643)<input id='biet' />
+[20] (168,596)<label >Hiểu />
+[21] (168,643)<input id='hieu' />
+[22] (256,596)<label >Vận dụng />
+[23] (256,643)<input id='vandung' />
+Tổng nên bằng 100% (tự chuẩn hoá nếu khác)
+Ma trận tự động hình thành theo cấu hình trên và danh sách đơn vị đã chọn.
+[24] (155,888)<button class='generate-btn' id='btn-generate' />
+	[25] (77,888)<i  />
+	[26] (129,888)<span >Tạo ma trận />
+	[27] (207,888)<span >trừ 2 điểm />
+Đạo đức và pháp luật trong CNTT
+3
+Ứng dụng tin học
+4
+Giải quyết vấn đề với máy tính
+4
+Lập trình cơ bản (Python)
+7
+[28] (478,278)<div  />
+	[29] (347,275)<div  />
+		[30] (347,275)<i  />
+	[31] (365,275)<div  />
+	[32] (468,273)<span >Cơ sở dữ liệu />
+	[33] (580,278)<span >4 />
+	[34] (607,275)<span  />
+		[35] (607,275)<i  />
+[36] (478,343)<div  />
+	[37] (347,340)<div  />
+		[38] (347,340)<i  />
+	[39] (365,340)<div  />
+	[40] (468,339)<span >Hướng nghiệp với Tin học />
+	[41] (580,343)<span >3 />
+	[42] (607,340)<span  />
+		[43] (607,340)<i  />
+Chọn một mạch nội dung bên trái để hiện đơn vị kiến thức.
+Đã chọn:
+Chưa chọn đơn vị nào

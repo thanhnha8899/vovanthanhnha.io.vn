@@ -1,0 +1,141 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+Skip to main content
+Accessibility help
+Accessibility feedback
+[0] (106,90)<a aria-label='Go to Google Home' href='https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjL-tHSqOKTAxU4Z0EAHaRRO-kQPAgJ' id='logo' title='Go to Google Home' />
+[1] (397,88)<textarea aria-label='Search' class='gLFyf' id='APjFqb' role='combobox' />
+[2] (622,88)<div  />
+	[3] (620,88)<div aria-label='Clear' class='vOY7J M2vV3' role='button' />
+		[4] (620,88)<span  />
+	[5] (639,88)<span  />
+[6] (658,88)<div aria-label='Search by voice' class='XDyW0e' role='button' />
+[7] (689,88)<div aria-label='Search by image' class='nDcEnd' role='button' />
+[8] (725,88)<button aria-label='Search' class='HZVG1b Tg7LZd' />
+	[9] (720,88)<div  />
+		[10] (720,88)<span  />
+[11] (863,89)<div aria-label='Settings' class='fLciMb' id='og-te' role='button' />
+	[12] (863,92)<div  />
+		[13] (863,89)<span  />
+[14] (899,89)<a aria-label='Google apps' class='gb_B' href='https://www.google.com.vn/intl/en/about/products?tab=wh' role='button' />
+[15] (951,89)<a aria-label='Sign in' class='gb_A' href='https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3Dt%25C3%25A0i%2Bli%25E1%25BB%2587u%2Bgi%25C3%25A1o%2Bd%25E1%25BB%25A5c%2Btr%25C3%25AD%2Btu%25E1%25BB%2587%2Bnh%25C3%25A2n%2Bt%25E1%25BA%25A1o%2Bcho%2Bh%25E1%25BB%258Dc%2Bsinh%2Bph%25E1%25BB%2595%2Bth%25C3%25B4ng%2BVi%25E1%25BB%2587t%2BNam&ec=futura_srp_og_si_72236_p'>Sign in />
+	Sign in
+[16] (91,195)<a class='XVMlrc C6AK7c' href='/search?q=t%C3%A0i+li%E1%BB%87u+gi%C3%A1o+d%E1%BB%A5c+tr%C3%AD+tu%E1%BB%87+nh%C3%A2n+t%E1%BA%A1o+cho+h%E1%BB%8Dc+sinh+ph%E1%BB%95+th%C3%B4ng+Vi%E1%BB%87t+Nam&sca_esv=ac692c75a76bde75&udm=50&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3jljrY5CkLlk8Dq3IvwBz-Qg9gdZYJriKd9fBMKKfwqZsp5a2Z8RykAyI8QON1GKtCr4VT6OCYPo9szQYqtZwk7b1IdjhhypaYKEvL3a3az9oJEwtR9fyXPT7ybdvqXtdoKNPa-4DlTyEl6zlJkmnfQS92CUYknTpzg_Gi9hGFLDXohBAQ&aep=1&ntc=1&sa=X&ved=2ahUKEwjL-tHSqOKTAxU4Z0EAHaRRO-kQ2J8OegQIDxAE' />
+	[17] (91,195)<div  />
+		[18] (91,210)<div  />
+			[19] (91,201)<span >AI Mode />
+[20] (138,195)<a class='C6AK7c' role='link' />
+	All
+[21] (182,195)<a class='C6AK7c' href='/search?sca_esv=ac692c75a76bde75&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3jljrY5CkLlk8Dq3IvwBz-Qg9gdZYJriKd9fBMKKfwqZsp5a2Z8RykAyI8QON1GKtCr4VT6OCYPo9szQYqtZwk7b1IdjhhypaYKEvL3a3az9oJEwtR9fyXPT7ybdvqXtdoKNPa-4DlTyEl6zlJkmnfQS92CUYknTpzg_Gi9hGFLDXohBAQ&q=t%C3%A0i+li%E1%BB%87u+gi%C3%A1o+d%E1%BB%A5c+tr%C3%AD+tu%E1%BB%87+nh%C3%A2n+t%E1%BA%A1o+cho+h%E1%BB%8Dc+sinh+ph%E1%BB%95+th%C3%B4ng+Vi%E1%BB%87t+Nam&sa=X&ved=2ahUKEwjL-tHSqOKTAxU4Z0EAHaRRO-kQtKgLegQIFRAB' />
+	[22] (182,195)<div  />
+		[23] (182,210)<span >Images />
+[24] (236,195)<a class='C6AK7c' href='/search?sca_esv=ac692c75a76bde75&udm=7&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3jljrY5CkLlk8Dq3IvwBz-Qg9gdZYJriKd9fBMKKfwqZsp5a2Z8RykAyI8QON1GKtCr4VT6OCYPo9szQYqtZwk7b1IdjhhypaYKEvL3a3az9oJEwtR9fyXPT7ybdvqXtdoKNPa-4DlTyEl6zlJkmnfQS92CUYknTpzg_Gi9hGFLDXohBAQ&q=t%C3%A0i+li%E1%BB%87u+gi%C3%A1o+d%E1%BB%A5c+tr%C3%AD+tu%E1%BB%87+nh%C3%A2n+t%E1%BA%A1o+cho+h%E1%BB%8Dc+sinh+ph%E1%BB%95+th%C3%B4ng+Vi%E1%BB%87t+Nam&sa=X&ved=2ahUKEwjL-tHSqOKTAxU4Z0EAHaRRO-kQtKgLegQIEhAB' />
+	[25] (236,195)<div  />
+		[26] (236,210)<span >Videos />
+[27] (286,195)<a class='C6AK7c' href='/search?sca_esv=ac692c75a76bde75&q=t%C3%A0i+li%E1%BB%87u+gi%C3%A1o+d%E1%BB%A5c+tr%C3%AD+tu%E1%BB%87+nh%C3%A2n+t%E1%BA%A1o+cho+h%E1%BB%8Dc+sinh+ph%E1%BB%95+th%C3%B4ng+Vi%E1%BB%87t+Nam&tbm=nws&source=lnms&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3jljrY5CkLlk8Dq3IvwBz-Qg9gdZYJriKd9fBMKKfwqZsp5a2Z8RykAyI8QON1GKtCr4VT6OCYPo9szQYqtZwk7b1IdjhhypaYKEvL3a3az9oJEwtR9fyXPT7ybdvqXtdoKNPa-4DlTyEl6zlJkmnfQS92CUYknTpzg_Gi9hGFLDXohBAQ&sa=X&ved=2ahUKEwjL-tHSqOKTAxU4Z0EAHaRRO-kQ0pQJegQIFBAB' />
+	[28] (286,195)<div  />
+		[29] (286,210)<span >News />
+[30] (343,195)<a class='C6AK7c' href='/search?sca_esv=ac692c75a76bde75&udm=28&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3jljrY5CkLlk8Dq3IvwBz-Qg9gdZYJriKd9fBMKKfwqZsp5a2Z8RykAyI8QON1GKtCr4VT6OCYPo9szQYqtZwk7b1IdjhhypaYKEvL3a3az9oJEwtR9fyXPT7ybdvqXtdoKNPa-4DlTyEl6zlJkmnfQS92CUYknTpzg_Gi9hGFLDXohBAQ&q=t%C3%A0i+li%E1%BB%87u+gi%C3%A1o+d%E1%BB%A5c+tr%C3%AD+tu%E1%BB%87+nh%C3%A2n+t%E1%BA%A1o+cho+h%E1%BB%8Dc+sinh+ph%E1%BB%95+th%C3%B4ng+Vi%E1%BB%87t+Nam&ved=1t:220175&ictx=111' />
+	[31] (343,195)<div  />
+		[32] (343,210)<span >Shopping />
+[33] (419,195)<a class='C6AK7c' href='/search?sca_esv=ac692c75a76bde75&udm=39&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3jljrY5CkLlk8Dq3IvwBz-Qg9gdZYJriKd9fBMKKfwqZsp5a2Z8RykAyI8QON1GKtCr4VT6OCYPo9szQYqtZwk7b1IdjhhypaYKEvL3a3az9oJEwtR9fyXPT7ybdvqXtdoKNPa-4DlTyEl6zlJkmnfQS92CUYknTpzg_Gi9hGFLDXohBAQ&q=t%C3%A0i+li%E1%BB%87u+gi%C3%A1o+d%E1%BB%A5c+tr%C3%AD+tu%E1%BB%87+nh%C3%A2n+t%E1%BA%A1o+cho+h%E1%BB%8Dc+sinh+ph%E1%BB%95+th%C3%B4ng+Vi%E1%BB%87t+Nam&sa=X&ved=2ahUKEwjL-tHSqOKTAxU4Z0EAHaRRO-kQs6gLegQIERAB' />
+	[34] (419,195)<div  />
+		[35] (419,210)<span >Short videos />
+[36] (491,195)<div class='mTpL7c' role='button' />
+	[37] (491,195)<div  />
+		[38] (491,210)<div  />
+			[39] (484,201)<span >More />
+			[40] (504,201)<span  />
+[41] (550,195)<div class='mOKdDc' id='hdtb-tls' role='button' />
+	[42] (550,195)<div  />
+		[43] (550,210)<div  />
+			[44] (543,201)<span >Tools />
+			[45] (564,201)<span  />
+Search Results
+Kết quả trên web
+[46] (258,347)<a class='zReHs' href='https://thptnguyenthuonghien.hcm.edu.vn/chuyen-doi-so/tai-lieu-huong-dan-su-dung-tri-tue-nhan-tao-trong-day-hoc/ctmb/98138/539655' />
+	[47] (258,379)<h3 >Tài Liệu Hướng Dẫn Sử Dụng Trí Tuệ Nhân Tạo Trong ... />
+	[48] (195,320)<div  />
+		[49] (195,320)<div  />
+			[50] (81,320)<span  />
+				[51] (81,320)<div  />
+					[52] (81,320)<img  />
+			[53] (210,320)<div  />
+				[54] (210,304)<div  />
+					[55] (210,304)<span >THPT NGUYỄN THƯỢNG HIỀN />
+				[56] (210,337)<div  />
+					[57] (210,337)<cite class='qLRx3b tjvcx GvPZzd dTxz9 cHaqb' role='text'>https://thptnguyenthuonghien.hcm.edu.vn />
+						[58] (281,336)<span class='ylgVCe ob9lvb' role='text'>› ... />
+·
+[59] (341,337)<a class='dEEN8c' href='https://thptnguyenthuonghien.hcm.edu.vn/chuyen-doi-so/tai-lieu-huong-dan-su-dung-tri-tue-nhan-tao-trong-day-hoc/ctmb/98138/539655' />
+	[60] (341,336)<span >Translate this page />
+[61] (398,335)<div aria-label='About this result' class='MJ8UF iTPLzd rNSxBe eY4mx lUn2nc' role='button' />
+	[62] (398,335)<span  />
+		[63] (398,337)<span  />
+Oct 1, 2025
+—
+Tài Liệu Hướng Dẫn Sử Dụng Trí Tuệ Nhân Tạo Trong Dạy Học
+. Thứ tư, 1/10/2025, 22:12. Lượt đọc: 862. Tải file : 11-tai-lieu-huong-dan-su-.pdf ...
+[64] (405,467)<a class='vzmbzf' href='https://thptnguyenthuonghien.hcm.edu.vn/chuyen-doi-so/tai-lieu-huong-dan-su-dung-tri-tue-nhan-tao-trong-day-hoc/ctmb/98138/539655#:~:text=T%C3%A0i%20Li%E1%BB%87u%20H%C6%B0%E1%BB%9Bng%20D%E1%BA%ABn%20S%E1%BB%AD,T%E1%BA%A3i%20file%20%3A%2011%2Dtai%2Dlieu%2Dhuong%2Ddan%2Dsu%2D.pdf' />
+	[65] (405,467)<span >Read more />
+Missing:
+Việt
+‎| Show results with:
+[66] (242,504)<a href='/search?sca_esv=ac692c75a76bde75&q=t%C3%A0i+li%E1%BB%87u+gi%C3%A1o+d%E1%BB%A5c+tr%C3%AD+tu%E1%BB%87+nh%C3%A2n+t%E1%BA%A1o+cho+h%E1%BB%8Dc+sinh+ph%E1%BB%95+th%C3%B4ng+%22Vi%E1%BB%87t%22+Nam&sa=X&ved=2ahUKEwjL-tHSqOKTAxU4Z0EAHaRRO-kQ5t4CegQIHBAB' />
+	[67] (242,504)<span >Việt />
+[68] (235,630)<a class='zReHs' href='https://ai.vnies.edu.vn/' />
+	[69] (235,666)<h3 >Tài liệu hướng dẫn sử dụng AI trong dạy và học />
+	[70] (146,607)<div  />
+		[71] (146,607)<div  />
+			[72] (81,607)<span  />
+				[73] (81,607)<div  />
+					[74] (81,607)<img  />
+			[75] (161,607)<div  />
+				[76] (161,591)<div  />
+					[77] (161,591)<span >vnies />
+				[78] (161,624)<div  />
+					[79] (161,624)<cite class='tjvcx GvPZzd dTxz9 cHaqb' role='text'>https://ai.vnies.edu.vn />
+·
+[80] (244,624)<a class='dEEN8c' href='https://ai.vnies.edu.vn/' />
+	[81] (244,623)<span >Translate this page />
+[82] (301,622)<div aria-label='About this result' class='MJ8UF iTPLzd rNSxBe eY4mx lUn2nc' role='button' />
+	[83] (301,622)<span  />
+		[84] (301,624)<span  />
+TÀI LIỆU HƯỚNG DẪN SỬ DỤNG TRÍ TUỆ NHÂN TẠO TRONG DẠY VÀ HỌC
+. Xem toàn màn hình. Thumbnails Document Outline Attachments Layers. Current Outline Item.
+[85] (457,754)<a class='vzmbzf' href='https://ai.vnies.edu.vn/#:~:text=T%C3%80I%20LI%E1%BB%86U%20H%C6%AF%E1%BB%9ANG%20D%E1%BA%AAN%20S%E1%BB%AC,Xem%20to%C3%A0n%20m%C3%A0n%20h%C3%ACnh' />
+	[86] (457,754)<span >Read more />
+[87] (186,884)<a class='zReHs' href='https://www.scribd.com/document/927871284/TLTH-Tri-Tu%E1%BB%87-Nhan-T%E1%BA%A1o-THPT' />
+	[88] (186,915)<h3 >TLTH Trí Tuệ Nhân Tạo THPT | PDF />
+	[89] (173,856)<div  />
+		[90] (173,856)<div  />
+			[91] (81,856)<span  />
+				[92] (81,856)<div  />
+					[93] (81,856)<img  />
+			[94] (189,856)<div  />
+				[95] (189,841)<div  />
+					[96] (189,841)<span >Scribd />
+				[97] (189,874)<div  />
+					[98] (189,874)<cite class='qLRx3b tjvcx GvPZzd dTxz9 cHaqb' role='text'>https://www.scribd.com />
+						[99] (222,873)<span class='ylgVCe ob9lvb' role='text'>› document />
+·
+[100] (298,874)<a class='dEEN8c' href='https://www.scribd.com/document/927871284/TLTH-Tri-Tu%E1%BB%87-Nhan-T%E1%BA%A1o-THPT' />
+	[101] (298,873)<span >Translate this page />
+[102] (355,872)<div aria-label='About this result' class='MJ8UF iTPLzd rNSxBe eY4mx lUn2nc' role='button' />
+	[103] (355,872)<span  />
+		[104] (355,874)<span  />
+HÀ ĐẶNG CAO TÙNG – HOÀNG THỊ MAI.
+TÀI LIỆU
+TẬP HUẤN, BỒI DƯỠNG
+GIÁO
+VIÊN. bộ
+sách
+.
+TRÍ TUỆ NHÂN TẠO
+. CẤP THPT QUY ƯỚC VIẾT TẮT DÙNG TRONG
+SÁCH
+Read more
+
+</current_dom>

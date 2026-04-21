@@ -1,0 +1,9 @@
+# Task Checklist
+- [ ] Open `de-thi-hoahoc.html` in browser
+- [ ] Select topics in "Cấu hình" tab
+- [ ] Take screenshot of topics selection
+- [ ] Switch to "Ma trận" tab
+- [ ] Take screenshot of matrix table
+- [ ] Verify title, buttons, table headers, footer rows, and footnotes
+- [ ] Check for console errors
+- [ ] Report findings

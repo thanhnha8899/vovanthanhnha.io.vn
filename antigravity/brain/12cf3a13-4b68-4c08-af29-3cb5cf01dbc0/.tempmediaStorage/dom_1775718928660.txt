@@ -1,0 +1,94 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (33,73)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (33,73)<i  />
+Đề thi THPT – Hóa học
+Công cụ tạo đề thi PPKT THPT
+[2] (65,183)<div  />
+	[3] (40,183)<i  />
+	[4] (74,183)<span >Cấu hình />
+[5] (159,183)<div  />
+	[6] (137,183)<i  />
+	[7] (167,183)<span >Ma trận />
+[8] (246,183)<div  />
+	[9] (227,183)<i  />
+	[10] (254,183)<span >Đặc tả />
+[11] (327,183)<div  />
+	[12] (310,183)<i  />
+	[13] (334,183)<span >Đề thi />
+[14] (915,183)<div  />
+	[15] (871,183)<i  />
+	[16] (924,183)<span >Nguồn ứng dụng />
+[17] (153,298)<input id='tn-socau' />
+[18] (218,298)<input id='tn-diem' />
+[19] (153,384)<input id='ds-socau' />
+[20] (218,384)<input id='ds-diem' />
+[21] (153,470)<input id='tln-socau' />
+[22] (218,470)<input id='tln-diem' />
+[23] (153,555)<input id='tl-socau' />
+[24] (74,889)<label  />
+[25] (74,941)<input id='biet' />
+[26] (156,889)<label  />
+[27] (156,941)<input id='hieu' />
+[28] (237,889)<label  />
+[29] (237,941)<input id='vandung' />
+[30] (461,285)<div  />
+	[31] (322,281)<div  />
+		[32] (322,281)<i  />
+	[33] (338,281)<div  />
+	[34] (452,280)<span  />
+	[35] (574,285)<span  />
+	[36] (599,281)<span  />
+		[37] (599,281)<i  />
+[38] (461,357)<div  />
+	[39] (322,353)<div  />
+		[40] (322,353)<i  />
+	[41] (338,353)<div  />
+	[42] (452,352)<span  />
+	[43] (574,357)<span  />
+	[44] (599,353)<span  />
+		[45] (599,353)<i  />
+[46] (461,428)<div  />
+	[47] (322,425)<div  />
+		[48] (322,425)<i  />
+	[49] (338,425)<div  />
+	[50] (452,423)<span  />
+	[51] (574,428)<span  />
+	[52] (599,425)<span  />
+		[53] (599,425)<i  />
+[54] (461,500)<div  />
+	[55] (322,497)<div  />
+		[56] (322,497)<i  />
+	[57] (338,497)<div  />
+	[58] (452,495)<span  />
+	[59] (574,500)<span  />
+	[60] (599,497)<span  />
+		[61] (599,497)<i  />
+[62] (461,572)<div  />
+	[63] (322,569)<div  />
+		[64] (322,569)<i  />
+	[65] (338,569)<div  />
+	[66] (452,567)<span  />
+	[67] (574,572)<span  />
+	[68] (599,569)<span  />
+		[69] (599,569)<i  />
+[70] (461,644)<div  />
+	[71] (322,640)<div  />
+		[72] (322,640)<i  />
+	[73] (338,640)<div  />
+	[74] (452,639)<span  />
+	[75] (574,644)<span  />
+	[76] (599,640)<span  />
+		[77] (599,640)<i  />
+[78] (804,252)<div  />
+	[79] (664,252)<div  />
+		[80] (664,252)<i  />
+	[81] (815,252)<span  />
+[82] (804,310)<div  />
+	[83] (664,311)<div  />
+		[84] (664,311)<i  />
+	[85] (815,310)<span  />
+
+</current_dom>

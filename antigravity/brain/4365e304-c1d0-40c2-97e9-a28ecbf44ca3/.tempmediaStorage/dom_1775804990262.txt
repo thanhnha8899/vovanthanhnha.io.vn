@@ -1,0 +1,90 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (198,54)<a class='logo' href='#' id='logo' />
+	[1] (72,54)<div  />
+		[2] (72,54)<i  />
+	[3] (242,54)<div  />
+		[4] (242,39)<span >VOVANTHANHNHA />
+		[5] (242,70)<span >Nền tảng AI Giáo dục />
+[6] (427,54)<a class='topup-btn' href='nap-diem.html' id='nav-napdiem' />
+	[7] (427,54)<i  />
+0
+điểm
+[8] (646,54)<button class='notif-btn' id='notif-btn' title='Thông báo' />
+	[9] (646,54)<i  />
+	[10] (659,39)<span  />
+[11] (717,54)<div  />
+	[12] (717,54)<div  />
+		[13] (717,54)<span >A />
+		[14] (736,75)<span  />
+[15] (814,54)<button class='btn-logout' id='btn-logout' title='Đăng xuất' />
+	[16] (814,54)<i  />
+[17] (919,54)<button aria-label='Menu' class='mobile-menu-btn' id='mobile-menu-btn' />
+	[18] (919,41)<span  />
+	[19] (919,54)<span  />
+	[20] (919,67)<span  />
+Hỗ trợ Zalo
+Chuẩn Công văn 5512
+4
+[21] (503,119)<a class='tile' href='#' id='tool-khbd-1001' />
+	[22] (131,119)<div  />
+		[23] (131,119)<i  />
+	[24] (514,119)<div >KHBD DGNL 1001 />
+		KHBD DGNL 1001
+		[25] (514,137)<span >Đánh giá năng lực />
+	[26] (886,119)<span >4 />
+		[27] (895,119)<i  />
+[28] (503,236)<a class='tile' href='#' id='tool-nangluc-tichop' />
+	[29] (131,236)<div  />
+		[30] (131,236)<i  />
+	[31] (514,236)<div  />
+		[32] (514,220)<span >Tích hợp năng lực số />
+		[33] (514,255)<span >Thêm NLS vào giáo án có sẵn />
+	[34] (886,236)<span >4 />
+		[35] (895,236)<i  />
+[36] (503,354)<a class='tile' href='#' id='tool-nangluc-auto' />
+	[37] (131,354)<div  />
+		[38] (131,354)<i  />
+	[39] (514,354)<div  />
+		[40] (514,338)<span >Tự động NLS vào giáo án />
+		[41] (514,373)<span >AI tự tích hợp hoàn tất />
+	[42] (886,354)<span >4 />
+		[43] (895,354)<i  />
+Giáo dục AI vào KHBD
+Mới 🚀
+[44] (503,628)<a class='tile' href='khbd-ai-tieuhoc.html' id='tool-ai-khbd-tieuhoc' />
+	[45] (131,628)<div  />
+		[46] (131,628)<i  />
+	[47] (514,628)<div  />
+		[48] (514,612)<span >KHBD tích hợp AI – Tiểu học />
+		[49] (514,647)<span >Làm quen AI, tư duy thuật toán cho HS tiểu học />
+	[50] (886,628)<span >4 />
+		[51] (895,628)<i  />
+[52] (503,746)<a class='tile' href='khbd-ai-thcs.html' id='tool-ai-khbd-thcs' />
+	[53] (131,746)<div  />
+		[54] (131,746)<i  />
+	[55] (514,746)<div  />
+		[56] (514,730)<span >KHBD tích hợp AI – THCS />
+		[57] (514,764)<span >Ứng dụng AI trong học tập & năng lực số THCS />
+	[58] (886,746)<span >4 />
+		[59] (895,746)<i  />
+[60] (503,863)<a class='tile' href='khbd-ai-thpt.html' id='tool-ai-khbd-thpt' />
+	[61] (131,863)<div  />
+		[62] (131,863)<i  />
+	[63] (514,863)<div  />
+		[64] (514,847)<span >KHBD tích hợp AI – THPT />
+		[65] (514,882)<span >Machine Learning, Generative AI & đạo đức AI />
+	[66] (886,863)<span >4 />
+		[67] (895,863)<i  />
+[68] (131,981)<div  />
+	[69] (131,981)<i  />
+Tích hợp AI vào KHBD có sẵn
+Tải KHBD lên, AI tự thêm nội dung giáo dục AI
+[70] (886,981)<span >4 />
+	[71] (895,981)<i  />
+[72] (915,908)<button aria-label='Về đầu trang' class='back-to-top visible' id='back-to-top' />
+	[73] (915,908)<i  />
+
+</current_dom>

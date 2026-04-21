@@ -1,0 +1,68 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+TÀI LIỆU HƯỚNG DẪN
+SỬ DỤNG TRÍ TUỆ NHÂN TẠO
+TRONG DẠY VÀ HỌC
+[0] (500,436)<a class='fullscreen-button' href='/fullScreen'>Xem toàn màn hình />
+[1] (262,588)<button class='toolbarButton' id='viewThumbnail' role='radio' title='Show Thumbnails'>Thumbnails />
+	Thumbnails
+[2] (284,588)<button class='toolbarButton toggled' id='viewOutline' role='radio' title='Show Document Outline (double-click to expand/collapse all items)'>Document Outline />
+	Document Outline
+Attachments
+[3] (330,588)<button class='toolbarButton' id='viewLayers' role='radio' title='Show Layers (double-click to reset all layers to the default state)'>Layers />
+	Layers
+[4] (393,588)<button class='toolbarButton' id='currentOutlineItem' title='Find Current Outline Item'>Current Outline Item />
+	Current Outline Item
+[5] (328,642)<a >COVER />
+[6] (328,683)<a href='#%5B%7B%22num%22%3A1%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22FitH%22%7D%2C798%5D'>A4 />
+[7] (409,908)<div  />
+[8] (262,532)<button class='toolbarButton toggled' id='sidebarToggleButton' title='Toggle Sidebar (document contains outline/attachments/layers)'>Toggle Sidebar />
+	Toggle Sidebar
+[9] (285,532)<button class='toolbarButton' id='viewFindButton' title='Find in Document'>Find />
+	Find
+[10] (318,532)<input class='toolbarField' id='pageNumber' title='Page' />
+of ⁨60⁩
+[11] (434,532)<button class='toolbarButton' id='zoomOutButton' title='Zoom Out'>Zoom Out />
+	Zoom Out
+[12] (458,532)<button class='toolbarButton' id='zoomInButton' title='Zoom In'>Zoom In />
+	Zoom In
+[13] (525,532)<select id='scaleSelect' title='Zoom' />
+[14] (643,532)<button class='toolbarButton' id='editorHighlightButton' role='radio' title='Highlight'>Highlight />
+	Highlight
+[15] (666,532)<button class='toolbarButton' id='editorFreeTextButton' role='radio' title='Text'>Text />
+	Text
+[16] (689,532)<button class='toolbarButton' id='editorInkButton' role='radio' title='Draw'>Draw />
+	Draw
+[17] (711,532)<button class='toolbarButton' id='editorStampButton' role='radio' title='Add or edit images'>Add or edit images />
+	Add or edit images
+[18] (738,532)<button class='toolbarButton' id='secondaryToolbarToggleButton' title='Tools'>Tools />
+	Tools
+[19] (500,908)<div id='viewerContainer' scrollable='true' />
+	[20] (662,1388)<span role='presentation'>3 />
+	[21] (505,767)<span role='presentation'>Trong kỷ nguyên số, sự bùng nổ của khoa học - công nghệ đã và đang trở thành />
+	[22] (496,791)<span role='presentation'>động lực quan trọng thúc đẩy sự phát triển của toàn xã hội. Các thành tựu công nghệ />
+	[23] (496,814)<span role='presentation'>mở ra nhiều cơ hội đổi mới, hướng đến nâng cao chất lượng, hiệu quả cho mọi lĩnh vực, />
+	[24] (496,838)<span role='presentation'>trong đó có giáo dục. Việc nghiên cứu khả năng ứng dụng công nghệ trong giáo dục là />
+	[25] (496,861)<span role='presentation'>một trong những xu hướng nổi bật, thu hút sự quan tâm của của nhà khoa học và các cấp />
+	[26] (391,885)<span role='presentation'>quản lý trong nhiều năm gần đây. />
+	[27] (505,922)<span role='presentation'>Một trong những công nghệ quan trọng trong kỷ nguyên số là trí tuệ nhân tạo (AI), />
+	[28] (496,946)<span role='presentation'>với tiềm năng kiến tạo một môi trường học tập hiệu quả, cá nhân hóa và hòa nhập hơn. />
+	[29] (496,969)<span role='presentation'>AI mang lại nhiều lợi ích cho cả học sinh và giáo viên, hỗ trợ giáo viên trong giảng dạy, />
+	[30] (496,993)<span role='presentation'>đánh giá và quản lý lớp học, đồng thời hỗ trợ học sinh tăng cường tự học, cá nhân hóa />
+	[31] (460,1016)<span role='presentation'>trải nghiệm học tập, tạo nên một hệ thống giáo dục hiện đại, linh hoạt. />
+	[32] (505,1054)<span role='presentation'>Tài liệu “Hướng dẫn sử dụng trí tuệ nhân tạo trong Dạy và Học” được xây dựng nhằm />
+	[33] (496,1077)<span role='presentation'>cung cấp những thông tin cập nhật về công nghệ AI trong giáo dục. Các nội dung trong />
+	[34] (496,1101)<span role='presentation'>tài liệu không chỉ giúp giáo viên, học sinh và các nhà quản lý giáo dục hiểu rõ hơn về AI />
+	[35] (496,1124)<span role='presentation'>mà còn tạo tiền đề cho những chiến lược phát triển giáo dục trong tương lai. Tài liệu nhấn />
+	[36] (496,1148)<span role='presentation'>mạnh vai trò trung tâm của giáo viên và học sinh trong việc ứng dụng AI, đảm bảo rằng />
+	[37] (496,1171)<span role='presentation'>công nghệ này chỉ góp phần hỗ trợ mà không thay thế con người, đồng thời hướng đến />
+	[38] (496,1195)<span role='presentation'>mục tiêu phát triển toàn diện cho người dùng và toàn xã hội. Bên cạnh việc cung cấp các />
+	[39] (496,1218)<span role='presentation'>công cụ và phương pháp ứng dụng AI trong dạy - học, tài liệu cũng đưa ra những gợi ý, />
+	[40] (496,1242)<span role='presentation'>đề xuất cho các cấp quản lý giáo dục về cách tiếp cận chiến lược và chủ động trong việc />
+	[41] (496,1265)<span role='presentation'>điều chỉnh chính sách, bảo vệ quyền riêng tư dữ liệu và xây dựng hệ thống đánh giá />
+	[42] (349,1289)<span role='presentation'>minh bạch. />
+	[43] (608,499)<span role='presentation'>LỜI MỞ ĐẦU />
+
+</current_dom>

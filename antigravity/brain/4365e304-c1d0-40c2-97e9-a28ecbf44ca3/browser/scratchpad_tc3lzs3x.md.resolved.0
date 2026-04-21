@@ -1,0 +1,8 @@
+# Plan to verify 'Đề thi' tab on de-thi-tinhoc.html
+
+- [ ] Open de-thi-tinhoc.html in browser
+- [ ] Identify 'Đề thi' tab button index/selector
+- [ ] Click 'Đề thi' tab
+- [ ] Take screenshot of the tab content
+- [ ] Note title text, button labels, warnings, and placeholder content
+- [ ] Final summary report

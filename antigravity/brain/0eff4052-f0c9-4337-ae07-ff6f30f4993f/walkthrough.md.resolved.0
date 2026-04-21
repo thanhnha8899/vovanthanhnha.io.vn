@@ -1,0 +1,46 @@
+# Walkthrough: Đặc Tả Tab & DOCX Export Implementation
+
+## Changes Made
+
+### Physics Page (`de-thi-vatli.html`)
+
+#### CSS Changes
+- Removed `display: grid` from `.main-content` to prevent conflict with tab switching
+- Added `tab-content` / `tab-content-grid` visibility system using `display: none !important` / `display: block !important`
+- Added comprehensive Đặc tả tab styling: header, action buttons, specification table, responsive breakpoints
+
+#### HTML Changes
+- Updated `main-content` div to `class="main-content tab-content tab-content-grid active" id="content-cauhinh"`
+- Added full Đặc tả tab HTML content (`id="content-dacta"`) with:
+  - Header section with Vietnamese text (BẢN ĐẶC TẢ ĐỀ KIỂM TRA ĐỊNH KÌ)
+  - Action buttons: "Chuyển sang tab Đề thi" and "Tải về .docx"
+  - Complex 4-row header table (TT, Chủ đề, Nội dung, Yêu cầu cần đạt, 12 cognition columns, Tổng)
+  - Dynamic tbody and tfoot for generated data
+- Added `docx@8.5.0` and `FileSaver.js` CDN script includes
+
+#### JavaScript Changes
+- Replaced simple `initTabs()` with full `switchTab(tabName)` function that shows/hides tab content panels
+- Added `generateSpecTable()` function that:
+  - Reads configuration from the Cấu hình tab (questions, points, cognition percentages)
+  - Distributes questions across selected topics evenly
+  - Splits each topic's questions by cognition level (Biết/Hiểu/Vận dụng)
+  - Generates footer rows (Tổng số câu, Tổng số điểm, Tỉ lệ %)
+- Added `generateYeuCau(topic)` mapping Physics topic IDs to requirement descriptions
+- Added `exportDactaToDocx()` function using docx.js library for Word document generation
+- Added button event handlers for tab switching and docx download
+
+---
+
+### Math Page (`de-thi-toan.html`)
+- Already had all CSS/HTML/JS changes applied from a previous session
+- Fixed `generateYeuCau()` function: replaced Physics topic IDs with correct Math topic IDs (mệnh đề, bất phương trình, hàm số, etc.)
+
+## Verification
+
+- ✅ Tab switching works: Cấu hình content hides when Đặc tả is active
+- ✅ Vietnamese diacritical marks display correctly in table headers and content
+- ✅ Specification table populates with correct data from the configuration
+- ✅ Footer rows show Tổng số câu, Tổng số điểm (= 10), Tỉ lệ % (= 100)
+- ✅ Action buttons (Chuyển sang tab Đề thi, Tải về .docx) are visible and functional
+
+![Đặc tả tab with specification table](C:/Users/thanh/.gemini/antigravity/brain/0eff4052-f0c9-4337-ae07-ff6f30f4993f/.system_generated/click_feedback/click_feedback_1775711692269.png)

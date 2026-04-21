@@ -1,0 +1,15 @@
+# Task: Test "Đặc tả" tab in de-thi-vatli.html
+
+## Plan
+1. Navigate to de-thi-vatli.html.
+2. Select 3 topics from the left panel.
+3. Click "Đặc tả" tab.
+4. Verify Vietnamese text, tab switching, and table content.
+5. Take screenshots.
+
+## Progress
+- [ ] Navigate to page
+- [ ] Select 3 topics
+- [ ] Click "Đặc tả" tab
+- [ ] Take screenshots
+- [ ] Verify content

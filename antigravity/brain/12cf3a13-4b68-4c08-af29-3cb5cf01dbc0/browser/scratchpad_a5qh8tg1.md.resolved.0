@@ -1,0 +1,8 @@
+# Task: Verify Ma trận tab in de-thi-hoahoc.html
+
+- [ ] Open http://127.0.0.1:8080/de-thi-hoahoc.html (done)
+- [ ] Select 3 topics in Cấu hình tab
+- [ ] Click Ma trận tab
+- [ ] Take screenshot of top part of Ma trận tab
+- [ ] Scroll down and take screenshot of bottom part
+- [ ] Verify table content and buttons

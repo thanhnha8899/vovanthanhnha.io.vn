@@ -1,0 +1,93 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (198,54)<a class='logo' href='#' id='logo' />
+	[1] (72,54)<div  />
+		[2] (72,54)<i  />
+	[3] (242,54)<div  />
+		[4] (242,39)<span >VOVANTHANHNHA />
+		[5] (242,70)<span >Nền tảng AI Giáo dục />
+[6] (427,54)<a class='topup-btn' href='nap-diem.html' id='nav-napdiem' />
+	[7] (427,54)<i  />
+0
+điểm
+[8] (646,54)<button class='notif-btn' id='notif-btn' title='Thông báo' />
+	[9] (646,54)<i  />
+	[10] (659,39)<span  />
+[11] (717,54)<div  />
+	[12] (717,54)<div  />
+		[13] (717,54)<span >A />
+		[14] (736,75)<span  />
+[15] (814,54)<button class='btn-logout' id='btn-logout' title='Đăng xuất' />
+	[16] (814,54)<i  />
+[17] (919,54)<button aria-label='Menu' class='mobile-menu-btn' id='mobile-menu-btn' />
+	[18] (919,41)<span  />
+	[19] (919,54)<span  />
+	[20] (919,67)<span  />
+Hỗ trợ Zalo
+Tạo PPT từ KHBD
+Chuyển giáo án thành slide bài giảng tự động
+5
+[21] (503,121)<a class='tile' href='#' id='tool-ppt-ai-education' />
+	[22] (131,121)<div  />
+		[23] (131,121)<i  />
+	[24] (514,121)<div >PPT giáo dục AI cho HS />
+		PPT giáo dục AI cho HS
+		[25] (514,139)<span >Slide bài dạy trí tuệ nhân tạo cho học sinh PT />
+	[26] (887,121)<span >5 />
+		[27] (895,121)<i  />
+[28] (503,238)<a class='tile' href='#' id='tool-ppt-tuongtac' />
+	[29] (131,238)<div  />
+		[30] (131,238)<i  />
+	[31] (514,238)<div  />
+		[32] (514,222)<span >PPT tương tác />
+		[33] (514,257)<span >Slide tương tác với hoạt động nhóm & trải nghiệm />
+	[34] (887,238)<span >5 />
+		[35] (895,238)<i  />
+[36] (503,356)<a class='tile' href='#' id='tool-ppt-ai-design' />
+	[37] (131,356)<div  />
+		[38] (131,356)<i  />
+	[39] (514,356)<div  />
+		[40] (514,340)<span >AI thiết kế PPT chuyên nghiệp />
+		[41] (514,375)<span >AI tạo slide đẹp, chuyên nghiệp từ nội dung bài />
+	[42] (886,356)<span >6 />
+		[43] (895,356)<i  />
+[44] (503,474)<a class='tile' href='#' id='tool-ppt-template' />
+	[45] (131,474)<div  />
+		[46] (131,474)<i  />
+	[47] (514,474)<div  />
+		[48] (514,458)<span >Kho mẫu PPT giáo dục />
+		[49] (514,492)<span >200+ mẫu slide dành riêng cho giáo viên />
+	[50] (887,474)<span >3 />
+		[51] (895,474)<i  />
+Đề thi 7991 THPT
+9 bộ môn
+[52] (181,807)<a class='subject-card' href='de-thi-toan.html' id='tool-dt-toan' />
+	[53] (181,763)<div  />
+		[54] (181,763)<i  />
+	[55] (181,831)<span >Toán />
+	[56] (181,875)<span >5★ />
+[57] (396,807)<a class='subject-card' href='de-thi-vatli.html' id='tool-dt-vatli' />
+	[58] (396,763)<div  />
+		[59] (396,763)<i  />
+	[60] (396,831)<span >Vật Lí />
+	[61] (396,875)<span >5★ />
+[62] (611,807)<a class='subject-card' href='de-thi-hoahoc.html' id='tool-dt-hoahoc' />
+	[63] (611,763)<div  />
+		[64] (611,763)<i  />
+	[65] (611,831)<span >Hóa học />
+	[66] (611,875)<span >5★ />
+[67] (826,807)<a class='subject-card' href='de-thi-sinhhoc.html' id='tool-dt-sinhhoc' />
+	[68] (826,763)<div  />
+		[69] (826,763)<i  />
+	[70] (826,831)<span >Sinh Học />
+	[71] (826,875)<span >5★ />
+[72] (181,999)<div  />
+	[73] (181,999)<i  />
+[74] (826,999)<div  />
+	[75] (826,999)<i  />
+[76] (915,908)<button aria-label='Về đầu trang' class='back-to-top visible' id='back-to-top' />
+	[77] (915,908)<i  />
+
+</current_dom>

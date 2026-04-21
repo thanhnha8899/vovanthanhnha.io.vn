@@ -1,0 +1,104 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (153,54)<a class='logo' href='#' id='logo' />
+	[1] (91,54)<div  />
+		[2] (91,54)<i  />
+	[3] (175,54)<div  />
+		[4] (175,39)<span >VOVANTHANHNHA />
+		[5] (175,70)<span >Nền tảng AI Giáo dục />
+[6] (305,54)<a class='dash-nav-link active' href='#' id='nav-home' />
+	[7] (278,54)<i  />
+	[8] (313,54)<span >Trang chủ />
+[9] (395,54)<a class='dash-nav-link' href='#' id='nav-huongdan' />
+	[10] (366,54)<i  />
+	[11] (403,54)<span >Hướng dẫn />
+[12] (487,54)<a class='dash-nav-link' href='https://www.facebook.com/share/g/18P1cQjhou/' id='nav-congdong' />
+	[13] (458,54)<i  />
+	[14] (495,54)<span >Cộng đồng />
+[15] (581,54)<a class='dash-nav-link' href='https://zalo.me/g/ioouc1kyhugjrtwmij5k' id='nav-zalo' />
+	[16] (552,54)<i  />
+	[17] (590,54)<span >Hỗ trợ Zalo />
+[18] (692,54)<a class='topup-btn' href='nap-diem.html' id='nav-napdiem' />
+	[19] (668,54)<i  />
+	[20] (698,54)<span >Nạp điểm />
+0
+điểm
+[21] (825,54)<button class='notif-btn' id='notif-btn' title='Thông báo' />
+	[22] (825,54)<i  />
+	[23] (831,39)<span  />
+[24] (860,54)<div  />
+	[25] (860,54)<div  />
+		[26] (860,54)<span >A />
+		[27] (870,75)<span  />
+[28] (908,54)<button class='btn-logout' id='btn-logout' title='Đăng xuất' />
+	[29] (908,54)<i  />
+Tích hợp năng lực số
+Thêm NLS vào giáo án có sẵn
+4
+[30] (284,121)<a class='tile' href='#' id='tool-nangluc-auto' />
+	[31] (120,121)<div  />
+		[32] (120,121)<i  />
+	[33] (290,121)<div  />
+		[34] (290,105)<span >Tự động NLS vào giáo án />
+		[35] (290,140)<span >AI tự tích hợp hoàn tất />
+	[36] (454,121)<span >4 />
+		[37] (459,121)<i  />
+Tích hợp AI vào KHBD có sẵn
+Tải KHBD lên, AI tự thêm nội dung giáo dục AI
+4
+[38] (719,121)<a class='tile' href='#' id='tool-ai-khbd-auto' />
+	[39] (554,121)<div  />
+		[40] (554,121)<i  />
+	[41] (724,121)<div  />
+		[42] (724,105)<span >AI tự động soạn KHBD giáo dục AI />
+		[43] (724,140)<span >AI soạn giáo án giáo dục trí tuệ nhân tạo hoàn chỉnh />
+	[44] (889,121)<span >4 />
+		[45] (893,121)<i  />
+PPT bài dạy
+Mới 🚀
+[46] (284,395)<a class='tile' href='#' id='tool-ppt-from-khbd' />
+	[47] (120,395)<div  />
+		[48] (120,395)<i  />
+	[49] (290,395)<div  />
+		[50] (290,379)<span >Tạo PPT từ KHBD />
+		[51] (290,413)<span >Chuyển giáo án thành slide bài giảng tự động />
+	[52] (454,395)<span >5 />
+		[53] (459,395)<i  />
+[54] (284,512)<a class='tile' href='#' id='tool-ppt-ai-education' />
+	[55] (120,512)<div  />
+		[56] (120,512)<i  />
+	[57] (290,512)<div  />
+		[58] (290,496)<span >PPT giáo dục AI cho HS />
+		[59] (290,531)<span >Slide bài dạy trí tuệ nhân tạo cho học sinh PT />
+	[60] (454,512)<span >5 />
+		[61] (459,512)<i  />
+[62] (284,630)<a class='tile' href='#' id='tool-ppt-tuongtac' />
+	[63] (120,630)<div  />
+		[64] (120,630)<i  />
+	[65] (290,630)<div  />
+		[66] (290,614)<span >PPT tương tác />
+		[67] (290,648)<span >Slide tương tác với hoạt động nhóm & trải nghiệm />
+	[68] (454,630)<span >5 />
+		[69] (459,630)<i  />
+[70] (284,747)<a class='tile' href='#' id='tool-ppt-ai-design' />
+	[71] (120,747)<div  />
+		[72] (120,747)<i  />
+	[73] (290,747)<div  />
+		[74] (290,731)<span >AI thiết kế PPT chuyên nghiệp />
+		[75] (290,766)<span >AI tạo slide đẹp, chuyên nghiệp từ nội dung bài />
+	[76] (454,747)<span >6 />
+		[77] (459,747)<i  />
+[78] (284,865)<a class='tile' href='#' id='tool-ppt-template' />
+	[79] (120,865)<div  />
+		[80] (120,865)<i  />
+	[81] (290,865)<div  />
+		[82] (290,849)<span >Kho mẫu PPT giáo dục />
+		[83] (290,883)<span >200+ mẫu slide dành riêng cho giáo viên />
+	[84] (454,865)<span >3 />
+		[85] (459,865)<i  />
+[86] (958,908)<button aria-label='Về đầu trang' class='back-to-top visible' id='back-to-top' />
+	[87] (958,908)<i  />
+
+</current_dom>

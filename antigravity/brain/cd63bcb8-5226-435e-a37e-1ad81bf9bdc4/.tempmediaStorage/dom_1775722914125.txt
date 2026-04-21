@@ -1,0 +1,58 @@
+[0] (33,73)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (33,73)<i  />
+Đề thi THPT – Hóa học
+Công cụ tạo đề thi PPKT THPT
+[2] (65,183)<div  />
+	[3] (40,183)<i  />
+	[4] (74,183)<span >Cấu hình />
+[5] (159,183)<div  />
+	[6] (137,183)<i  />
+	[7] (167,183)<span >Ma trận />
+[8] (246,183)<div  />
+	[9] (227,183)<i  />
+	[10] (254,183)<span >Đặc tả />
+[11] (327,183)<div  />
+	[12] (310,183)<i  />
+	[13] (334,183)<span >Đề thi />
+[14] (915,183)<div  />
+	[15] (871,183)<i  />
+	[16] (924,183)<span >Nguồn ứng dụng />
+Trắc nghiệm Đúng/Sai
+Trả lời ngắn
+Tự luận
+—
+Tổng điểm TNKQ
+6
+Điểm tự luận
+4
+MỨC ĐỘ NHẬN THỨC (%)
+[17] (74,555)<label >Biết />
+[18] (74,607)<input id='biet' />
+[19] (156,555)<label >Hiểu />
+[20] (156,607)<input id='hieu' />
+[21] (237,555)<label >Vận dụng />
+[22] (237,607)<input id='vandung' />
+Tổng nên bằng 100% (tự chuẩn hoá nếu khác)
+Ma trận tự động hình thành theo cấu hình trên và danh sách đơn vị đã chọn.
+[23] (144,873)<button class='generate-btn' id='btn-generate' />
+	[24] (71,873)<i  />
+	[25] (120,873)<span >Tạo ma trận />
+	[26] (192,873)<span >trừ 2 điểm />
+Phản ứng oxi hoá – khử
+3
+Năng lượng hoá học
+3
+Tốc độ phản ứng hoá học
+3
+Nguyên tố nhóm VIIA (Halogen)
+4
+[27] (461,310)<div  />
+	[28] (322,306)<div  />
+		[29] (322,306)<i  />
+	[30] (338,306)<div  />
+	[31] (452,305)<span >Chuyên đề 10 />
+	[32] (574,310)<span >3 />
+	[33] (599,306)<span  />
+		[34] (599,306)<i  />
+Đã chọn:
+Bảng tuần hoàn các nguyên tố hoá học

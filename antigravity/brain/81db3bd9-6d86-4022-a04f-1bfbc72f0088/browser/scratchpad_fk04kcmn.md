@@ -1,0 +1,16 @@
+# Task: Capture screenshots of the new hoc8.com clone
+
+## Plan
+- [x] Capture top section (hero + header)
+- [x] Scroll to and capture "Sản phẩm & Dịch vụ"
+- [x] Scroll to and capture "Doanh nghiệp"
+- [x] Scroll to and capture "Chính sách"
+- [x] Scroll to and capture CTA + Footer
+- [x] Return screenshot paths
+
+## Screenshot Paths
+1. Hero section: `C:\Users\thanh\.gemini\antigravity\brain\81db3bd9-6d86-4022-a04f-1bfbc72f0088\hoc8_top_section_1775674163212.png`
+2. Produk section: `C:\Users\thanh\.gemini\antigravity\brain\81db3bd9-6d86-4022-a04f-1bfbc72f0088\hoc8_products_section_1775674185766.png`
+3. Doanh nghiệp section: `C:\Users\thanh\.gemini\antigravity\brain\81db3bd9-6d86-4022-a04f-1bfbc72f0088\hoc8_company_section_1775674206962.png`
+4. Chính sách section: `C:\Users\thanh\.gemini\antigravity\brain\81db3bd9-6d86-4022-a04f-1bfbc72f0088\hoc8_policy_section_1775674225321.png`
+5. CTA + Footer: `C:\Users\thanh\.gemini\antigravity\brain\81db3bd9-6d86-4022-a04f-1bfbc72f0088\hoc8_footer_section_1775674236736.png`

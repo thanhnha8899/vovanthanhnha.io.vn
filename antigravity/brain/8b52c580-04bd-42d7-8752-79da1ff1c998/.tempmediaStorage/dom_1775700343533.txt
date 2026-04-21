@@ -1,0 +1,68 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (131,49)<a class='logo' href='#' id='logo' />
+	[1] (68,49)<div  />
+		[2] (68,49)<i  />
+	[3] (153,49)<div  />
+		[4] (153,36)<span >VOVANTHANHNHA />
+		[5] (153,64)<span >HỆ SINH THÁI AI GIÁO DỤC />
+[6] (274,49)<a class='dash-nav-link active' href='#' id='nav-home' />
+	[7] (274,49)<span >Trang chủ />
+[8] (354,49)<a class='dash-nav-link highlight' href='#' id='nav-napdiem' />
+	[9] (354,49)<span >Nạp điểm />
+[10] (436,49)<a class='dash-nav-link' href='#' id='nav-huongdan' />
+	[11] (436,49)<span >Hướng dẫn />
+[12] (522,49)<a class='dash-nav-link' href='#' id='nav-congdong' />
+	[13] (522,49)<span >Cộng đồng />
+[14] (625,49)<a class='dash-nav-link' href='#' id='nav-zalo' />
+	[15] (625,49)<span >Nhóm Zalo hỗ trợ />
+[16] (740,49)<div  />
+	[17] (725,49)<i  />
+	[18] (748,49)<span >0 điểm />
+[19] (798,49)<button class='notif-btn' id='notif-btn' title='Thông báo' />
+	[20] (798,49)<i  />
+[21] (867,49)<div  />
+	[22] (849,49)<div  />
+		[23] (849,22)<span >Admin />
+		[24] (849,65)<span >Giáo viên mới />
+	[25] (892,49)<div  />
+		[26] (892,49)<i  />
+		[27] (900,69)<span  />
+[28] (952,49)<button class='btn-logout' id='btn-logout' title='Đăng xuất' />
+	[29] (952,49)<i  />
+Hệ sinh thái AI Giáo dục
+Giải pháp trí tuệ nhân tạo chuyên biệt dành cho Thầy/Cô
+[30] (500,385)<a class='free-tools-btn' href='#' id='free-tools-btn' />
+	[31] (451,385)<i  />
+	[32] (509,385)<span >Công cụ miễn phí />
+SÁNG KIẾN KINH NGHIỆM
+Viết sáng kiến kinh nghiệm 4 chương chuẩn
+[33] (785,582)<a class='guide-btn' href='#' id='guide-skkn' />
+	[34] (739,582)<i  />
+	[35] (793,582)<span >Hướng dẫn sử dụng />
+[36] (202,748)<a class='tool-card' href='#' id='tool-skkn-auto' />
+	[37] (202,720)<div  />
+		[38] (202,720)<i  />
+	[39] (237,673)<span >-15 />
+		[40] (244,673)<i  />
+	[41] (202,800)<span >SKKN (Tự động
+) />
+		[42] (238,788)<i  />
+[43] (316,748)<a class='tool-card' href='#' id='tool-skkn-danuy' />
+	[44] (316,720)<div  />
+		[45] (316,720)<i  />
+	[46] (351,673)<span >-15 />
+		[47] (358,673)<i  />
+	[48] (316,800)<span >SKKN (Dàn ý riêng) />
+[49] (430,748)<a class='tool-card' href='#' id='tool-skkn-tt18' />
+	[50] (430,720)<div  />
+		[51] (430,720)<i  />
+	[52] (465,673)<span >-15 />
+		[53] (472,673)<i  />
+	[54] (430,800)<span >SKKN (TT 18/BKHCN) />
+GIÁO ÁN MẦM NON
+Chào mừng Admin! Đang chuyển hướng...
+
+</current_dom>

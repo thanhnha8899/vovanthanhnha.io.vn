@@ -1,0 +1,68 @@
+[0] (35,66)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (35,66)<i  />
+Đề thi THPT – Tin học
+Công cụ tạo đề thi PPKT THPT
+[2] (71,166)<div  />
+	[3] (44,166)<i  />
+	[4] (79,166)<span >Cấu hình />
+[5] (171,166)<div  />
+	[6] (148,166)<i  />
+	[7] (180,166)<span >Ma trận />
+[8] (265,166)<div  />
+	[9] (245,166)<i  />
+	[10] (274,166)<span >Đặc tả />
+[11] (353,166)<div  />
+	[12] (335,166)<i  />
+	[13] (361,166)<span >Đề thi />
+[14] (909,166)<div  />
+	[15] (861,166)<i  />
+	[16] (917,166)<span >Nguồn ứng dụng />
+1
+Thông tin đề thi
+Trường, kỳ thi, môn học, thời gian
+[17] (151,400)<label >Tên trường />
+[18] (151,456)<input id='ten-truong' placeholder='Nhập tên trường' />
+[19] (384,400)<label >Tổ chuyên môn />
+[20] (384,456)<input id='to-chuyen-mon' placeholder='Nhập tổ chuyên môn' />
+[21] (616,400)<label >Tên đề kiểm tra />
+[22] (616,456)<input id='ten-de' placeholder='Nhập tên đề' />
+[23] (849,400)<label >Môn học />
+[24] (849,456)<select id='mon-hoc' />
+[25] (151,527)<label >Năm học />
+[26] (151,583)<input id='nam-hoc' placeholder='VD: NĂM HỌC 2026 - 2027' />
+[27] (384,527)<label >Thời gian (phút) />
+[28] (384,583)<input id='thoi-gian' />
+[29] (616,527)<label >Khối lớp />
+[30] (616,583)<select id='khoi-lop' />
+[31] (849,527)<label >Kỳ kiểm tra />
+[32] (849,583)<select id='ky-kiem-tra' />
+2
+Cấu trúc đề & Tỉ lệ
+Loại câu, điểm, mức độ nhận thức
+[33] (155,823)<label >ĐỘ KHÓ ĐỀ THI />
+[34] (155,878)<select id='do-kho' />
+Loại câu
+Số câu
+Điểm/câu
+3
+Chọn nội dung kiểm tra
+Mạch – Đơn vị kiến thức · Đã chọn:
+0
+[35] (862,747)<input id='search-topic' placeholder='Lọc mạch...' />
+MẠCH NỘI DUNG
+[36] (478,890)<div  />
+	[37] (347,886)<div  />
+		[38] (347,886)<i  />
+	[39] (365,886)<div  />
+	[40] (468,885)<span >Máy tính và xã hội tri thức />
+	[41] (580,890)<span >4 />
+	[42] (607,886)<span  />
+		[43] (607,886)<i  />
+[44] (347,952)<div  />
+	[45] (347,952)<i  />
+[46] (365,952)<div  />
+Mạng máy tính và Internet
+3
+[47] (607,952)<span  />
+	[48] (607,952)<i  />
+CHỌN MẠCH BÊN TRÁI

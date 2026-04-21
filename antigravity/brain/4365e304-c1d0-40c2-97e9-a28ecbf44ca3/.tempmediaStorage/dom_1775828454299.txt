@@ -1,0 +1,45 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+const loading = document.getElementById('dethi-loading');
+const placeholder = document.getElementById('dethi-placeholder');
+const rendered = document.getElementById('exam-rendered');
+const btn = document.getElementById('btn-generate-exam');
+const warning = document.getElementById('dethi-warning');
+loading.classList.add('active');
+placeholder.style.display = 'none';
+rendered.style.display = 'none';
+btn.disabled = true;
+btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Đang tạo đề thi...';
+try {
+const prompt = buildExamPrompt();
+const text = await callAI(prompt);
+lastExamMarkdown = text;
+renderExamContent(text);
+warning.style.display = 'flex';
+document.getElementById('btn-download-exam-docx').style.display = '';
+showNotification('Đề thi đã được tạo thành công!', 'success');
+} catch (err) {
+console.error('Exam generation error:', err);
+showNotification('Lỗi: ' + err.message, 'error');
+placeholder.style.display = 'flex';
+} finally {
+loading.classList.remove('active');
+btn.disabled = false;
+btn.innerHTML = '<i class="fas fa-wand-magic-sparkles"></i> Tạo đề thi (trừ 2 điểm)';
+}
+}
+function buildExamPrompt() {
+const g = id => { const e = document.getElementById(id); return e ? (e.tagName === 'SELECT' ? e.options[e.selectedIndex].text : e.value) : ''; };
+const n = id => parseInt(document.getElementById(id)?.value) || 0;
+const monHoc = g('mon-hoc'), khoiLop = g('khoi-lop'), thoiGian = g('thoi-gian');
+const tnSoCau = n('tn-socau'), dsSoCau = n('ds-socau'), tlnSoCau = n('tln-socau'), tlSoCau = n('tl-socau');
+const diemTL = document.getElementById('diem-tuluan')?.textContent || '4';
+let topics = '';
+selectedTopics.forEach(id => {
+const t = physicsTopics.find(x => x.id === id);
+if (t) {
+const s = selectedSubTopics[id] ? Array.from(selectedSubTopics[id]) : t.subtopics;
+
+</current_dom>

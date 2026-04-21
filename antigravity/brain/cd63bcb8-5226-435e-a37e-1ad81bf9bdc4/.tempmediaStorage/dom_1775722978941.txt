@@ -1,0 +1,133 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (33,73)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (33,73)<i  />
+Đề thi THPT – Hóa học
+Công cụ tạo đề thi PPKT THPT
+[2] (65,183)<div  />
+	[3] (40,183)<i  />
+	[4] (74,183)<span >Cấu hình />
+[5] (159,183)<div  />
+	[6] (137,183)<i  />
+	[7] (167,183)<span >Ma trận />
+[8] (246,183)<div  />
+	[9] (227,183)<i  />
+	[10] (254,183)<span >Đặc tả />
+[11] (327,183)<div  />
+	[12] (310,183)<i  />
+	[13] (334,183)<span >Đề thi />
+[14] (915,183)<div  />
+	[15] (871,183)<i  />
+	[16] (924,183)<span >Nguồn ứng dụng />
+Năm học
+Thời gian (phút)
+Khối lớp
+Kỳ kiểm tra
+2
+Cấu trúc đề & Tỉ lệ
+Loại câu, điểm, mức độ nhận thức
+[17] (144,379)<label >ĐỘ KHÓ ĐỀ THI />
+[18] (144,439)<select id='do-kho' />
+Loại câu
+Số câu
+Điểm/câu
+Trắc nghiệm nhiều lựa chọn
+[19] (153,608)<input id='tn-socau' />
+[20] (218,608)<input id='tn-diem' />
+Trắc nghiệm Đúng/Sai
+[21] (153,695)<input id='ds-socau' />
+[22] (218,695)<input id='ds-diem' />
+Trả lời ngắn
+[23] (153,781)<input id='tln-socau' />
+[24] (218,781)<input id='tln-diem' />
+Tự luận
+[25] (153,866)<input id='tl-socau' />
+—
+Tổng điểm TNKQ
+Điểm tự luận
+3
+Chọn nội dung kiểm tra
+Mạch – Đơn vị kiến thức · Đã chọn:
+1
+[26] (872,296)<input id='search-topic' placeholder='Lọc mạch...' />
+MẠCH NỘI DUNG
+[27] (461,452)<div  />
+	[28] (322,449)<div  />
+		[29] (322,449)<i  />
+	[30] (338,449)<div  />
+	[31] (452,447)<span >Bảng tuần hoàn các nguyên tố hoá học />
+	[32] (574,452)<span >3 />
+	[33] (599,449)<span  />
+		[34] (599,449)<i  />
+[35] (461,524)<div  />
+	[36] (322,520)<div  />
+		[37] (322,520)<i  />
+	[38] (338,520)<div  />
+	[39] (452,519)<span >Cấu tạo nguyên tử />
+	[40] (574,524)<span >4 />
+	[41] (599,520)<span  />
+		[42] (599,520)<i  />
+[43] (461,596)<div  />
+	[44] (322,592)<div  />
+		[45] (322,592)<i  />
+	[46] (338,592)<div  />
+	[47] (452,591)<span >Liên kết hoá học />
+	[48] (574,596)<span >4 />
+	[49] (599,592)<span  />
+		[50] (599,592)<i  />
+[51] (461,668)<div  />
+	[52] (322,664)<div  />
+		[53] (322,664)<i  />
+	[54] (338,664)<div  />
+	[55] (452,663)<span >Phản ứng oxi hoá – khử />
+	[56] (574,668)<span >3 />
+	[57] (599,664)<span  />
+		[58] (599,664)<i  />
+[59] (461,739)<div  />
+	[60] (322,736)<div  />
+		[61] (322,736)<i  />
+	[62] (338,736)<div  />
+	[63] (452,734)<span >Năng lượng hoá học />
+	[64] (574,739)<span >3 />
+	[65] (599,736)<span  />
+		[66] (599,736)<i  />
+[67] (461,811)<div  />
+	[68] (322,808)<div  />
+		[69] (322,808)<i  />
+	[70] (338,808)<div  />
+	[71] (452,806)<span >Tốc độ phản ứng hoá học />
+	[72] (574,811)<span >3 />
+	[73] (599,808)<span  />
+		[74] (599,808)<i  />
+[75] (461,883)<div  />
+	[76] (322,879)<div  />
+		[77] (322,879)<i  />
+	[78] (338,879)<div  />
+	[79] (452,878)<span >Nguyên tố nhóm VIIA (Halogen) />
+	[80] (574,883)<span >4 />
+	[81] (599,879)<span  />
+		[82] (599,879)<i  />
+[83] (322,951)<div  />
+	[84] (322,951)<i  />
+[85] (338,951)<div  />
+Chuyên đề 10
+3
+[86] (599,951)<span  />
+	[87] (599,951)<i  />
+Bảng tuần hoàn các nguyên tố hoá học
+[88] (804,445)<div  />
+	[89] (664,446)<div  />
+		[90] (664,446)<i  />
+	[91] (815,445)<span >Cấu tạo của bảng tuần hoàn />
+[92] (804,504)<div  />
+	[93] (664,505)<div  />
+		[94] (664,505)<i  />
+	[95] (815,504)<span >Xu hướng biến đổi một số tính chất />
+[96] (804,562)<div  />
+	[97] (664,563)<div  />
+		[98] (664,563)<i  />
+	[99] (815,562)<span >Định luật tuần hoàn và ý nghĩa />
+
+</current_dom>

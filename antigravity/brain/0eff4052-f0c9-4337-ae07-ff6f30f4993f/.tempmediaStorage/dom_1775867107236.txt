@@ -1,0 +1,73 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+Skip to main content
+Accessibility help
+Accessibility feedback
+[0] (100,90)<a aria-label='Go to Google Home' href='https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjq-fDAxOSTAxUp2DgGHazEI70QPAgJ' id='logo' title='Go to Google Home' />
+[1] (391,88)<textarea aria-label='Search' class='gLFyf' id='APjFqb' role='combobox' />
+[2] (616,88)<div  />
+	[3] (614,88)<div aria-label='Clear' class='vOY7J M2vV3' role='button' />
+		[4] (614,88)<span  />
+	[5] (633,88)<span  />
+[6] (652,88)<div aria-label='Search by voice' class='XDyW0e' role='button' />
+[7] (683,88)<div aria-label='Search by image' class='nDcEnd' role='button' />
+[8] (719,88)<button aria-label='Search' class='HZVG1b Tg7LZd' />
+	[9] (714,88)<div  />
+		[10] (714,88)<span  />
+[11] (851,89)<div aria-label='Settings' class='fLciMb' id='og-te' role='button' />
+	[12] (851,92)<div  />
+		[13] (851,89)<span  />
+[14] (887,89)<a aria-label='Google apps' class='gb_B' href='https://www.google.com.vn/intl/en/about/products?tab=wh' role='button' />
+[15] (939,89)<a aria-label='Sign in' class='gb_A' href='https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3D%2522Ph%25E1%25BB%25A5%2Bl%25E1%25BB%25A5c%2522%2Bkem%2Btheo%2B%25222487%252FSGD%25C4%2590T-GDPT%2522%2Bfiletype%253Adocx%2BOR%2Bfiletype%253Azip&ec=futura_srp_og_si_72236_p'>Sign in />
+	Sign in
+[16] (85,195)<a class='XVMlrc C6AK7c' href='/search?q=Ph%E1%BB%A5+l%E1%BB%A5c+kem+theo+2487/SGD%C4%90T-GDPT+filetype:docx+OR+filetype:zip&sca_esv=d2a5470d2e85f15e&udm=50&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3o6iwGk6Iv1tRbZIBNIVs-5-bUj3iBl-UxHsANYwOkWWQqZAJJdwuRaSoLHfELMHATVl4OUcAVbIDCswZGv5UYJTv7qwJ2CDpYRsRw0bVxq-1xN0k3Bd8nRhVHhgIzntpeYcaVmeGi_r667IT1CFQHHkgF_tn77GZW-i6VGAdkvKfX2HGg&aep=1&ntc=1&sa=X&ved=2ahUKEwjq-fDAxOSTAxUp2DgGHazEI70Q2J8OegQIERAE' />
+	[17] (85,195)<div  />
+		[18] (85,210)<div  />
+			[19] (85,201)<span >AI Mode />
+[20] (130,195)<a class='C6AK7c' role='link' />
+	All
+[21] (173,195)<a class='C6AK7c' href='/search?sca_esv=d2a5470d2e85f15e&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3o6iwGk6Iv1tRbZIBNIVs-5-bUj3iBl-UxHsANYwOkWWQqZAJJdwuRaSoLHfELMHATVl4OUcAVbIDCswZGv5UYJTv7qwJ2CDpYRsRw0bVxq-1xN0k3Bd8nRhVHhgIzntpeYcaVmeGi_r667IT1CFQHHkgF_tn77GZW-i6VGAdkvKfX2HGg&q=Ph%E1%BB%A5+l%E1%BB%A5c+kem+theo+2487/SGD%C4%90T-GDPT+filetype:docx+OR+filetype:zip&sa=X&ved=2ahUKEwjq-fDAxOSTAxUp2DgGHazEI70QtKgLegQIFxAB' />
+	[22] (173,195)<div  />
+		[23] (173,210)<span >Images />
+[24] (232,195)<a class='C6AK7c' href='/search?sca_esv=d2a5470d2e85f15e&udm=28&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3o6iwGk6Iv1tRbZIBNIVs-5-bUj3iBl-UxHsANYwOkWWQqZAJJdwuRaSoLHfELMHATVl4OUcAVbIDCswZGv5UYJTv7qwJ2CDpYRsRw0bVxq-1xN0k3Bd8nRhVHhgIzntpeYcaVmeGi_r667IT1CFQHHkgF_tn77GZW-i6VGAdkvKfX2HGg&q=Ph%E1%BB%A5+l%E1%BB%A5c+kem+theo+2487/SGD%C4%90T-GDPT+filetype:docx+OR+filetype:zip&ved=1t:220175&ictx=111' />
+	[25] (232,195)<div  />
+		[26] (232,210)<span >Shopping />
+[27] (291,195)<a class='C6AK7c' href='/search?sca_esv=d2a5470d2e85f15e&udm=7&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3o6iwGk6Iv1tRbZIBNIVs-5-bUj3iBl-UxHsANYwOkWWQqZAJJdwuRaSoLHfELMHATVl4OUcAVbIDCswZGv5UYJTv7qwJ2CDpYRsRw0bVxq-1xN0k3Bd8nRhVHhgIzntpeYcaVmeGi_r667IT1CFQHHkgF_tn77GZW-i6VGAdkvKfX2HGg&q=Ph%E1%BB%A5+l%E1%BB%A5c+kem+theo+2487/SGD%C4%90T-GDPT+filetype:docx+OR+filetype:zip&sa=X&ved=2ahUKEwjq-fDAxOSTAxUp2DgGHazEI70QtKgLegQIFRAB' />
+	[28] (291,195)<div  />
+		[29] (291,210)<span >Videos />
+[30] (357,195)<a class='C6AK7c' href='/search?sca_esv=d2a5470d2e85f15e&udm=39&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3o6iwGk6Iv1tRbZIBNIVs-5-bUj3iBl-UxHsANYwOkWWQqZAJJdwuRaSoLHfELMHATVl4OUcAVbIDCswZGv5UYJTv7qwJ2CDpYRsRw0bVxq-1xN0k3Bd8nRhVHhgIzntpeYcaVmeGi_r667IT1CFQHHkgF_tn77GZW-i6VGAdkvKfX2HGg&q=Ph%E1%BB%A5+l%E1%BB%A5c+kem+theo+2487/SGD%C4%90T-GDPT+filetype:docx+OR+filetype:zip&sa=X&ved=2ahUKEwjq-fDAxOSTAxUp2DgGHazEI70Qs6gLegQIFhAB' />
+	[31] (357,195)<div  />
+		[32] (357,210)<span >Short videos />
+[33] (420,195)<a class='C6AK7c' href='/search?sca_esv=d2a5470d2e85f15e&q=Ph%E1%BB%A5+l%E1%BB%A5c+kem+theo+2487/SGD%C4%90T-GDPT+filetype:docx+OR+filetype:zip&tbm=nws&source=lnms&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3o6iwGk6Iv1tRbZIBNIVs-5-bUj3iBl-UxHsANYwOkWWQqZAJJdwuRaSoLHfELMHATVl4OUcAVbIDCswZGv5UYJTv7qwJ2CDpYRsRw0bVxq-1xN0k3Bd8nRhVHhgIzntpeYcaVmeGi_r667IT1CFQHHkgF_tn77GZW-i6VGAdkvKfX2HGg&sa=X&ved=2ahUKEwjq-fDAxOSTAxUp2DgGHazEI70Q0pQJegQIFBAB' />
+	[34] (420,195)<div  />
+		[35] (420,210)<span >News />
+[36] (471,195)<div class='mTpL7c' role='button' />
+	[37] (471,195)<div  />
+		[38] (471,210)<div  />
+			[39] (464,201)<span >More />
+			[40] (484,201)<span  />
+[41] (530,195)<div class='mOKdDc' id='hdtb-tls' role='button' />
+	[42] (530,195)<div  />
+		[43] (530,210)<div  />
+			[44] (522,201)<span >Tools />
+			[45] (542,201)<span  />
+Search Results
+No results found for
+"Phụ lục" kem theo "2487/SGDĐT-GDPT" filetype:docx OR filetype:zip
+.
+Results for
+[46] (323,454)<a href='/search?sca_esv=d2a5470d2e85f15e&q=Ph%E1%BB%A5+l%E1%BB%A5c+kem+theo+2487/SGD%C4%90T-GDPT+filetype:docx+OR+filetype:zip&sa=X&ved=2ahUKEwjq-fDAxOSTAxUp2DgGHazEI70QgwN6BAgQEAE' />
+	[47] (323,454)<b >Phụ lục kem theo 2487/SGDĐT-GDPT filetype:docx OR filetype:zip />
+(without quotes):
+Your search -
+Phụ lục kem theo 2487/SGDĐT-GDPT filetype:docx OR filetype:zip
+- did not match any documents.
+Suggestions:
+Make sure that all words are spelled correctly.
+Try different keywords.
+Try more general keywords.
+Try fewer keywords.
+
+</current_dom>

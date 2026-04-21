@@ -1,0 +1,33 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (227,165)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (227,165)<i  />
+Đề thi THPT – Tin học
+Công cụ tạo đề thi PPKT THPT
+[2] (450,369)<div  />
+	[3] (252,369)<i  />
+	[4] (520,369)<span >Cấu hình />
+[5] (426,437)<div  />
+	[6] (252,437)<i  />
+	[7] (496,437)<span >Ma trận />
+[8] (402,505)<div  />
+	[9] (252,505)<i  />
+	[10] (472,505)<span >Đặc tả />
+[11] (381,573)<div  />
+	[12] (241,573)<i  />
+	[13] (440,573)<span >Đề thi />
+[14] (602,642)<div  />
+	[15] (252,642)<i  />
+	[16] (672,642)<span >Nguồn ứng dụng />
+Máy tính và xã hội tri thức
+Biểu diễn thông tin, Hệ nhị phân, Đơn vị đo thông tin
+2
+Mạng máy tính và Internet
+Mạng máy tính, Internet và WWW, An toàn trên Internet
+3
+Đạo đức và pháp luật trong môi trường số
+Bản quyền và sở hữu trí tuệ, An toàn thông tin, Tác động CNTT đến xã hội
+
+</current_dom>

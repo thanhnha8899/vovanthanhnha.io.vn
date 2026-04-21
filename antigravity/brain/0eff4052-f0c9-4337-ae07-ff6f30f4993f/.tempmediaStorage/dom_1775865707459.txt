@@ -1,0 +1,136 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (33,73)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (33,73)<i  />
+Đề thi THPT – Tin học
+Công cụ tạo đề thi PPKT THPT
+[2] (65,183)<div  />
+	[3] (40,183)<i  />
+	[4] (74,183)<span >Cấu hình />
+[5] (159,183)<div  />
+	[6] (137,183)<i  />
+	[7] (167,183)<span >Ma trận />
+[8] (246,183)<div  />
+	[9] (227,183)<i  />
+	[10] (254,183)<span >Đặc tả />
+[11] (327,183)<div  />
+	[12] (310,183)<i  />
+	[13] (334,183)<span >Đề thi />
+[14] (915,183)<div  />
+	[15] (871,183)<i  />
+	[16] (924,183)<span >Nguồn ứng dụng />
+Năm học
+Thời gian (phút)
+Khối lớp
+Kỳ kiểm tra
+2
+Cấu trúc đề & Tỉ lệ
+Loại câu, điểm, mức độ nhận thức
+[17] (144,386)<label >ĐỘ KHÓ ĐỀ THI />
+[18] (144,447)<select id='do-kho' />
+Loại câu
+Số câu
+Điểm/câu
+Trắc nghiệm nhiều lựa chọn
+[19] (153,615)<input id='tn-socau' />
+[20] (218,615)<input id='tn-diem' />
+Trắc nghiệm Đúng/Sai
+(1 câu = 4 lệnh hỏi)
+[21] (153,716)<input id='ds-socau' />
+[22] (218,716)<input id='ds-diem' />
+Trả lời ngắn
+[23] (153,816)<input id='tln-socau' />
+[24] (218,816)<input id='tln-diem' />
+Tự luận
+[25] (153,902)<input id='tl-socau' />
+—
+3
+Chọn nội dung kiểm tra
+Mạch – Đơn vị kiến thức · Đã chọn:
+1
+[26] (872,303)<input id='search-topic' placeholder='Lọc mạch...' />
+MẠCH NỘI DUNG
+[27] (461,459)<div  />
+	[28] (322,456)<div  />
+		[29] (322,456)<i  />
+	[30] (338,456)<div  />
+	[31] (452,454)<span >Máy tính và xã hội tri thức />
+	[32] (574,459)<span >4 />
+	[33] (599,456)<span  />
+		[34] (599,456)<i  />
+[35] (461,531)<div  />
+	[36] (322,528)<div  />
+		[37] (322,528)<i  />
+	[38] (338,528)<div  />
+	[39] (452,526)<span >Mạng máy tính và Internet />
+	[40] (574,531)<span >3 />
+	[41] (599,528)<span  />
+		[42] (599,528)<i  />
+[43] (461,603)<div  />
+	[44] (322,599)<div  />
+		[45] (322,599)<i  />
+	[46] (338,599)<div  />
+	[47] (452,598)<span >Đạo đức và pháp luật trong CNTT />
+	[48] (574,603)<span >3 />
+	[49] (599,599)<span  />
+		[50] (599,599)<i  />
+[51] (461,675)<div  />
+	[52] (322,671)<div  />
+		[53] (322,671)<i  />
+	[54] (338,671)<div  />
+	[55] (452,670)<span >Ứng dụng tin học />
+	[56] (574,675)<span >4 />
+	[57] (599,671)<span  />
+		[58] (599,671)<i  />
+[59] (461,746)<div  />
+	[60] (322,743)<div  />
+		[61] (322,743)<i  />
+	[62] (338,743)<div  />
+	[63] (452,741)<span >Giải quyết vấn đề với máy tính />
+	[64] (574,746)<span >4 />
+	[65] (599,743)<span  />
+		[66] (599,743)<i  />
+[67] (461,818)<div  />
+	[68] (322,815)<div  />
+		[69] (322,815)<i  />
+	[70] (338,815)<div  />
+	[71] (452,813)<span >Lập trình cơ bản (Python) />
+	[72] (574,818)<span >7 />
+	[73] (599,815)<span  />
+		[74] (599,815)<i  />
+[75] (461,890)<div  />
+	[76] (322,887)<div  />
+		[77] (322,887)<i  />
+	[78] (338,887)<div  />
+	[79] (452,885)<span >Cơ sở dữ liệu />
+	[80] (574,890)<span >4 />
+	[81] (599,887)<span  />
+		[82] (599,887)<i  />
+[83] (322,958)<div  />
+	[84] (322,958)<i  />
+[85] (338,958)<div  />
+Hướng nghiệp với Tin học
+3
+[86] (599,958)<span  />
+	[87] (599,958)<i  />
+Máy tính và xã hội tri thức
+[88] (804,453)<div  />
+	[89] (664,453)<div  />
+		[90] (664,453)<i  />
+	[91] (815,453)<span >Thông tin và dữ liệu />
+[92] (804,511)<div  />
+	[93] (664,512)<div  />
+		[94] (664,512)<i  />
+	[95] (815,511)<span >Biểu diễn thông tin />
+[96] (804,569)<div  />
+	[97] (664,570)<div  />
+		[98] (664,570)<i  />
+	[99] (815,569)<span >Hệ nhị phân />
+[100] (804,628)<div  />
+	[101] (664,629)<div  />
+		[102] (664,629)<i  />
+	[103] (815,628)<span >Đơn vị đo thông tin />
+
+</current_dom>

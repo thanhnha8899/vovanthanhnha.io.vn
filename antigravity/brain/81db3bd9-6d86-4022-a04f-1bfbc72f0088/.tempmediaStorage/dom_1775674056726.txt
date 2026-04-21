@@ -1,0 +1,26 @@
+[0] (115,62)<a class='logo' href='#' id='logo' />
+	[1] (49,62)<div  />
+		[2] (49,62)<i  />
+	[3] (146,62)<div  />
+		[4] (146,46)<span >HOC8.COM />
+		[5] (146,82)<span >Nền tảng AI Giáo dục />
+[6] (361,62)<a class='nav-link' href='#products' id='nav-products'>Sản phẩm />
+[7] (501,62)<a class='nav-link' href='#company' id='nav-company'>Doanh nghiệp />
+[8] (645,62)<a class='nav-link' href='#policy' id='nav-policy'>Chính sách />
+[9] (890,62)<a class='phone-link' href='tel:0972300864' id='phone-link' />
+	[10] (834,62)<i  />
+	[11] (901,62)<span >0972 300 864 />
+AI-Powered Education Platform
+Nền tảng
+AI Giáo dục
+cho Giáo viên Việt Nam
+Ứng dụng trí tuệ nhân tạo hỗ trợ giáo viên soạn giáo án, tạo sáng kiến 
+                    và phát triển tài liệu giảng dạy chuyên nghiệp.
+1,000+
+Giáo viên tin dùng
+24/7
+Bảo mật an toàn
+2018
+Chuẩn CTGDPT
+Đăng nhập
+Truy cập tài khoản của bạn

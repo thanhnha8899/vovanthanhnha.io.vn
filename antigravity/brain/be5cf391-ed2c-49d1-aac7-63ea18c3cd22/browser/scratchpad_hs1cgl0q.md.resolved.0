@@ -1,0 +1,10 @@
+# Task: Thiết lập giao diện nạp tiền
+
+## Plan
+1. [ ] Navigate to http://127.0.0.1:8080/index.html
+2. [ ] Take screenshot and get DOM
+3. [ ] Extract page structure and navigation links
+4. [ ] Report findings to the user
+
+## Progress
+- Initializing scratchpad.

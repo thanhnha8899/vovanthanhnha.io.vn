@@ -1,0 +1,250 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (94,53)<a class='header-brand' href='index.html' />
+	[1] (34,53)<div  />
+		[2] (34,53)<i  />
+	[3] (113,53)<div  />
+		[4] (113,42)<span >VOVANTHANHNHA />
+		[5] (113,67)<span >Nền tảng AI Giáo dục />
+[6] (930,53)<a class='back-link' href='index.html'>Về trang chủ />
+	[7] (897,53)<i  />
+[8] (110,144)<button class='tab-btn active' id='tab-periodic-3d'>Bảng tuần hoàn hóa học 3D />
+	[9] (40,144)<i  />
+[10] (296,144)<button class='tab-btn' id='tab-more'>Phản ứng hóa học />
+	[11] (227,144)<i  />
+	[12] (355,144)<span >Sắp có />
+[13] (485,144)<button class='tab-btn' id='tab-more2'>Phòng thí nghiệm ảo />
+	[14] (411,144)<i  />
+	[15] (549,144)<span >Sắp có />
+Bảng tuần hoàn các nguyên tố hóa học
+3D Interactive
+[16] (174,365)<input id='search-input' placeholder='Tìm nguyên tố (tên, ký hiệu, số hiệu)...' />
+[17] (299,365)<button class='clear-btn visible' id='clear-search' />
+[18] (400,365)<select class='filter-select' id='category-filter' />
+[19] (543,365)<select class='filter-select' id='phase-filter' />
+[20] (918,365)<button id='btn-flat' title='Phẳng' />
+	[21] (918,365)<i  />
+[22] (950,365)<button class='active' id='btn-3d' title='Nghiêng 3D' />
+	[23] (950,365)<i  />
+1
+H
+Hydrogen
+1.008
+2
+He
+Helium
+4.003
+3
+Li
+Lithium
+6.940
+4
+Be
+Beryllium
+9.012
+5
+B
+Boron
+10.81
+[24] (733,645)<div  />
+	[25] (715,613)<span >6 />
+	[26] (718,638)<span >C />
+	[27] (733,661)<span >Carbon />
+	[28] (722,677)<span >12.01 />
+7
+N
+Nitrogen
+14.01
+8
+O
+Oxygen
+16.00
+9
+F
+Fluorine
+19.00
+10
+Ne
+Neon
+20.18
+11
+Na
+Sodium
+22.99
+12
+Mg
+Magnesium
+24.30
+13
+Al
+Aluminium
+26.98
+14
+Si
+Silicon
+28.09
+15
+P
+Phosphorus
+30.97
+16
+S
+Sulfur
+32.06
+17
+Cl
+Chlorine
+35.45
+18
+Ar
+Argon
+39.95
+19
+K
+Potassium
+39.10
+20
+Ca
+Calcium
+40.08
+21
+Sc
+Scandium
+44.96
+22
+Ti
+Titanium
+47.87
+23
+V
+Vanadium
+50.94
+24
+Cr
+Chromium
+52.00
+25
+Mn
+Manganese
+54.94
+26
+Fe
+Iron
+55.85
+27
+Co
+Cobalt
+58.93
+28
+Ni
+Nickel
+58.69
+29
+Cu
+Copper
+63.55
+30
+Zn
+Zinc
+65.38
+31
+Ga
+Gallium
+69.72
+32
+Ge
+Germanium
+72.63
+33
+As
+Arsenic
+74.92
+34
+Se
+Selenium
+78.97
+35
+Br
+Bromine
+79.90
+36
+Kr
+Krypton
+83.80
+37
+Rb
+Rubidium
+85.47
+38
+Sr
+Strontium
+87.62
+39
+Y
+Yttrium
+88.91
+40
+Zr
+Zirconium
+91.22
+41
+Nb
+Niobium
+92.91
+42
+Mo
+Molybdenum
+95.95
+43
+Tc
+Technetium
+98.00
+44
+Ru
+Ruthenium
+101.07
+45
+Rh
+Rhodium
+102.91
+46
+Pd
+Palladium
+106.42
+47
+Ag
+Silver
+107.87
+48
+Cd
+Cadmium
+112.41
+49
+In
+Indium
+114.82
+50
+Sn
+Tin
+118.71
+51
+Sb
+Antimony
+121.76
+52
+Te
+Tellurium
+127.60
+53
+I
+Iodine
+126.90
+54
+Xe
+Xenon
+131.29
+[29] (1203,500)<div class='detail-panel' id='detail-panel' scrollable='true' />
+
+</current_dom>

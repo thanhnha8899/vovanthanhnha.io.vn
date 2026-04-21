@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SKKN Tu dong</title>
+  <style>
+    body { font-family: Inter, Arial, sans-serif; margin: 0; background: #f3f6fb; color: #0f172a; }
+    .wrap { max-width: 900px; margin: 24px auto; padding: 20px; }
+    .card { background: #fff; border: 1px solid #dbe3ef; border-radius: 16px; padding: 20px; }
+    h1 { margin: 0 0 6px; color: #0b7fa5; }
+    .sub { margin: 0 0 16px; color: #64748b; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .full { grid-column: 1 / -1; }
+    label { font-size: 14px; font-weight: 600; display: block; margin-bottom: 6px; }
+    input, textarea, select { width: 100%; box-sizing: border-box; border: 1px solid #cbd5e1; border-radius: 10px; padding: 10px 12px; font-size: 14px; }
+    textarea { min-height: 100px; resize: vertical; }
+    .actions { margin-top: 16px; display: flex; gap: 10px; }
+    button, a.btn { border: 0; border-radius: 10px; padding: 10px 14px; font-weight: 700; text-decoration: none; cursor: pointer; }
+    .primary { background: #0891b2; color: #fff; }
+    .ghost { background: #e2e8f0; color: #0f172a; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Cai dat SKKN Tu dong</h1>
+      <p class="sub">Nhap thong tin co ban de AI tao ban sang kien kinh nghiem.</p>
+      <form class="grid">
+        <div class="full">
+          <label for="topic">Ten sang kien kinh nghiem</label>
+          <input id="topic" placeholder="Nhap ten de tai..." />
+        </div>
+        <div>
+          <label for="teacher">Ho ten giao vien</label>
+          <input id="teacher" />
+        </div>
+        <div>
+          <label for="school">Truong cong tac</label>
+          <input id="school" />
+        </div>
+        <div class="full">
+          <label for="context">Boi canh/van de thuc te</label>
+          <textarea id="context"></textarea>
+        </div>
+        <div class="full">
+          <label for="solution">Giai phap de xuat</label>
+          <textarea id="solution"></textarea>
+        </div>
+      </form>
+      <div class="actions">
+        <button class="primary" type="button">Tao dan y sang kien</button>
+        <a class="btn ghost" href="index.html">Quay lai</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

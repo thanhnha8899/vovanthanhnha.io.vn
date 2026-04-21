@@ -1,0 +1,120 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (145,45)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (145,45)<i  />
+Đề thi THPT – Vật Lí
+Công cụ tạo đề thi PPKT THPT
+[2] (166,113)<div  />
+	[3] (150,113)<i  />
+	[4] (172,113)<span >Cấu hình />
+[5] (228,113)<div  />
+	[6] (214,113)<i  />
+	[7] (234,113)<span >Ma trận />
+[8] (286,113)<div  />
+	[9] (273,113)<i  />
+	[10] (291,113)<span >Đặc tả />
+[11] (340,113)<div  />
+	[12] (328,113)<i  />
+	[13] (345,113)<span >Đề thi />
+[14] (821,113)<div  />
+	[15] (791,113)<i  />
+	[16] (826,113)<span >Nguồn ứng dụng />
+2. BAN DAC TA DE KIEM TRA DINH KI
+Kem theo Cong van so 7991/BGDDT-GDTrH ngay 17/12/2024 cua Bo GDDT
+So cau hoi phan bo can do theo tung don vi kien thuc (theo ma tran).
+Yeu cau can dat: moi don vi kien thuc chi mot y (trich tu khung), thuoc muc co nhieu cau nhat tren hang ma tran; hoa do uu tien Biet -> Hieu -> Van dung. Khong ghi nhan Biet, Hieu, Van dung trong o.
+[17] (221,378)<button class='dacta-btn primary' id='btn-switch-dethi' />
+	[18] (178,378)<i  />
+	[19] (226,378)<span >Chuyen sang tab De thi />
+[20] (323,378)<button class='dacta-btn secondary' id='btn-download-docx' />
+	[21] (300,378)<i  />
+	[22] (329,378)<span >Tai ve .docx />
+TT
+Chu de/Chuong
+Noi dung/don vi kien thuc
+Yeu cau can dat
+So cau hoi o cac muc do danh gia
+Tong
+TNKQ
+Tu luan
+Nhieu lua chon
+"Dung - Sai"
+Tra loi ngan
+Tu luan
+Biet
+Hieu
+Van dung
+Biet
+Hieu
+Van dung
+Biet
+Hieu
+Van dung
+Biet
+Hieu
+Van dung
+1
+Ba định luật Newton và chuyển động
+Định luật I Newton, Định luật II Newton, Định luật III Newton, Lực hấp dẫn và gia tốc rơi tự do, Chuyển động ném ngang, Chuyển động tròn đều
+Khai niem, phat bieu dinh luat, giai thich chuyen dong
+2
+1
+1
+1
+1
+1
+1
+8
+2
+Biến dạng nén và biến dạng kéo
+Biến dạng đàn hồi, Biến dạng nén, Biến dạng kéo, Giới hạn đàn hồi
+Khai niem, goi ten, dac diem lien ket, hinh dang phan tu
+2
+1
+1
+1
+1
+6
+3
+Bảo toàn động lượng
+Động lượng, Xung lượng của lực, Định luật bảo toàn động lượng, Va chạm đàn hồi và không đàn hồi, Chuyển động bằng phản lực
+Khai niem, bac alcohol, goi ten, cau tao phenol
+2
+1
+1
+1
+5
+Tong so cau
+6
+3
+3
+2
+1
+1
+2
+1
+19
+Tong so diem
+1.50
+0.75
+0.75
+2
+0.25
+0.25
+0.50
+4
+10
+Ti le %
+15
+8
+8
+20
+3
+3
+5
+40
+100
+
+</current_dom>

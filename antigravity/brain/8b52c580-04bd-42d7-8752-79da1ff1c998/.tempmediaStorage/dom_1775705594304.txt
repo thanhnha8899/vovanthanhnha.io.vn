@@ -1,0 +1,23 @@
+VOVANTHANHNHA
+Nền tảng AI Giáo dục
+Chào mừng trở lại!
+Đăng nhập để truy cập nền tảng AI giáo dục hàng đầu cho giáo viên Việt Nam.
+Soạn giáo án tự động với AI
+Tạo sáng kiến kinh nghiệm chuyên nghiệp
+Hỗ trợ 24/7 - Hotline: 0943 265 527
+Đăng nhập
+Nhập thông tin tài khoản để tiếp tục
+[0] (736,316)<label >Tên đăng nhập />
+[1] (736,381)<input id='login-username' placeholder='Nhập tên đăng nhập' />
+[2] (736,465)<label >Mật khẩu />
+[3] (736,530)<input id='login-password' placeholder='Nhập mật khẩu' />
+[4] (854,530)<button aria-label='Hiện mật khẩu' class='toggle-password' id='toggle-password-screen' />
+	[5] (869,541)<i  />
+[6] (662,613)<label class='checkbox-label'>Ghi nhớ đăng nhập />
+	[7] (611,613)<input id='remember-login' />
+[8] (829,613)<a class='forgot-link' href='#'>Quên mật khẩu? />
+[9] (736,704)<button class='btn btn-primary btn-login' id='btn-login-screen' />
+	[10] (728,704)<span >Đăng nhập />
+	[11] (772,704)<i  />
+Chưa có tài khoản?
+[12] (787,827)<a class='register-link' href='#'>Đăng ký ngay />

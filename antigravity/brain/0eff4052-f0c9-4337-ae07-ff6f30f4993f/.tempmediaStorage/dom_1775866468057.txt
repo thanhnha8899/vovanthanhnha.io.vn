@@ -1,0 +1,97 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+Skip to main content
+Accessibility help
+Accessibility feedback
+[0] (106,90)<a aria-label='Go to Google Home' href='https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwj7hOPsweSTAxUZxTgGHdiKPMsQPAgJ' id='logo' title='Go to Google Home' />
+[1] (397,88)<textarea aria-label='Search' class='gLFyf' id='APjFqb' role='combobox' />
+[2] (622,88)<div  />
+	[3] (620,88)<div aria-label='Clear' class='vOY7J M2vV3' role='button' />
+		[4] (620,88)<span  />
+	[5] (639,88)<span  />
+[6] (658,88)<div aria-label='Search by voice' class='XDyW0e' role='button' />
+[7] (689,88)<div aria-label='Search by image' class='nDcEnd' role='button' />
+[8] (725,88)<button aria-label='Search' class='HZVG1b Tg7LZd' />
+	[9] (720,88)<div  />
+		[10] (720,88)<span  />
+[11] (863,89)<div aria-label='Settings' class='fLciMb' id='og-te' role='button' />
+	[12] (863,92)<div  />
+		[13] (863,89)<span  />
+[14] (899,89)<a aria-label='Google apps' class='gb_B' href='https://www.google.com.vn/intl/en/about/products?tab=wh' role='button' />
+[15] (951,89)<a aria-label='Sign in' class='gb_A' href='https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3Dt%25E1%25BA%25A3i%2Bph%25E1%25BB%25A5%2Bl%25E1%25BB%25A5c%2BC%25C3%25B4ng%2Bv%25C4%2583n%2B2487%252FSGD%25C4%2590T-GDPT%2BTPHCM%2B2025%2Bfile%2Bword&ec=futura_srp_og_si_72236_p'>Sign in />
+	Sign in
+[16] (91,195)<a class='XVMlrc C6AK7c' href='/search?q=t%E1%BA%A3i+ph%E1%BB%A5+l%E1%BB%A5c+C%C3%B4ng+v%C4%83n+2487/SGD%C4%90T-GDPT+TPHCM+2025+file+word&sca_esv=d2a5470d2e85f15e&udm=50&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3vMboekt2cKC3pTSxvmRKdBH1tOmdyHeywNECeu_1ugRhkAtIkb-H90aQ8XzPj9jTpdfhSySjuWGfgv1HrLAzZ3l8zTri-nes0lQCfF8V_NaSxl3tUV-2EGJsGpLnVtH7ZpIIO1oAtJGN-4uCQi-uDkGeU4dqxwhvCLjNyidj5uHVI3NvA&aep=1&ntc=1&sa=X&ved=2ahUKEwj7hOPsweSTAxUZxTgGHdiKPMsQ2J8OegQIEBAE' />
+	[17] (91,195)<div  />
+		[18] (91,210)<div  />
+			[19] (91,201)<span >AI Mode />
+[20] (138,195)<a class='C6AK7c' role='link' />
+	All
+[21] (182,195)<a class='C6AK7c' href='/search?sca_esv=d2a5470d2e85f15e&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3vMboekt2cKC3pTSxvmRKdBH1tOmdyHeywNECeu_1ugRhkAtIkb-H90aQ8XzPj9jTpdfhSySjuWGfgv1HrLAzZ3l8zTri-nes0lQCfF8V_NaSxl3tUV-2EGJsGpLnVtH7ZpIIO1oAtJGN-4uCQi-uDkGeU4dqxwhvCLjNyidj5uHVI3NvA&q=t%E1%BA%A3i+ph%E1%BB%A5+l%E1%BB%A5c+C%C3%B4ng+v%C4%83n+2487/SGD%C4%90T-GDPT+TPHCM+2025+file+word&sa=X&ved=2ahUKEwj7hOPsweSTAxUZxTgGHdiKPMsQtKgLegQIEhAB' />
+	[22] (182,195)<div  />
+		[23] (182,210)<span >Images />
+[24] (233,195)<a class='C6AK7c' href='/search?sca_esv=d2a5470d2e85f15e&q=t%E1%BA%A3i+ph%E1%BB%A5+l%E1%BB%A5c+C%C3%B4ng+v%C4%83n+2487/SGD%C4%90T-GDPT+TPHCM+2025+file+word&tbm=nws&source=lnms&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3vMboekt2cKC3pTSxvmRKdBH1tOmdyHeywNECeu_1ugRhkAtIkb-H90aQ8XzPj9jTpdfhSySjuWGfgv1HrLAzZ3l8zTri-nes0lQCfF8V_NaSxl3tUV-2EGJsGpLnVtH7ZpIIO1oAtJGN-4uCQi-uDkGeU4dqxwhvCLjNyidj5uHVI3NvA&sa=X&ved=2ahUKEwj7hOPsweSTAxUZxTgGHdiKPMsQ0pQJegQIExAB' />
+	[25] (233,195)<div  />
+		[26] (233,210)<span >News />
+[27] (290,195)<a class='C6AK7c' href='/search?sca_esv=d2a5470d2e85f15e&udm=28&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3vMboekt2cKC3pTSxvmRKdBH1tOmdyHeywNECeu_1ugRhkAtIkb-H90aQ8XzPj9jTpdfhSySjuWGfgv1HrLAzZ3l8zTri-nes0lQCfF8V_NaSxl3tUV-2EGJsGpLnVtH7ZpIIO1oAtJGN-4uCQi-uDkGeU4dqxwhvCLjNyidj5uHVI3NvA&q=t%E1%BA%A3i+ph%E1%BB%A5+l%E1%BB%A5c+C%C3%B4ng+v%C4%83n+2487/SGD%C4%90T-GDPT+TPHCM+2025+file+word&ved=1t:220175&ictx=111' />
+	[28] (290,195)<div  />
+		[29] (290,210)<span >Shopping />
+[30] (351,195)<a class='C6AK7c' href='/search?sca_esv=d2a5470d2e85f15e&udm=7&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3vMboekt2cKC3pTSxvmRKdBH1tOmdyHeywNECeu_1ugRhkAtIkb-H90aQ8XzPj9jTpdfhSySjuWGfgv1HrLAzZ3l8zTri-nes0lQCfF8V_NaSxl3tUV-2EGJsGpLnVtH7ZpIIO1oAtJGN-4uCQi-uDkGeU4dqxwhvCLjNyidj5uHVI3NvA&q=t%E1%BA%A3i+ph%E1%BB%A5+l%E1%BB%A5c+C%C3%B4ng+v%C4%83n+2487/SGD%C4%90T-GDPT+TPHCM+2025+file+word&sa=X&ved=2ahUKEwj7hOPsweSTAxUZxTgGHdiKPMsQtKgLegQIFhAB' />
+	[31] (351,195)<div  />
+		[32] (351,210)<span >Videos />
+[33] (419,195)<a class='C6AK7c' href='/search?sca_esv=d2a5470d2e85f15e&udm=39&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3vMboekt2cKC3pTSxvmRKdBH1tOmdyHeywNECeu_1ugRhkAtIkb-H90aQ8XzPj9jTpdfhSySjuWGfgv1HrLAzZ3l8zTri-nes0lQCfF8V_NaSxl3tUV-2EGJsGpLnVtH7ZpIIO1oAtJGN-4uCQi-uDkGeU4dqxwhvCLjNyidj5uHVI3NvA&q=t%E1%BA%A3i+ph%E1%BB%A5+l%E1%BB%A5c+C%C3%B4ng+v%C4%83n+2487/SGD%C4%90T-GDPT+TPHCM+2025+file+word&sa=X&ved=2ahUKEwj7hOPsweSTAxUZxTgGHdiKPMsQs6gLegQIFRAB' />
+	[34] (419,195)<div  />
+		[35] (419,210)<span >Short videos />
+[36] (491,195)<div class='mTpL7c' role='button' />
+	[37] (491,195)<div  />
+		[38] (491,210)<div  />
+			[39] (484,201)<span >More />
+			[40] (504,201)<span  />
+[41] (550,195)<div class='mOKdDc' id='hdtb-tls' role='button' />
+	[42] (550,195)<div  />
+		[43] (550,210)<div  />
+			[44] (543,201)<span >Tools />
+			[45] (564,201)<span  />
+Search Results
+Kết quả trên web
+[46] (272,347)<a class='zReHs' href='https://thcsduongbatrac.hcm.edu.vn/van-ban-tu-so-giao-duc-va-dao-tao-tphcm/cong-van-so-2487sgddt-gdpt-ngay-1892025-cua-so-gddt-ve-viec-huong-dan-to-chuc-k/vbctmb/34230/716121' />
+	[47] (272,379)<h3 >Công văn số 2487/SGDĐT-GDPT ngày 18/9/2025 của Sở ... />
+	[48] (183,320)<div  />
+		[49] (183,320)<div  />
+			[50] (81,320)<span  />
+				[51] (81,320)<div  />
+					[52] (81,320)<img  />
+			[53] (198,320)<div  />
+				[54] (198,304)<div  />
+					[55] (198,304)<span >THCS Dương Bá Trạc />
+				[56] (198,337)<div  />
+					[57] (198,337)<cite class='qLRx3b tjvcx GvPZzd dTxz9 cHaqb' role='text'>https://thcsduongbatrac.hcm.edu.vn />
+						[58] (258,336)<span class='ylgVCe ob9lvb' role='text'>› ... />
+·
+[59] (317,337)<a class='dEEN8c' href='https://thcsduongbatrac.hcm.edu.vn/van-ban-tu-so-giao-duc-va-dao-tao-tphcm/cong-van-so-2487sgddt-gdpt-ngay-1892025-cua-so-gddt-ve-viec-huong-dan-to-chuc-k/vbctmb/34230/716121' />
+	[60] (317,336)<span >Translate this page />
+[61] (374,335)<div aria-label='About this result' class='MJ8UF iTPLzd rNSxBe eY4mx lUn2nc' role='button' />
+	[62] (374,335)<span  />
+		[63] (374,337)<span  />
+Sep 18, 2025
+—
+Công văn số 2487/SGDĐT-GDPT ngày 18/9/2025
+của Sở GD&ĐT về việc hướng dẫn tổ chức kiểm tra, đánh giá học sinh THCS, THPT từ năm học 2025 - 2026 ...
+[64] (473,467)<a class='vzmbzf' href='https://thcsduongbatrac.hcm.edu.vn/van-ban-tu-so-giao-duc-va-dao-tao-tphcm/cong-van-so-2487sgddt-gdpt-ngay-1892025-cua-so-gddt-ve-viec-huong-dan-to-chuc-k/vbctmb/34230/716121#:~:text=C%C3%B4ng%20v%C4%83n%20s%E1%BB%91%202487%2FSGD%C4%90T%2DGDPT%20ng%C3%A0y,n%C4%83m%20h%E1%BB%8Dc%202025%20%2D%202026' />
+	[65] (473,467)<span >Read more />
+Missing:
+phụ
+‎
+lục
+‎
+word
+AI Overview
+[66] (573,600)<div aria-label='About this result' class='Mtffrd' role='button' />
+Công văn 2487/SGDĐT-GDPT ngày 18/9/2025 của Sở GD&ĐT TPHCM hướng dẫn kiểm tra, đánh giá học sinh THCS, THPT từ năm học 2025-2026. Phụ lục chứa nội dung chi tiết về hình thức và cấu trúc bài thi.
+Tải phụ lục và công văn (dạng file PDF/Word):
+[67] (173,882)<a class='H23r4e' href='https://thcsbachdangq3.hcm.edu.vn/cong-khai/van-ban-2487sgddt-gdpt-huong-dan-to-chuc-kiem-tra-danh-gia-hoc-sinh-thcs-thpt-t/ctmb/94035/715888'>Thcsbachdangq3.hcm.edu.vn />
+[68] (174,944)<a class='H23r4e' href='https://thcsduongbatrac.hcm.edu.vn/van-ban-tu-so-giao-duc-va-dao-tao-tphcm/cong-van-so-2487sgddt-gdpt-ngay-1892025-cua-so-gddt-ve-viec-huong-dan-to-chuc-k/vbctmb/34230/716121'>Thcsduongbatrac.hcm.edu.vn />
+Thcsphamhuulau.hcm.edu.vn
+
+</current_dom>

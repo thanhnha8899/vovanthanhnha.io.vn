@@ -1,0 +1,6 @@
+{
+  "artifactType": "ARTIFACT_TYPE_IMPLEMENTATION_PLAN",
+  "summary": "Plan to add a 'Đề thi' (Exam) tab to all 10 exam subject pages. The tab will allow users to generate exams using the Gemini API based on previously configured matrix and specification data. Includes CSS styling for the exam display, JavaScript for API integration, prompt building from configuration data, and .docx export. The plan requires the user to provide a Gemini API key and confirm which model to use.",
+  "updatedAt": "2026-04-09T07:16:54.977364300Z",
+  "requestFeedback": true
+}

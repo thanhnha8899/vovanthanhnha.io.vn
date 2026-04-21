@@ -1,0 +1,6 @@
+# Task: Capture screenshot of Đề thi tab in de-thi-tinhoc.html
+
+## Status
+- [ ] List browser pages and get DOM of de-thi-tinhoc.html
+- [ ] Activate "Đề thi" tab
+- [ ] Capture screenshot and describe content

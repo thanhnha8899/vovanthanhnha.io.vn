@@ -1,0 +1,37 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+Đề thi THPT – Hóa học
+Công cụ tạo đề thi PPKT THPT
+Cấu hình
+Ma trận
+Đặc tả
+Đề thi
+Nguồn ứng dụng
+1
+Thông tin đề thi
+Trường, kỳ thi, môn học, thời gian
+Tên trường
+Tổ chuyên môn
+Tên đề kiểm tra
+Môn học
+Năm học
+Thời gian (phút)
+Khối lớp
+Kỳ kiểm tra
+2
+Cấu trúc đề & Tỉ lệ
+Loại câu, điểm, mức độ nhận thức
+ĐỘ KHÓ ĐỀ THI
+3
+Chọn nội dung kiểm tra
+Mạch – Đơn vị kiến thức · Đã chọn:
+3
+MẠCH NỘI DUNG
+Bảng tuần hoàn các nguyên tố hoá học
+3
+Liên kết hoá học
+Quy tắc octet
+
+</current_dom>

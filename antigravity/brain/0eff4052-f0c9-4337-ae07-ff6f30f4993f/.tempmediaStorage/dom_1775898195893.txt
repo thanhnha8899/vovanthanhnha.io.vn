@@ -1,0 +1,71 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (33,73)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (33,73)<i  />
+Đề thi THPT – Tin học
+Công cụ tạo đề thi PPKT THPT
+[2] (65,183)<div  />
+	[3] (40,183)<i  />
+	[4] (74,183)<span >Cấu hình />
+[5] (159,183)<div  />
+	[6] (137,183)<i  />
+	[7] (167,183)<span >Ma trận />
+[8] (246,183)<div  />
+	[9] (227,183)<i  />
+	[10] (254,183)<span >Đặc tả />
+[11] (327,183)<div  />
+	[12] (310,183)<i  />
+	[13] (334,183)<span >Đề thi />
+[14] (915,183)<div  />
+	[15] (871,183)<i  />
+	[16] (924,183)<span >Nguồn ứng dụng />
+Tạo đề thi (trừ 2 điểm)
+Quay lại cấu hình
+Tải về .docx
+Hãy tải đề thi trước khi tạo đề thi khác; khi quay lại sẽ không thể tải đề thi này. Mỗi lần bấm "Tạo đề thi (trừ 2 điểm)" trừ 2 điểm.
+SỞ GD&ĐT ...
+TRƯỜNG THPT
+ĐỀ KIỂM TRA TIN HỌC 10 - NĂM HỌC NĂM HỌC 2026 - 2027
+Môn: Tin học
+Thời gian làm bài: 45 phút
+Họ và tên thí sinh: ........................................................................... Số BD: .....................
+--------- HẾT --------
+ĐÁP ÁN
+Phần I
+1.
+B) Hàm AVERAGE
+2.
+D)
+Tất cả các đáp án trên
+3.
+A) 2
+4.
+A) Bit
+5.
+D)
+Tất cả các đáp án trên
+6.
+D)
+Tất cả các đáp án trên
+7.
+C)
+Hệ thống thông tin siêu liên kết
+8.
+C)
+Tất cả các đáp án trên
+9.
+D)
+Tất cả các đáp án trên
+10.
+C)
+Phát triển trí tuệ nhân tạo
+11.
+C)
+Kỹ năng phân tích và giải quyết vấn đề
+12.
+C)
+Kiến thức về công nghệ thông tin và kỹ năng thực hành
+
+</current_dom>

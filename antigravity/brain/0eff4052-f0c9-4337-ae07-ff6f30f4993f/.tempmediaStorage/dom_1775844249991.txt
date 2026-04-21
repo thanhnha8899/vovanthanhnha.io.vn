@@ -1,0 +1,109 @@
+[0] (35,66)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (35,66)<i  />
+Đề thi THPT – Tin học
+Công cụ tạo đề thi PPKT THPT
+[2] (71,166)<div  />
+	[3] (44,166)<i  />
+	[4] (79,166)<span >Cấu hình />
+[5] (171,166)<div  />
+	[6] (148,166)<i  />
+	[7] (180,166)<span >Ma trận />
+[8] (265,166)<div  />
+	[9] (245,166)<i  />
+	[10] (274,166)<span >Đặc tả />
+[11] (353,166)<div  />
+	[12] (335,166)<i  />
+	[13] (361,166)<span >Đề thi />
+[14] (909,166)<div  />
+	[15] (861,166)<i  />
+	[16] (917,166)<span >Nguồn ứng dụng />
+Loại câu, điểm, mức độ nhận thức
+ĐỘ KHÓ ĐỀ THI
+Loại câu
+Số câu
+Điểm/câu
+Trắc nghiệm nhiều lựa chọn
+[17] (166,254)<input id='tn-socau' />
+[18] (236,254)<input id='tn-diem' />
+Trắc nghiệm Đúng/Sai
+(1 câu = 4 lệnh hỏi)
+[19] (166,346)<input id='ds-socau' />
+[20] (236,346)<input id='ds-diem' />
+Trả lời ngắn
+[21] (166,437)<input id='tln-socau' />
+[22] (236,437)<input id='tln-diem' />
+Tự luận
+[23] (166,515)<input id='tl-socau' />
+—
+Tổng điểm TNKQ
+8.5
+Điểm tự luận
+1.5
+MỨC ĐỘ NHẬN THỨC (%)
+[24] (80,819)<label >Biết />
+[25] (80,866)<input id='biet' />
+[26] (168,819)<label >Hiểu />
+[27] (168,866)<input id='hieu' />
+[28] (256,819)<label >Vận dụng />
+[29] (256,866)<input id='vandung' />
+Tổng nên bằng 100% (tự chuẩn hoá nếu khác)
+Ma trận tự động hình thành theo cấu hình trên và danh sách đơn vị đã chọn.
+Mạch – Đơn vị kiến thức · Đã chọn:
+0
+MẠCH NỘI DUNG
+Máy tính và xã hội tri thức
+4
+Mạng máy tính và Internet
+3
+[30] (478,243)<div  />
+	[31] (347,239)<div  />
+		[32] (347,239)<i  />
+	[33] (365,239)<div  />
+	[34] (468,238)<span >Đạo đức và pháp luật trong CNTT />
+	[35] (580,243)<span >3 />
+	[36] (607,239)<span  />
+		[37] (607,239)<i  />
+[38] (478,308)<div  />
+	[39] (347,305)<div  />
+		[40] (347,305)<i  />
+	[41] (365,305)<div  />
+	[42] (468,303)<span >Ứng dụng tin học />
+	[43] (580,308)<span >4 />
+	[44] (607,305)<span  />
+		[45] (607,305)<i  />
+[46] (478,373)<div  />
+	[47] (347,370)<div  />
+		[48] (347,370)<i  />
+	[49] (365,370)<div  />
+	[50] (468,369)<span >Giải quyết vấn đề với máy tính />
+	[51] (580,373)<span >4 />
+	[52] (607,370)<span  />
+		[53] (607,370)<i  />
+[54] (478,439)<div  />
+	[55] (347,435)<div  />
+		[56] (347,435)<i  />
+	[57] (365,435)<div  />
+	[58] (468,434)<span >Lập trình cơ bản (Python) />
+	[59] (580,439)<span >7 />
+	[60] (607,435)<span  />
+		[61] (607,435)<i  />
+[62] (478,504)<div  />
+	[63] (347,501)<div  />
+		[64] (347,501)<i  />
+	[65] (365,501)<div  />
+	[66] (468,499)<span >Cơ sở dữ liệu />
+	[67] (580,504)<span >4 />
+	[68] (607,501)<span  />
+		[69] (607,501)<i  />
+[70] (478,569)<div  />
+	[71] (347,566)<div  />
+		[72] (347,566)<i  />
+	[73] (365,566)<div  />
+	[74] (468,565)<span >Hướng nghiệp với Tin học />
+	[75] (580,569)<span >3 />
+	[76] (607,566)<span  />
+		[77] (607,566)<i  />
+CHỌN MẠCH BÊN TRÁI
+Chọn một mạch nội dung bên trái để hiện đơn vị kiến thức.
+Đã chọn:
+Chưa chọn đơn vị nào

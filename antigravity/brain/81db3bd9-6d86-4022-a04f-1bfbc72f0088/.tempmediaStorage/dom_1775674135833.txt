@@ -1,0 +1,33 @@
+[0] (115,62)<a class='logo' href='#' id='logo' />
+	[1] (49,62)<div  />
+		[2] (49,62)<i  />
+	[3] (146,62)<div  />
+		[4] (146,46)<span >HOC8.COM />
+		[5] (146,82)<span >Nền tảng AI Giáo dục />
+[6] (353,62)<a class='nav-link' href='#products' id='nav-products'>Sản phẩm />
+[7] (492,62)<a class='nav-link' href='#company' id='nav-company'>Doanh nghiệp />
+[8] (636,62)<a class='nav-link' href='#policy' id='nav-policy'>Chính sách />
+[9] (874,62)<a class='phone-link' href='tel:0972300864' id='phone-link' />
+	[10] (818,62)<i  />
+	[11] (885,62)<span >0972 300 864 />
+Bắt đầu soạn giáo án với AI ngay hôm nay
+Tham gia cùng hơn 1000+ giáo viên đang sử dụng HOC8.COM
+[12] (376,350)<a class='btn btn-primary btn-cta' href='#hero' id='btn-cta-register' />
+	[13] (300,350)<i  />
+	[14] (389,350)<span >Đăng ký miễn phí />
+[15] (620,350)<a class='btn btn-outline-light btn-cta' href='tel:0972300864' id='btn-cta-contact' />
+	[16] (557,350)<i  />
+	[17] (632,350)<span >Liên hệ tư vấn />
+[18] (492,718)<a class='footer-logo' href='#' />
+	[19] (49,718)<div  />
+		[20] (49,718)<i  />
+	[21] (159,718)<div  />
+		[22] (159,702)<span >HOC8.COM />
+		[23] (159,738)<span >Nền tảng AI cho Giáo viên />
+Ứng dụng trí tuệ nhân tạo hỗ trợ giáo viên soạn giáo án, tạo sáng kiến 
+                        và phát triển tài liệu giảng dạy chuyên nghiệp.
+GPĐKKD: 8594615626 - Đã xác thực
+Liên kết
+Liên hệ
+[24] (926,907)<button aria-label='Về đầu trang' class='back-to-top visible' id='back-to-top' />
+	[25] (926,907)<i  />

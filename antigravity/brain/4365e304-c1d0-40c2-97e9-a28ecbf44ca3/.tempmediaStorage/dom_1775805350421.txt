@@ -1,0 +1,97 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (53,66)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (53,66)<i  />
+Đề thi THPT – Tin học
+Công cụ tạo đề thi PPKT THPT
+[2] (106,171)<div  />
+	[3] (59,171)<i  />
+	[4] (122,171)<span >Cấu hình />
+[5] (265,171)<div  />
+	[6] (224,171)<i  />
+	[7] (281,171)<span >Ma trận />
+[8] (413,171)<div  />
+	[9] (377,171)<i  />
+	[10] (429,171)<span >Đặc tả />
+[11] (550,171)<div  />
+	[12] (517,171)<i  />
+	[13] (564,171)<span >Đề thi />
+[14] (858,171)<div  />
+	[15] (776,171)<i  />
+	[16] (875,171)<span >Nguồn ứng dụng />
+Ma trận tự động hình thành theo cấu hình trên và danh sách đơn vị đã chọn.
+Tạo ma trận
+trừ 2 điểm
+3
+Chọn nội dung kiểm tra
+Mạch – Đơn vị kiến thức · Đã chọn:
+1
+[17] (756,310)<input id='search-topic' placeholder='Lọc mạch...' />
+MẠCH NỘI DUNG
+[18] (497,467)<div  />
+	[19] (94,464)<div  />
+		[20] (94,464)<i  />
+	[21] (126,464)<div  />
+	[22] (480,462)<span >Máy tính và xã hội tri thức />
+	[23] (848,467)<span >4 />
+	[24] (899,464)<span  />
+		[25] (899,464)<i  />
+[26] (497,539)<div  />
+	[27] (94,536)<div  />
+		[28] (94,536)<i  />
+	[29] (126,536)<div  />
+	[30] (480,534)<span >Mạng máy tính và Internet />
+	[31] (848,539)<span >3 />
+	[32] (899,536)<span  />
+		[33] (899,536)<i  />
+[34] (497,611)<div  />
+	[35] (94,608)<div  />
+		[36] (94,608)<i  />
+	[37] (126,608)<div  />
+	[38] (480,606)<span >Đạo đức và pháp luật trong CNTT />
+	[39] (848,611)<span >3 />
+	[40] (899,608)<span  />
+		[41] (899,608)<i  />
+[42] (497,683)<div  />
+	[43] (94,680)<div  />
+		[44] (94,680)<i  />
+	[45] (126,680)<div  />
+	[46] (480,678)<span >Ứng dụng tin học />
+	[47] (848,683)<span >4 />
+	[48] (899,680)<span  />
+		[49] (899,680)<i  />
+[50] (497,755)<div  />
+	[51] (94,751)<div  />
+		[52] (94,751)<i  />
+	[53] (126,751)<div  />
+	[54] (480,750)<span >Giải quyết vấn đề với máy tính />
+	[55] (848,755)<span >4 />
+	[56] (899,751)<span  />
+		[57] (899,751)<i  />
+[58] (497,827)<div  />
+	[59] (94,823)<div  />
+		[60] (94,823)<i  />
+	[61] (126,823)<div  />
+	[62] (480,822)<span >Lập trình cơ bản (Python) />
+	[63] (848,827)<span >7 />
+	[64] (899,823)<span  />
+		[65] (899,823)<i  />
+[66] (497,899)<div  />
+	[67] (94,895)<div  />
+		[68] (94,895)<i  />
+	[69] (126,895)<div  />
+	[70] (480,894)<span >Cơ sở dữ liệu />
+	[71] (848,899)<span >4 />
+	[72] (899,895)<span  />
+		[73] (899,895)<i  />
+[74] (94,967)<div  />
+	[75] (94,967)<i  />
+[76] (126,967)<div  />
+Hướng nghiệp với Tin học
+[77] (848,971)<span >3 />
+[78] (899,967)<span  />
+	[79] (899,967)<i  />
+
+</current_dom>

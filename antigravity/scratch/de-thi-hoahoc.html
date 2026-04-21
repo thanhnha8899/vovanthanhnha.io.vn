@@ -1,0 +1,2729 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đề thi THPT – Hóa học | VOVANTHANHNHA.IO.VN</title>
+    <meta name="description" content="Công cụ tạo đề thi THPT môn Hóa học tự động với AI - vovanthanhnha.io.vn">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* ===== CSS Variables / Design Tokens ===== */
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --primary-light: #eef2ff;
+            --primary-gradient: linear-gradient(135deg, #6366f1, #818cf8);
+
+            --navy: #1e293b;
+            --navy-light: #334155;
+
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --text-light: #94a3b8;
+
+            --bg-white: #ffffff;
+            --bg-light: #f8fafc;
+            --bg-lighter: #f1f5f9;
+            --bg-page: #f0f2f8;
+
+            --pink: #f43f5e;
+            --pink-light: #fff1f2;
+            --teal: #14b8a6;
+            --teal-light: #f0fdfa;
+            --purple: #8b5cf6;
+            --purple-light: #f5f3ff;
+            --orange: #f59e0b;
+            --orange-light: #fffbeb;
+            --blue: #3b82f6;
+            --blue-light: #eff6ff;
+            --green: #22c55e;
+            --green-light: #f0fdf4;
+            --red: #ef4444;
+            --red-light: #fef2f2;
+            --indigo: #6366f1;
+            --indigo-light: #eef2ff;
+            --cyan: #06b6d4;
+            --cyan-light: #ecfeff;
+            --amber: #f59e0b;
+            --amber-light: #fffbeb;
+
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+
+            --radius-sm: 8px;
+            --radius: 12px;
+            --radius-lg: 16px;
+            --radius-xl: 20px;
+            --radius-full: 9999px;
+
+            --transition-fast: 0.15s ease;
+            --transition: 0.3s ease;
+        }
+
+        /* ===== Reset & Base ===== */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: var(--text-primary);
+            background: var(--bg-page);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
+        }
+
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        button { cursor: pointer; border: none; background: none; font-family: inherit; }
+        input, select { font-family: inherit; outline: none; }
+
+        /* ===== Page Header ===== */
+        .page-header {
+            background: var(--bg-white);
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .page-header-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .page-header-top {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 4px;
+        }
+
+        .back-btn {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--radius-sm);
+            color: var(--text-primary);
+            font-size: 18px;
+            transition: all var(--transition);
+            flex-shrink: 0;
+        }
+
+        .back-btn:hover {
+            background: var(--bg-lighter);
+            color: var(--primary);
+        }
+
+        .page-title-group h1 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--navy);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .page-title-group h1 .subject-icon {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, #14b8a6, #2dd4bf);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 15px;
+        }
+
+        .page-title-group p {
+            font-size: 12px;
+            color: var(--text-light);
+            margin-top: 2px;
+        }
+
+        /* ===== Tab Bar ===== */
+        .tab-bar {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin-top: 16px;
+            border-bottom: none;
+            flex-wrap: wrap;
+        }
+
+        .tab-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            border-radius: var(--radius-full);
+            transition: all var(--transition);
+            cursor: pointer;
+            border: 1.5px solid transparent;
+            position: relative;
+            white-space: nowrap;
+        }
+
+        .tab-item i {
+            font-size: 13px;
+        }
+
+        .tab-item:hover {
+            color: var(--primary);
+            background: var(--primary-light);
+        }
+
+        .tab-item.active {
+            background: var(--bg-white);
+            color: var(--primary);
+            border-color: var(--primary);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .tab-item.tab-source {
+            margin-left: auto;
+            color: var(--pink);
+        }
+
+        .tab-item.tab-source:hover {
+            background: var(--pink-light);
+        }
+
+        /* ===== Main Content ===== */
+        .main-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 24px;
+            gap: 24px;
+            animation: fadeInUp 0.5s ease;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(16px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ===== Cards ===== */
+        .card {
+            background: var(--bg-white);
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(0,0,0,0.06);
+            overflow: hidden;
+            transition: box-shadow var(--transition);
+        }
+
+        .card:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 20px 24px 16px;
+        }
+
+        .card-step {
+            width: 32px;
+            height: 32px;
+            background: var(--primary-gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .card-header-info h3 {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--navy);
+        }
+
+        .card-header-info p {
+            font-size: 11px;
+            color: var(--text-light);
+            margin-top: 1px;
+        }
+
+        .card-body {
+            padding: 0 24px 24px;
+        }
+
+        /* ===== Section 1: Thông tin đề thi ===== */
+        .info-section {
+            grid-column: 1 / -1;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+
+        .info-grid .form-field:nth-child(n+5) {
+            /* second row */
+        }
+
+        .form-field {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .form-field label {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .form-field input,
+        .form-field select {
+            padding: 10px 14px;
+            background: var(--bg-white);
+            border: 1.5px solid #e2e8f0;
+            border-radius: var(--radius-sm);
+            font-size: 14px;
+            color: var(--text-primary);
+            font-weight: 500;
+            transition: all var(--transition);
+            height: 42px;
+        }
+
+        .form-field input:focus,
+        .form-field select:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+
+        .form-field select {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2364748b' d='M2.5 4.5L6 8l3.5-3.5'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            padding-right: 32px;
+            cursor: pointer;
+        }
+
+        /* ===== Section 2: Cấu trúc đề ===== */
+        .structure-section {
+            /* left column */
+        }
+
+        .difficulty-select {
+            margin-bottom: 20px;
+        }
+
+        .difficulty-select label {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .difficulty-select select {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1.5px solid #e2e8f0;
+            border-radius: var(--radius-sm);
+            font-size: 14px;
+            color: var(--text-primary);
+            font-weight: 500;
+            appearance: none;
+            background: var(--bg-white);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2364748b' d='M2.5 4.5L6 8l3.5-3.5'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            padding-right: 32px;
+            cursor: pointer;
+            transition: all var(--transition);
+        }
+
+        .difficulty-select select:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+
+        /* Question Types Table */
+        .question-table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .question-table-header {
+            display: grid;
+            grid-template-columns: 1fr 70px 80px;
+            gap: 8px;
+            padding: 0 0 8px;
+            border-bottom: 1px solid #e2e8f0;
+            margin-bottom: 8px;
+        }
+
+        .question-table-header span {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .question-table-header span:not(:first-child) {
+            text-align: center;
+        }
+
+        .question-row {
+            display: grid;
+            grid-template-columns: 1fr 70px 80px;
+            gap: 8px;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.03);
+        }
+
+        .question-row:last-child {
+            border-bottom: none;
+        }
+
+        .question-type-name {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-primary);
+            line-height: 1.3;
+        }
+
+        .question-row input {
+            width: 100%;
+            padding: 7px 8px;
+            border: 1.5px solid #e2e8f0;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+            background: var(--bg-light);
+            transition: all var(--transition);
+        }
+
+        .question-row input:focus {
+            border-color: var(--primary);
+            background: white;
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+
+        .question-row .score-dash {
+            text-align: center;
+            font-size: 18px;
+            color: var(--text-light);
+        }
+
+        /* Totals Row */
+        .totals-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-top: 2px solid #e2e8f0;
+            margin-top: 4px;
+        }
+
+        .total-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .total-label {
+            font-size: 10px;
+            font-weight: 600;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .total-value {
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .total-value.orange { color: var(--orange); }
+
+        /* Mức độ nhận thức */
+        .cognition-section {
+            margin-top: 20px;
+            padding-top: 16px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .cognition-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .cognition-title i {
+            color: var(--orange);
+            font-size: 14px;
+        }
+
+        .cognition-inputs {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 12px;
+        }
+
+        .cognition-field {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .cognition-field label {
+            font-size: 11px;
+            font-weight: 500;
+            color: var(--text-light);
+        }
+
+        .cognition-field input {
+            padding: 8px 10px;
+            border: 1.5px solid #e2e8f0;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+            background: var(--bg-light);
+            transition: all var(--transition);
+        }
+
+        .cognition-field input:focus {
+            border-color: var(--primary);
+            background: white;
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+
+        .cognition-note {
+            font-size: 11px;
+            color: var(--text-light);
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .auto-gen-note {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            margin-top: 12px;
+            padding: 10px 12px;
+            background: var(--primary-light);
+            border-radius: var(--radius-sm);
+            font-size: 12px;
+            color: var(--primary-dark);
+            line-height: 1.5;
+        }
+
+        .auto-gen-note i {
+            color: var(--primary);
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+
+        /* Generate Button */
+        .generate-btn {
+            width: 100%;
+            margin-top: 20px;
+            padding: 14px 24px;
+            background: linear-gradient(135deg, #22c55e, #16a34a);
+            color: white;
+            border: none;
+            border-radius: var(--radius);
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: all var(--transition);
+            box-shadow: 0 4px 14px rgba(34, 197, 94, 0.35);
+        }
+
+        .generate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(34, 197, 94, 0.4);
+        }
+
+        .generate-btn:active {
+            transform: translateY(0);
+        }
+
+        .generate-btn .cost-badge {
+            background: rgba(255,255,255,0.25);
+            padding: 3px 10px;
+            border-radius: var(--radius-full);
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        /* ===== Section 3: Chọn nội dung kiểm tra ===== */
+        .content-section {
+            /* right column */
+        }
+
+        .content-search {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 4px;
+        }
+
+        .content-search .search-wrapper {
+            flex: 1;
+            position: relative;
+        }
+
+        .content-search .search-wrapper i {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-light);
+            font-size: 14px;
+        }
+
+        .content-search .search-wrapper input {
+            width: 100%;
+            padding: 10px 14px 10px 38px;
+            border: 1.5px solid #e2e8f0;
+            border-radius: var(--radius-sm);
+            font-size: 13px;
+            color: var(--text-primary);
+            background: var(--bg-white);
+            transition: all var(--transition);
+        }
+
+        .content-search .search-wrapper input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+
+        .content-header-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 0 12px;
+        }
+
+        .content-subtitle {
+            font-size: 11px;
+            color: var(--text-light);
+        }
+
+        .content-body {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            min-height: 480px;
+        }
+
+        /* Left column: mạch nội dung */
+        .mach-noi-dung {
+            border-right: 1px solid #e2e8f0;
+            padding-right: 20px;
+        }
+
+        .mach-title {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+
+        .topic-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 9px 10px;
+            border-radius: var(--radius-sm);
+            transition: all var(--transition-fast);
+            cursor: pointer;
+            user-select: none;
+            position: relative;
+        }
+
+        .topic-item:hover {
+            background: var(--bg-lighter);
+        }
+
+        .topic-item.selected {
+            background: var(--primary-light);
+        }
+
+        .topic-checkbox {
+            width: 18px;
+            height: 18px;
+            border: 2px solid #cbd5e1;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 1px;
+            transition: all var(--transition-fast);
+            cursor: pointer;
+        }
+
+        .topic-item.selected .topic-checkbox,
+        .topic-item.checked .topic-checkbox {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .topic-checkbox i {
+            font-size: 10px;
+            color: white;
+            opacity: 0;
+            transition: opacity var(--transition-fast);
+        }
+
+        .topic-item.selected .topic-checkbox i,
+        .topic-item.checked .topic-checkbox i {
+            opacity: 1;
+        }
+
+        .topic-name {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-primary);
+            flex: 1;
+            line-height: 1.4;
+        }
+
+        .topic-count {
+            width: 24px;
+            height: 24px;
+            background: var(--bg-lighter);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--text-secondary);
+            flex-shrink: 0;
+        }
+
+        .topic-item.selected .topic-count,
+        .topic-item.checked .topic-count {
+            background: var(--primary);
+            color: white;
+        }
+
+        .topic-remove {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: var(--red);
+            font-size: 11px;
+            opacity: 0;
+            transition: all var(--transition-fast);
+            flex-shrink: 0;
+            cursor: pointer;
+        }
+
+        .topic-item:hover .topic-remove {
+            opacity: 1;
+        }
+
+        .topic-remove:hover {
+            background: var(--red-light);
+        }
+
+        /* Right column: chọn mạch bên trái */
+        .mach-right {
+            padding-left: 20px;
+        }
+
+        .mach-right-title {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+
+        .mach-right-placeholder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: calc(100% - 40px);
+            text-align: center;
+            color: var(--text-light);
+        }
+
+        .mach-right-placeholder i {
+            font-size: 48px;
+            color: #e2e8f0;
+            margin-bottom: 16px;
+        }
+
+        .mach-right-placeholder p {
+            font-size: 13px;
+            line-height: 1.6;
+            max-width: 220px;
+        }
+
+        /* Selected topics footer */
+        .selected-footer {
+            padding: 12px 24px;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .selected-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .selected-text {
+            font-size: 12px;
+            color: var(--text-light);
+            font-style: italic;
+        }
+
+        /* Sub-topic items in right panel */
+        .sub-topic-list {
+            max-height: 440px;
+            overflow-y: auto;
+            padding-right: 4px;
+        }
+
+        .sub-topic-list::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .sub-topic-list::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .sub-topic-list::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+
+        .sub-topic-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 10px;
+            border-radius: var(--radius-sm);
+            transition: all var(--transition-fast);
+            cursor: pointer;
+        }
+
+        .sub-topic-item:hover {
+            background: var(--bg-lighter);
+        }
+
+        .sub-topic-item.checked {
+            background: var(--primary-light);
+        }
+
+        .sub-topic-item .topic-checkbox {
+            width: 16px;
+            height: 16px;
+        }
+
+        .sub-topic-item.checked .topic-checkbox {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .sub-topic-item .topic-name {
+            font-size: 13px;
+        }
+
+        /* Topic list scrollable */
+        .topic-list {
+            max-height: 480px;
+            overflow-y: auto;
+            padding-right: 4px;
+        }
+
+        .topic-list::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .topic-list::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .topic-list::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+
+        /* ===== Color Indicators for topics ===== */
+        .topic-indicator {
+            width: 4px;
+            height: 20px;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        .topic-indicator.c-blue { background: var(--blue); }
+        .topic-indicator.c-green { background: var(--green); }
+        .topic-indicator.c-purple { background: var(--purple); }
+        .topic-indicator.c-orange { background: var(--orange); }
+        .topic-indicator.c-pink { background: var(--pink); }
+        .topic-indicator.c-teal { background: var(--teal); }
+        .topic-indicator.c-indigo { background: var(--indigo); }
+        .topic-indicator.c-cyan { background: var(--cyan); }
+        .topic-indicator.c-red { background: var(--red); }
+        .topic-indicator.c-amber { background: var(--amber); }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 1024px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            .info-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .content-body {
+                grid-template-columns: 1fr;
+            }
+
+            .mach-noi-dung {
+                border-right: none;
+                border-bottom: 1px solid #e2e8f0;
+                padding-right: 0;
+                padding-bottom: 16px;
+                margin-bottom: 16px;
+            }
+
+            .mach-right {
+                padding-left: 0;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tab-bar {
+                gap: 2px;
+            }
+
+            .tab-item {
+                padding: 8px 14px;
+                font-size: 12px;
+            }
+
+            .main-content {
+                padding: 16px;
+                gap: 16px;
+            }
+
+            .page-header {
+                padding: 12px 16px;
+            }
+
+            .cognition-inputs {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        /* ===== Pulse animation ===== */
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+
+        /* ===== Tooltip ===== */
+        .tooltip {
+            position: relative;
+        }
+
+        .tooltip::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 6px 12px;
+            background: var(--navy);
+            color: white;
+            font-size: 11px;
+            border-radius: 6px;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity var(--transition-fast);
+            margin-bottom: 6px;
+        }
+
+        .tooltip:hover::after {
+            opacity: 1;
+        }
+
+        /* Info section full width on top */
+        .info-section .card-body {
+            padding-bottom: 20px;
+        }
+
+        /* Top section layout */
+        .top-section {
+            grid-column: 1 / -1;
+        }
+
+        /* Bottom layout */
+        .bottom-layout {
+            display: contents;
+        }
+
+        /* ===== Tab Content Visibility ===== */
+        .tab-content { display: none !important; }
+        .tab-content.active { display: block !important; }
+        .tab-content-grid { display: none !important; }
+        .tab-content-grid.active {
+            display: grid !important;
+            grid-template-columns: 320px 1fr;
+            gap: 24px;
+        }
+
+        /* ===== Dacta Tab Styles ===== */
+        .dacta-container { max-width: 1400px; margin: 0 auto; padding: 24px; animation: fadeInUp 0.5s ease; }
+        .dacta-card { background: var(--bg-white); border-radius: var(--radius-lg); border: 1px solid rgba(0,0,0,0.06); overflow: hidden; box-shadow: var(--shadow); }
+        .dacta-header { display: flex; align-items: flex-start; gap: 16px; padding: 24px 28px 20px; border-bottom: 1px solid rgba(0,0,0,0.06); background: linear-gradient(135deg, #fefce8 0%, #fff7ed 100%); }
+        .dacta-header-icon { width: 44px; height: 44px; background: linear-gradient(135deg, #f59e0b, #d97706); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; color: white; font-size: 20px; flex-shrink: 0; }
+        .dacta-header-info h2 { font-size: 18px; font-weight: 700; color: var(--navy); margin-bottom: 2px; }
+        .dacta-header-info p { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+        .dacta-header-info p i { color: var(--primary); margin-right: 4px; }
+        .dacta-note { font-size: 12px; color: var(--text-light); margin-top: 6px; line-height: 1.5; }
+        .dacta-actions { display: flex; gap: 12px; padding: 20px 28px; border-bottom: 1px solid rgba(0,0,0,0.06); flex-wrap: wrap; }
+        .dacta-btn { display: inline-flex; align-items: center; gap: 8px; padding: 11px 22px; border-radius: var(--radius); font-size: 14px; font-weight: 600; cursor: pointer; transition: all var(--transition); border: none; }
+        .dacta-btn.primary { background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: white; box-shadow: 0 4px 14px rgba(99,102,241,0.3); }
+        .dacta-btn.primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(99,102,241,0.4); }
+        .dacta-btn.secondary { background: var(--bg-lighter); color: var(--text-primary); border: 1.5px solid #e2e8f0; }
+        .dacta-btn.secondary:hover { background: var(--bg-white); border-color: var(--primary); color: var(--primary); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+
+        .spec-table-wrapper { padding: 24px 28px; overflow-x: auto; }
+        .spec-table { width: 100%; border-collapse: collapse; font-size: 12px; min-width: 900px; }
+        .spec-table th, .spec-table td { border: 1px solid #cbd5e1; padding: 8px 10px; text-align: center; vertical-align: middle; }
+        .spec-table thead th { background: linear-gradient(180deg, #f1f5f9, #e2e8f0); font-weight: 700; color: var(--navy); font-size: 11px; text-transform: uppercase; letter-spacing: 0.3px; }
+        .spec-table thead tr:first-child th { background: linear-gradient(180deg, #eef2ff, #dbeafe); color: var(--primary-dark); font-size: 12px; }
+        .spec-table tbody td { font-size: 12px; color: var(--text-primary); }
+        .spec-table tbody td.td-left { text-align: left; }
+        .spec-table tbody td.td-center { text-align: center; font-weight: 700; width: 35px; }
+        .spec-table tbody tr:hover { background: #fefce8; }
+        .spec-table tfoot td { background: linear-gradient(180deg, #fef3c7, #fde68a); font-weight: 700; color: var(--navy); font-size: 12px; }
+        .spec-table tfoot tr:last-child td { background: linear-gradient(180deg, #f0fdf4, #dcfce7); }
+        .spec-table-footnote { margin-top: 16px; padding: 12px 16px; background: var(--bg-lighter); border-radius: var(--radius-sm); font-size: 11px; color: var(--text-light); line-height: 1.6; font-style: italic; }
+        .spec-table-footnote sup { color: var(--primary); font-weight: 600; }
+
+        /* ===== Dethi Tab ===== */
+        .dethi-container { max-width: 1400px; margin: 0 auto; padding: 24px; animation: fadeInUp 0.5s ease; }
+        .dethi-card { background: var(--bg-white); border-radius: var(--radius-lg); border: 1px solid rgba(0,0,0,0.06); overflow: hidden; box-shadow: var(--shadow); padding: 28px; }
+        .dethi-title { font-size: 20px; font-weight: 700; color: var(--navy); margin-bottom: 20px; }
+        .dethi-actions { display: flex; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; }
+        .dethi-btn-create { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; background: var(--primary); color: white; border: none; border-radius: var(--radius-sm); font-size: 13px; font-weight: 600; cursor: pointer; transition: all var(--transition); box-shadow: 0 2px 8px rgba(99,102,241,0.25); }
+        .dethi-btn-create:hover:not(:disabled) { background: var(--primary-dark); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(99,102,241,0.35); }
+        .dethi-btn-create:disabled { opacity: 0.6; cursor: not-allowed; transform: none !important; }
+        .dethi-btn-secondary { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; background: var(--bg-white); color: var(--text-primary); border: 1.5px solid #e2e8f0; border-radius: var(--radius-sm); font-size: 13px; font-weight: 600; cursor: pointer; transition: all var(--transition); }
+        .dethi-btn-secondary:hover { border-color: var(--primary); color: var(--primary); }
+        .dethi-warning { display: flex; align-items: flex-start; gap: 10px; padding: 14px 18px; background: #fffbeb; border: 1px solid #fde68a; border-radius: var(--radius-sm); margin-bottom: 24px; font-size: 13px; color: #92400e; line-height: 1.6; }
+        .dethi-warning i { color: #f59e0b; margin-top: 3px; flex-shrink: 0; }
+        .dethi-content-area { position: relative; min-height: 300px; }
+        .dethi-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 300px; text-align: center; color: var(--text-light); }
+        .dethi-placeholder i { font-size: 56px; margin-bottom: 16px; color: #c7d2fe; }
+        .dethi-placeholder h3 { font-size: 16px; font-weight: 700; color: var(--text-secondary); margin-bottom: 6px; }
+        .dethi-placeholder p { font-size: 13px; max-width: 360px; line-height: 1.5; }
+        .dethi-loading { display: none; position: absolute; inset: 0; background: rgba(255,255,255,0.95); z-index: 10; flex-direction: column; align-items: center; justify-content: center; }
+        .dethi-loading.active { display: flex !important; }
+        .dethi-loading-spinner { width: 44px; height: 44px; border: 4px solid #e2e8f0; border-top-color: var(--primary); border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 14px; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .dethi-loading-text { font-size: 14px; font-weight: 600; color: var(--text-secondary); }
+        .dethi-loading-sub { font-size: 12px; color: var(--text-light); margin-top: 4px; }
+        .exam-rendered { font-family: 'Times New Roman', serif; font-size: 14.5px; line-height: 1.75; color: #1a1a1a; }
+        .exam-rendered h1 { font-size: 16px; font-weight: 700; text-transform: uppercase; margin: 14px 0; text-align: center; }
+        .exam-rendered h2 { font-size: 15px; font-weight: 700; margin: 20px 0 10px; }
+        .exam-rendered h3 { font-size: 14.5px; font-weight: 700; margin: 14px 0 8px; }
+        .exam-rendered p { margin: 5px 0; }
+        .exam-rendered strong { font-weight: 700; }
+        .exam-rendered em { font-style: italic; }
+        .exam-rendered hr { border: none; border-top: 1px solid #d1d5db; margin: 20px 0; }
+        .exam-rendered table { border-collapse: collapse; margin: 12px 0; }
+        .exam-rendered th, .exam-rendered td { border: 1px solid #9ca3af; padding: 6px 14px; text-align: center; font-size: 13px; }
+        .exam-rendered th { background: #f3f4f6; font-weight: 700; }
+        .exam-rendered ul, .exam-rendered ol { padding-left: 24px; margin: 5px 0; }
+        .exam-rendered li { margin: 3px 0; }
+        .exam-rendered blockquote { margin: 8px 0; padding: 8px 14px; border-left: 3px solid var(--primary); background: var(--bg-light); color: var(--text-secondary); font-style: italic; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+        .exam-header-table { width: 100%; border-collapse: collapse; margin-bottom: 12px; border: none !important; }
+        .exam-header-table td { border: none !important; padding: 2px 8px; vertical-align: top; font-family: 'Times New Roman', serif; font-size: 12pt; }
+        .exam-header-table .col-left { width: 45%; text-align: center; }
+        .exam-header-table .col-right { width: 55%; text-align: center; }
+        .dap-an-dung { color: #dc2626 !important; font-weight: 700 !important; }
+        .exam-student-info { border: 1px solid #000; padding: 8px 14px; margin: 10px 0; font-size: 12pt; }
+        @media (max-width: 640px) { .dethi-card { padding: 16px; } .dethi-actions { flex-direction: column; } }
+
+        @media (max-width: 1024px) {
+            .tab-content-grid.active { grid-template-columns: 1fr !important; }
+        }
+        @media (max-width: 640px) {
+            .dacta-container { padding: 16px; }
+            .dacta-header { padding: 16px 20px; flex-direction: column; gap: 12px; }
+            .dacta-actions { padding: 16px 20px; flex-direction: column; }
+            .dacta-btn { justify-content: center; }
+            .spec-table-wrapper { padding: 16px 12px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== Page Header ===== -->
+    <div class="page-header" id="page-header">
+        <div class="page-header-inner">
+            <div class="page-header-top">
+                <a href="index.html" class="back-btn" id="back-btn" title="Quay lại">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+                <div class="page-title-group">
+                    <h1>
+                        <span class="subject-icon"><i class="fas fa-flask"></i></span>
+                        Đề thi THPT – Hóa học
+                    </h1>
+                    <p>Công cụ tạo đề thi PPKT THPT</p>
+                </div>
+            </div>
+
+            <!-- Tab Bar -->
+            <div class="tab-bar" id="tab-bar">
+                <div class="tab-item active" data-tab="cauhinh" id="tab-cauhinh">
+                    <i class="fas fa-cog"></i>
+                    <span>Cấu hình</span>
+                </div>
+                <div class="tab-item" data-tab="matran" id="tab-matran">
+                    <i class="fas fa-table-cells"></i>
+                    <span>Ma trận</span>
+                </div>
+                <div class="tab-item" data-tab="dacta" id="tab-dacta">
+                    <i class="fas fa-list-ol"></i>
+                    <span>Đặc tả</span>
+                </div>
+                <div class="tab-item" data-tab="dethi" id="tab-dethi">
+                    <i class="fas fa-file-lines"></i>
+                    <span>Đề thi</span>
+                </div>
+                <div class="tab-item tab-source" data-tab="nguon" id="tab-nguon">
+                    <i class="fas fa-heart"></i>
+                    <span>Nguồn ứng dụng</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== Main Content: Tab Cau Hinh ===== -->
+    <div class="main-content tab-content tab-content-grid active" id="content-cauhinh">
+
+        <!-- Section 1: Thông tin đề thi (Full Width) -->
+        <div class="card info-section top-section" id="section-info">
+            <div class="card-header">
+                <div class="card-step">1</div>
+                <div class="card-header-info">
+                    <h3>Thông tin đề thi</h3>
+                    <p>Trường, kỳ thi, môn học, thời gian</p>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="info-grid">
+                    <div class="form-field">
+                        <label>Tên trường</label>
+                        <input type="text" id="ten-truong" value="TRƯỜNG THPT" placeholder="Nhập tên trường">
+                    </div>
+                    <div class="form-field">
+                        <label>Tổ chuyên môn</label>
+                        <input type="text" id="to-chuyen-mon" value="TỔ CHUYÊN MÔN" placeholder="Nhập tổ chuyên môn">
+                    </div>
+                    <div class="form-field">
+                        <label>Tên đề kiểm tra</label>
+                        <input type="text" id="ten-de" value="ĐỀ KIỂM TRA HÓA HỌC 10" placeholder="Nhập tên đề">
+                    </div>
+                    <div class="form-field">
+                        <label>Môn học</label>
+                        <select id="mon-hoc">
+                            <option value="hoahoc" selected>Hóa học</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label>Năm học</label>
+                        <input type="text" id="nam-hoc" value="NĂM HỌC 2026 - 2027" placeholder="VD: NĂM HỌC 2026 - 2027">
+                    </div>
+                    <div class="form-field">
+                        <label>Thời gian (phút)</label>
+                        <input type="number" id="thoi-gian" value="45" min="15" max="180">
+                    </div>
+                    <div class="form-field">
+                        <label>Khối lớp</label>
+                        <select id="khoi-lop">
+<option value="hoahoc10" selected>Hóa học 10</option>
+<option value="hoahoc11">Hóa học 11</option>
+<option value="hoahoc12">Hóa học 12</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label>Kỳ kiểm tra</label>
+                        <select id="ky-kiem-tra">
+                            <option value="giuaki1">Giữa kì I</option>
+                            <option value="cuoiki1">Cuối kì I</option>
+                            <option value="giuaki2">Giữa kì II</option>
+                            <option value="cuoiki2" selected>Học kì II</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Cấu trúc đề & Tỉ lệ (Left Column) -->
+        <div class="card structure-section" id="section-structure">
+            <div class="card-header">
+                <div class="card-step">2</div>
+                <div class="card-header-info">
+                    <h3>Cấu trúc đề & Tỉ lệ</h3>
+                    <p>Loại câu, điểm, mức độ nhận thức</p>
+                </div>
+            </div>
+            <div class="card-body">
+                <!-- Độ khó đề thi -->
+                <div class="difficulty-select">
+                    <label>ĐỘ KHÓ ĐỀ THI</label>
+                    <select id="do-kho">
+                        <option value="de">Dễ</option>
+                        <option value="trungbinh" selected>Trung bình</option>
+                        <option value="kho">Khó</option>
+                        <option value="ratkho">Rất khó</option>
+                    </select>
+                </div>
+
+                <!-- Question type table -->
+                <div class="question-table">
+                    <div class="question-table-header">
+                        <span>Loại câu</span>
+                        <span>Số câu</span>
+                        <span>Điểm/câu</span>
+                    </div>
+
+                    <div class="question-row" id="row-tnnlc">
+                        <span class="question-type-name">Trắc nghiệm nhiều lựa chọn</span>
+                        <input type="number" id="tn-socau" value="12" min="0">
+                        <input type="text" id="tn-diem" value="0,25">
+                    </div>
+
+                    <div class="question-row" id="row-tnds">
+                        <span class="question-type-name">Trắc nghiệm Đúng/Sai<br><small style="font-weight:400;color:#94a3b8;font-size:11px">(1 câu = 4 lệnh hỏi)</small></span>
+                        <input type="number" id="ds-socau" value="16" min="0">
+                        <input type="text" id="ds-diem" value="0,25">
+                    </div>
+
+                    <div class="question-row" id="row-tln">
+                        <span class="question-type-name">Trả lời ngắn</span>
+                        <input type="number" id="tln-socau" value="6" min="0">
+                        <input type="text" id="tln-diem" value="0,25">
+                    </div>
+
+                    <div class="question-row" id="row-tuluan">
+                        <span class="question-type-name">Tự luận</span>
+                        <input type="number" id="tl-socau" value="2" min="0">
+                        <div class="score-dash">—</div>
+                    </div>
+                </div>
+
+                <!-- Totals -->
+                <div class="totals-row">
+                    <div class="total-item">
+                        <span class="total-label">Tổng điểm TNKQ</span>
+                        <span class="total-value" id="tong-tnkq">5.5</span>
+                    </div>
+                    <div class="total-item">
+                        <span class="total-label">Điểm tự luận</span>
+                        <span class="total-value orange" id="diem-tuluan">4.5</span>
+                    </div>
+                </div>
+
+                <!-- Mức độ nhận thức -->
+                <div class="cognition-section">
+                    <div class="cognition-title">
+                        <i class="fas fa-chart-pie"></i>
+                        <span>MỨC ĐỘ NHẬN THỨC (%)</span>
+                    </div>
+                    <div class="cognition-inputs">
+                        <div class="cognition-field">
+                            <label>Biết</label>
+                            <input type="number" id="biet" value="40" min="0" max="100">
+                        </div>
+                        <div class="cognition-field">
+                            <label>Hiểu</label>
+                            <input type="number" id="hieu" value="30" min="0" max="100">
+                        </div>
+                        <div class="cognition-field">
+                            <label>Vận dụng</label>
+                            <input type="number" id="vandung" value="30" min="0" max="100">
+                        </div>
+                    </div>
+                    <p class="cognition-note">Tổng nên bằng 100% (tự chuẩn hoá nếu khác)</p>
+                </div>
+
+                <!-- Auto-gen note -->
+                <div class="auto-gen-note">
+                    <i class="fas fa-magic"></i>
+                    <span>Ma trận tự động hình thành theo cấu hình trên và danh sách đơn vị đã chọn.</span>
+                </div>
+
+                <!-- Generate button -->
+                <button class="generate-btn" id="btn-generate">
+                    <i class="fas fa-wand-magic-sparkles"></i>
+                    <span>Tạo ma trận</span>
+                    <span class="cost-badge">trừ 2 điểm</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Section 3: Chọn nội dung kiểm tra (Right Column) -->
+        <div class="card content-section" id="section-content">
+            <div class="card-header">
+                <div class="card-step">3</div>
+                <div class="card-header-info">
+                    <h3>Chọn nội dung kiểm tra</h3>
+                    <p>Mạch – Đơn vị kiến thức · Đã chọn: <span id="selected-count">0</span></p>
+                </div>
+                <div class="content-search" style="margin-left: auto;">
+                    <div class="search-wrapper">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="search-topic" placeholder="Lọc mạch...">
+                    </div>
+                </div>
+            </div>
+            <div class="card-body" style="padding-bottom: 0;">
+                <div class="content-body">
+                    <!-- Left: Mạch nội dung -->
+                    <div class="mach-noi-dung">
+                        <div class="mach-title">MẠCH NỘI DUNG</div>
+                        <div class="topic-list" id="topic-list">
+                            <!-- Physics topics will be dynamically generated -->
+                        </div>
+                    </div>
+
+                    <!-- Right: Chọn mạch bên trái -->
+                    <div class="mach-right" id="mach-right">
+                        <div class="mach-right-title">CHỌN MẠCH BÊN TRÁI</div>
+                        <div class="mach-right-placeholder" id="right-placeholder">
+                            <i class="fas fa-hand-pointer"></i>
+                            <p>Chọn một mạch nội dung bên trái để hiện đơn vị kiến thức.</p>
+                        </div>
+                        <div class="sub-topic-list" id="sub-topic-list" style="display: none;">
+                            <!-- Sub topics appear here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="selected-footer" id="selected-footer">
+                <span class="selected-label">Đã chọn:</span>
+                <span class="selected-text" id="selected-text">Chưa chọn đơn vị nào</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ===== Tab Content: Dac Ta ===== -->
+    <div class="tab-content" id="content-dacta">
+        <div class="dacta-container">
+            <div class="dacta-card">
+                <div class="dacta-header">
+                    <div class="dacta-header-icon">
+                        <i class="fas fa-list-ol"></i>
+                    </div>
+                    <div class="dacta-header-info">
+                        <h2>2. B&#7842;N &#272;&#7862;C T&#7842; &#272;&#7872; KI&#7874;M TRA &#272;&#7882;NH K&#204;</h2>
+                        <p><i class="fas fa-file-circle-check"></i> K&#232;m theo C&#244;ng v&#259;n s&#7889; 7991/BGD&#272;T-GDTrH ng&#224;y 17/12/2024 c&#7911;a B&#7897; GD&#272;T</p>
+                        <p class="dacta-note">S&#7889; c&#226;u h&#7887;i ph&#226;n b&#7893; c&#7847;n &#273;&#243; theo t&#7915;ng &#273;&#417;n v&#7883; ki&#7871;n th&#7913;c (theo ma tr&#7853;n).</p>
+                        <p class="dacta-note">Y&#234;u c&#7847;u c&#7847;n &#273;&#7841;t: m&#7895;i &#273;&#417;n v&#7883; ki&#7871;n th&#7913;c ch&#7881; m&#7897;t &#253; (tr&#237;ch t&#7915; khung), thu&#7897;c m&#7913;c c&#243; nhi&#7873;u c&#226;u nh&#7845;t tr&#234;n h&#224;ng ma tr&#7853;n; hoa &#273;&#243; &#432;u ti&#234;n Bi&#7871;t &#8594; Hi&#7875;u &#8594; V&#7853;n d&#7909;ng. Kh&#244;ng ghi nh&#227;n &#171;Bi&#7871;t&#187;, &#171;Hi&#7875;u&#187;, &#171;V&#7853;n d&#7909;ng&#187; trong &#244;.</p>
+                    </div>
+                </div>
+                <div class="dacta-actions">
+                    <button class="dacta-btn primary" id="btn-switch-dethi">
+                        <i class="fas fa-arrow-right-arrow-left"></i>
+                        <span>Chuy&#7875;n sang tab &#272;&#7873; thi</span>
+                    </button>
+                    <button class="dacta-btn secondary" id="btn-download-docx">
+                        <i class="fas fa-download"></i>
+                        <span>T&#7843;i v&#7873; .docx</span>
+                    </button>
+                </div>
+                <div class="spec-table-wrapper">
+                    <table class="spec-table" id="spec-table">
+                        <thead>
+                            <tr>
+                                <th rowspan="4">TT</th>
+                                <th rowspan="4">Ch&#7911; &#273;&#7873;/Ch&#432;&#417;ng</th>
+                                <th rowspan="4">N&#7897;i dung/&#273;&#417;n v&#7883; ki&#7871;n th&#7913;c</th>
+                                <th rowspan="4">Y&#234;u c&#7847;u c&#7847;n &#273;&#7841;t</th>
+                                <th colspan="12">S&#7889; c&#226;u h&#7887;i &#7903; c&#225;c m&#7913;c &#273;&#7897; &#273;&#225;nh gi&#225;</th>
+                                <th rowspan="4">T&#7893;ng</th>
+                            </tr>
+                            <tr>
+                                <th colspan="6">TNKQ</th>
+                                <th colspan="6">T&#7921; lu&#7853;n</th>
+                            </tr>
+                            <tr>
+                                <th colspan="3">Nhi&#7873;u l&#7921;a ch&#7885;n</th>
+                                <th colspan="3">&#8220;&#272;&#250;ng &#8211; Sai&#8221;</th>
+                                <th colspan="3">Tr&#7843; l&#7901;i ng&#7855;n</th>
+                                <th colspan="3">T&#7921; lu&#7853;n</th>
+                            </tr>
+                            <tr>
+                                <th>Bi&#7871;t</th><th>Hi&#7875;u</th><th>V&#7853;n d&#7909;ng</th>
+                                <th>Bi&#7871;t</th><th>Hi&#7875;u</th><th>V&#7853;n d&#7909;ng</th>
+                                <th>Bi&#7871;t</th><th>Hi&#7875;u</th><th>V&#7853;n d&#7909;ng</th>
+                                <th>Bi&#7871;t</th><th>Hi&#7875;u</th><th>V&#7853;n d&#7909;ng</th>
+                            </tr>
+                        </thead>
+                        <tbody id="spec-table-body">
+                        </tbody>
+                        <tfoot id="spec-table-foot">
+                        </tfoot>
+                    </table>
+                    <div class="spec-table-footnote">
+                        <sup>6</sup> C&#243; &#7903; trong m&#7897;t s&#7889; &#244; c&#7911;a b&#7843;n &#273;&#7863;c t&#7843;, ghi t&#7855;t t&#234;n c&#7911;a n&#259;ng l&#7921;c (&#273;&#227; &#273;&#432;&#7907;c quy &#273;&#7883;nh trong ch&#432;&#417;ng tr&#236;nh m&#244;n h&#7885;c/ho&#7841;t &#273;&#7897;ng gi&#225;o d&#7909;c).
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== Tab Content: De Thi ===== -->
+    <div class="tab-content" id="content-dethi">
+        <div class="dethi-container">
+            <div class="dethi-card">
+                <div class="dethi-title" id="dethi-title">Đề thi</div>
+                <div class="dethi-actions">
+                    <button class="dethi-btn-create" id="btn-generate-exam">
+                        <i class="fas fa-wand-magic-sparkles"></i> Tạo đề thi (trừ 2 điểm)
+                    </button>
+                    <button class="dethi-btn-secondary" id="btn-back-cauhinh">
+                        <i class="fas fa-rotate-left"></i> Quay lại cấu hình
+                    </button>
+                    <button class="dethi-btn-secondary" id="btn-download-exam-docx" style="display:none;">
+                        <i class="fas fa-download"></i> Tải về .docx
+                    </button>
+                </div>
+                <div class="dethi-warning" id="dethi-warning" style="display:none;">
+                    <i class="fas fa-circle-info"></i>
+                    <span>Hãy tải đề thi trước khi tạo đề thi khác; khi quay lại sẽ không thể tải đề thi này. Mỗi lần bấm "Tạo đề thi (trừ 2 điểm)" trừ 2 điểm.</span>
+                </div>
+                <div class="dethi-content-area" id="dethi-content-area">
+                    <div class="dethi-placeholder" id="dethi-placeholder">
+                        <i class="fas fa-file-circle-plus"></i>
+                        <h3>Chưa có đề thi</h3>
+                        <p>Nhấn nút "Tạo đề thi" để AI tự động sinh đề dựa trên ma trận và đặc tả đã cấu hình.</p>
+                    </div>
+                    <div class="dethi-loading" id="dethi-loading">
+                        <div class="dethi-loading-spinner"></div>
+                        <div class="dethi-loading-text">Đang tạo đề thi...</div>
+                        <div class="dethi-loading-sub">AI đang phân tích ma trận và tạo câu hỏi</div>
+                    </div>
+                    <div class="exam-rendered" id="exam-rendered" style="display:none;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- docx library for Word export -->
+    <script src="https://cdn.jsdelivr.net/npm/docx@8.5.0/build/index.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <script>
+    // ===== Physics Topics Data =====
+    const physicsTopics = [
+        { id: 'bang-tuan-hoan', name: 'Bảng tuần hoàn các nguyên tố hoá học', fullName: 'Bảng tuần hoàn các nguyên tố hoá học', color: 'c-blue', subtopics: ['Cấu tạo của bảng tuần hoàn', 'Xu hướng biến đổi một số tính chất', 'Định luật tuần hoàn và ý nghĩa'] },
+        { id: 'cau-tao-nguyen-tu', name: 'Cấu tạo nguyên tử', fullName: 'Cấu tạo nguyên tử', color: 'c-green', subtopics: ['Thành phần nguyên tử', 'Nguyên tố hoá học', 'Cấu trúc lớp vỏ electron', 'Cấu hình electron nguyên tử'] },
+        { id: 'lien-ket-hoa-hoc', name: 'Liên kết hoá học', fullName: 'Liên kết hoá học', color: 'c-purple', subtopics: ['Quy tắc octet', 'Liên kết ion', 'Liên kết cộng hoá trị', 'Liên kết hydrogen và van der Waals'] },
+        { id: 'phan-ung-oxi-hoa-khu', name: 'Phản ứng oxi hoá – khử', fullName: 'Phản ứng oxi hoá – khử', color: 'c-orange', subtopics: ['Số oxi hoá', 'Phản ứng oxi hoá – khử', 'Cân bằng phản ứng oxi hoá – khử'] },
+        { id: 'nang-luong-hoa-hoc', name: 'Năng lượng hoá học', fullName: 'Năng lượng hoá học', color: 'c-pink', subtopics: ['Enthalpy tạo thành', 'Biến thiên enthalpy', 'Tính biến thiên enthalpy phản ứng'] },
+        { id: 'toc-do-phan-ung', name: 'Tốc độ phản ứng hoá học', fullName: 'Tốc độ phản ứng hoá học', color: 'c-teal', subtopics: ['Tốc độ phản ứng', 'Các yếu tố ảnh hưởng', 'Ý nghĩa thực tiễn'] },
+        { id: 'nguyen-to-nhom-viia', name: 'Nguyên tố nhóm VIIA (Halogen)', fullName: 'Nguyên tố nhóm VIIA (Halogen)', color: 'c-indigo', subtopics: ['Đơn chất halogen', 'Hydrogen halide', 'Muối halide', 'Ứng dụng'] },
+        { id: 'chuyen-de-10', name: 'Chuyên đề 10', fullName: 'Chuyên đề 10 (Cơ sở hoá học)', color: 'c-cyan', subtopics: ['Phản ứng hạt nhân', 'Hoá học phản ứng cháy', 'Chất xúc tác trong đời sống'] }
+    ];
+
+    // ===== State =====
+    let selectedTopics = new Set();
+    let currentTopic = null;
+    let selectedSubTopics = {};
+
+    // ===== DOM Ready =====
+    document.addEventListener('DOMContentLoaded', () => {
+        renderTopicList();
+        initSearch();
+        initTabs();
+        initGenerateButton();
+        updateSelectedCount();
+        initAutoCalculate();
+    });
+
+    // ===== Auto-Calculate Score Logic =====
+    function initAutoCalculate() {
+        const inputs = ['tn-socau', 'tn-diem', 'ds-socau', 'ds-diem', 'tln-socau', 'tln-diem'];
+        inputs.forEach(id => {
+            const el = document.getElementById(id);
+            if (el) {
+                el.addEventListener('input', calculateScores);
+                el.addEventListener('change', calculateScores);
+            }
+        });
+        // Initial calculation
+        calculateScores();
+    }
+
+    function parseVietnameseDecimal(val) {
+        // Handle Vietnamese decimal: "0,25" => 0.25
+        if (typeof val === 'string') {
+            val = val.replace(',', '.');
+        }
+        const num = parseFloat(val);
+        return isNaN(num) ? 0 : num;
+    }
+
+    function calculateScores() {
+        const tnSoCau = parseInt(document.getElementById('tn-socau').value) || 0;
+        const tnDiem = parseVietnameseDecimal(document.getElementById('tn-diem').value);
+        const dsSoCau = parseInt(document.getElementById('ds-socau').value) || 0;
+        const dsDiem = parseVietnameseDecimal(document.getElementById('ds-diem').value);
+        const tlnSoCau = parseInt(document.getElementById('tln-socau').value) || 0;
+        const tlnDiem = parseVietnameseDecimal(document.getElementById('tln-diem').value);
+
+        const tongTNKQ = (tnSoCau * tnDiem) + (dsSoCau * dsDiem) + (tlnSoCau * tlnDiem);
+        const diemTuLuan = 10 - tongTNKQ;
+
+        // Update display
+        const tongEl = document.getElementById('tong-tnkq');
+        const tuluanEl = document.getElementById('diem-tuluan');
+
+        // Round to avoid floating point issues
+        const tongRounded = Math.round(tongTNKQ * 100) / 100;
+        const tuluanRounded = Math.round(diemTuLuan * 100) / 100;
+
+        tongEl.textContent = tongRounded % 1 === 0 ? tongRounded.toString() : tongRounded.toFixed(1);
+        tuluanEl.textContent = tuluanRounded % 1 === 0 ? tuluanRounded.toString() : tuluanRounded.toFixed(1);
+
+        // Warning if TNKQ > 10
+        if (tongTNKQ > 10) {
+            tongEl.style.color = '#ef4444';
+            tuluanEl.style.color = '#ef4444';
+            tongEl.title = 'Tổng TNKQ vượt quá 10 điểm!';
+        } else if (diemTuLuan < 0) {
+            tongEl.style.color = '#ef4444';
+            tuluanEl.style.color = '#ef4444';
+        } else {
+            tongEl.style.color = '';
+            tuluanEl.style.color = '';
+            tongEl.title = '';
+        }
+    }
+
+    // ===== Render Topic List =====
+    function renderTopicList(filter = '') {
+        const container = document.getElementById('topic-list');
+        container.innerHTML = '';
+
+        const filtered = physicsTopics.filter(t =>
+            t.fullName.toLowerCase().includes(filter.toLowerCase())
+        );
+
+        filtered.forEach(topic => {
+            const isSelected = selectedTopics.has(topic.id);
+            const div = document.createElement('div');
+            div.className = `topic-item${isSelected ? ' checked' : ''}${currentTopic === topic.id ? ' selected' : ''}`;
+            div.dataset.id = topic.id;
+
+            const subtopicCount = selectedSubTopics[topic.id]
+                ? selectedSubTopics[topic.id].size
+                : 0;
+
+            div.innerHTML = `
+                <div class="topic-checkbox">
+                    <i class="fas fa-check"></i>
+                </div>
+                <div class="topic-indicator ${topic.color}"></div>
+                <span class="topic-name">${topic.name}</span>
+                <span class="topic-count">${subtopicCount || topic.subtopics.length}</span>
+                <span class="topic-remove" title="Bỏ chọn"><i class="fas fa-times"></i></span>
+            `;
+
+            // Click on topic to show subtopics
+            div.addEventListener('click', (e) => {
+                if (e.target.closest('.topic-remove')) {
+                    // Remove topic
+                    selectedTopics.delete(topic.id);
+                    delete selectedSubTopics[topic.id];
+                    if (currentTopic === topic.id) {
+                        currentTopic = null;
+                        showPlaceholder();
+                    }
+                    renderTopicList(document.getElementById('search-topic').value);
+                    updateSelectedCount();
+                    return;
+                }
+
+                // Toggle selection and show subtopics
+                currentTopic = topic.id;
+                if (!selectedTopics.has(topic.id)) {
+                    selectedTopics.add(topic.id);
+                    // Select all subtopics by default
+                    selectedSubTopics[topic.id] = new Set(topic.subtopics);
+                }
+                renderTopicList(document.getElementById('search-topic').value);
+                renderSubTopics(topic);
+                updateSelectedCount();
+            });
+
+            container.appendChild(div);
+        });
+    }
+
+    // ===== Render Sub Topics =====
+    function renderSubTopics(topic) {
+        const placeholder = document.getElementById('right-placeholder');
+        const list = document.getElementById('sub-topic-list');
+        const title = document.querySelector('.mach-right-title');
+
+        placeholder.style.display = 'none';
+        list.style.display = 'block';
+        title.textContent = topic.fullName;
+
+        list.innerHTML = '';
+
+        topic.subtopics.forEach(sub => {
+            const isChecked = selectedSubTopics[topic.id] && selectedSubTopics[topic.id].has(sub);
+            const div = document.createElement('div');
+            div.className = `sub-topic-item${isChecked ? ' checked' : ''}`;
+
+            div.innerHTML = `
+                <div class="topic-checkbox">
+                    <i class="fas fa-check"></i>
+                </div>
+                <span class="topic-name">${sub}</span>
+            `;
+
+            div.addEventListener('click', () => {
+                if (!selectedSubTopics[topic.id]) {
+                    selectedSubTopics[topic.id] = new Set();
+                }
+
+                if (selectedSubTopics[topic.id].has(sub)) {
+                    selectedSubTopics[topic.id].delete(sub);
+                } else {
+                    selectedSubTopics[topic.id].add(sub);
+                }
+
+                // If no subtopics selected, remove the topic too
+                if (selectedSubTopics[topic.id].size === 0) {
+                    selectedTopics.delete(topic.id);
+                    delete selectedSubTopics[topic.id];
+                } else {
+                    selectedTopics.add(topic.id);
+                }
+
+                renderSubTopics(topic);
+                renderTopicList(document.getElementById('search-topic').value);
+                updateSelectedCount();
+            });
+
+            list.appendChild(div);
+        });
+    }
+
+    // ===== Show Placeholder =====
+    function showPlaceholder() {
+        const placeholder = document.getElementById('right-placeholder');
+        const list = document.getElementById('sub-topic-list');
+        const title = document.querySelector('.mach-right-title');
+
+        placeholder.style.display = 'flex';
+        list.style.display = 'none';
+        title.textContent = 'CHỌN MẠCH BÊN TRÁI';
+    }
+
+    // ===== Update Selected Count =====
+    function updateSelectedCount() {
+        const countEl = document.getElementById('selected-count');
+        const textEl = document.getElementById('selected-text');
+        const count = selectedTopics.size;
+        countEl.textContent = count;
+
+        if (count === 0) {
+            textEl.textContent = 'Chưa chọn đơn vị nào';
+        } else {
+            const names = [];
+            selectedTopics.forEach(id => {
+                const topic = physicsTopics.find(t => t.id === id);
+                if (topic) names.push(topic.fullName);
+            });
+            textEl.textContent = names.join(', ');
+        }
+    }
+
+    // ===== Search =====
+    function initSearch() {
+        const input = document.getElementById('search-topic');
+        input.addEventListener('input', (e) => {
+            renderTopicList(e.target.value);
+        });
+    }
+
+    // ===== Tabs =====
+    function initTabs() {
+        const tabs = document.querySelectorAll('.tab-item');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabName = tab.dataset.tab;
+                switchTab(tabName);
+            });
+        });
+    }
+
+    function switchTab(tabName) {
+        // Update tab buttons
+        const tabs = document.querySelectorAll('.tab-item');
+        tabs.forEach(t => t.classList.remove('active'));
+        const activeTab = document.querySelector(`.tab-item[data-tab="${tabName}"]`);
+        if (activeTab) activeTab.classList.add('active');
+
+        // Hide all tab content
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+        // Show selected tab content
+        const contentId = 'content-' + tabName;
+        const contentEl = document.getElementById(contentId);
+        if (contentEl) {
+            contentEl.classList.add('active');
+        }
+
+        // When switching to dacta, generate the spec table
+        if (tabName === 'dacta') {
+            generateSpecTable();
+        }
+
+        // When switching to dethi, update dynamic title
+        if (tabName === 'dethi') {
+            const kl = document.getElementById('khoi-lop');
+            const dt = document.getElementById('dethi-title');
+            if (dt && kl) dt.textContent = 'Đề thi ' + kl.options[kl.selectedIndex].text;
+        }
+    }
+
+    // ===== Generate Button =====
+    function initGenerateButton() {
+        const btn = document.getElementById('btn-generate');
+        btn.addEventListener('click', () => {
+            if (selectedTopics.size === 0) {
+                showNotification('Vui lòng chọn ít nhất một mạch nội dung!', 'warning');
+                return;
+            }
+
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>Đang tạo ma trận...</span>';
+            btn.style.opacity = '0.7';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                btn.innerHTML = `
+                    <i class="fas fa-check-circle"></i>
+                    <span>Đã tạo ma trận thành công!</span>
+                `;
+                btn.style.background = 'linear-gradient(135deg, #059669, #10b981)';
+
+                showNotification('Ma trận đề thi Hóa học đã được tạo thành công!', 'success');
+
+                // Switch to Ma trận tab
+                setTimeout(() => {
+                    const tabMatran = document.getElementById('tab-matran');
+                    document.querySelectorAll('.tab-item').forEach(t => t.classList.remove('active'));
+                    tabMatran.classList.add('active');
+
+                    // Reset button
+                    btn.innerHTML = `
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                        <span>Tạo ma trận</span>
+                        <span class="cost-badge">trừ 2 điểm</span>
+                    `;
+                    btn.style.background = '';
+                    btn.style.opacity = '1';
+                    btn.disabled = false;
+                }, 2000);
+            }, 2000);
+        });
+    }
+
+    // ===== Notification =====
+    function showNotification(message, type = 'success') {
+        const existing = document.querySelector('.notification-toast');
+        if (existing) existing.remove();
+
+        const toast = document.createElement('div');
+        toast.className = 'notification-toast';
+        toast.style.cssText = `
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            padding: 14px 24px;
+            background: ${type === 'success' ? '#059669' : type === 'warning' ? '#f59e0b' : '#ef4444'};
+            color: white;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        `;
+
+        const iconMap = { success: 'check-circle', warning: 'exclamation-triangle', error: 'times-circle' };
+        toast.innerHTML = `<i class="fas fa-${iconMap[type]}"></i> ${message}`;
+        document.body.appendChild(toast);
+
+        requestAnimationFrame(() => {
+            toast.style.transform = 'translateY(0)';
+            toast.style.opacity = '1';
+        });
+
+        setTimeout(() => {
+            toast.style.transform = 'translateY(100px)';
+            toast.style.opacity = '0';
+            setTimeout(() => toast.remove(), 400);
+        }, 3500);
+    }
+
+    // ===== Specification Table Generation =====
+    function generateSpecTable() {
+        const tbody = document.getElementById('spec-table-body');
+        const tfoot = document.getElementById('spec-table-foot');
+        tbody.innerHTML = '';
+        tfoot.innerHTML = '';
+
+        // Get config values
+        const tnSoCau = parseInt(document.getElementById('tn-socau').value) || 0;
+        const dsSoCau = parseInt(document.getElementById('ds-socau').value) || 0;
+        const tlnSoCau = parseInt(document.getElementById('tln-socau').value) || 0;
+        const tlSoCau = parseInt(document.getElementById('tl-socau').value) || 0;
+        const tnDiem = parseVietnameseDecimal(document.getElementById('tn-diem').value);
+        const dsDiem = parseVietnameseDecimal(document.getElementById('ds-diem').value);
+        const tlnDiem = parseVietnameseDecimal(document.getElementById('tln-diem').value);
+
+        const bietPct = parseInt(document.getElementById('biet').value) || 40;
+        const hieuPct = parseInt(document.getElementById('hieu').value) || 30;
+        const vandungPct = parseInt(document.getElementById('vandung').value) || 30;
+        const totalPct = bietPct + hieuPct + vandungPct;
+
+        // Normalize percentages
+        const bietRatio = bietPct / totalPct;
+        const hieuRatio = hieuPct / totalPct;
+        const vandungRatio = vandungPct / totalPct;
+
+        // Get selected topics
+        const selectedTopicList = [];
+        selectedTopics.forEach(id => {
+            const topic = physicsTopics.find(t => t.id === id);
+            if (topic) {
+                const subs = selectedSubTopics[id] || new Set(topic.subtopics);
+                selectedTopicList.push({
+                    ...topic,
+                    selectedSubs: Array.from(subs)
+                });
+            }
+        });
+
+        if (selectedTopicList.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="17" style="padding: 40px; color: #94a3b8; font-style: italic;">Vui l\u00f2ng ch\u1ecdn n\u1ed9i dung ki\u1ec3m tra \u1edf tab C\u1ea5u h\u00ecnh tr\u01b0\u1edbc.</td></tr>';
+            return;
+        }
+
+        const numTopics = selectedTopicList.length;
+
+        // Distribute questions across topics
+        function distribute(total, count) {
+            if (count === 0) return [];
+            const base = Math.floor(total / count);
+            const remainder = total % count;
+            const arr = Array(count).fill(base);
+            for (let i = 0; i < remainder; i++) arr[i]++;
+            return arr;
+        }
+
+        const tnPerTopic = distribute(tnSoCau, numTopics);
+        const dsPerTopic = distribute(dsSoCau, numTopics);
+        const tlnPerTopic = distribute(tlnSoCau, numTopics);
+        const tlPerTopic = distribute(tlSoCau, numTopics);
+
+        // Totals for footer
+        let totalCols = new Array(12).fill(0);
+        let grandTotal = 0;
+
+        // Generate rows for each topic
+        selectedTopicList.forEach((topic, idx) => {
+            const tn = tnPerTopic[idx] || 0;
+            const ds = dsPerTopic[idx] || 0;
+            const tln = tlnPerTopic[idx] || 0;
+            const tl = tlPerTopic[idx] || 0;
+
+            // Distribute by cognition level
+            function splitByCognition(total) {
+                if (total === 0) return [0, 0, 0];
+                const b = Math.round(total * bietRatio);
+                const h = Math.round(total * hieuRatio);
+                const v = total - b - h;
+                return [Math.max(0, b), Math.max(0, h), Math.max(0, v)];
+            }
+
+            const tnSplit = splitByCognition(tn);
+            const dsSplit = splitByCognition(ds);
+            const tlnSplit = splitByCognition(tln);
+            const tlSplit = splitByCognition(tl);
+
+            const rowTotal = tn + ds + tln + tl;
+            grandTotal += rowTotal;
+
+            const cells = [...tnSplit, ...dsSplit, ...tlnSplit, ...tlSplit];
+            cells.forEach((v, i) => totalCols[i] += v);
+
+            const subNames = topic.selectedSubs.join(', ');
+            const yeuCau = generateYeuCau(topic);
+
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td class="td-center">${idx + 1}</td>
+                <td class="td-left">${topic.fullName}</td>
+                <td class="td-left">${subNames}</td>
+                <td class="td-left">${yeuCau}</td>
+                ${cells.map(c => `<td>${c || ''}</td>`).join('')}
+                <td style="font-weight:700;">${rowTotal}</td>
+            `;
+            tbody.appendChild(tr);
+        });
+
+        // Totals rows
+        const totalQuestions = totalCols.reduce((a, b) => a + b, 0);
+
+        // Row: Tong so cau
+        const trTotal = document.createElement('tr');
+        trTotal.innerHTML = `
+            <td colspan="4" style="text-align:left;"><strong>T\u1ed5ng s\u1ed1 c\u00e2u</strong></td>
+            ${totalCols.map(c => `<td>${c || ''}</td>`).join('')}
+            <td><strong>${grandTotal}</strong></td>
+        `;
+        tfoot.appendChild(trTotal);
+
+        // Row: Tong so diem
+        const tnTotal = (totalCols[0] + totalCols[1] + totalCols[2]) * tnDiem;
+        const dsTotal = (totalCols[3] + totalCols[4] + totalCols[5]) * dsDiem;
+        const tlnTotal = (totalCols[6] + totalCols[7] + totalCols[8]) * tlnDiem;
+        const diemTuLuan = 10 - tnTotal - dsTotal - tlnTotal;
+        const tlTotalEach = (totalCols[9] + totalCols[10] + totalCols[11]) > 0
+            ? diemTuLuan / (totalCols[9] + totalCols[10] + totalCols[11]) : 0;
+
+        function fmtDiem(v) {
+            if (v === 0) return '';
+            const r = Math.round(v * 100) / 100;
+            return r % 1 === 0 ? r.toFixed(0) : r.toFixed(2);
+        }
+
+        const diemCols = [
+            ...totalCols.slice(0, 3).map(c => fmtDiem(c * tnDiem)),
+            ...totalCols.slice(3, 6).map(c => fmtDiem(c * dsDiem)),
+            ...totalCols.slice(6, 9).map(c => fmtDiem(c * tlnDiem)),
+            ...totalCols.slice(9, 12).map(c => fmtDiem(c * tlTotalEach))
+        ];
+
+        const trDiem = document.createElement('tr');
+        trDiem.innerHTML = `
+            <td colspan="4" style="text-align:left;"><strong>T\u1ed5ng s\u1ed1 \u0111i\u1ec3m</strong></td>
+            ${diemCols.map(c => `<td>${c}</td>`).join('')}
+            <td><strong>10</strong></td>
+        `;
+        tfoot.appendChild(trDiem);
+
+        // Row: Ti le %
+        const totalDiem = 10;
+        const pctCols = diemCols.map(c => {
+            const v = parseFloat(c) || 0;
+            return v > 0 ? Math.round(v / totalDiem * 100) : '';
+        });
+
+        const trPct = document.createElement('tr');
+        trPct.innerHTML = `
+            <td colspan="4" style="text-align:left;"><strong>T\u1ec9 l\u1ec7 %</strong></td>
+            ${pctCols.map(c => `<td>${c}</td>`).join('')}
+            <td><strong>100</strong></td>
+        `;
+        tfoot.appendChild(trPct);
+    }
+
+    function generateYeuCau(topic) {
+        const yeuCauMap = {
+            'bang-tuan-hoan': 'Cấu tạo bảng tuần hoàn, định luật tuần hoàn, biến đổi tuần hoàn',
+            'cau-tao-nguyen-tu': 'Thành phần nguyên tử, lớp vỏ electron, cấu hình electron',
+            'lien-ket-hoa-hoc': 'Liên kết ion, liên kết cộng hóa trị, điện hóa trị',
+            'phan-ung-oxi-hoa-khu': 'Số oxi hóa, chất khử, chất oxi hóa, cân bằng phản ứng',
+            'nang-luong-hoa-hoc': 'Phản ứng tỏa nhiệt, thu nhiệt, enthalpy, định luật Hess',
+            'toc-do-phan-ung': 'Tốc độ phản ứng, yếu tố ảnh hưởng, cân bằng hóa học',
+            'nguyen-to-nhom-viia': 'Tính chất Halogen, HX, muối halogenua',
+            'chuyen-de-10': 'Liên kết, phản ứng, cơ sở hóa học nâng cao'
+        };
+        return yeuCauMap[topic.id] || 'Khái niệm, tính chất, phản ứng đặc trưng';
+    }
+
+    // ===== Button Handlers =====
+    document.addEventListener('DOMContentLoaded', () => {
+        const btnSwitchDethi = document.getElementById('btn-switch-dethi');
+        if (btnSwitchDethi) btnSwitchDethi.addEventListener('click', () => switchTab('dethi'));
+        const btnDownload = document.getElementById('btn-download-docx');
+        if (btnDownload) btnDownload.addEventListener('click', () => exportDactaToDocx());
+        const btnGenExam = document.getElementById('btn-generate-exam');
+        if (btnGenExam) btnGenExam.addEventListener('click', () => generateExamWithAI());
+        const btnBack = document.getElementById('btn-back-cauhinh');
+        if (btnBack) btnBack.addEventListener('click', () => switchTab('cauhinh'));
+        const btnDlExam = document.getElementById('btn-download-exam-docx');
+        if (btnDlExam) btnDlExam.addEventListener('click', () => exportExamToDocx());
+    });
+
+    // ===== Export to .docx =====
+    async function exportDactaToDocx() {
+        const { Document, Packer, Table, TableRow, TableCell, Paragraph, TextRun, AlignmentType, BorderStyle, WidthType, VerticalAlign, HeadingLevel } = docx;
+
+        // Get data
+        const tnSoCau = parseInt(document.getElementById('tn-socau').value) || 0;
+        const dsSoCau = parseInt(document.getElementById('ds-socau').value) || 0;
+        const tlnSoCau = parseInt(document.getElementById('tln-socau').value) || 0;
+        const tlSoCau = parseInt(document.getElementById('tl-socau').value) || 0;
+        const tnDiem = parseVietnameseDecimal(document.getElementById('tn-diem').value);
+        const dsDiem = parseVietnameseDecimal(document.getElementById('ds-diem').value);
+        const tlnDiem = parseVietnameseDecimal(document.getElementById('tln-diem').value);
+
+        const bietPct = parseInt(document.getElementById('biet').value) || 40;
+        const hieuPct = parseInt(document.getElementById('hieu').value) || 30;
+        const vandungPct = parseInt(document.getElementById('vandung').value) || 30;
+        const totalPct = bietPct + hieuPct + vandungPct;
+        const bietRatio = bietPct / totalPct;
+        const hieuRatio = hieuPct / totalPct;
+        const vandungRatio = vandungPct / totalPct;
+
+        const selectedTopicList = [];
+        selectedTopics.forEach(id => {
+            const topic = physicsTopics.find(t => t.id === id);
+            if (topic) {
+                const subs = selectedSubTopics[id] || new Set(topic.subtopics);
+                selectedTopicList.push({
+                    ...topic,
+                    selectedSubs: Array.from(subs)
+                });
+            }
+        });
+
+        if (selectedTopicList.length === 0) {
+            showNotification('Vui lòng chọn nội dung kiểm tra trước!', 'warning');
+            return;
+        }
+
+        const numTopics = selectedTopicList.length;
+
+        function distribute(total, count) {
+            if (count === 0) return [];
+            const base = Math.floor(total / count);
+            const remainder = total % count;
+            const arr = Array(count).fill(base);
+            for (let i = 0; i < remainder; i++) arr[i]++;
+            return arr;
+        }
+
+        const tnPerTopic = distribute(tnSoCau, numTopics);
+        const dsPerTopic = distribute(dsSoCau, numTopics);
+        const tlnPerTopic = distribute(tlnSoCau, numTopics);
+        const tlPerTopic = distribute(tlSoCau, numTopics);
+
+        function splitByCognition(total) {
+            if (total === 0) return [0, 0, 0];
+            const b = Math.round(total * bietRatio);
+            const h = Math.round(total * hieuRatio);
+            const v = total - b - h;
+            return [Math.max(0, b), Math.max(0, h), Math.max(0, v)];
+        }
+
+        // Build cell helper
+        function makeCell(text, opts = {}) {
+            return new TableCell({
+                children: [new Paragraph({
+                    alignment: opts.align || AlignmentType.CENTER,
+                    children: [new TextRun({
+                        text: String(text),
+                        bold: opts.bold || false,
+                        size: opts.size || 20,
+                        font: 'Times New Roman'
+                    })]
+                })],
+                verticalAlign: VerticalAlign.CENTER,
+                rowSpan: opts.rowSpan || 1,
+                columnSpan: opts.colSpan || 1,
+                width: opts.width ? { size: opts.width, type: WidthType.DXA } : undefined,
+                shading: opts.shading || undefined
+            });
+        }
+
+        // Header rows
+        const headerRow1 = new TableRow({
+            children: [
+                makeCell('TT', { bold: true, rowSpan: 4 }),
+                makeCell('Chu de/Chuong', { bold: true, rowSpan: 4 }),
+                makeCell('Noi dung/don vi kien thuc', { bold: true, rowSpan: 4 }),
+                makeCell('Yeu cau can dat', { bold: true, rowSpan: 4 }),
+                makeCell('So cau hoi o cac muc do danh gia', { bold: true, colSpan: 12 }),
+                makeCell('Tong', { bold: true, rowSpan: 4 })
+            ]
+        });
+
+        const headerRow2 = new TableRow({
+            children: [
+                makeCell('TNKQ', { bold: true, colSpan: 6 }),
+                makeCell('Tu luan', { bold: true, colSpan: 6 })
+            ]
+        });
+
+        const headerRow3 = new TableRow({
+            children: [
+                makeCell('Nhieu lua chon', { bold: true, colSpan: 3 }),
+                makeCell('"Dung - Sai"', { bold: true, colSpan: 3 }),
+                makeCell('Tra loi ngan', { bold: true, colSpan: 3 }),
+                makeCell('Tu luan', { bold: true, colSpan: 3 })
+            ]
+        });
+
+        const headerRow4 = new TableRow({
+            children: [
+                makeCell('Biet', { bold: true }), makeCell('Hieu', { bold: true }), makeCell('Van dung', { bold: true }),
+                makeCell('Biet', { bold: true }), makeCell('Hieu', { bold: true }), makeCell('Van dung', { bold: true }),
+                makeCell('Biet', { bold: true }), makeCell('Hieu', { bold: true }), makeCell('Van dung', { bold: true }),
+                makeCell('Biet', { bold: true }), makeCell('Hieu', { bold: true }), makeCell('Van dung', { bold: true })
+            ]
+        });
+
+        // Data rows
+        const dataRows = [];
+        let totalCols = new Array(12).fill(0);
+        let grandTotal = 0;
+
+        selectedTopicList.forEach((topic, idx) => {
+            const tn = tnPerTopic[idx] || 0;
+            const ds = dsPerTopic[idx] || 0;
+            const tln = tlnPerTopic[idx] || 0;
+            const tl = tlPerTopic[idx] || 0;
+
+            const tnSplit = splitByCognition(tn);
+            const dsSplit = splitByCognition(ds);
+            const tlnSplit = splitByCognition(tln);
+            const tlSplit = splitByCognition(tl);
+
+            const cells = [...tnSplit, ...dsSplit, ...tlnSplit, ...tlSplit];
+            cells.forEach((v, i) => totalCols[i] += v);
+
+            const rowTotal = tn + ds + tln + tl;
+            grandTotal += rowTotal;
+
+            const subNames = topic.selectedSubs.join(', ');
+            const yeuCau = generateYeuCau(topic);
+
+            dataRows.push(new TableRow({
+                children: [
+                    makeCell(String(idx + 1), { bold: true }),
+                    makeCell(topic.fullName, { align: AlignmentType.LEFT }),
+                    makeCell(subNames, { align: AlignmentType.LEFT }),
+                    makeCell(yeuCau, { align: AlignmentType.LEFT }),
+                    ...cells.map(c => makeCell(c || '')),
+                    makeCell(String(rowTotal), { bold: true })
+                ]
+            }));
+        });
+
+        // Footer rows
+        const tnTotalScore = (totalCols[0] + totalCols[1] + totalCols[2]) * tnDiem;
+        const dsTotalScore = (totalCols[3] + totalCols[4] + totalCols[5]) * dsDiem;
+        const tlnTotalScore = (totalCols[6] + totalCols[7] + totalCols[8]) * tlnDiem;
+        const diemTuLuan = 10 - tnTotalScore - dsTotalScore - tlnTotalScore;
+        const tlCount = totalCols[9] + totalCols[10] + totalCols[11];
+        const tlEach = tlCount > 0 ? diemTuLuan / tlCount : 0;
+
+        function fmtD(v) {
+            if (v === 0) return '';
+            const r = Math.round(v * 100) / 100;
+            return r % 1 === 0 ? r.toFixed(0) : r.toFixed(2);
+        }
+
+        const diemArr = [
+            ...totalCols.slice(0, 3).map(c => fmtD(c * tnDiem)),
+            ...totalCols.slice(3, 6).map(c => fmtD(c * dsDiem)),
+            ...totalCols.slice(6, 9).map(c => fmtD(c * tlnDiem)),
+            ...totalCols.slice(9, 12).map(c => fmtD(c * tlEach))
+        ];
+
+        const pctArr = diemArr.map(c => {
+            const v = parseFloat(c) || 0;
+            return v > 0 ? String(Math.round(v / 10 * 100)) : '';
+        });
+
+        const footerRow1 = new TableRow({
+            children: [
+                makeCell('Tong so cau', { bold: true, colSpan: 4, align: AlignmentType.LEFT }),
+                ...totalCols.map(c => makeCell(c || '')),
+                makeCell(String(grandTotal), { bold: true })
+            ]
+        });
+
+        const footerRow2 = new TableRow({
+            children: [
+                makeCell('Tong so diem', { bold: true, colSpan: 4, align: AlignmentType.LEFT }),
+                ...diemArr.map(c => makeCell(c)),
+                makeCell('10', { bold: true })
+            ]
+        });
+
+        const footerRow3 = new TableRow({
+            children: [
+                makeCell('Ti le %', { bold: true, colSpan: 4, align: AlignmentType.LEFT }),
+                ...pctArr.map(c => makeCell(c)),
+                makeCell('100', { bold: true })
+            ]
+        });
+
+        // Build document
+        const table = new Table({
+            rows: [headerRow1, headerRow2, headerRow3, headerRow4, ...dataRows, footerRow1, footerRow2, footerRow3],
+            width: { size: 100, type: WidthType.PERCENTAGE }
+        });
+
+        const doc = new Document({
+            sections: [{
+                properties: {
+                    page: { margin: { top: 1440, right: 1080, bottom: 1440, left: 1440 } }
+                },
+                children: [
+                    new Paragraph({
+                        alignment: AlignmentType.CENTER,
+                        spacing: { after: 200 },
+                        children: [new TextRun({
+                            text: '2. BAN DAC TA DE KIEM TRA DINH KI',
+                            bold: true, size: 28, font: 'Times New Roman'
+                        })]
+                    }),
+                    new Paragraph({
+                        alignment: AlignmentType.CENTER,
+                        spacing: { after: 300 },
+                        children: [new TextRun({
+                            text: 'Kem theo Cong van so 7991/BGDDT-GDTrH ngay 17/12/2024 cua Bo GDDT',
+                            italics: true, size: 22, font: 'Times New Roman'
+                        })]
+                    }),
+                    table,
+                    new Paragraph({
+                        spacing: { before: 200 },
+                        children: [new TextRun({
+                            text: '6 Co o trong mot so o cua ban dac ta, ghi tat ten cua nang luc (da duoc quy dinh trong chuong trinh mon hoc/hoat dong giao duc).',
+                            italics: true, size: 18, font: 'Times New Roman'
+                        })]
+                    })
+                ]
+            }]
+        });
+
+        try {
+            const blob = await Packer.toBlob(doc);
+            saveAs(blob, 'Dac_Ta_De_Kiem_Tra.docx');
+            showNotification('Da tai ve file Dac_Ta_De_Kiem_Tra.docx thanh cong!', 'success');
+        } catch (err) {
+            console.error('Export error:', err);
+            showNotification('Loi khi xuat file. Vui long thu lai!', 'error');
+        }
+    }
+
+    // ===== Exam Generation with AI (Groq - Free) =====
+    const AI_API_KEY = 'sk-bee-59bc27a9256f4bf5bb4fc37843c7f282';
+    const AI_MODEL = 'qwen-3-235b-a22b-instruct-2507';
+    const AI_ENDPOINT = 'https://platform.beeknoee.com/api/v1/chat/completions';
+    let lastExamMarkdown = '';
+    let examGenerationInProgress = false;
+
+    async function generateExamWithAI() {
+        if (selectedTopics.size === 0) { showNotification('Vui l\u00f2ng ch\u1ecdn n\u1ed9i dung ki\u1ec3m tra \u1edf tab C\u1ea5u h\u00ecnh!', 'warning'); return; }
+        if (examGenerationInProgress) { showNotification('\u0110ang c\u00f3 y\u00eau c\u1ea7u t\u1ea1o \u0111\u1ec1, vui l\u00f2ng ch\u1edd ho\u00e0n t\u1ea5t.', 'warning'); return; }
+        examGenerationInProgress = true;
+        const loading = document.getElementById('dethi-loading');
+        const placeholder = document.getElementById('dethi-placeholder');
+        const rendered = document.getElementById('exam-rendered');
+        const btn = document.getElementById('btn-generate-exam');
+        const warning = document.getElementById('dethi-warning');
+        loading.classList.add('active'); placeholder.style.display = 'none'; rendered.style.display = 'none';
+        btn.disabled = true; btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> \u0110ang t\u1ea1o \u0111\u1ec1 thi...';
+        try {
+            const prompt = buildExamPrompt();
+            const text = await callAI(prompt);
+            lastExamMarkdown = text;
+            renderExamContent(text);
+            warning.style.display = 'flex';
+            document.getElementById('btn-download-exam-docx').style.display = '';
+            showNotification('\u0110\u1ec1 thi \u0111\u00e3 \u0111\u01b0\u1ee3c t\u1ea1o th\u00e0nh c\u00f4ng!', 'success');
+        } catch (err) {
+            console.error('Exam generation error:', err);
+            const msg = (err && err.message) ? err.message : 'L\u1ed7i kh\u00f4ng x\u00e1c \u0111\u1ecbnh';
+            if (/Too many concurrent requests/i.test(msg)) {
+                showNotification('API \u0111ang b\u1eadn (1 y\u00eau c\u1ea7u/l\u1ea7n). Vui l\u00f2ng \u0111\u1ee3i v\u00e0i gi\u00e2y r\u1ed3i th\u1eed l\u1ea1i.', 'warning');
+            } else {
+                showNotification('L\u1ed7i: ' + msg, 'error');
+            }
+            placeholder.style.display = 'flex';
+        } finally {
+            examGenerationInProgress = false;
+            loading.classList.remove('active'); btn.disabled = false;
+            btn.innerHTML = '<i class="fas fa-wand-magic-sparkles"></i> T\u1ea1o \u0111\u1ec1 thi (tr\u1eeb 2 \u0111i\u1ec3m)';
+        }
+    }
+
+    function buildExamPrompt() {
+        const g = id => { const e = document.getElementById(id); return e ? (e.tagName === 'SELECT' ? e.options[e.selectedIndex].text : e.value) : ''; };
+        const n = id => parseInt(document.getElementById(id)?.value) || 0;
+        const monHoc = g('mon-hoc'), khoiLop = g('khoi-lop'), thoiGian = g('thoi-gian');
+        const tnSoCau = n('tn-socau'), dsSoCau = n('ds-socau'), tlnSoCau = n('tln-socau'), tlSoCau = n('tl-socau');
+        const tnDiem = g('tn-diem'), dsDiem = g('ds-diem');
+        const diemTL = document.getElementById('diem-tuluan')?.textContent || '4';
+        const tenTruong = g('ten-truong'), tenDe = g('ten-de'), namHoc = g('nam-hoc');
+        let topics = '';
+        selectedTopics.forEach(id => {
+            const t = physicsTopics.find(x => x.id === id);
+            if (t) { const s = selectedSubTopics[id] ? Array.from(selectedSubTopics[id]) : t.subtopics; topics += '- ' + t.fullName + ': ' + s.join(', ') + '\n'; }
+        });
+        const pTN = tnSoCau > 0 ? (tnSoCau * parseFloat(tnDiem.replace(',','.'))).toFixed(1) : '0';
+        const pDS = dsSoCau > 0 ? (dsSoCau * parseFloat(dsDiem.replace(',','.'))).toFixed(1) : '0';
+        let secs = '';
+        if (tnSoCau > 0) secs += '\n**Phần I. Câu trắc nghiệm nhiều phương án lựa chọn (' + pTN + ' điểm)** *(Thí sinh trả lời từ câu 1 đến câu ' + tnSoCau + '. Mỗi câu hỏi thí sinh chỉ chọn một phương án)*\n';
+        if (dsSoCau > 0) secs += '\n**Phần II. Câu trắc nghiệm đúng sai (' + pDS + ' điểm)** *(Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh chọn đúng hoặc sai)*\n';
+        if (tlSoCau > 0) secs += '\n**Phần III. Tự luận (' + diemTL + ' điểm)**\n';
+        return 'Tạo ĐỀ KIỂM TRA hoàn chỉnh bằng tiếng Việt (Markdown). Font 12pt Times New Roman.\n' +
+            'Môn: ' + monHoc + ' (' + khoiLop + ') | TG: ' + thoiGian + ' phút\nNội dung:\n' + topics +
+            '\nKHÔNG TẠO HEADER - hệ thống tự tạo. Bắt đầu NGAY từ nội dung đề.\n' +
+            secs +
+            '\n=== ĐỊNH DẠNG BẮT BUỘC ===\n\n' +
+            'PHẦN TN (' + tnSoCau + ' câu):\n' +
+            '- Đánh số liên tục: **Câu 1.** nội dung... **Câu 2.** nội dung...\n' +
+            '- 4 đáp án xếp dạng bảng markdown:\n' +
+            '| | |\n|---|---|\n| A. đáp án 1 | **B.** đáp án đúng |\n| C. đáp án 3 | D. đáp án 4 |\n' +
+            '- Đáp án ĐÚNG: in đậm CHỈ chữ cái (**B.** nếu B đúng)\n\n' +
+            'PHẦN Đ/S (' + dsSoCau + ' câu):\n' +
+            '- **Câu X.** Tình huống 4-6 dòng. "Xác định Đúng hay Sai:"\n' +
+            '- a) nhận biết, b) thông hiểu, c) suy luận, d) vận dụng\n' +
+            '- Các ý ĐỘC LẬP nhau\n\n' +
+            'PHẦN TL (' + tlSoCau + ' câu): chi tiết\n\n' +
+            '---\n**--------- HẾT --------**\n\n## ĐÁP ÁN\nLiệt kê đáp án.\n\n' +
+            'YÊU CẦU: SGK GDPT 2018 ' + khoiLop + '. Câu hoàn chỉnh, có ngữ cảnh. 4 đáp án hợp lý. KHÔNG tạo đáp án kiểu "Cả A, B, C...". Với đáp án là câu/ý diễn đạt bằng ngôn ngữ tự nhiên phải có dấu chấm cuối câu. Với đáp án là công thức, biểu thức, cú pháp câu lệnh, đoạn code thì không thêm dấu chấm cuối. Trả đề, KHÔNG giải thích.';
+    }
+
+    function sanitizeExamMarkdown(md) {
+        const optionRegex = /^\s*(?:\*\*)?([A-D])\.(?:\*\*)?\s*(.+)$/i;
+        const formulaRegex = /[\[\]\{\}\(\)=+\-*/%<>]|:\s*$|;\s*$|\b(print|input|for|while|if|else|elif|append|remove|len|def|return)\b/i;
+        const normalizeOption = (txt) => {
+            let t = (txt || '').replace(/\*\*/g, '').replace(/==/g, '').trim();
+            if (/^cả\s*[A-D](\s*,\s*[A-D])+/i.test(t) || /^tất cả các ý trên$/i.test(t)) t = 'Tất cả các phương án trên';
+            const hasPunc = /[.!?)]$/.test(t);
+            if (!formulaRegex.test(t) && !hasPunc) t += '.';
+            return t;
+        };
+
+        const lines = (md || '').split('\n');
+        const out = [];
+        let i = 0;
+        while (i < lines.length) {
+            const line = lines[i] || '';
+            const trimmed = line.trim();
+
+            if (trimmed.startsWith('|')) {
+                const table = [];
+                let j = i;
+                while (j < lines.length && (lines[j] || '').trim().startsWith('|')) {
+                    table.push((lines[j] || '').trim());
+                    j++;
+                }
+
+                const found = [];
+                table.forEach((row) => {
+                    if (/^[\|\s\-:]+$/.test(row)) return;
+                    row.split('|').map((c) => c.trim()).filter(Boolean).forEach((cell) => {
+                        const m = cell.match(optionRegex);
+                        if (m) found.push({ key: m[1].toUpperCase(), value: normalizeOption(m[2]) });
+                    });
+                });
+
+                if (found.length) {
+                    const map = { A: '', B: '', C: '', D: '' };
+                    found.forEach((f) => { if (!map[f.key]) map[f.key] = f.value; });
+                    ['A', 'B', 'C', 'D'].forEach((k) => { if (map[k]) out.push(k + '. ' + map[k]); });
+                }
+
+                i = j;
+                continue;
+            }
+
+            const m = trimmed.match(optionRegex);
+            if (m) {
+                out.push(m[1].toUpperCase() + '. ' + normalizeOption(m[2]));
+            } else if (!/^[\|\s\-:]+$/.test(trimmed)) {
+                out.push(line);
+            }
+            i++;
+        }
+        return out.join('\n');
+    }
+    async function callAI(prompt) {
+        const maxRetries = 3;
+        for (let attempt = 0; attempt <= maxRetries; attempt++) {
+            const res = await fetch(AI_ENDPOINT, { method: 'POST', headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + AI_API_KEY}, body: JSON.stringify({ model: AI_MODEL, messages: [{role: 'user', content: prompt}], temperature: 0.8, max_tokens: 4096 }) });
+            if (res.ok) {
+                const data = await res.json();
+                const text = data.choices?.[0]?.message?.content;
+                if (!text) throw new Error('AI không trả về kết quả.');
+                return text;
+            }
+            const e = await res.json().catch(() => ({}));
+            const msg = e.error?.message || ('HTTP ' + res.status);
+            const isBusy = /Too many concurrent requests/i.test(msg);
+            if (isBusy && attempt < maxRetries) {
+                await new Promise(r => setTimeout(r, 1500 * (attempt + 1)));
+                continue;
+            }
+            console.error('API Error:', JSON.stringify(e));
+            throw new Error(msg);
+        }
+        throw new Error('API bận, vui lòng thử lại.');
+    }
+
+    function renderExamContent(md) {
+        const el = document.getElementById('exam-rendered');
+        let html;
+        if (typeof marked !== 'undefined') { html = marked.parse(sanitizeExamMarkdown(md)); }
+        else { let h = md; h = h.replace(/^#### (.+)$/gm, '<h4>$1</h4>'); h = h.replace(/^### (.+)$/gm, '<h3>$1</h3>'); h = h.replace(/^## (.+)$/gm, '<h2>$1</h2>'); h = h.replace(/^# (.+)$/gm, '<h1>$1</h1>'); h = h.replace(/^---+$/gm, '<hr>'); h = h.replace(/\*\*\*(.+?)\*\*\*/g, '<strong><em>$1</em></strong>'); h = h.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>'); h = h.replace(/\*(.+?)\*/g, '<em>$1</em>'); h = h.replace(/\n\n/g, '</p><p>'); h = h.replace(/\n/g, '<br>'); html = '<p>' + h + '</p>'; }
+        html = html.replace(/<strong>([A-D])\.\s*<\/strong>/g, '<span class="dap-an-dung"><strong>$1.</strong></span>');
+        html = html.replace(/<strong>([A-D])\.<\/strong>/g, '<span class="dap-an-dung"><strong>$1.</strong></span>');
+        html = buildExamHeader(html);
+        el.innerHTML = '<div class="exam-document">' + html + '</div>';
+        if (!document.getElementById('exam-render-css')) { const s = document.createElement('style'); s.id = 'exam-render-css'; s.textContent = '.exam-document{font-family:"Times New Roman",serif;font-size:12pt;color:#000;line-height:1.4;max-width:800px;margin:0 auto;padding:20px}.exam-document h2{font-size:14pt;margin:16px 0 6px;border-bottom:1px solid #ccc;padding-bottom:4px}.exam-document p{margin:4px 0;text-align:justify}.exam-document hr{border:none;border-top:1px solid #999;margin:12px 0}.exam-document table:not(.exam-header-table){width:100%;border-collapse:collapse;margin:2px 0 8px 0;border:1px solid #000}.exam-document table:not(.exam-header-table) td,.exam-document table:not(.exam-header-table) th{padding:4px 10px;font-size:12pt;font-family:"Times New Roman",serif;border:1px solid #000;text-align:left}.exam-document ul,.exam-document ol{margin:4px 0;padding-left:24px}.exam-document li{margin:2px 0;text-align:justify}.dap-an-dung{color:#dc2626!important;font-weight:700!important}.opt-label{display:inline-block;min-width:20px;padding:0 3px;border:1px solid #000;font-weight:700;margin-right:4px;line-height:1.1;text-align:center}.exam-header-table{border:none!important}.exam-header-table td{border:none!important}'; document.head.appendChild(s); }
+        el.style.display = 'block'; document.getElementById('dethi-placeholder').style.display = 'none';
+    }
+    function buildExamHeader(html) {
+        const tenTruong = document.getElementById('ten-truong')?.value || 'TRƯỜNG THPT';
+        const tenDe = document.getElementById('ten-de')?.value || 'ĐỀ KIỂM TRA';
+        const monHoc = document.getElementById('mon-hoc'); const monText = monHoc ? monHoc.options[monHoc.selectedIndex].text : '';
+        const khoiLop = document.getElementById('khoi-lop'); const lopText = khoiLop ? khoiLop.options[khoiLop.selectedIndex].text : '';
+        const thoiGian = document.getElementById('thoi-gian')?.value || '45';
+        const namHoc = document.getElementById('nam-hoc')?.value || 'NĂM HỌC 2026 - 2027';
+        const toCM = document.getElementById('to-chuyen-mon')?.value || 'TỔ CHUYÊN MÔN';
+        const header = `<table class="exam-header-table"><tr><td class="col-left"><strong>SỞ GD&ĐT TP.CẦN THƠ</strong></td><td class="col-right"><strong>${tenDe.toUpperCase()}</strong></td></tr><tr><td class="col-left"><strong>${tenTruong.toUpperCase()}</strong><br><span style="display:inline-block;width:60%;border-bottom:1px solid #000;margin-top:2px">&nbsp;</span></td><td class="col-right"><strong>MÔN: ${monText} ${lopText ? '- ' + lopText : ''}</strong></td></tr><tr><td class="col-left"><strong>${toCM.toUpperCase()}</strong></td><td class="col-right"><em>Thời gian làm bài: ${thoiGian} phút (không kể thời gian phát đề)</em></td></tr><tr><td class="col-left"><em>(Đề thi có ... trang)</em></td><td class="col-right"><strong>${namHoc}</strong></td></tr></table><div class="exam-student-info"><strong>Họ và tên thí sinh:</strong> ………………………………………………… &nbsp;&nbsp;&nbsp;&nbsp;<strong>Mã đề: ĐỀ GỐC</strong><br><strong>Số BD:</strong> …………………………………………………</div><hr>`;
+        const idx = html.search(/Ph\u1ea7n\s+I|PH\u1ea6N\s+I|<strong>Ph\u1ea7n|<h[23]>Ph|C\u00e2u\s+1\.|<strong>C\u00e2u\s+1/);
+        if (idx > 0) return header + html.substring(idx);
+        const hr = html.indexOf('<hr>'); if (hr > 0) return header + html.substring(hr + 4);
+        return header + html;
+    }
+
+    async function exportExamToDocx() {
+        if (!lastExamMarkdown) { showNotification('Chưa có đề thi!', 'warning'); return; }
+        const {Document, Packer, Paragraph, TextRun, AlignmentType, Table, TableRow, TableCell, WidthType, VerticalAlign, BorderStyle} = docx;
+
+        const getText = (id, fallback = '') => {
+            const el = document.getElementById(id);
+            if (!el) return fallback;
+            if (el.tagName === 'SELECT') return el.options[el.selectedIndex]?.text || fallback;
+            return (el.value || '').trim() || fallback;
+        };
+        const stripMd = (txt) => (txt || '').replace(/\*\*/g, '').replace(/==/g, '').trim();
+        const optionRegex = /^\s*(?:\*\*)?([A-D])\.(?:\*\*)?\s*(.+)$/i;
+        const isQuestionLine = (txt) => /^\s*(\*\*)?Câu\s*\d+/i.test(txt);
+
+        const getMeta = () => {
+            const tenTruong = getText('ten-truong', 'TRƯỜNG THPT').toUpperCase();
+            const tenDe = getText('ten-de', 'KIỂM TRA GIỮA HỌC KÌ I, NĂM HỌC 2025 - 2026').toUpperCase();
+            const monHoc = getText('mon-hoc', 'Tin học');
+            const khoiLop = getText('khoi-lop', '10');
+            const thoiGian = getText('thoi-gian', '45');
+            const namHoc = getText('nam-hoc', 'NĂM HỌC 2025 - 2026');
+            const toCM = getText('to-chuyen-mon', 'TỔ CHUYÊN MÔN').toUpperCase();
+            const maDe = getText('ma-de', 'ĐỀ GỐC');
+            const monLower = monHoc.toLowerCase();
+            const khoiLower = khoiLop.toLowerCase();
+            const monDisplay = khoiLower.includes(monLower) ? khoiLop : (monHoc + (khoiLop ? ' ' + khoiLop : ''));
+            return { tenTruong, tenDe, monHoc, monDisplay, thoiGian, namHoc, toCM, maDe };
+        };
+
+        const addHeader = (children, meta) => {
+            const mkCell = (paras, align = AlignmentType.LEFT) => new TableCell({
+                width: { size: 50, type: WidthType.PERCENTAGE },
+                verticalAlign: VerticalAlign.TOP,
+                children: paras.map((p) => new Paragraph({
+                    alignment: align,
+                    children: [new TextRun({ text: p.text, bold: !!p.bold, italics: !!p.italics, size: 24, font: 'Times New Roman' })],
+                    spacing: { after: p.after ?? 40 }
+                }))
+            });
+            children.push(new Table({
+                width: { size: 100, type: WidthType.PERCENTAGE },
+                borders: {
+                    top: { style: BorderStyle.SINGLE, size: 4, color: '000000' },
+                    bottom: { style: BorderStyle.SINGLE, size: 4, color: '000000' },
+                    left: { style: BorderStyle.SINGLE, size: 4, color: '000000' },
+                    right: { style: BorderStyle.SINGLE, size: 4, color: '000000' },
+                    insideHorizontal: { style: BorderStyle.SINGLE, size: 4, color: '000000' },
+                    insideVertical: { style: BorderStyle.SINGLE, size: 4, color: '000000' }
+                },
+                rows: [new TableRow({
+                    children: [
+                        mkCell([
+                            { text: 'SỞ GD&ĐT TP.CẦN THƠ', bold: true, after: 20 },
+                            { text: meta.tenTruong, bold: true, after: 20 },
+                            { text: meta.toCM, bold: true, after: 20 },
+                            { text: '(Đề thi có 4 trang)', italics: true, after: 0 }
+                        ]),
+                        mkCell([
+                            { text: meta.tenDe, bold: true, after: 30 },
+                            { text: 'MÔN: ' + meta.monDisplay, bold: true, after: 20 },
+                            { text: 'Thời gian làm bài: ' + meta.thoiGian + ' phút (không kể thời gian phát đề)', italics: true, after: 20 },
+                            { text: meta.namHoc, bold: true, after: 0 }
+                        ], AlignmentType.CENTER)
+                    ]
+                })]
+            }));
+            children.push(new Paragraph({
+                spacing: { before: 80, after: 40 },
+                children: [
+                    new TextRun({ text: 'Họ và tên thí sinh: ……………………………………………', bold: true, size: 24, font: 'Times New Roman' }),
+                    new TextRun({ text: '        Mã đề: ' + meta.maDe, bold: true, size: 24, font: 'Times New Roman' })
+                ]
+            }));
+            children.push(new Paragraph({
+                spacing: { after: 80 },
+                children: [new TextRun({ text: 'Số BD: …………………………………………………………', bold: true, size: 24, font: 'Times New Roman' })]
+            }));
+        };
+
+        const rawLines = lastExamMarkdown.split('\n');
+        const firstBodyIdx = rawLines.findIndex((l) => /phần\s*i|PHẦN\s*I|câu\s*1\./i.test(l));
+        const lines = firstBodyIdx > -1 ? rawLines.slice(firstBodyIdx) : rawLines;
+        const children = [];
+        const meta = getMeta();
+        addHeader(children, meta);
+
+        const makeRuns = (text) => {
+            const runs = [];
+            text.split(/(\*\*[^*]+\*\*)/g).forEach((part) => {
+                if (!part) return;
+                if (part.startsWith('**') && part.endsWith('**')) runs.push(new TextRun({ text: part.slice(2, -2), bold: true, size: 24, font: 'Times New Roman' }));
+                else runs.push(new TextRun({ text: part, size: 24, font: 'Times New Roman' }));
+            });
+            return runs;
+        };
+
+        const parseStyledCell = (rawText) => {
+            const raw = (rawText || '').trim();
+            const cleaned = stripMd(raw);
+            const isCorrect = /\*\*\s*[A-D]\./i.test(raw) || /==\s*[A-D]\./i.test(raw);
+            return {
+                text: cleaned,
+                correct: isCorrect
+            };
+        };
+
+        const pushOptionTable = (opts) => {
+            const byKey = { A: null, B: null, C: null, D: null };
+            opts.forEach((o) => { byKey[o.key] = o; });
+            const rows = [[byKey.A, byKey.B], [byKey.C, byKey.D]].map((pair) => new TableRow({
+                children: pair.map((opt) => new TableCell({
+                    verticalAlign: VerticalAlign.CENTER,
+                    children: [new Paragraph({
+                        children: [new TextRun({
+                            text: (opt ? opt.key + '. ' + stripMd(opt.text) : ''),
+                            bold: !!(opt && opt.correct),
+                            color: opt && opt.correct ? 'CC0000' : '000000',
+                            size: 24,
+                            font: 'Times New Roman'
+                        })]
+                    })]
+                }))
+            }));
+            children.push(new Table({
+                width: { size: 100, type: WidthType.PERCENTAGE },
+                borders: {
+                    top: { style: BorderStyle.SINGLE, size: 4, color: '000000' },
+                    bottom: { style: BorderStyle.SINGLE, size: 4, color: '000000' },
+                    left: { style: BorderStyle.SINGLE, size: 4, color: '000000' },
+                    right: { style: BorderStyle.SINGLE, size: 4, color: '000000' },
+                    insideHorizontal: { style: BorderStyle.SINGLE, size: 4, color: '000000' },
+                    insideVertical: { style: BorderStyle.SINGLE, size: 4, color: '000000' }
+                },
+                rows
+            }));
+            children.push(new Paragraph({ spacing: { after: 80 } }));
+        };
+
+        const pushMarkdownTable = (tableLines) => {
+            if (!tableLines || tableLines.length < 2) return;
+            const rows = tableLines
+                .map((ln) => ln.trim())
+                .filter((ln) => ln.startsWith('|') && !/^[\|\s\-:]+$/.test(ln))
+                .map((ln) => ln.split('|').map((c) => c.trim()).filter(Boolean))
+                .filter((cells) => cells.length > 0);
+            if (!rows.length) return;
+
+            const tableRows = rows.map((cells) => new TableRow({
+                children: cells.map((cell) => {
+                    const styled = parseStyledCell(cell);
+                    return new TableCell({
+                        verticalAlign: VerticalAlign.CENTER,
+                        children: [new Paragraph({
+                            children: [new TextRun({
+                                text: styled.text,
+                                bold: styled.correct,
+                                color: styled.correct ? 'CC0000' : '000000',
+                                size: 24,
+                                font: 'Times New Roman'
+                            })]
+                        })]
+                    });
+                })
+            }));
+
+            children.push(new Table({
+                width: { size: 100, type: WidthType.PERCENTAGE },
+                borders: {
+                    top: { style: BorderStyle.SINGLE, size: 4, color: '000000' },
+                    bottom: { style: BorderStyle.SINGLE, size: 4, color: '000000' },
+                    left: { style: BorderStyle.SINGLE, size: 4, color: '000000' },
+                    right: { style: BorderStyle.SINGLE, size: 4, color: '000000' },
+                    insideHorizontal: { style: BorderStyle.SINGLE, size: 4, color: '000000' },
+                    insideVertical: { style: BorderStyle.SINGLE, size: 4, color: '000000' }
+                },
+                rows: tableRows
+            }));
+            children.push(new Paragraph({ spacing: { after: 80 } }));
+        };
+
+        let i = 0;
+        while (i < lines.length) {
+            const t = lines[i].trim();
+            if (!t) { children.push(new Paragraph({ spacing: { after: 60 } })); i++; continue; }
+            if (/^---+$/.test(t)) { i++; continue; }
+            if (t.startsWith('|')) {
+                const tableLines = [];
+                let k = i;
+                while (k < lines.length && (lines[k] || '').trim().startsWith('|')) {
+                    tableLines.push((lines[k] || '').trim());
+                    k++;
+                }
+                pushMarkdownTable(tableLines);
+                i = k;
+                continue;
+            }
+            if (/^#{1,3}\s+/.test(t)) {
+                children.push(new Paragraph({ spacing: { before: 120, after: 60 }, children: [new TextRun({ text: stripMd(t.replace(/^#{1,3}\s+/, '')), bold: true, size: 24, font: 'Times New Roman' })] }));
+                i++;
+                continue;
+            }
+            if (isQuestionLine(t)) {
+                children.push(new Paragraph({ spacing: { after: 40 }, children: makeRuns(stripMd(t)) }));
+                const opts = [];
+                let j = i + 1;
+                while (j < lines.length) {
+                    const candidate = (lines[j] || '').trim();
+                    const m = candidate.match(optionRegex);
+                    if (!m) break;
+                    const key = m[1].toUpperCase();
+                    const raw = m[2];
+                    const correct = /\*\*\s*$/.test(raw) || /^\*\*/.test(raw);
+                    opts.push({ key, text: raw, correct });
+                    j++;
+                }
+                if (opts.length >= 2) {
+                    pushOptionTable(opts);
+                    i = j;
+                    continue;
+                }
+                i++;
+                continue;
+            }
+            children.push(new Paragraph({ spacing: { after: 40 }, children: makeRuns(stripMd(t)) }));
+            i++;
+        }
+
+        const baseName = (meta.tenDe + '_' + meta.monHoc + '_' + meta.maDe).replace(/[^a-zA-Z0-9\u00C0-\u1EF9\s_-]/g, '').replace(/\s+/g, '_');
+        const doc = new Document({
+            sections: [{ properties: { page: { margin: { top: 1134, right: 850, bottom: 1134, left: 1134 } } }, children }]
+        });
+        try {
+            const blob = await Packer.toBlob(doc);
+            saveAs(blob, baseName + '.docx');
+            showNotification('Đã tải đề thi thành công!', 'success');
+        } catch (err) {
+            console.error(err);
+            showNotification('Lỗi xuất file!', 'error');
+        }
+    }    </script>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+2026/04/11-07:14:19.225 5144 Creating DB C:\Users\thanh\.gemini\antigravity-browser-profile\Default\IndexedDB\https_thcsbachdangq3.hcm.edu.vn_0.indexeddb.leveldb since it was missing.
+2026/04/11-07:14:19.327 5144 Reusing MANIFEST C:\Users\thanh\.gemini\antigravity-browser-profile\Default\IndexedDB\https_thcsbachdangq3.hcm.edu.vn_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/11-07:45:05.070 3a80 Level-0 table #5: started
+2026/04/11-07:45:05.075 3a80 Level-0 table #5: 1794 bytes OK
+2026/04/11-07:45:05.079 3a80 Delete type=0 #3
+2026/04/11-07:45:05.080 5144 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

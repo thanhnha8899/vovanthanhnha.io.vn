@@ -1,0 +1,68 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (154,49)<a class='logo' href='#' id='logo' />
+	[1] (92,49)<div  />
+		[2] (92,49)<i  />
+	[3] (176,49)<div  />
+		[4] (176,35)<span  />
+		[5] (176,64)<span  />
+[6] (305,49)<a class='dash-nav-link active' href='#' id='nav-home' />
+	[7] (278,49)<i  />
+	[8] (313,49)<span  />
+[9] (396,49)<a class='dash-nav-link' href='#' id='nav-huongdan' />
+	[10] (367,49)<i  />
+	[11] (403,49)<span  />
+[12] (489,49)<a class='dash-nav-link' href='#' id='nav-congdong' />
+	[13] (460,49)<i  />
+	[14] (498,49)<span  />
+[15] (583,49)<a class='dash-nav-link' href='#' id='nav-zalo' />
+	[16] (554,49)<i  />
+	[17] (592,49)<span  />
+[18] (691,49)<a class='topup-btn' href='#' id='nav-napdiem' />
+	[19] (668,49)<i  />
+	[20] (698,49)<span  />
+[21] (824,49)<button class='notif-btn' id='notif-btn' title='Thông báo' />
+	[22] (824,49)<i  />
+	[23] (831,36)<span  />
+[24] (859,49)<div  />
+	[25] (859,49)<div  />
+		[26] (859,49)<span  />
+		[27] (869,68)<span  />
+[28] (908,49)<button class='btn-logout' id='btn-logout' title='Đăng xuất' />
+	[29] (908,49)<i  />
+[30] (166,515)<a class='hero-btn primary' href='#' id='free-tools-btn' />
+	[31] (131,515)<i  />
+[32] (298,515)<a class='hero-btn outline' href='#' />
+	[33] (253,515)<i  />
+[34] (285,849)<a class='tile' href='#' id='tool-skkn-auto' />
+	[35] (121,849)<div  />
+		[36] (121,849)<i  />
+	[37] (288,849)<div  />
+		[38] (288,834)<span  />
+		[39] (288,866)<span  />
+	[40] (453,849)<span  />
+		[41] (459,849)<i  />
+[42] (285,956)<a class='tile' href='#' id='tool-skkn-danuy' />
+	[43] (121,956)<div  />
+		[44] (121,956)<i  />
+	[45] (288,956)<div  />
+		[46] (288,941)<span  />
+		[47] (288,973)<span  />
+[48] (718,849)<a class='tile' href='#' id='tool-mn-giaoan' />
+	[49] (554,849)<div  />
+		[50] (554,849)<i  />
+	[51] (724,849)<div  />
+		[52] (724,834)<span  />
+		[53] (724,866)<span  />
+	[54] (888,849)<span  />
+		[55] (892,849)<i  />
+[56] (718,956)<a class='tile' href='#' id='tool-mn-hoatdong' />
+	[57] (724,956)<div  />
+		[58] (724,941)<span  />
+		[59] (724,973)<span  />
+	[60] (888,956)<span  />
+		[61] (892,956)<i  />
+
+</current_dom>

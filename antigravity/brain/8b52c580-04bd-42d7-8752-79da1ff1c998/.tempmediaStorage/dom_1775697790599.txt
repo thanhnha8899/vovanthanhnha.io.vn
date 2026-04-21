@@ -1,0 +1,83 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (45,74)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (45,74)<i  />
+Đề thi THPT – Vật Lí
+Công cụ tạo đề thi PPKT THPT
+[2] (90,185)<div  />
+	[3] (56,185)<i  />
+	[4] (101,185)<span >Cấu hình />
+[5] (218,185)<div  />
+	[6] (188,185)<i  />
+	[7] (229,185)<span >Ma trận />
+[8] (338,185)<div  />
+	[9] (312,185)<i  />
+	[10] (349,185)<span >Đặc tả />
+[11] (450,185)<div  />
+	[12] (426,185)<i  />
+	[13] (460,185)<span >Đề thi />
+[14] (884,185)<div  />
+	[15] (823,185)<i  />
+	[16] (895,185)<span >Nguồn ứng dụng />
+Tổng nên bằng 100% (tự chuẩn hoá nếu khác)
+Ma trận tự động hình thành theo cấu hình trên và danh sách đơn vị đã chọn.
+Tạo ma trận
+trừ 2 điểm
+3
+Chọn nội dung kiểm tra
+Mạch – Đơn vị kiến thức · Đã chọn:
+0
+[17] (825,440)<input id='search-topic' placeholder='Lọc mạch...' />
+MẠCH NỘI DUNG
+[18] (500,977)<div class='topic-list' id='topic-list' scrollable='true' />
+	[19] (496,598)<div  />
+		[20] (73,594)<div  />
+			[21] (73,594)<i  />
+		[22] (95,594)<div  />
+		[23] (484,593)<span >Ba định luật Newton và chuyển đô... />
+		[24] (884,598)<span >6 />
+		[25] (918,594)<span  />
+			[26] (918,594)<i  />
+	[27] (496,671)<div  />
+		[28] (73,667)<div  />
+			[29] (73,667)<i  />
+		[30] (95,667)<div  />
+		[31] (484,666)<span >Biến dạng nén và biến dạng kéo />
+		[32] (884,671)<span >4 />
+		[33] (918,667)<span  />
+			[34] (918,667)<i  />
+	[35] (496,743)<div  />
+		[36] (73,740)<div  />
+			[37] (73,740)<i  />
+		[38] (95,740)<div  />
+		[39] (484,738)<span >Bảo toàn động lượng />
+		[40] (884,743)<span >5 />
+		[41] (918,740)<span  />
+			[42] (918,740)<i  />
+	[43] (496,816)<div  />
+		[44] (73,812)<div  />
+			[45] (73,812)<i  />
+		[46] (95,812)<div  />
+		[47] (484,811)<span >Chuyển động biến đổi />
+		[48] (884,816)<span >4 />
+		[49] (918,812)<span  />
+			[50] (918,812)<i  />
+	[51] (496,889)<div  />
+		[52] (73,885)<div  />
+			[53] (73,885)<i  />
+		[54] (95,885)<div  />
+		[55] (484,884)<span >Cân bằng lực, moment lực />
+		[56] (884,889)<span >4 />
+		[57] (918,885)<span  />
+			[58] (918,885)<i  />
+	[59] (73,958)<div  />
+		[60] (73,958)<i  />
+	[61] (95,958)<div  />
+	Công suất và hiệu suất
+	[62] (884,961)<span >4 />
+	[63] (918,958)<span  />
+		[64] (918,958)<i  />
+
+</current_dom>

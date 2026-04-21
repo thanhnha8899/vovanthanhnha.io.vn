@@ -1,0 +1,108 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (33,73)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (33,73)<i  />
+Đề thi THPT – Tin học
+Công cụ tạo đề thi PPKT THPT
+[2] (65,183)<div  />
+	[3] (40,183)<i  />
+	[4] (74,183)<span >Cấu hình />
+[5] (159,183)<div  />
+	[6] (137,183)<i  />
+	[7] (167,183)<span >Ma trận />
+[8] (246,183)<div  />
+	[9] (227,183)<i  />
+	[10] (254,183)<span >Đặc tả />
+[11] (327,183)<div  />
+	[12] (310,183)<i  />
+	[13] (334,183)<span >Đề thi />
+[14] (915,183)<div  />
+	[15] (871,183)<i  />
+	[16] (924,183)<span >Nguồn ứng dụng />
+Phần I. Câu trắc nghiệm nhiều phương án lựa chọn (3.0 điểm)
+Thí sinh trả lời từ câu 1 đến câu 12. Mỗi câu 0,25 điểm.
+1.
+Khi em mở phần mềm bảng tính để tính điểm trung bình, em cần sử dụng hàm nào?
+A) Hàm SUM
+B) Hàm AVERAGE
+C) Hàm COUNT
+D) Hàm MAX
+2.
+Thông tin được biểu diễn dưới dạng nào trong máy tính?
+A) Chỉ số
+B) Văn bản
+C) Hình ảnh
+D)
+Tất cả các đáp án trên
+3.
+Hệ nhị phân là hệ đếm sử dụng bao nhiêu chữ số?
+A) 2
+B) 8
+C) 10
+D) 16
+4.
+Đơn vị đo thông tin cơ bản trong máy tính là gì?
+A) Bit
+B) Byte
+C) Kilobyte
+D) Megabyte
+5.
+Mạng máy tính là hệ thống các máy tính được kết nối với nhau để:
+A) Chia sẻ tài nguyên
+B) Truyền dữ liệu
+C) Thực hiện các nhiệm vụ độc lập
+D)
+Tất cả các đáp án trên
+6.
+Internet là mạng máy tính toàn cầu, cho phép người dùng:
+A) Truy cập thông tin
+B) Chia sẻ tài nguyên
+C) Truyền dữ liệu
+D)
+Tất cả các đáp án trên
+7.
+WWW (World Wide Web) là:
+A) Mạng máy tính toàn cầu
+B) Hệ thống quản lý tệp
+C)
+Hệ thống thông tin siêu liên kết
+D) Ngôn ngữ lập trình
+8.
+An toàn trên Internet là việc bảo vệ:
+A) Thông tin cá nhân
+B) Tài nguyên máy tính
+C)
+Tất cả các đáp án trên
+D) Dữ liệu truyền tải
+9.
+Ngành nghề CNTT (Công nghệ thông tin) bao gồm:
+A) Lập trình
+B) Quản trị mạng
+C) Thiết kế đồ họa
+D)
+Tất cả các đáp án trên
+10.
+Xu hướng phát triển của ngành CNTT là:
+A) Phát triển phần mềm
+B) Phát triển phần cứng
+C)
+Phát triển trí tuệ nhân tạo
+D) Phát triển mạng máy tính
+11.
+Kỹ năng cần thiết cho người làm việc trong ngành CNTT là:
+A) Kỹ năng lập trình
+B) Kỹ năng quản trị mạng
+C)
+Kỹ năng phân tích và giải quyết vấn đề
+D) Kỹ năng thiết kế đồ họa
+12.
+Để trở thành một chuyên gia CNTT, cần có:
+A) Kiến thức về lập trình
+B) Kiến thức về quản trị mạng
+C)
+Kiến thức về công nghệ thông tin và kỹ năng thực hành
+D) Kiến thức về thiết kế đồ họa
+
+</current_dom>

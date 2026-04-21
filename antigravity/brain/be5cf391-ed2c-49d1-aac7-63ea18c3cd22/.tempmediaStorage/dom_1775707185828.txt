@@ -1,0 +1,175 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (145,45)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (145,45)<i  />
+Đề thi THPT – Vật Lí
+Công cụ tạo đề thi PPKT THPT
+[2] (166,113)<div  />
+	[3] (150,113)<i  />
+	[4] (172,113)<span >Cấu hình />
+[5] (228,113)<div  />
+	[6] (214,113)<i  />
+	[7] (234,113)<span >Ma trận />
+[8] (286,113)<div  />
+	[9] (273,113)<i  />
+	[10] (291,113)<span >Đặc tả />
+[11] (340,113)<div  />
+	[12] (328,113)<i  />
+	[13] (345,113)<span >Đề thi />
+[14] (821,113)<div  />
+	[15] (791,113)<i  />
+	[16] (826,113)<span >Nguồn ứng dụng />
+Năm học
+Thời gian (phút)
+Khối lớp
+Kỳ kiểm tra
+2
+Cấu trúc đề & Tỉ lệ
+Loại câu, điểm, mức độ nhận thức
+[17] (231,215)<label >ĐỘ KHÓ ĐỀ THI />
+[18] (231,252)<select id='do-kho' />
+Loại câu
+Số câu
+Điểm/câu
+Trắc nghiệm nhiều lựa chọn
+[19] (238,357)<input id='tn-socau' />
+[20] (281,357)<input id='tn-diem' />
+Trắc nghiệm Đúng/Sai
+[21] (238,410)<input id='ds-socau' />
+[22] (281,410)<input id='ds-diem' />
+Trả lời ngắn
+[23] (238,464)<input id='tln-socau' />
+[24] (281,464)<input id='tln-diem' />
+Tự luận
+[25] (238,517)<input id='tl-socau' />
+—
+Tổng điểm TNKQ
+6
+Điểm tự luận
+4
+MỨC ĐỘ NHẬN THỨC (%)
+[26] (185,723)<label >Biết />
+[27] (185,756)<input id='biet' />
+[28] (239,723)<label >Hiểu />
+[29] (239,756)<input id='hieu' />
+[30] (293,723)<label >Vận dụng />
+[31] (293,756)<input id='vandung' />
+Tổng nên bằng 100% (tự chuẩn hoá nếu khác)
+Ma trận tự động hình thành theo cấu hình trên và danh sách đơn vị đã chọn.
+[32] (231,922)<button class='generate-btn' id='btn-generate' />
+	[33] (183,922)<i  />
+	[34] (215,922)<span >Tạo ma trận />
+	[35] (264,922)<span >trừ 2 điểm />
+3
+Chọn nội dung kiểm tra
+Mạch – Đơn vị kiến thức · Đã chọn:
+0
+[36] (780,163)<input id='search-topic' placeholder='Lọc mạch...' />
+MẠCH NỘI DUNG
+[37] (459,492)<div class='topic-list' id='topic-list' scrollable='true' />
+	Ba định luật Newton và chuyển đô...
+	6
+	Biến dạng nén và biến dạng kéo
+	4
+	Bảo toàn động lượng
+	5
+	Chuyển động biến đổi
+	4
+	Cân bằng lực, moment lực
+	4
+	[38] (457,279)<div  />
+		[39] (350,277)<div  />
+			[40] (350,277)<i  />
+		[41] (361,277)<div  />
+		[42] (452,276)<span >Công suất và hiệu suất />
+		[43] (547,279)<span >4 />
+		[44] (564,277)<span  />
+			[45] (564,277)<i  />
+	[46] (457,323)<div  />
+		[47] (350,321)<div  />
+			[48] (350,321)<i  />
+		[49] (361,321)<div  />
+		[50] (452,320)<span >Công và năng lượng />
+		[51] (547,323)<span >5 />
+		[52] (564,321)<span  />
+			[53] (564,321)<i  />
+	[54] (457,368)<div  />
+		[55] (350,366)<div  />
+			[56] (350,366)<i  />
+		[57] (361,366)<div  />
+		[58] (452,365)<span >Gia tốc hướng tâm và lực hướng tâ... />
+		[59] (547,368)<span >4 />
+		[60] (564,366)<span  />
+			[61] (564,366)<i  />
+	[62] (457,412)<div  />
+		[63] (350,410)<div  />
+			[64] (350,410)<i  />
+		[65] (361,410)<div  />
+		[66] (452,409)<span >Khối lượng riêng, áp suất chất lỏng />
+		[67] (547,412)<span >5 />
+		[68] (564,410)<span  />
+			[69] (564,410)<i  />
+	[70] (457,457)<div  />
+		[71] (350,455)<div  />
+			[72] (350,455)<i  />
+		[73] (361,455)<div  />
+		[74] (452,454)<span >Mô tả chuyển động />
+		[75] (547,457)<span >4 />
+		[76] (564,455)<span  />
+			[77] (564,455)<i  />
+	[78] (457,501)<div  />
+		[79] (350,499)<div  />
+			[80] (350,499)<i  />
+		[81] (361,499)<div  />
+		[82] (452,498)<span >Một số lực trong thực tiễn />
+		[83] (547,501)<span >4 />
+		[84] (564,499)<span  />
+			[85] (564,499)<i  />
+	[86] (457,546)<div  />
+		[87] (350,543)<div  />
+			[88] (350,543)<i  />
+		[89] (361,543)<div  />
+		[90] (452,542)<span >Định luật Hooke />
+		[91] (547,546)<span >4 />
+		[92] (564,543)<span  />
+			[93] (564,543)<i  />
+	[94] (457,590)<div  />
+		[95] (350,588)<div  />
+			[96] (350,588)<i  />
+		[97] (361,588)<div  />
+		[98] (452,587)<span >Định nghĩa động lượng />
+		[99] (547,590)<span >3 />
+		[100] (564,588)<span  />
+			[101] (564,588)<i  />
+	[102] (457,634)<div  />
+		[103] (350,632)<div  />
+			[104] (350,632)<i  />
+		[105] (361,632)<div  />
+		[106] (452,631)<span >Động học các chuyển động tròn đ... />
+		[107] (547,634)<span >4 />
+		[108] (564,632)<span  />
+			[109] (564,632)<i  />
+	[110] (457,679)<div  />
+		[111] (350,677)<div  />
+			[112] (350,677)<i  />
+		[113] (361,677)<div  />
+		[114] (452,676)<span >Động lượng và va chạm />
+		[115] (547,679)<span >4 />
+		[116] (564,677)<span  />
+			[117] (564,677)<i  />
+	[118] (457,723)<div  />
+		[119] (350,721)<div  />
+			[120] (350,721)<i  />
+		[121] (361,721)<div  />
+		[122] (452,720)<span >Động năng và thế năng />
+		[123] (547,723)<span >5 />
+		[124] (564,721)<span  />
+			[125] (564,721)<i  />
+CHỌN MẠCH BÊN TRÁI
+Chọn một mạch nội dung bên trái để hiện đơn vị kiến thức.
+Đã chọn:
+Chưa chọn đơn vị nào
+
+</current_dom>

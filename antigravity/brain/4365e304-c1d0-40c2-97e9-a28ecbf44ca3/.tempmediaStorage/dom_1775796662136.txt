@@ -1,0 +1,90 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (153,54)<a class='logo' href='#' id='logo' />
+	[1] (91,54)<div  />
+		[2] (91,54)<i  />
+	[3] (175,54)<div  />
+		[4] (175,39)<span >VOVANTHANHNHA />
+		[5] (175,70)<span >Nền tảng AI Giáo dục />
+[6] (305,54)<a class='dash-nav-link active' href='#' id='nav-home' />
+	[7] (278,54)<i  />
+	[8] (313,54)<span >Trang chủ />
+[9] (395,54)<a class='dash-nav-link' href='#' id='nav-huongdan' />
+	[10] (366,54)<i  />
+	[11] (403,54)<span >Hướng dẫn />
+[12] (489,54)<a class='dash-nav-link' href='#' id='nav-congdong' />
+	[13] (459,54)<i  />
+	[14] (497,54)<span >Cộng đồng />
+[15] (583,54)<a class='dash-nav-link' href='#' id='nav-zalo' />
+	[16] (554,54)<i  />
+	[17] (592,54)<span >Hỗ trợ Zalo />
+[18] (692,54)<a class='topup-btn' href='nap-diem.html' id='nav-napdiem' />
+	[19] (668,54)<i  />
+	[20] (698,54)<span >Nạp điểm />
+0
+điểm
+[21] (825,54)<button class='notif-btn' id='notif-btn' title='Thông báo' />
+	[22] (825,54)<i  />
+	[23] (831,39)<span  />
+[24] (860,54)<div  />
+	[25] (860,54)<div  />
+		[26] (860,54)<span >A />
+		[27] (870,75)<span  />
+[28] (908,54)<button class='btn-logout' id='btn-logout' title='Đăng xuất' />
+	[29] (908,54)<i  />
+Kho mẫu PPT giáo dục
+200+ mẫu slide dành riêng cho giáo viên
+3
+Đề thi 7991 THPT
+9 bộ môn
+[30] (193,414)<a class='subject-card' href='de-thi-toan.html' id='tool-dt-toan' />
+	[31] (193,371)<div  />
+		[32] (193,371)<i  />
+	[33] (193,438)<span >Toán />
+	[34] (193,482)<span >5★ />
+[35] (399,414)<a class='subject-card' href='de-thi-vatli.html' id='tool-dt-vatli' />
+	[36] (399,371)<div  />
+		[37] (399,371)<i  />
+	[38] (399,438)<span >Vật Lí />
+	[39] (399,482)<span >5★ />
+[40] (604,414)<a class='subject-card' href='de-thi-hoahoc.html' id='tool-dt-hoahoc' />
+	[41] (604,371)<div  />
+		[42] (604,371)<i  />
+	[43] (604,438)<span >Hóa học />
+	[44] (604,482)<span >5★ />
+[45] (810,414)<a class='subject-card' href='de-thi-sinhhoc.html' id='tool-dt-sinhhoc' />
+	[46] (810,371)<div  />
+		[47] (810,371)<i  />
+	[48] (810,438)<span >Sinh Học />
+	[49] (810,482)<span >5★ />
+[50] (193,654)<a class='subject-card' href='de-thi-nguvan.html' id='tool-dt-nguvan' />
+	[51] (193,610)<div  />
+		[52] (193,610)<i  />
+	[53] (193,677)<span >Ngữ Văn />
+	[54] (193,721)<span >5★ />
+[55] (399,654)<a class='subject-card' href='de-thi-lichsu.html' id='tool-dt-lichsu' />
+	[56] (399,610)<div  />
+		[57] (399,610)<i  />
+	[58] (399,677)<span >Lịch Sử />
+	[59] (399,721)<span >5★ />
+[60] (604,654)<a class='subject-card' href='de-thi-diali.html' id='tool-dt-diali' />
+	[61] (604,610)<div  />
+		[62] (604,610)<i  />
+	[63] (604,677)<span >Địa Lí />
+	[64] (604,721)<span >5★ />
+[65] (810,654)<a class='subject-card' href='de-thi-ktpl.html' id='tool-dt-ktpl' />
+	[66] (810,610)<div  />
+		[67] (810,610)<i  />
+	[68] (810,677)<span >KT – PL />
+	[69] (810,721)<span >5★ />
+[70] (193,893)<a class='subject-card' href='de-thi-tinhoc.html' id='tool-dt-tinhoc' />
+	[71] (193,849)<div  />
+		[72] (193,849)<i  />
+	[73] (193,917)<span >Tin học />
+	[74] (193,960)<span >5★ />
+[75] (958,908)<button aria-label='Về đầu trang' class='back-to-top visible' id='back-to-top' />
+	[76] (958,908)<i  />
+
+</current_dom>

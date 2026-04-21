@@ -1,0 +1,110 @@
+{
+  "template_version": "1.0.0",
+  "template_id": "thpt-7991-midterm-vn",
+  "description": "Spec template ngan gon cho de kiem tra THPT theo bo mau docx.",
+  "document_defaults": {
+    "language": "vi",
+    "font_family": "Times New Roman",
+    "font_size_pt": 12,
+    "line_height": 1.5,
+    "page_size": "A4",
+    "margins_mm": {
+      "top": 20,
+      "right": 15,
+      "bottom": 20,
+      "left": 20
+    }
+  },
+  "header": {
+    "left_block": [
+      "SỞ GD&ĐT {{so_gddt}}",
+      "{{truong}}",
+      "{{to_cm}}",
+      "(Đề thi có {{so_trang}} trang)"
+    ],
+    "right_block": [
+      "{{ten_ky_thi}}",
+      "MÔN: {{mon_hoc}} {{khoi_lop}}",
+      "Thời gian làm bài: {{thoi_gian_phut}} phút không kể thời gian phát đề",
+      "{{nam_hoc}}"
+    ],
+    "student_info": [
+      "Họ và tên thí sinh: {{ho_ten_placeholder}}",
+      "Số BD: {{so_bd_placeholder}}",
+      "Mã đề: {{ma_de}}"
+    ],
+    "normalization_rules": {
+      "ky_thi_phrase": "KIỂM TRA GIỮA HỌC KÌ",
+      "ma_de_format": "Mã đề: {{ma_de}}"
+    }
+  },
+  "sections": [
+    {
+      "id": "phan_1_tn",
+      "title": "Phần I. Câu trắc nghiệm nhiều phương án lựa chọn",
+      "score": 3.0,
+      "instruction": "Thí sinh trả lời từ câu 1 đến câu {{so_cau_phan_1}}. Mỗi câu hỏi thí sinh chỉ chọn một phương án.",
+      "question_type": "single_choice_4_options",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "phan_2_ds",
+      "title": "Phần II. Đúng sai",
+      "score": 2.0,
+      "instruction": "Mỗi câu có các ý a, b, c, d. Thí sinh chọn Đúng/Sai cho từng ý.",
+      "question_type": "true_false_subitems",
+      "subitems": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    },
+    {
+      "id": "phan_3_tl",
+      "title": "Phần III. Tự luận",
+      "score": 2.0,
+      "instruction": "Trình bày rõ cách làm. Có thể có đoạn mã hoặc bảng dữ liệu nếu cần.",
+      "question_type": "essay"
+    }
+  ],
+  "footer": {
+    "end_marker": "------ Hết ------",
+    "pagination": "Trang {{page}}/{{total_pages}}"
+  },
+  "answer_key": {
+    "enabled": true,
+    "layout": "appendix_after_exam",
+    "single_choice_format": "Câu {{n}}: {{answer}}",
+    "true_false_format": "Câu {{n}}: a.{{a}} b.{{b}} c.{{c}} d.{{d}}",
+    "essay_format": "Câu {{n}}: Thang điểm chi tiết theo ý"
+  },
+  "pipeline_mapping": {
+    "required_payload_fields": [
+      "so_gddt",
+      "truong",
+      "to_cm",
+      "ten_ky_thi",
+      "nam_hoc",
+      "mon_hoc",
+      "khoi_lop",
+      "thoi_gian_phut",
+      "ma_de",
+      "so_trang",
+      "sections"
+    ],
+    "recommended_generated_variants": [
+      "DE_GOC",
+      "DU_PHONG",
+      "MA_DE_101",
+      "MA_DE_102",
+      "MA_DE_103",
+      "MA_DE_104"
+    ]
+  }
+}

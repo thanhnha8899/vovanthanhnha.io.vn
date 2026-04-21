@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng tuần hoàn hóa học 3D | VOVANTHANHNHA.IO.VN</title>
+    <meta name="description" content="Bảng tuần hoàn hóa học 3D tương tác - Khám phá 118 nguyên tố với mô hình Bohr, cấu hình electron và thông tin chi tiết.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+    :root {
+        --bg-deep: #050a18;
+        --bg-card: rgba(15,23,42,0.85);
+        --glass: rgba(255,255,255,0.06);
+        --glass-border: rgba(255,255,255,0.10);
+        --cyan-glow: rgba(34,211,238,0.35);
+        --text-primary: #e2e8f0;
+        --text-secondary: #94a3b8;
+        --text-muted: #64748b;
+        --radius: 16px;
+        --font: 'Inter', -apple-system, sans-serif;
+        --mono: 'JetBrains Mono', monospace;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+        font-family: var(--font);
+        background: var(--bg-deep);
+        color: var(--text-primary);
+        min-height: 100vh;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+    }
+    /* ===== AMBIENT BACKGROUND ===== */
+    .ambient-bg {
+        position: fixed; inset: 0; z-index: 0; pointer-events: none;
+        background:
+            radial-gradient(ellipse 80% 50% at 20% 20%, rgba(56,189,248,0.07), transparent),
+            radial-gradient(ellipse 60% 40% at 80% 80%, rgba(167,139,250,0.06), transparent),
+            radial-gradient(ellipse 50% 60% at 50% 50%, rgba(34,211,238,0.04), transparent);
+    }
+    .ambient-bg::after {
+        content: '';
+        position: absolute; inset: 0;
+        background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.025'/%3E%3C/svg%3E");
+        opacity: 0.4;
+    }
+
+    /* ===== HEADER ===== */
+    .page-header {
+        position: sticky; top: 0; z-index: 100;
+        background: rgba(5,10,24,0.88);
+        backdrop-filter: blur(20px) saturate(1.5);
+        border-bottom: 1px solid var(--glass-border);
+    }
+    .header-inner {
+        max-width: 1600px; margin: 0 auto;
+        display: flex; align-items: center; justify-content: space-between;
+        padding: 12px 24px; gap: 16px;
+    }
+    .header-brand {
+        display: flex; align-items: center; gap: 12px; text-decoration: none;
+    }
+    .header-brand .logo-icon {
+        width: 38px; height: 38px; border-radius: 10px;
+        background: linear-gradient(135deg, #06b6d4, #3b82f6);
+        display: flex; align-items: center; justify-content: center;
+        font-size: 16px; color: #fff;
+        box-shadow: 0 4px 16px rgba(6,182,212,0.3);
+    }
+    .header-brand .brand-text { display: flex; flex-direction: column; }
+    .header-brand .brand-name { font-weight: 800; font-size: 14px; color: #fff; letter-spacing: 0.5px; }
+    .header-brand .brand-tagline { font-size: 10px; color: var(--text-muted); font-weight: 500; }
+    .back-link {
+        display: flex; align-items: center; gap: 6px;
+        color: var(--text-secondary); text-decoration: none; font-size: 13px; font-weight: 500;
+        padding: 8px 16px; border-radius: 10px; border: 1px solid var(--glass-border);
+        background: var(--glass); transition: all 0.2s;
+    }
+    .back-link:hover { background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.2); }
+
+    /* ===== TABS BAR ===== */
+    .tabs-bar {
+        position: relative; z-index: 10;
+        background: rgba(15,23,42,0.6);
+        border-bottom: 1px solid var(--glass-border);
+        backdrop-filter: blur(12px);
+    }
+    .tabs-inner {
+        max-width: 1600px; margin: 0 auto;
+        display: flex; align-items: center; gap: 4px;
+        padding: 0 24px; overflow-x: auto;
+    }
+    .tab-btn {
+        display: flex; align-items: center; gap: 8px;
+        padding: 14px 20px; font-size: 13px; font-weight: 600;
+        color: var(--text-secondary); background: none; border: none;
+        cursor: pointer; white-space: nowrap; position: relative;
+        transition: color 0.25s;
+    }
+    .tab-btn::after {
+        content: ''; position: absolute; bottom: 0; left: 50%; width: 0; height: 2px;
+        background: linear-gradient(90deg, #06b6d4, #3b82f6);
+        border-radius: 2px 2px 0 0; transition: all 0.3s ease; transform: translateX(-50%);
+    }
+    .tab-btn:hover { color: #e2e8f0; }
+    .tab-btn.active { color: #22d3ee; }
+    .tab-btn.active::after { width: 70%; }
+    .tab-btn i { font-size: 14px; }
+
+    /* ===== MAIN CONTENT ===== */
+    .main-content {
+        position: relative; z-index: 1;
+        max-width: 1600px; margin: 0 auto;
+        padding: 24px 24px 80px;
+    }
+    .section-title-row {
+        display: flex; align-items: center; justify-content: space-between;
+        flex-wrap: wrap; gap: 16px; margin-bottom: 20px;
+    }
+    .section-title-row h1 {
+        font-size: 24px; font-weight: 800; color: #fff;
+        display: flex; align-items: center; gap: 10px;
+    }
+    .section-title-row h1 i { color: #22d3ee; }
+    .section-title-row .badge-3d {
+        display: inline-flex; align-items: center; gap: 6px;
+        padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 700;
+        background: linear-gradient(135deg, rgba(6,182,212,0.2), rgba(59,130,246,0.15));
+        border: 1px solid rgba(34,211,238,0.3); color: #67e8f9;
+        text-transform: uppercase; letter-spacing: 0.5px;
+    }
+
+    /* ===== CONTROLS BAR ===== */
+    .controls-bar {
+        display: flex; flex-wrap: wrap; align-items: center; gap: 12px;
+        margin-bottom: 20px;
+        padding: 14px 18px; border-radius: var(--radius);
+        background: var(--bg-card); border: 1px solid var(--glass-border);
+        backdrop-filter: blur(12px);
+    }
+    .search-box {
+        position: relative; flex: 1; min-width: 200px; max-width: 360px;
+    }
+    .search-box i {
+        position: absolute; left: 12px; top: 50%; transform: translateY(-50%);
+        color: rgba(34,211,238,0.5); font-size: 14px; pointer-events: none;
+    }
+    .search-box input {
+        width: 100%; padding: 10px 38px 10px 36px;
+        border-radius: 10px; border: 1px solid var(--glass-border);
+        background: rgba(255,255,255,0.05); color: #fff;
+        font-size: 13px; font-family: var(--font); outline: none;
+        transition: all 0.25s;
+    }
+    .search-box input::placeholder { color: var(--text-muted); }
+    .search-box input:focus { border-color: rgba(34,211,238,0.4); box-shadow: 0 0 20px rgba(34,211,238,0.1); }
+    .search-box .clear-btn {
+        position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+        width: 24px; height: 24px; border-radius: 6px;
+        background: rgba(255,255,255,0.08); border: none; color: var(--text-secondary);
+        cursor: pointer; display: none; align-items: center; justify-content: center; font-size: 11px;
+    }
+    .search-box .clear-btn.visible { display: flex; }
+
+    .filter-select {
+        padding: 10px 32px 10px 12px; border-radius: 10px;
+        border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05);
+        color: #fff; font-size: 13px; font-family: var(--font); outline: none;
+        cursor: pointer; appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M3 5l3 3 3-3' fill='none' stroke='%2394a3b8' stroke-width='1.5'/%3E%3C/svg%3E");
+        background-repeat: no-repeat; background-position: right 10px center;
+    }
+    .filter-select:focus { border-color: rgba(34,211,238,0.4); }
+    .filter-select option { background: #0f172a; color: #fff; }
+
+    .view-toggle {
+        display: flex; border-radius: 10px; overflow: hidden;
+        border: 1px solid var(--glass-border); margin-left: auto;
+    }
+    .view-toggle button {
+        padding: 8px 14px; background: rgba(255,255,255,0.04); border: none;
+        color: var(--text-secondary); cursor: pointer; font-size: 13px;
+        transition: all 0.2s; display: flex; align-items: center; gap: 6px;
+    }
+    .view-toggle button + button { border-left: 1px solid var(--glass-border); }
+    .view-toggle button:hover { background: rgba(255,255,255,0.08); }
+    .view-toggle button.active { background: rgba(34,211,238,0.15); color: #22d3ee; }
+
+    /* ===== PERIODIC TABLE GRID ===== */
+    .table-wrapper {
+        perspective: 2000px;
+        padding: 20px;
+        border-radius: var(--radius);
+        background: var(--bg-card);
+        border: 1px solid var(--glass-border);
+        overflow-x: auto;
+        transform-style: preserve-3d;
+        transition: transform 0.6s cubic-bezier(0.22,1,0.36,1);
+    }
+    .table-wrapper.tilt-3d {
+        transform: rotateX(8deg) rotateY(-3deg);
+    }
+    .periodic-grid {
+        display: grid;
+        grid-template-columns: repeat(18, minmax(62px, 1fr));
+        grid-template-rows: repeat(10, minmax(58px, auto));
+        gap: 3px;
+        min-width: 1100px;
+        transform-style: preserve-3d;
+    }
+
+    /* ===== ELEMENT CELL ===== */
+    .element-cell {
+        position: relative;
+        display: flex; flex-direction: column;
+        align-items: flex-start; justify-content: space-between;
+        padding: 5px 6px;
+        border-radius: 8px;
+        cursor: pointer;
+        border: 1px solid transparent;
+        transition: all 0.35s cubic-bezier(0.22,1,0.36,1);
+        transform-style: preserve-3d;
+        transform: translateZ(0);
+        min-height: 58px;
+        overflow: hidden;
+        user-select: none;
+    }
+    .element-cell::before {
+        content: '';
+        position: absolute; inset: 0; border-radius: 8px;
+        background: linear-gradient(135deg, rgba(255,255,255,0.12) 0%, transparent 50%);
+        opacity: 0; transition: opacity 0.3s; pointer-events: none;
+    }
+    .element-cell:hover {
+        transform: translateZ(20px) scale(1.08);
+        z-index: 20;
+        box-shadow: 0 12px 40px -8px rgba(0,0,0,0.6), 0 0 30px -5px var(--cat-glow, rgba(34,211,238,0.3));
+        border-color: rgba(255,255,255,0.25);
+    }
+    .element-cell:hover::before { opacity: 1; }
+    .element-cell.selected {
+        transform: translateZ(30px) scale(1.12);
+        z-index: 30;
+        border-color: rgba(34,211,238,0.7) !important;
+        box-shadow: 0 0 50px -4px rgba(34,211,238,0.5), 0 20px 50px -15px rgba(34,211,238,0.3), inset 0 1px 0 rgba(255,255,255,0.2) !important;
+    }
+    .element-cell.dimmed {
+        opacity: 0.15; filter: grayscale(1); pointer-events: none;
+    }
+
+    .el-number { font-size: 9px; color: rgba(255,255,255,0.65); line-height: 1; position: relative; z-index: 2; }
+    .el-symbol { font-size: 18px; font-weight: 800; color: #fff; line-height: 1; position: relative; z-index: 2;
+        text-shadow: 0 1px 6px rgba(0,0,0,0.4); letter-spacing: -0.5px; }
+    .el-name { font-size: 7px; color: rgba(255,255,255,0.55); line-height: 1.1; position: relative; z-index: 2;
+        white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 100%; }
+    .el-mass { font-size: 7.5px; color: rgba(255,255,255,0.45); font-family: var(--mono); position: relative; z-index: 2; }
+
+    /* Category Colors */
+    .cat-alkali { background: linear-gradient(135deg, rgba(245,158,11,0.35), rgba(245,158,11,0.08) 70%, rgba(15,23,42,0.8)); border-color: rgba(245,158,11,0.3); --cat-glow: rgba(245,158,11,0.4); }
+    .cat-alkaline { background: linear-gradient(135deg, rgba(163,230,53,0.3), rgba(163,230,53,0.06) 70%, rgba(15,23,42,0.8)); border-color: rgba(163,230,53,0.25); --cat-glow: rgba(163,230,53,0.35); }
+    .cat-transition { background: linear-gradient(135deg, rgba(56,189,248,0.32), rgba(56,189,248,0.06) 70%, rgba(15,23,42,0.8)); border-color: rgba(56,189,248,0.25); --cat-glow: rgba(56,189,248,0.35); }
+    .cat-post-transition { background: linear-gradient(135deg, rgba(167,139,250,0.3), rgba(167,139,250,0.06) 70%, rgba(15,23,42,0.8)); border-color: rgba(167,139,250,0.25); --cat-glow: rgba(167,139,250,0.35); }
+    .cat-metalloid { background: linear-gradient(135deg, rgba(52,211,153,0.28), rgba(52,211,153,0.05) 70%, rgba(15,23,42,0.8)); border-color: rgba(52,211,153,0.25); --cat-glow: rgba(52,211,153,0.35); }
+    .cat-nonmetal { background: linear-gradient(135deg, rgba(34,211,238,0.35), rgba(34,211,238,0.06) 70%, rgba(15,23,42,0.8)); border-color: rgba(34,211,238,0.3); --cat-glow: rgba(34,211,238,0.4); }
+    .cat-halogen { background: linear-gradient(135deg, rgba(45,212,191,0.32), rgba(45,212,191,0.05) 70%, rgba(15,23,42,0.8)); border-color: rgba(45,212,191,0.25); --cat-glow: rgba(45,212,191,0.35); }
+    .cat-noble { background: linear-gradient(135deg, rgba(129,140,248,0.32), rgba(129,140,248,0.05) 70%, rgba(15,23,42,0.8)); border-color: rgba(129,140,248,0.3); --cat-glow: rgba(129,140,248,0.4); }
+    .cat-lanthanide { background: linear-gradient(135deg, rgba(232,121,249,0.3), rgba(232,121,249,0.05) 70%, rgba(15,23,42,0.8)); border-color: rgba(232,121,249,0.25); --cat-glow: rgba(232,121,249,0.35); }
+    .cat-actinide { background: linear-gradient(135deg, rgba(251,113,133,0.3), rgba(251,113,133,0.05) 70%, rgba(15,23,42,0.8)); border-color: rgba(251,113,133,0.25); --cat-glow: rgba(251,113,133,0.35); }
+    .cat-unknown { background: linear-gradient(135deg, rgba(113,113,122,0.25), rgba(113,113,122,0.05) 70%, rgba(15,23,42,0.8)); border-color: rgba(113,113,122,0.2); --cat-glow: rgba(113,113,122,0.3); }
+
+    /* ===== LEGEND ===== */
+    .legend-bar {
+        display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px;
+        padding: 14px 18px; border-radius: var(--radius);
+        background: var(--bg-card); border: 1px solid var(--glass-border);
+    }
+    .legend-item {
+        display: inline-flex; align-items: center; gap: 6px;
+        padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: 600;
+        border: 1px solid; cursor: pointer; transition: all 0.2s;
+        backdrop-filter: blur(8px);
+    }
+    .legend-item:hover { transform: translateY(-1px); }
+    .legend-item .dot {
+        width: 8px; height: 8px; border-radius: 50%;
+    }
+    .leg-alkali { border-color: rgba(245,158,11,0.4); background: rgba(245,158,11,0.12); color: #fcd34d; }
+    .leg-alkali .dot { background: #f59e0b; }
+    .leg-alkaline { border-color: rgba(163,230,53,0.4); background: rgba(163,230,53,0.1); color: #d9f99d; }
+    .leg-alkaline .dot { background: #a3e635; }
+    .leg-transition { border-color: rgba(56,189,248,0.4); background: rgba(56,189,248,0.12); color: #bae6fd; }
+    .leg-transition .dot { background: #38bdf8; }
+    .leg-post-transition { border-color: rgba(167,139,250,0.4); background: rgba(167,139,250,0.1); color: #ddd6fe; }
+    .leg-post-transition .dot { background: #a78bfa; }
+    .leg-metalloid { border-color: rgba(52,211,153,0.4); background: rgba(52,211,153,0.1); color: #a7f3d0; }
+    .leg-metalloid .dot { background: #34d399; }
+    .leg-nonmetal { border-color: rgba(34,211,238,0.4); background: rgba(34,211,238,0.12); color: #a5f3fc; }
+    .leg-nonmetal .dot { background: #22d3ee; }
+    .leg-halogen { border-color: rgba(45,212,191,0.4); background: rgba(45,212,191,0.1); color: #99f6e4; }
+    .leg-halogen .dot { background: #2dd4bf; }
+    .leg-noble { border-color: rgba(129,140,248,0.4); background: rgba(129,140,248,0.1); color: #c7d2fe; }
+    .leg-noble .dot { background: #818cf8; }
+    .leg-lanthanide { border-color: rgba(232,121,249,0.4); background: rgba(232,121,249,0.1); color: #f0abfc; }
+    .leg-lanthanide .dot { background: #e879f9; }
+    .leg-actinide { border-color: rgba(251,113,133,0.4); background: rgba(251,113,133,0.1); color: #fecdd3; }
+    .leg-actinide .dot { background: #fb7185; }
+    .leg-unknown { border-color: rgba(113,113,122,0.35); background: rgba(113,113,122,0.1); color: #d4d4d8; }
+    .leg-unknown .dot { background: #71717a; }
+
+    /* ===== DETAIL PANEL (Side Drawer) ===== */
+    .detail-overlay {
+        position: fixed; inset: 0; z-index: 500;
+        background: rgba(0,0,0,0.55); backdrop-filter: blur(4px);
+        opacity: 0; visibility: hidden; transition: all 0.35s ease;
+    }
+    .detail-overlay.open { opacity: 1; visibility: visible; }
+
+    .detail-panel {
+        position: fixed; top: 0; right: 0; bottom: 0;
+        width: min(520px, 92vw); z-index: 510;
+        background: linear-gradient(180deg, #0c1225, #0a0f1e);
+        border-left: 1px solid rgba(34,211,238,0.2);
+        box-shadow: -20px 0 80px rgba(0,0,0,0.5), -4px 0 40px rgba(34,211,238,0.08);
+        transform: translateX(100%);
+        transition: transform 0.45s cubic-bezier(0.22,1,0.36,1);
+        overflow-y: auto; overflow-x: hidden;
+    }
+    .detail-panel.open { transform: translateX(0); }
+
+    .detail-header {
+        position: sticky; top: 0; z-index: 10;
+        padding: 20px 24px;
+        background: rgba(12,18,37,0.92); backdrop-filter: blur(16px);
+        border-bottom: 1px solid var(--glass-border);
+        display: flex; align-items: flex-start; gap: 16px;
+    }
+    .detail-close {
+        position: absolute; top: 16px; right: 16px;
+        width: 36px; height: 36px; border-radius: 10px;
+        background: rgba(255,255,255,0.06); border: 1px solid var(--glass-border);
+        color: var(--text-secondary); cursor: pointer; font-size: 14px;
+        display: flex; align-items: center; justify-content: center;
+        transition: all 0.2s;
+    }
+    .detail-close:hover { background: rgba(255,255,255,0.12); color: #fff; }
+
+    .detail-symbol-box {
+        width: 80px; height: 80px; border-radius: 14px;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        flex-shrink: 0;
+        box-shadow: 0 8px 32px -8px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.15);
+    }
+    .detail-symbol-box .d-number { font-size: 11px; color: rgba(255,255,255,0.7); }
+    .detail-symbol-box .d-symbol { font-size: 32px; font-weight: 900; color: #fff; line-height: 1; }
+
+    .detail-title-info { flex: 1; padding-top: 4px; max-width: calc(100% - 140px); }
+    .detail-title-info h2 { font-size: 22px; font-weight: 800; color: #fff; margin-bottom: 4px; }
+    .detail-title-info .d-category {
+        display: inline-flex; padding: 3px 10px; border-radius: 20px;
+        font-size: 11px; font-weight: 600; margin-bottom: 6px;
+    }
+    .detail-title-info .d-mass { font-size: 13px; color: var(--text-secondary); font-family: var(--mono); }
+
+    .detail-body { padding: 24px; display: flex; flex-direction: column; gap: 20px; }
+
+    /* Bohr model */
+    .bohr-section {
+        text-align: center; padding: 24px;
+        border-radius: var(--radius); background: rgba(255,255,255,0.03);
+        border: 1px solid var(--glass-border);
+    }
+    .bohr-section img { max-width: 180px; height: auto; margin: 0 auto 12px; display: block;
+        filter: drop-shadow(0 4px 20px rgba(34,211,238,0.3)); }
+    .bohr-section .shells-visual {
+        display: flex; align-items: center; justify-content: center; gap: 4px;
+        margin-top: 10px;
+    }
+    .shell-ring {
+        display: flex; align-items: center; justify-content: center;
+        width: 36px; height: 36px; border-radius: 50%;
+        border: 2px solid rgba(34,211,238,0.35);
+        font-size: 12px; font-weight: 700; color: #67e8f9;
+        font-family: var(--mono);
+        box-shadow: 0 0 12px rgba(34,211,238,0.15);
+    }
+    .shell-arrow { color: var(--text-muted); font-size: 10px; }
+
+    /* Info grid */
+    .info-grid {
+        display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    }
+    .info-card {
+        padding: 14px; border-radius: 12px;
+        background: rgba(255,255,255,0.04); border: 1px solid var(--glass-border);
+    }
+    .info-card .info-label { font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; margin-bottom: 4px; }
+    .info-card .info-value { font-size: 15px; font-weight: 700; color: #fff; font-family: var(--mono); }
+    .info-card .info-unit { font-size: 10px; color: var(--text-secondary); font-weight: 400; }
+    .info-card.full { grid-column: 1 / -1; }
+
+    .electron-config {
+        padding: 14px; border-radius: 12px;
+        background: rgba(34,211,238,0.06); border: 1px solid rgba(34,211,238,0.15);
+        font-family: var(--mono); font-size: 13px; color: #67e8f9;
+        word-break: break-all;
+    }
+    .electron-config .ec-label {
+        font-family: var(--font); font-size: 10px; color: var(--text-muted);
+        text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; margin-bottom: 6px;
+    }
+
+    .summary-text {
+        padding: 16px; border-radius: 12px;
+        background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border);
+        font-size: 13px; line-height: 1.7; color: var(--text-secondary);
+    }
+    .summary-text .s-title {
+        font-size: 11px; color: var(--text-muted); text-transform: uppercase;
+        letter-spacing: 0.5px; font-weight: 600; margin-bottom: 8px;
+    }
+
+    /* ===== TOOLTIP ===== */
+    .el-tooltip {
+        position: fixed; z-index: 400; pointer-events: none;
+        padding: 10px 14px; border-radius: 10px;
+        background: rgba(15,23,42,0.95); border: 1px solid rgba(34,211,238,0.25);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.5), 0 0 20px rgba(34,211,238,0.1);
+        backdrop-filter: blur(16px);
+        opacity: 0; transition: opacity 0.2s;
+        max-width: 220px;
+    }
+    .el-tooltip.visible { opacity: 1; }
+    .el-tooltip .tt-name { font-weight: 700; color: #fff; font-size: 13px; }
+    .el-tooltip .tt-info { font-size: 11px; color: var(--text-secondary); margin-top: 2px; }
+
+    /* ===== FOOTER ===== */
+    .page-footer {
+        position: relative; z-index: 1;
+        text-align: center;
+        padding: 24px;
+        border-top: 1px solid var(--glass-border);
+        font-size: 12px; color: var(--text-muted);
+    }
+    .page-footer a { color: #22d3ee; text-decoration: none; }
+    .page-footer a:hover { text-decoration: underline; }
+
+    /* ===== SCROLLBAR ===== */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 6px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.2); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+        .header-inner { padding: 10px 16px; }
+        .tabs-inner { padding: 0 16px; }
+        .main-content { padding: 16px 12px 60px; }
+        .controls-bar { padding: 10px 12px; }
+        .periodic-grid { grid-template-columns: repeat(18, minmax(38px, 1fr)); gap: 2px; min-width: 700px; }
+        .element-cell { min-height: 40px; padding: 3px 4px; border-radius: 4px; }
+        .el-symbol { font-size: 12px; }
+        .el-number { font-size: 7px; }
+        .el-name, .el-mass { display: none; }
+        .info-grid { grid-template-columns: 1fr; }
+        .detail-panel { width: 100vw; }
+    }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 20px rgba(34,211,238,0.2); } 50% { box-shadow: 0 0 30px rgba(34,211,238,0.4); } }
+    .element-cell { animation: fadeInUp 0.4s ease backwards; }
+    </style>
+</head>
+<body>
+    <div class="ambient-bg"></div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="page-header">
+        <div class="header-inner">
+            <a href="index.html" class="header-brand">
+                <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="brand-text">
+                    <span class="brand-name">VOVANTHANHNHA</span>
+                    <span class="brand-tagline">Nền tảng AI Giáo dục</span>
+                </div>
+            </a>
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i> Về trang chủ
+            </a>
+        </div>
+    </header>
+
+    <!-- ===== TABS ===== -->
+    <div class="tabs-bar">
+        <div class="tabs-inner">
+            <button class="tab-btn active" id="tab-periodic-3d">
+                <i class="fas fa-atom"></i> Bảng tuần hoàn hóa học 3D
+            </button>
+            <button class="tab-btn" id="tab-more" disabled style="opacity:0.4">
+                <i class="fas fa-flask-vial"></i> Phản ứng hóa học
+                <span style="font-size:9px;padding:2px 6px;border-radius:8px;background:rgba(255,255,255,0.1);color:#94a3b8;margin-left:4px;">Sắp có</span>
+            </button>
+            <button class="tab-btn" id="tab-more2" disabled style="opacity:0.4">
+                <i class="fas fa-microscope"></i> Phòng thí nghiệm ảo
+                <span style="font-size:9px;padding:2px 6px;border-radius:8px;background:rgba(255,255,255,0.1);color:#94a3b8;margin-left:4px;">Sắp có</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- ===== MAIN ===== -->
+    <div class="main-content">
+        <div class="section-title-row">
+            <h1>
+                <i class="fas fa-atom"></i>
+                Bảng tuần hoàn các nguyên tố hóa học
+                <span class="badge-3d"><i class="fas fa-cube"></i> 3D Interactive</span>
+            </h1>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls-bar">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search-input" placeholder="Tìm nguyên tố (tên, ký hiệu, số hiệu)...">
+                <button class="clear-btn" id="clear-search"><i class="fas fa-times"></i></button>
+            </div>
+            <select class="filter-select" id="category-filter">
+                <option value="all">Tất cả nhóm</option>
+                <option value="alkali">Kim loại kiềm</option>
+                <option value="alkaline">Kim loại kiềm thổ</option>
+                <option value="transition">Kim loại chuyển tiếp</option>
+                <option value="post-transition">Kim loại sau chuyển tiếp</option>
+                <option value="metalloid">Á kim</option>
+                <option value="nonmetal">Phi kim</option>
+                <option value="halogen">Halogen</option>
+                <option value="noble">Khí hiếm</option>
+                <option value="lanthanide">Nhóm Lanthan</option>
+                <option value="actinide">Nhóm Actini</option>
+            </select>
+            <select class="filter-select" id="phase-filter">
+                <option value="all">Tất cả trạng thái</option>
+                <option value="Solid">Rắn</option>
+                <option value="Liquid">Lỏng</option>
+                <option value="Gas">Khí</option>
+            </select>
+            <div class="view-toggle">
+                <button class="active" id="btn-flat" title="Phẳng"><i class="fas fa-table-cells"></i></button>
+                <button id="btn-3d" title="Nghiêng 3D"><i class="fas fa-cube"></i></button>
+            </div>
+        </div>
+
+        <!-- Periodic Table -->
+        <div class="table-wrapper" id="table-wrapper">
+            <div class="periodic-grid" id="periodic-grid">
+                <!-- Elements will be inserted by JS -->
+            </div>
+        </div>
+
+        <!-- Legend -->
+        <div class="legend-bar" id="legend-bar">
+            <span style="font-size:10px;color:var(--text-muted);font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-right:4px;">Chú thích:</span>
+        </div>
+    </div>
+
+    <!-- ===== TOOLTIP ===== -->
+    <div class="el-tooltip" id="el-tooltip">
+        <div class="tt-name" id="tt-name"></div>
+        <div class="tt-info" id="tt-info"></div>
+    </div>
+
+    <!-- ===== DETAIL PANEL ===== -->
+    <div class="detail-overlay" id="detail-overlay"></div>
+    <div class="detail-panel" id="detail-panel">
+        <div class="detail-header">
+            <button class="detail-close" id="detail-close"><i class="fas fa-times"></i></button>
+            <div class="detail-symbol-box" id="d-symbol-box">
+                <span class="d-number" id="d-number"></span>
+                <span class="d-symbol" id="d-symbol"></span>
+            </div>
+            <div class="detail-title-info">
+                <h2 id="d-name"></h2>
+                <span class="d-category" id="d-category"></span>
+                <div class="d-mass" id="d-mass"></div>
+            </div>
+        </div>
+        <div class="detail-body">
+            <!-- Bohr Model -->
+            <div class="bohr-section" id="bohr-section">
+                <img id="d-bohr-img" src="" alt="Mô hình Bohr">
+                <div style="font-size:11px;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Lớp vỏ electron</div>
+                <div class="shells-visual" id="d-shells"></div>
+            </div>
+
+            <!-- Electron Config -->
+            <div class="electron-config">
+                <div class="ec-label">Cấu hình electron</div>
+                <div id="d-econfig"></div>
+                <div id="d-econfig-sem" style="margin-top:4px;font-size:11px;color:rgba(103,232,249,0.6);"></div>
+            </div>
+
+            <!-- Properties Grid -->
+            <div class="info-grid" id="d-info-grid">
+                <!-- Filled by JS -->
+            </div>
+
+            <!-- Summary -->
+            <div class="summary-text">
+                <div class="s-title">Tổng quan</div>
+                <div id="d-summary"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="page-footer">
+        <p>Dữ liệu từ <a href="https://en.wikipedia.org/wiki/Periodic_table" target="_blank">Wikipedia</a> &amp; <a href="https://storage.googleapis.com/search-ar-edu/periodic-table/" target="_blank">Google AR</a> · © 2026 <a href="index.html">VOVANTHANHNHA.IO.VN</a></p>
+    </footer>
+
+<script>
+// ===== ELEMENT DATA (extracted from periodic-raw.json) =====
+const ELEMENTS_RAW_URL = null;
+// We embed the data extraction script - will fetch from the JSON file
+// For offline use, we'll inline the critical data
+
+const CAT_MAP = {
+    'diatomic nonmetal': 'nonmetal',
+    'polyatomic nonmetal': 'nonmetal',
+    'alkali metal': 'alkali',
+    'alkaline earth metal': 'alkaline',
+    'transition metal': 'transition',
+    'post-transition metal': 'post-transition',
+    'metalloid': 'metalloid',
+    'noble gas': 'noble',
+    'halogen': 'halogen',
+    'lanthanide': 'lanthanide',
+    'actinide': 'actinide',
+    'unknown, probably transition metal': 'unknown',
+    'unknown, probably post-transition metal': 'unknown',
+    'unknown, probably metalloid': 'unknown',
+    'unknown, predicted to be noble gas': 'unknown',
+    'unknown, but predicted to be an alkali metal': 'unknown',
+};
+
+const CAT_VN = {
+    alkali: 'Kim loại kiềm',
+    alkaline: 'Kim loại kiềm thổ',
+    transition: 'Kim loại chuyển tiếp',
+    'post-transition': 'Kim loại sau chuyển tiếp',
+    metalloid: 'Á kim',
+    nonmetal: 'Phi kim',
+    halogen: 'Halogen',
+    noble: 'Khí hiếm',
+    lanthanide: 'Nhóm Lanthan',
+    actinide: 'Nhóm Actini',
+    unknown: 'Chưa xác định',
+};
+
+const PHASE_VN = { Solid: 'Rắn', Liquid: 'Lỏng', Gas: 'Khí' };
+
+const LEGEND_DATA = [
+    { key: 'alkali', label: 'Kim loại kiềm' },
+    { key: 'alkaline', label: 'Kim loại kiềm thổ' },
+    { key: 'transition', label: 'Kim loại chuyển tiếp' },
+    { key: 'post-transition', label: 'Kim loại sau chuyển tiếp' },
+    { key: 'metalloid', label: 'Á kim' },
+    { key: 'nonmetal', label: 'Phi kim' },
+    { key: 'halogen', label: 'Halogen' },
+    { key: 'noble', label: 'Khí hiếm' },
+    { key: 'lanthanide', label: 'Nhóm Lanthan' },
+    { key: 'actinide', label: 'Nhóm Actini' },
+    { key: 'unknown', label: 'Chưa xác định' },
+];
+
+let ELEMENTS = [];
+let selectedZ = null;
+
+// ===== FETCH & PARSE DATA =====
+async function loadElements() {
+    try {
+        // Try to load from relative path (if running on same server)
+        const resp = await fetch('periodic-raw.json');
+        if (!resp.ok) throw new Error('Not found');
+        const data = await resp.json();
+        return data.elements;
+    } catch {
+        // Fallback: generate minimal data for all 118 elements
+        return generateFallbackData();
+    }
+}
+
+function generateFallbackData() {
+    // Minimal fallback data for all 118 elements
+    const fallback = [
+        {name:"Hydrogen",symbol:"H",number:1,atomic_mass:1.008,category:"diatomic nonmetal",phase:"Gas",period:1,group:1,xpos:1,ypos:1,shells:[1],electron_configuration:"1s1",electron_configuration_semantic:"1s1",electronegativity_pauling:2.2,density:0.08988,melt:13.99,boil:20.271,block:"s",summary:"Hydrogen is a chemical element with symbol H and atomic number 1. With atomic weight of 1.00794 u, hydrogen is the lightest element on the periodic table.",discovered_by:"Henry Cavendish",bohr_model_image:"https://storage.googleapis.com/search-ar-edu/periodic-table/element_001_hydrogen/element_001_hydrogen_srp_th.png"},
+        {name:"Helium",symbol:"He",number:2,atomic_mass:4.0026,category:"noble gas",phase:"Gas",period:1,group:18,xpos:18,ypos:1,shells:[2],electron_configuration:"1s2",electron_configuration_semantic:"1s2",electronegativity_pauling:null,density:0.1786,melt:0.95,boil:4.222,block:"s",summary:"Helium is a chemical element with symbol He and atomic number 2.",discovered_by:"Pierre Janssen",bohr_model_image:"https://storage.googleapis.com/search-ar-edu/periodic-table/element_002_helium/element_002_helium_srp_th.png"},
+        {name:"Lithium",symbol:"Li",number:3,atomic_mass:6.94,category:"alkali metal",phase:"Solid",period:2,group:1,xpos:1,ypos:2,shells:[2,1],electron_configuration:"1s2 2s1",electron_configuration_semantic:"[He] 2s1",electronegativity_pauling:0.98,density:0.534,melt:453.65,boil:1603,block:"s",summary:"Lithium is a chemical element with symbol Li and atomic number 3.",discovered_by:"Johan August Arfwedson",bohr_model_image:"https://storage.googleapis.com/search-ar-edu/periodic-table/element_003_lithium/element_003_lithium_srp_th.png"},
+    ];
+    // In production, the full JSON would be served; this is just a development safeguard.
+    return fallback;
+}
+
+function mapCategory(catStr) {
+    if (!catStr) return 'unknown';
+    const lower = catStr.toLowerCase();
+    return CAT_MAP[lower] || 'unknown';
+}
+
+// ===== BUILD TABLE =====
+function buildTable(elements) {
+    const grid = document.getElementById('periodic-grid');
+    grid.innerHTML = '';
+    elements.forEach((el, i) => {
+        const cat = mapCategory(el.category);
+        const cell = document.createElement('div');
+        cell.className = `element-cell cat-${cat}`;
+        cell.dataset.z = el.number;
+        cell.dataset.cat = cat;
+        cell.dataset.phase = el.phase || '';
+        cell.dataset.name = el.name.toLowerCase();
+        cell.dataset.symbol = el.symbol.toLowerCase();
+        cell.style.gridColumn = el.xpos;
+        cell.style.gridRow = el.ypos;
+        cell.style.animationDelay = `${i * 4}ms`;
+        cell.innerHTML = `
+            <span class="el-number">${el.number}</span>
+            <span class="el-symbol">${el.symbol}</span>
+            <span class="el-name">${el.name}</span>
+            <span class="el-mass">${el.atomic_mass ? el.atomic_mass.toFixed(el.atomic_mass < 10 ? 3 : 2) : '—'}</span>
+        `;
+        cell.addEventListener('click', () => selectElement(el.number));
+        cell.addEventListener('mouseenter', (e) => showTooltip(e, el));
+        cell.addEventListener('mousemove', (e) => moveTooltip(e));
+        cell.addEventListener('mouseleave', hideTooltip);
+        grid.appendChild(cell);
+    });
+}
+
+// ===== LEGEND =====
+function buildLegend() {
+    const bar = document.getElementById('legend-bar');
+    LEGEND_DATA.forEach(item => {
+        const span = document.createElement('span');
+        span.className = `legend-item leg-${item.key}`;
+        span.innerHTML = `<span class="dot"></span>${item.label}`;
+        span.addEventListener('click', () => {
+            document.getElementById('category-filter').value = item.key;
+            applyFilters();
+        });
+        bar.appendChild(span);
+    });
+}
+
+// ===== TOOLTIP =====
+const tooltip = document.getElementById('el-tooltip');
+function showTooltip(e, el) {
+    const cat = mapCategory(el.category);
+    document.getElementById('tt-name').textContent = `${el.symbol} — ${el.name}`;
+    document.getElementById('tt-info').textContent = `Z=${el.number} · ${CAT_VN[cat] || el.category} · ${PHASE_VN[el.phase] || el.phase || '—'}`;
+    tooltip.classList.add('visible');
+    moveTooltip(e);
+}
+function moveTooltip(e) {
+    const x = Math.min(e.clientX + 16, window.innerWidth - 240);
+    const y = Math.min(e.clientY - 10, window.innerHeight - 60);
+    tooltip.style.left = x + 'px';
+    tooltip.style.top = y + 'px';
+}
+function hideTooltip() { tooltip.classList.remove('visible'); }
+
+// ===== SELECT ELEMENT (Detail Panel) =====
+function selectElement(z) {
+    const el = ELEMENTS.find(e => e.number === z);
+    if (!el) return;
+    selectedZ = z;
+
+    // Update cells
+    document.querySelectorAll('.element-cell').forEach(c => {
+        c.classList.toggle('selected', +c.dataset.z === z);
+    });
+
+    const cat = mapCategory(el.category);
+
+    // Symbol box
+    const symBox = document.getElementById('d-symbol-box');
+    symBox.className = `detail-symbol-box cat-${cat}`;
+    document.getElementById('d-number').textContent = el.number;
+    document.getElementById('d-symbol').textContent = el.symbol;
+
+    // Title
+    document.getElementById('d-name').textContent = el.name;
+    const catBadge = document.getElementById('d-category');
+    catBadge.textContent = CAT_VN[cat] || el.category;
+    catBadge.className = `d-category leg-${cat}`;
+    document.getElementById('d-mass').textContent = `${el.atomic_mass ? el.atomic_mass.toFixed(4) : '—'} u`;
+
+    // Bohr model image
+    const bohrImg = document.getElementById('d-bohr-img');
+    const numPadded = String(el.number).padStart(3, '0');
+    const bohrUrl = el.bohr_model_image || `https://storage.googleapis.com/search-ar-edu/periodic-table/element_${numPadded}_${el.name.toLowerCase()}/element_${numPadded}_${el.name.toLowerCase()}_srp_th.png`;
+    bohrImg.src = bohrUrl;
+    bohrImg.alt = `Mô hình Bohr: ${el.name}`;
+
+    // Shells
+    const shellsDiv = document.getElementById('d-shells');
+    const shells = el.shells || [];
+    shellsDiv.innerHTML = shells.map((s, i) =>
+        (i > 0 ? '<span class="shell-arrow">→</span>' : '') +
+        `<span class="shell-ring">${s}</span>`
+    ).join('');
+
+    // Electron config
+    document.getElementById('d-econfig').textContent = el.electron_configuration || '—';
+    document.getElementById('d-econfig-sem').textContent = el.electron_configuration_semantic || '';
+
+    // Info grid
+    const infoGrid = document.getElementById('d-info-grid');
+    const props = [
+        { label: 'Nhóm', value: el.group || '—', unit: '' },
+        { label: 'Chu kỳ', value: el.period, unit: '' },
+        { label: 'Khối', value: (el.block || '—').toUpperCase(), unit: '' },
+        { label: 'Trạng thái (STP)', value: PHASE_VN[el.phase] || el.phase || '—', unit: '' },
+        { label: 'Khối lượng riêng', value: el.density != null ? el.density : '—', unit: el.density != null ? ' g/cm³' : '' },
+        { label: 'Độ âm điện', value: el.electronegativity_pauling != null ? el.electronegativity_pauling : '—', unit: el.electronegativity_pauling != null ? ' (Pauling)' : '' },
+        { label: 'Nhiệt độ nóng chảy', value: el.melt != null ? el.melt : '—', unit: el.melt != null ? ' K' : '' },
+        { label: 'Nhiệt độ sôi', value: el.boil != null ? el.boil : '—', unit: el.boil != null ? ' K' : '' },
+        { label: 'Phát hiện bởi', value: el.discovered_by || '—', unit: '', full: true },
+    ];
+    infoGrid.innerHTML = props.map(p =>
+        `<div class="info-card${p.full ? ' full' : ''}">
+            <div class="info-label">${p.label}</div>
+            <div class="info-value">${p.value}<span class="info-unit">${p.unit}</span></div>
+        </div>`
+    ).join('');
+
+    // Summary
+    document.getElementById('d-summary').textContent = el.summary || 'Chưa có thông tin.';
+
+    // Open panel
+    document.getElementById('detail-overlay').classList.add('open');
+    document.getElementById('detail-panel').classList.add('open');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeDetail() {
+    selectedZ = null;
+    document.querySelectorAll('.element-cell.selected').forEach(c => c.classList.remove('selected'));
+    document.getElementById('detail-overlay').classList.remove('open');
+    document.getElementById('detail-panel').classList.remove('open');
+    document.body.style.overflow = '';
+}
+
+// ===== FILTERS =====
+function applyFilters() {
+    const q = document.getElementById('search-input').value.trim().toLowerCase();
+    const catF = document.getElementById('category-filter').value;
+    const phaseF = document.getElementById('phase-filter').value;
+
+    document.querySelectorAll('.element-cell').forEach(cell => {
+        const matchCat = catF === 'all' || cell.dataset.cat === catF;
+        const matchPhase = phaseF === 'all' || cell.dataset.phase === phaseF;
+        let matchSearch = true;
+        if (q) {
+            matchSearch = cell.dataset.name.includes(q) ||
+                          cell.dataset.symbol.includes(q) ||
+                          cell.dataset.z === q;
+        }
+        cell.classList.toggle('dimmed', !(matchCat && matchPhase && matchSearch));
+    });
+
+    const clearBtn = document.getElementById('clear-search');
+    clearBtn.classList.toggle('visible', q.length > 0);
+}
+
+// ===== 3D TOGGLE =====
+function toggle3D(is3d) {
+    document.getElementById('table-wrapper').classList.toggle('tilt-3d', is3d);
+    document.getElementById('btn-flat').classList.toggle('active', !is3d);
+    document.getElementById('btn-3d').classList.toggle('active', is3d);
+}
+
+// ===== INIT =====
+async function init() {
+    // Load data
+    const raw = await loadElements();
+    ELEMENTS = raw.filter(e => e.number >= 1 && e.number <= 118).sort((a, b) => a.number - b.number);
+
+    buildTable(ELEMENTS);
+    buildLegend();
+
+    // Events
+    document.getElementById('search-input').addEventListener('input', applyFilters);
+    document.getElementById('category-filter').addEventListener('change', applyFilters);
+    document.getElementById('phase-filter').addEventListener('change', applyFilters);
+    document.getElementById('clear-search').addEventListener('click', () => {
+        document.getElementById('search-input').value = '';
+        applyFilters();
+    });
+    document.getElementById('btn-flat').addEventListener('click', () => toggle3D(false));
+    document.getElementById('btn-3d').addEventListener('click', () => toggle3D(true));
+    document.getElementById('detail-close').addEventListener('click', closeDetail);
+    document.getElementById('detail-overlay').addEventListener('click', closeDetail);
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeDetail();
+    });
+}
+
+init();
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+[0] (227,165)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (227,165)<i  />
+Đề thi THPT – Tin học
+Công cụ tạo đề thi PPKT THPT
+[2] (450,369)<div  />
+	[3] (252,369)<i  />
+	[4] (520,369)<span >Cấu hình />
+[5] (426,437)<div  />
+	[6] (252,437)<i  />
+	[7] (496,437)<span >Ma trận />
+[8] (402,505)<div  />
+	[9] (252,505)<i  />
+	[10] (472,505)<span >Đặc tả />
+[11] (381,573)<div  />
+	[12] (241,573)<i  />
+	[13] (440,573)<span >Đề thi />
+[14] (602,642)<div  />
+	[15] (252,642)<i  />
+	[16] (672,642)<span >Nguồn ứng dụng />
+Đề thi Tin học 10
+Tạo đề thi (trừ 2 điểm)
+Quay lại cấu hình
+Chưa có đề thi
+Nhấn nút "Tạo đề thi" để AI tự động sinh đề dựa trên ma trận và đặc tả đã cấu hình.

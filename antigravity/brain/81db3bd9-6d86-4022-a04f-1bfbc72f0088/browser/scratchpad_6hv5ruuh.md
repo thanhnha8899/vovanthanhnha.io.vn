@@ -1,0 +1,7 @@
+# Task: Verify Website Functionality
+- [x] Open http://127.0.0.1:8080/index.html
+- [x] Check for load errors or blank page
+- [x] Check console logs for JS errors
+- [/] Attempt login with admin/Nha12345 (In progress)
+- [ ] Verify dashboard access
+- [ ] Report observations

@@ -1,0 +1,12 @@
+# Task: Verify Fixed generateYeuCau Function in Exam Pages
+
+## Steps:
+- [ ] Navigate to http://127.0.0.1:8080/de-thi-tinhoc.html
+- [ ] Hard refresh the page (Ctrl+Shift+R)
+- [ ] Select topics: "Máy tính và xã hội tri thức" and "Mạng máy tính và Internet"
+- [ ] Click "Đặc tả" tab
+- [ ] Verify "Yêu cầu cần đạt" column text
+- [ ] Report findings
+
+## Findings:
+- To be updated...

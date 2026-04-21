@@ -1,0 +1,13 @@
+# Task: Tạo giao diện Đề thi 7991 THPT cho tất cả các môn
+
+- [/] Update auto-calculate score logic in de-thi-vatli.html
+- [ ] Create de-thi-toan.html
+- [ ] Create de-thi-hoahoc.html
+- [ ] Create de-thi-sinhhoc.html
+- [ ] Create de-thi-nguvan.html
+- [ ] Create de-thi-lichsu.html
+- [ ] Create de-thi-diali.html
+- [ ] Create de-thi-ktpl.html
+- [ ] Create de-thi-tinhoc.html
+- [ ] Update index.html links for all subjects
+- [ ] Verify auto-calculate works correctly

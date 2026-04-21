@@ -1,0 +1,55 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+school
+HOC8.COM
+Nền tảng AI Giáo dục
+[0] (548,65)<button class='text-sm font-semibold text-slate-700 hover:text-bal-teal transition-colors'>Sản phẩm />
+[1] (665,65)<button class='text-sm font-semibold text-slate-700 hover:text-bal-teal transition-colors'>Doanh nghiệp />
+[2] (785,65)<button class='text-sm font-semibold text-slate-700 hover:text-bal-teal transition-colors'>Chính sách />
+[3] (913,65)<a class='text-sm font-bold text-bal-teal flex items-center gap-1' href='tel:0972300864'>0972 300 864 />
+	[4] (860,65)<span >call />
+check_circle
+Hỗ trợ tải lại không giới hạn
+check_circle
+Tuân thủ GDPR & Nghị định 13/2023
+sync
+Hoàn trả
+check_circle
+Hoàn 100% nếu lỗi hệ thống
+check_circle
+Hoàn điểm nếu kết quả không đạt
+check_circle
+Quy trình xử lý trong 3-5 ngày làm việc
+check_circle
+Hỗ trợ 24/7: 0972 300 864
+gavel
+Điều khoản
+check_circle
+Tuân thủ Luật TMĐT số 52/2005/QH11
+check_circle
+Quyền & trách nhiệm 2 bên rõ ràng
+check_circle
+Giải quyết tranh chấp tại Phú Thọ
+check_circle
+Bảo vệ quyền lợi người tiêu dùng
+school
+HOC8.COM
+Nền tảng AI cho Giáo viên
+Ứng dụng trí tuệ nhân tạo hỗ trợ giáo viên soạn giáo án, tạo sáng kiến và phát triển tài liệu giảng dạy chuyên nghiệp.
+GPĐKKD: 8594615626 - Đã xác thực
+Liên kết
+[5] (554,849)<button class='hover:text-bal-teal transition-colors'>Sản phẩm />
+[6] (565,897)<button class='hover:text-bal-teal transition-colors'>Thông tin DN />
+Chính sách
+Đăng ký
+Liên hệ
+call
+[7] (842,849)<a class='text-slate-300 hover:text-bal-teal transition-colors font-bold' href='tel:0972300864'>0972 300 864 />
+email
+[8] (857,904)<a class='text-slate-300 hover:text-bal-teal transition-colors' href='mailto:gioisc@gmail.com'>gioisc@gmail.com />
+location_on
+Ngõ 18, Nguyễn Trãi, Phúc Yên, Phú Thọ
+
+</current_dom>

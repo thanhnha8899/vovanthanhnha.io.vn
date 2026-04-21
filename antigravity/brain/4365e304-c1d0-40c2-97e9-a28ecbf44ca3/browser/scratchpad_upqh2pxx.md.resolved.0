@@ -1,0 +1,12 @@
+# Task: Test Gemini API in de-thi-tinhoc.html
+
+## Checklist
+- [ ] Navigate to http://127.0.0.1:8080/de-thi-tinhoc.html?t=gemini2
+- [ ] Wait for page load and resize window
+- [ ] Go to "Cấu hình" tab
+- [ ] Select first topic
+- [ ] Go to "Đề thi" tab
+- [ ] Click "Tạo đề thi (trừ 2 điểm)"
+- [ ] Wait for API response (up to 60s)
+- [ ] Capture result screenshots
+- [ ] Report success or failure

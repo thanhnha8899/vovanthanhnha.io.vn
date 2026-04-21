@@ -1,0 +1,12 @@
+# Task: Test "Tạo đề thi" on de-thi-tinhoc.html
+
+## Checklist
+- [ ] Navigate to http://127.0.0.1:8080/de-thi-tinhoc.html?v=3
+- [ ] Wait 4 seconds
+- [ ] Resize browser to 1200x800
+- [ ] Scroll down to section 3 topics list
+- [ ] Click topic "Máy tính và xã hội tri thức"
+- [ ] Click "Đề thi" tab
+- [ ] Click "Tạo đề thi (trừ 2 điểm)"
+- [ ] Wait 90 seconds for API response
+- [ ] Verify results with screenshots

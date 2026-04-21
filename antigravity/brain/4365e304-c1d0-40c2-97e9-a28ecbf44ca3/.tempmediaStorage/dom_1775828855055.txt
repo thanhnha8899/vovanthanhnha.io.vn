@@ -1,0 +1,74 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (35,66)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (35,66)<i  />
+Đề thi THPT – Tin học
+Công cụ tạo đề thi PPKT THPT
+[2] (71,166)<div  />
+	[3] (44,166)<i  />
+	[4] (79,166)<span >Cấu hình />
+[5] (171,166)<div  />
+	[6] (148,166)<i  />
+	[7] (180,166)<span >Ma trận />
+[8] (265,166)<div  />
+	[9] (245,166)<i  />
+	[10] (274,166)<span >Đặc tả />
+[11] (353,166)<div  />
+	[12] (335,166)<i  />
+	[13] (361,166)<span >Đề thi />
+[14] (909,166)<div  />
+	[15] (861,166)<i  />
+	[16] (917,166)<span >Nguồn ứng dụng />
+Đề thi Tin học 10
+[17] (129,417)<button class='dethi-btn-create' id='btn-generate-exam'>Tạo đề thi (trừ 2 điểm) />
+	[18] (67,417)<i  />
+[19] (297,419)<button class='dethi-btn-secondary' id='btn-back-cauhinh'>Quay lại cấu hình />
+	[20] (248,419)<i  />
+[21] (438,419)<button class='dethi-btn-secondary' id='btn-download-exam-docx'>Tải về .docx />
+	[22] (402,419)<i  />
+Hãy tải đề thi trước khi tạo đề thi khác; khi quay lại sẽ không thể tải đề thi này. Mỗi lần bấm "Tạo đề thi (trừ 2 điểm)" trừ 2 điểm.
+PHẦN I: TRẮC NGHIỆM
+Thông tin là:
+a) Dữ liệu đã được xử lý và có ý nghĩa
+b) Dữ liệu chưa được xử lý
+c) Hệ thống máy tính
+d) Phần mềm máy tính
+Dữ liệu là:
+a) Thông tin đã được mã hóa
+b) Thông tin chưa được mã hóa
+c) Thông tin đã được xử lý
+d) Thông tin chưa được xử lý
+Hệ nhị phân là hệ thống số dựa trên:
+a) 2 số 0 và 1
+b) 10 số từ 0 đến 9
+c) 16 số từ 0 đến 9 và A đến F
+d) 8 số từ 0 đến 7
+Đơn vị đo thông tin cơ bản là:
+a) Bit
+b) Byte
+c) Kilobyte
+d) Megabyte
+1 Byte bằng:
+a) 2 bit
+b) 4 bit
+c) 8 bit
+d) 16 bit
+Máy tính điện tử là thiết bị tự động:
+a) Thực hiện các phép tính
+b) Xử lý thông tin
+c) Nhận và truyền thông tin
+d) Tất cả các ý trên
+Phần cứng máy tính là:
+a) Các thiết bị vật lý của máy tính
+b) Các chương trình và dữ liệu của máy tính
+c) Hệ thống điều hành của máy tính
+d) Phần mềm ứng dụng của máy tính
+Phần mềm máy tính là:
+a) Các chương trình và dữ liệu của máy tính
+b) Các thiết bị vật lý của máy tính
+c) Hệ thống điều hành của máy tính
+d) Phần cứng của máy tính
+
+</current_dom>

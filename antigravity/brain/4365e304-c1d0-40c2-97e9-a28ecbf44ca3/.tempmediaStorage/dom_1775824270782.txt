@@ -1,0 +1,37 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (68,60)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (68,60)<i  />
+Đề thi THPT – Tin học
+Công cụ tạo đề thi PPKT THPT
+[2] (135,156)<div  />
+	[3] (76,156)<i  />
+	[4] (156,156)<span >Cấu hình />
+[5] (338,156)<div  />
+	[6] (286,156)<i  />
+	[7] (359,156)<span >Ma trận />
+[8] (526,156)<div  />
+	[9] (481,156)<i  />
+	[10] (547,156)<span >Đặc tả />
+[11] (701,156)<div  />
+	[12] (660,156)<i  />
+	[13] (719,156)<span >Đề thi />
+[14] (819,218)<div  />
+	[15] (714,218)<i  />
+	[16] (840,218)<span >Nguồn ứng dụng />
+1
+Thông tin đề thi
+Trường, kỳ thi, môn học, thời gian
+[17] (500,429)<label >Tên trường />
+[18] (500,484)<input id='ten-truong' placeholder='Nhập tên trường' />
+[19] (500,556)<label >Tổ chuyên môn />
+[20] (500,611)<input id='to-chuyen-mon' placeholder='Nhập tổ chuyên môn' />
+[21] (500,682)<label >Tên đề kiểm tra />
+[22] (500,738)<input id='ten-de' placeholder='Nhập tên đề' />
+[23] (500,809)<label >Môn học />
+[24] (500,865)<select id='mon-hoc' />
+Năm học
+
+</current_dom>

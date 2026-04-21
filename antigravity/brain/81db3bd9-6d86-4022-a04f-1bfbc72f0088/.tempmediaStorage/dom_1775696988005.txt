@@ -1,0 +1,32 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (135,62)<a class='logo' href='#' id='logo' />
+	[1] (49,62)<div  />
+		[2] (49,62)<i  />
+	[3] (166,62)<div  />
+		[4] (166,46)<span >VOVANTHANHNHA />
+		[5] (166,78)<span >Nền tảng AI Giáo dục />
+[6] (382,62)<a class='nav-link' href='#products' id='nav-products'>Sản phẩm />
+[7] (521,62)<a class='nav-link' href='#company' id='nav-company'>Doanh nghiệp />
+[8] (665,62)<a class='nav-link' href='#policy' id='nav-policy'>Chính sách />
+[9] (891,62)<a class='phone-link' href='tel:0943265527' id='phone-link' />
+	[10] (835,62)<i  />
+	[11] (902,62)<span >0943 265 527 />
+AI-Powered Education Platform
+Nền tảng
+AI Giáo dục
+cho Giáo viên Việt Nam
+Ứng dụng trí tuệ nhân tạo hỗ trợ giáo viên soạn giáo án, tạo sáng kiến 
+                    và phát triển tài liệu giảng dạy chuyên nghiệp.
+1,000+
+Giáo viên tin dùng
+24/7
+Bảo mật an toàn
+2018
+Chuẩn CTGDPT
+Đăng nhập
+Truy cập tài khoản của bạn
+
+</current_dom>

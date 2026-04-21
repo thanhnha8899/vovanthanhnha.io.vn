@@ -1,0 +1,62 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+Skip to main content
+Accessibility help
+Accessibility feedback
+[0] (106,90)<a aria-label='Go to Google Home' href='https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwj4x_-tweSTAxWQjGMGHWtPN1QQPAgJ' id='logo' title='Go to Google Home' />
+[1] (397,88)<textarea aria-label='Search' class='gLFyf' id='APjFqb' role='combobox' />
+[2] (622,88)<div  />
+	[3] (620,88)<div aria-label='Clear' class='vOY7J M2vV3' role='button' />
+		[4] (620,88)<span  />
+	[5] (639,88)<span  />
+[6] (658,88)<div aria-label='Search by voice' class='XDyW0e' role='button' />
+[7] (689,88)<div aria-label='Search by image' class='nDcEnd' role='button' />
+[8] (725,88)<button aria-label='Search' class='HZVG1b Tg7LZd' />
+	[9] (720,88)<div  />
+		[10] (720,88)<span  />
+[11] (863,89)<div aria-label='Settings' class='fLciMb' id='og-te' role='button' />
+	[12] (863,92)<div  />
+		[13] (863,89)<span  />
+[14] (899,89)<a aria-label='Google apps' class='gb_B' href='https://www.google.com.vn/intl/en/about/products?tab=wh' role='button' />
+[15] (951,89)<a aria-label='Sign in' class='gb_A' href='https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3D%2522Ph%25E1%25BB%25A5%2Bl%25E1%25BB%25A5c%2Bkem%2Btheo_CV%2Bhuong%2Bdan%2Bchi%2Btiet%2Bkiem%2Btra%2Bdanh%2Bgia%2B25_26%2522&ec=futura_srp_og_si_72236_p'>Sign in />
+	Sign in
+[16] (77,195)<a class='C6AK7c' role='link' />
+	All
+[17] (121,195)<a class='C6AK7c' href='/search?sca_esv=d2a5470d2e85f15e&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3p-ML-906rRL_m6h4jR-tdCeKIwp94h-QiJ4lJfObsqU79yRFgWBtc5FGpXu1cRl7TvjBz3jbzToCzgFmUUdZ3ioCY_19pW-mS6_VWp2Ke2eOATezR6LBTEZTHuGlWh1g4ZCdi9lKiKW5H2Mbyr-p90MCdoICXp4c2vtqYtQShVUfhmVOw&q=%22Ph%E1%BB%A5+l%E1%BB%A5c+kem+theo+CV+huong+dan+chi+tiet+kiem+tra+danh+gia+25_26%22&sa=X&ved=2ahUKEwj4x_-tweSTAxWQjGMGHWtPN1QQtKgLegQIEBAB' />
+	[18] (121,195)<div  />
+		[19] (121,210)<span >Images />
+[20] (175,195)<a class='C6AK7c' href='/search?sca_esv=d2a5470d2e85f15e&udm=7&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3p-ML-906rRL_m6h4jR-tdCeKIwp94h-QiJ4lJfObsqU79yRFgWBtc5FGpXu1cRl7TvjBz3jbzToCzgFmUUdZ3ioCY_19pW-mS6_VWp2Ke2eOATezR6LBTEZTHuGlWh1g4ZCdi9lKiKW5H2Mbyr-p90MCdoICXp4c2vtqYtQShVUfhmVOw&q=%22Ph%E1%BB%A5+l%E1%BB%A5c+kem+theo+CV+huong+dan+chi+tiet+kiem+tra+danh+gia+25_26%22&sa=X&ved=2ahUKEwj4x_-tweSTAxWQjGMGHWtPN1QQtKgLegQIDxAB' />
+	[21] (175,195)<div  />
+		[22] (175,210)<span >Videos />
+[23] (236,195)<a class='C6AK7c' href='/search?sca_esv=d2a5470d2e85f15e&udm=28&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3p-ML-906rRL_m6h4jR-tdCeKIwp94h-QiJ4lJfObsqU79yRFgWBtc5FGpXu1cRl7TvjBz3jbzToCzgFmUUdZ3ioCY_19pW-mS6_VWp2Ke2eOATezR6LBTEZTHuGlWh1g4ZCdi9lKiKW5H2Mbyr-p90MCdoICXp4c2vtqYtQShVUfhmVOw&q=%22Ph%E1%BB%A5+l%E1%BB%A5c+kem+theo+CV+huong+dan+chi+tiet+kiem+tra+danh+gia+25_26%22&ved=1t:220175&ictx=111' />
+	[24] (236,195)<div  />
+		[25] (236,210)<span >Shopping />
+[26] (311,195)<a class='C6AK7c' href='/search?sca_esv=d2a5470d2e85f15e&udm=39&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3p-ML-906rRL_m6h4jR-tdCeKIwp94h-QiJ4lJfObsqU79yRFgWBtc5FGpXu1cRl7TvjBz3jbzToCzgFmUUdZ3ioCY_19pW-mS6_VWp2Ke2eOATezR6LBTEZTHuGlWh1g4ZCdi9lKiKW5H2Mbyr-p90MCdoICXp4c2vtqYtQShVUfhmVOw&q=%22Ph%E1%BB%A5+l%E1%BB%A5c+kem+theo+CV+huong+dan+chi+tiet+kiem+tra+danh+gia+25_26%22&sa=X&ved=2ahUKEwj4x_-tweSTAxWQjGMGHWtPN1QQs6gLegQIEhAB' />
+	[27] (311,195)<div  />
+		[28] (311,210)<span >Short videos />
+[29] (377,195)<a class='C6AK7c' href='/search?sca_esv=d2a5470d2e85f15e&q=%22Ph%E1%BB%A5+l%E1%BB%A5c+kem+theo+CV+huong+dan+chi+tiet+kiem+tra+danh+gia+25_26%22&tbm=nws&source=lnms&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3p-ML-906rRL_m6h4jR-tdCeKIwp94h-QiJ4lJfObsqU79yRFgWBtc5FGpXu1cRl7TvjBz3jbzToCzgFmUUdZ3ioCY_19pW-mS6_VWp2Ke2eOATezR6LBTEZTHuGlWh1g4ZCdi9lKiKW5H2Mbyr-p90MCdoICXp4c2vtqYtQShVUfhmVOw&sa=X&ved=2ahUKEwj4x_-tweSTAxWQjGMGHWtPN1QQ0pQJegQIERAB' />
+	[30] (377,195)<div  />
+		[31] (377,210)<span >News />
+[32] (430,195)<div class='mTpL7c' role='button' />
+	[33] (430,195)<div  />
+		[34] (430,210)<div  />
+			[35] (423,201)<span >More />
+			[36] (443,201)<span  />
+[37] (489,195)<div class='mOKdDc' id='hdtb-tls' role='button' />
+	[38] (489,195)<div  />
+		[39] (489,210)<div  />
+			[40] (482,201)<span >Tools />
+			[41] (503,201)<span  />
+Search Results
+Your search -
+"Phụ lục kem theo_CV huong dan chi tiet kiem tra danh gia 25_26"
+- did not match any documents.
+Suggestions:
+Make sure that all words are spelled correctly.
+Try different keywords.
+Try more general keywords.
+Try fewer keywords.
+
+</current_dom>

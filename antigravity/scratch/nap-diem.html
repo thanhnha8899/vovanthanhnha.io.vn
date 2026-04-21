@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nạp điểm – VOVANTHANHNHA.IO.VN</title>
+    <meta name="description" content="Nạp điểm vào tài khoản để sử dụng các công cụ AI giáo dục tại vovanthanhnha.io.vn">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* ===== Design Tokens ===== */
+        :root {
+            --primary: #1a8a8a;
+            --primary-dark: #14706e;
+            --primary-light: #e0f4f4;
+            --primary-gradient: linear-gradient(135deg, #1a8a8a, #2db5b5);
+
+            --navy: #1e293b;
+            --navy-light: #334155;
+            --navy-dark: #0f172a;
+
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --text-light: #94a3b8;
+
+            --bg-white: #ffffff;
+            --bg-light: #f8fafc;
+            --bg-page: #f0f2f8;
+
+            --pink: #f43f5e;
+            --teal: #14b8a6;
+            --purple: #8b5cf6;
+            --orange: #f59e0b;
+            --green: #10b981;
+            --blue: #3b82f6;
+            --red: #ef4444;
+            --indigo: #6366f1;
+            --cyan: #06b6d4;
+
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
+
+            --radius-sm: 8px;
+            --radius: 12px;
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+            --radius-full: 9999px;
+
+            --transition-fast: 0.15s ease;
+            --transition: 0.3s ease;
+            --header-height: 72px;
+        }
+
+        /* ===== Reset ===== */
+        *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-primary);
+            background: var(--bg-page);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        a { text-decoration:none; color:inherit; }
+        ul { list-style:none; }
+        button { cursor:pointer; border:none; background:none; font-family:inherit; }
+
+        /* ===== Header ===== */
+        .dash-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,0.92);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+            transition: box-shadow var(--transition);
+        }
+        .dash-header.scrolled { box-shadow: var(--shadow-md); }
+        .dash-header-accent {
+            height: 3px;
+            background: var(--primary-gradient);
+        }
+        .dash-header-inner {
+            max-width: 1260px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: var(--header-height);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-icon {
+            width: 44px; height: 44px;
+            background: var(--primary-gradient);
+            border-radius: var(--radius);
+            display: flex; align-items: center; justify-content: center;
+            color: white; font-size: 20px;
+            box-shadow: 0 4px 12px rgba(26,138,138,0.3);
+            transition: transform var(--transition);
+        }
+        .logo:hover .logo-icon { transform: scale(1.05) rotate(-5deg); }
+        .logo-text { display: flex; flex-direction: column; }
+        .logo-name { font-size:16px; font-weight:800; color:var(--primary); letter-spacing:-0.5px; line-height:1.2; }
+        .logo-tagline { font-size:11px; color:var(--text-secondary); font-weight:500; }
+
+        .dash-nav { display: flex; align-items: center; gap: 6px; }
+        .dash-nav-link {
+            display: flex; align-items: center; gap: 7px;
+            padding: 8px 18px;
+            font-size: 14px; font-weight: 500;
+            color: var(--text-secondary);
+            border-radius: var(--radius-full);
+            transition: all var(--transition);
+        }
+        .dash-nav-link:hover { color: var(--primary); background: var(--primary-light); }
+        .dash-nav-link.active {
+            color: var(--primary);
+            background: var(--primary-light);
+            font-weight: 600;
+        }
+        .dash-nav-link i { font-size: 14px; }
+
+        .dash-header-right { display: flex; align-items: center; gap: 10px; }
+        .topup-btn {
+            display: flex; align-items: center; gap: 6px;
+            padding: 8px 18px;
+            background: var(--primary-gradient);
+            color: white; font-weight: 600; font-size: 13px;
+            border-radius: var(--radius-full);
+            box-shadow: 0 4px 12px rgba(26,138,138,0.3);
+            transition: all var(--transition);
+        }
+        .topup-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(26,138,138,0.4); }
+
+        .wallet-badge {
+            display: flex; align-items: center; gap: 6px;
+            padding: 8px 16px;
+            background: linear-gradient(135deg, #fef3c7, #fde68a);
+            color: #92400e; font-weight: 700; font-size: 13px;
+            border-radius: var(--radius-full);
+            border: 1px solid rgba(245,158,11,0.3);
+        }
+        .wallet-badge i { color: #d97706; }
+        .wallet-badge small { font-weight: 500; }
+
+        .notif-btn {
+            position: relative;
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            color: var(--text-secondary); font-size: 16px;
+            background: var(--bg-light);
+            transition: all var(--transition);
+        }
+        .notif-btn:hover { background: var(--primary-light); color: var(--primary); }
+        .notif-dot {
+            position: absolute; top: 8px; right: 8px;
+            width: 8px; height: 8px;
+            background: var(--pink); border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        .user-chip {
+            display: flex; align-items: center; gap: 8px;
+            cursor: pointer;
+        }
+        .avatar-circle {
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--teal));
+            display: flex; align-items: center; justify-content: center;
+            color: white; font-weight: 700; font-size: 14px;
+            position: relative;
+        }
+        .status-dot {
+            position: absolute; bottom: 1px; right: 1px;
+            width: 10px; height: 10px;
+            background: var(--green); border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        .btn-logout {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 8px 16px;
+            background: rgba(244,63,94,0.1); color: var(--pink);
+            border: 1px solid rgba(244,63,94,0.2);
+            border-radius: var(--radius-full);
+            font-size: 13px; font-weight: 600;
+            transition: all var(--transition);
+            margin-left: 4px;
+        }
+        .btn-logout:hover { background: rgba(244,63,94,0.15); border-color: var(--pink); transform: translateY(-1px); }
+
+        /* ===== Page Content ===== */
+        .page-main {
+            max-width: 1260px;
+            margin: 0 auto;
+            padding: 32px 24px 80px;
+        }
+
+        /* Page Header */
+        .page-header {
+            margin-bottom: 32px;
+        }
+        .page-header h1 {
+            font-size: 28px; font-weight: 800;
+            color: var(--navy); letter-spacing: -0.5px;
+            margin-bottom: 6px;
+        }
+        .page-header p {
+            font-size: 15px; color: var(--text-secondary);
+        }
+
+        /* Tabs */
+        .tabs {
+            display: flex; gap: 4px;
+            margin-bottom: 28px;
+            background: var(--bg-white);
+            border-radius: var(--radius-lg);
+            padding: 6px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(0,0,0,0.06);
+            display: inline-flex;
+        }
+        .tab-btn {
+            padding: 10px 24px;
+            font-size: 14px; font-weight: 600;
+            border-radius: var(--radius);
+            color: var(--text-secondary);
+            transition: all var(--transition);
+            white-space: nowrap;
+        }
+        .tab-btn:hover { color: var(--primary); background: var(--primary-light); }
+        .tab-btn.active {
+            color: white;
+            background: var(--navy);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* ===== Top Row: Balance + Exchange Info ===== */
+        .top-row {
+            display: grid;
+            grid-template-columns: 1fr 1.6fr;
+            gap: 24px;
+            margin-bottom: 28px;
+        }
+
+        /* Balance Card */
+        .balance-card {
+            background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 60%, var(--navy-light) 100%);
+            border-radius: var(--radius-xl);
+            padding: 32px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .balance-card::before {
+            content: '';
+            position: absolute;
+            top: -40px; right: -40px;
+            width: 180px; height: 180px;
+            background: radial-gradient(circle, rgba(26,138,138,0.25), transparent 70%);
+            border-radius: 50%;
+        }
+        .balance-card::after {
+            content: '';
+            position: absolute;
+            bottom: -30px; left: -30px;
+            width: 120px; height: 120px;
+            background: radial-gradient(circle, rgba(139,92,246,0.15), transparent 70%);
+            border-radius: 50%;
+        }
+        .balance-label {
+            font-size: 13px; font-weight: 500;
+            color: rgba(255,255,255,0.6);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        .balance-amount {
+            font-size: 52px; font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 4px;
+            position: relative;
+            z-index: 1;
+        }
+        .balance-unit {
+            font-size: 24px; font-weight: 600;
+            color: rgba(255,255,255,0.7);
+        }
+        .balance-actions {
+            margin-top: 24px;
+            position: relative; z-index: 1;
+        }
+        .btn-recharge {
+            display: flex; align-items: center; justify-content: center; gap: 10px;
+            width: 100%;
+            padding: 14px;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: var(--radius);
+            color: white; font-weight: 700; font-size: 15px;
+            transition: all var(--transition);
+        }
+        .btn-recharge:hover {
+            background: rgba(255,255,255,0.25);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        /* Exchange Info Card */
+        .exchange-card {
+            background: var(--bg-white);
+            border-radius: var(--radius-xl);
+            padding: 32px;
+            border: 1px solid rgba(0,0,0,0.06);
+            box-shadow: var(--shadow-sm);
+        }
+        .exchange-header {
+            display: flex; align-items: center; gap: 10px;
+            margin-bottom: 20px;
+        }
+        .exchange-header i {
+            font-size: 20px;
+            color: var(--orange);
+        }
+        .exchange-header h3 {
+            font-size: 17px; font-weight: 700;
+            color: var(--navy);
+        }
+        .exchange-rate {
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+            margin-bottom: 24px;
+            padding: 20px;
+            background: linear-gradient(135deg, #fef3c7 0%, #fffbeb 100%);
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(245,158,11,0.2);
+        }
+        .rate-amount {
+            font-size: 42px; font-weight: 900;
+            color: var(--orange);
+            line-height: 1;
+        }
+        .rate-currency {
+            font-size: 18px; font-weight: 600;
+            color: #b45309;
+        }
+        .rate-equals {
+            font-size: 14px; font-weight: 600;
+            color: var(--text-secondary);
+            padding: 4px 12px;
+            background: rgba(0,0,0,0.05);
+            border-radius: var(--radius-full);
+        }
+        .usage-list {
+            display: flex; flex-direction: column; gap: 12px;
+        }
+        .usage-item {
+            display: flex; align-items: center; gap: 12px;
+            font-size: 14px; color: var(--text-primary);
+        }
+        .usage-item i {
+            width: 8px; height: 8px;
+            background: var(--primary);
+            border-radius: 50%;
+            flex-shrink: 0;
+            display: inline-block;
+            font-size: 0;
+        }
+        .usage-item strong {
+            color: var(--primary); font-weight: 700;
+        }
+
+        /* ===== Pricing Packages ===== */
+        .packages-section {
+            margin-bottom: 28px;
+        }
+        .section-title-row {
+            display: flex; align-items: center; justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .section-title-row h2 {
+            font-size: 20px; font-weight: 700;
+            color: var(--navy);
+            display: flex; align-items: center; gap: 10px;
+        }
+        .section-title-row h2 i {
+            color: var(--primary);
+        }
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+        .package-card {
+            background: var(--bg-white);
+            border-radius: var(--radius-xl);
+            border: 2px solid transparent;
+            padding: 28px 24px;
+            text-align: center;
+            transition: all var(--transition);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .package-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary);
+        }
+        .package-card.popular {
+            border-color: var(--primary);
+            background: linear-gradient(180deg, var(--primary-light) 0%, var(--bg-white) 40%);
+        }
+        .popular-badge {
+            position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+            padding: 4px 16px;
+            background: var(--primary-gradient);
+            color: white; font-size: 11px; font-weight: 700;
+            border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+            text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .savings-badge {
+            position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+            padding: 4px 16px;
+            background: linear-gradient(135deg, var(--orange), #fbbf24);
+            color: white; font-size: 11px; font-weight: 700;
+            border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+            text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .pkg-icon {
+            width: 56px; height: 56px;
+            margin: 8px auto 16px;
+            border-radius: var(--radius-lg);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 24px;
+        }
+        .pkg-icon.blue { background: rgba(59,130,246,0.12); color: var(--blue); }
+        .pkg-icon.teal { background: rgba(20,184,166,0.12); color: var(--teal); }
+        .pkg-icon.purple { background: rgba(139,92,246,0.12); color: var(--purple); }
+        .pkg-icon.orange { background: rgba(245,158,11,0.12); color: var(--orange); }
+
+        .pkg-points {
+            font-size: 32px; font-weight: 900;
+            color: var(--navy);
+            line-height: 1.2;
+        }
+        .pkg-points small {
+            font-size: 16px; font-weight: 600; color: var(--text-secondary);
+        }
+        .pkg-price {
+            font-size: 18px; font-weight: 700;
+            color: var(--primary);
+            margin-top: 4px; margin-bottom: 6px;
+        }
+        .pkg-unit-price {
+            font-size: 12px; color: var(--text-light);
+            margin-bottom: 16px;
+        }
+        .pkg-btn {
+            display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+            width: 100%;
+            padding: 12px;
+            border-radius: var(--radius);
+            font-size: 14px; font-weight: 600;
+            transition: all var(--transition);
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            background: transparent;
+        }
+        .pkg-btn:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 14px rgba(26,138,138,0.35);
+        }
+        .package-card.popular .pkg-btn {
+            background: var(--primary-gradient);
+            color: white;
+            border-color: transparent;
+            box-shadow: 0 4px 14px rgba(26,138,138,0.35);
+        }
+        .package-card.popular .pkg-btn:hover {
+            box-shadow: 0 8px 25px rgba(26,138,138,0.45);
+        }
+
+        /* ===== History Tables ===== */
+        .history-section {
+            background: var(--bg-white);
+            border-radius: var(--radius-xl);
+            border: 1px solid rgba(0,0,0,0.06);
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 24px;
+            overflow: hidden;
+        }
+        .history-header {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 24px 28px 0;
+        }
+        .history-header h3 {
+            font-size: 17px; font-weight: 700; color: var(--navy);
+            display: flex; align-items: center; gap: 10px;
+        }
+        .history-header h3 i { color: var(--primary); font-size: 16px; }
+        .history-filter {
+            display: flex; gap: 8px;
+        }
+        .filter-btn {
+            padding: 6px 14px;
+            font-size: 12px; font-weight: 600;
+            border-radius: var(--radius-full);
+            color: var(--text-secondary);
+            background: var(--bg-light);
+            transition: all var(--transition);
+        }
+        .filter-btn:hover, .filter-btn.active {
+            color: var(--primary); background: var(--primary-light);
+        }
+        .history-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+        .history-table thead th {
+            padding: 12px 28px;
+            font-size: 12px; font-weight: 700;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            text-align: left;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+            background: var(--bg-light);
+        }
+        .history-table tbody td {
+            padding: 16px 28px;
+            font-size: 14px;
+            color: var(--text-primary);
+            border-bottom: 1px solid rgba(0,0,0,0.04);
+        }
+        .history-table tbody tr:hover {
+            background: rgba(26,138,138,0.03);
+        }
+        .history-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+        .status-badge {
+            display: inline-flex; align-items: center; gap: 5px;
+            padding: 4px 12px;
+            border-radius: var(--radius-full);
+            font-size: 12px; font-weight: 600;
+        }
+        .status-badge.success {
+            background: rgba(16,185,129,0.1); color: var(--green);
+        }
+        .status-badge.pending {
+            background: rgba(245,158,11,0.1); color: var(--orange);
+        }
+        .status-badge.failed {
+            background: rgba(239,68,68,0.1); color: var(--red);
+        }
+        .status-badge i { font-size: 10px; }
+        .empty-state {
+            text-align: center;
+            padding: 48px 28px;
+            color: var(--text-light);
+        }
+        .empty-state i {
+            font-size: 40px;
+            margin-bottom: 12px;
+            opacity: 0.4;
+        }
+        .empty-state p {
+            font-size: 14px;
+        }
+        .cost-badge {
+            display: inline-flex;
+            padding: 4px 10px;
+            border-radius: var(--radius-full);
+            background: rgba(244,63,94,0.08);
+            color: var(--pink);
+            font-weight: 700; font-size: 13px;
+        }
+        .cost-badge.plus {
+            background: rgba(16,185,129,0.08);
+            color: var(--green);
+        }
+
+        /* ===== Payment Modal ===== */
+        .modal-overlay {
+            position: fixed; inset: 0;
+            background: rgba(15,23,42,0.6);
+            backdrop-filter: blur(8px);
+            z-index: 9999;
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; pointer-events: none;
+            transition: opacity var(--transition);
+        }
+        .modal-overlay.active {
+            opacity: 1; pointer-events: all;
+        }
+        .modal-box {
+            background: var(--bg-white);
+            border-radius: var(--radius-xl);
+            width: 90%;
+            max-width: 520px;
+            box-shadow: var(--shadow-2xl);
+            transform: translateY(20px) scale(0.98);
+            transition: transform var(--transition);
+            overflow: hidden;
+        }
+        .modal-overlay.active .modal-box {
+            transform: translateY(0) scale(1);
+        }
+        .modal-top {
+            padding: 28px 32px;
+            background: linear-gradient(135deg, var(--navy-dark), var(--navy));
+            color: white;
+            position: relative;
+        }
+        .modal-top h3 {
+            font-size: 20px; font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .modal-top p {
+            font-size: 13px; color: rgba(255,255,255,0.6);
+        }
+        .modal-close {
+            position: absolute; top: 16px; right: 16px;
+            width: 36px; height: 36px;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            color: rgba(255,255,255,0.6); font-size: 16px;
+            background: rgba(255,255,255,0.1);
+            transition: all var(--transition);
+        }
+        .modal-close:hover { background: rgba(255,255,255,0.2); color: white; }
+        .modal-body {
+            padding: 28px 32px;
+        }
+        .payment-summary {
+            display: flex; justify-content: space-between;
+            padding: 16px 20px;
+            background: var(--bg-light);
+            border-radius: var(--radius);
+            margin-bottom: 24px;
+            border: 1px solid rgba(0,0,0,0.06);
+        }
+        .payment-summary .label { font-size: 13px; color: var(--text-secondary); }
+        .payment-summary .value { font-size: 18px; font-weight: 800; color: var(--navy); }
+        .payment-summary .value.highlight { color: var(--primary); }
+        .payment-methods {
+            margin-bottom: 24px;
+        }
+        .payment-methods h4 {
+            font-size: 14px; font-weight: 700; color: var(--navy);
+            margin-bottom: 12px;
+        }
+        .method-options {
+            display: flex; flex-direction: column; gap: 10px;
+        }
+        .method-option {
+            display: flex; align-items: center; gap: 14px;
+            padding: 14px 16px;
+            border: 2px solid rgba(0,0,0,0.08);
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: all var(--transition);
+        }
+        .method-option:hover, .method-option.selected {
+            border-color: var(--primary);
+            background: var(--primary-light);
+        }
+        .method-radio {
+            width: 20px; height: 20px;
+            border-radius: 50%;
+            border: 2px solid var(--text-light);
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+            transition: all var(--transition);
+        }
+        .method-option.selected .method-radio {
+            border-color: var(--primary);
+        }
+        .method-option.selected .method-radio::after {
+            content: '';
+            width: 10px; height: 10px;
+            border-radius: 50%;
+            background: var(--primary);
+        }
+        .method-icon {
+            width: 36px; height: 36px;
+            border-radius: var(--radius-sm);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 16px;
+        }
+        .method-icon.bank { background: rgba(59,130,246,0.12); color: var(--blue); }
+        .method-icon.momo { background: rgba(168,52,137,0.12); color: #a83489; }
+        .method-icon.zalo { background: rgba(0,136,204,0.12); color: #0088cc; }
+        .method-info { flex: 1; }
+        .method-info .name { font-size: 14px; font-weight: 600; color: var(--navy); }
+        .method-info .desc { font-size: 12px; color: var(--text-light); }
+
+        .btn-pay {
+            display: flex; align-items: center; justify-content: center; gap: 10px;
+            width: 100%;
+            padding: 16px;
+            background: var(--primary-gradient);
+            color: white; font-weight: 700; font-size: 16px;
+            border-radius: var(--radius);
+            box-shadow: 0 4px 14px rgba(26,138,138,0.35);
+            transition: all var(--transition);
+        }
+        .btn-pay:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(26,138,138,0.45);
+        }
+
+        /* QR Step */
+        .qr-step { display: none; }
+        .qr-step.active { display: block; }
+        .qr-center {
+            text-align: center;
+            padding: 8px 0;
+        }
+        .qr-box {
+            width: 200px; height: 200px;
+            margin: 0 auto 16px;
+            background: var(--bg-light);
+            border: 2px dashed rgba(0,0,0,0.1);
+            border-radius: var(--radius-lg);
+            display: flex; align-items: center; justify-content: center;
+            flex-direction: column;
+            gap: 8px;
+            color: var(--text-light);
+        }
+        .qr-box i { font-size: 48px; opacity: 0.3; }
+        .qr-box span { font-size: 12px; }
+        .bank-info {
+            text-align: left;
+            background: var(--bg-light);
+            border-radius: var(--radius);
+            padding: 16px 20px;
+            margin-top: 16px;
+        }
+        .bank-info-row {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px dashed rgba(0,0,0,0.06);
+        }
+        .bank-info-row:last-child { border-bottom: none; }
+        .bank-info-row .label { font-size: 13px; color: var(--text-secondary); }
+        .bank-info-row .value {
+            font-size: 14px; font-weight: 700; color: var(--navy);
+            display: flex; align-items: center; gap: 6px;
+        }
+        .copy-btn {
+            width: 28px; height: 28px;
+            border-radius: 6px;
+            display: flex; align-items: center; justify-content: center;
+            background: var(--primary-light);
+            color: var(--primary);
+            font-size: 12px;
+            transition: all var(--transition);
+        }
+        .copy-btn:hover { background: var(--primary); color: white; }
+        .transfer-note {
+            margin-top: 16px;
+            padding: 12px 16px;
+            background: rgba(245,158,11,0.08);
+            border: 1px solid rgba(245,158,11,0.2);
+            border-radius: var(--radius);
+            font-size: 13px;
+            color: #92400e;
+            display: flex; align-items: flex-start; gap: 8px;
+        }
+        .transfer-note i { color: var(--orange); margin-top: 2px; }
+
+        .btn-confirm-done {
+            display: flex; align-items: center; justify-content: center;
+            gap: 8px;
+            width: 100%;
+            padding: 14px;
+            margin-top: 20px;
+            background: linear-gradient(135deg, var(--green), #34d399);
+            color: white; font-weight: 700; font-size: 15px;
+            border-radius: var(--radius);
+            box-shadow: 0 4px 14px rgba(16,185,129,0.35);
+            transition: all var(--transition);
+        }
+        .btn-confirm-done:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(16,185,129,0.45);
+        }
+
+        /* ===== Footer ===== */
+        .dash-footer {
+            background: var(--navy-dark);
+            color: rgba(255,255,255,0.6);
+            padding: 48px 0 0;
+        }
+        .dash-footer-inner {
+            max-width: 1260px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .footer-top-row {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr 1fr 1fr;
+            gap: 40px;
+            padding-bottom: 40px;
+        }
+        .footer-brand-block p { font-size: 14px; margin-top: 12px; line-height: 1.7; }
+        .footer-logo-row {
+            display: flex; align-items: center; gap: 12px;
+            margin-bottom: 4px;
+        }
+        .footer-logo-row .logo-icon {
+            width: 36px; height: 36px; font-size: 16px;
+        }
+        .footer-logo-row .logo-name {
+            font-size: 16px; color: white;
+        }
+        .footer-logo-row .logo-name .accent { color: var(--primary); }
+        .footer-col h4 {
+            font-size: 13px; font-weight: 700;
+            color: rgba(255,255,255,0.9);
+            text-transform: uppercase; letter-spacing: 0.5px;
+            margin-bottom: 16px;
+        }
+        .footer-col a {
+            display: flex; align-items: center; gap: 8px;
+            font-size: 14px; color: rgba(255,255,255,0.5);
+            margin-bottom: 10px;
+            transition: color var(--transition);
+        }
+        .footer-col a:hover { color: var(--primary); }
+        .footer-col p { font-size: 14px; margin-bottom: 6px; }
+        .footer-bottom-row {
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding: 20px 0;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        /* ===== Toast ===== */
+        .toast-notification {
+            position: fixed; bottom: 30px; right: 30px;
+            padding: 14px 24px;
+            border-radius: var(--radius);
+            background: var(--navy);
+            color: white; font-size: 14px; font-weight: 500;
+            display: flex; align-items: center; gap: 10px;
+            box-shadow: var(--shadow-xl);
+            z-index: 99999;
+            transform: translateY(20px);
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+        .toast-notification.show { transform: translateY(0); opacity: 1; }
+        .toast-success i { color: var(--green); }
+        .toast-error i { color: var(--pink); }
+
+        /* ===== Animations ===== */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-up { animation: fadeInUp 0.5s ease both; }
+        .fade-up-1 { animation-delay: 0.1s; }
+        .fade-up-2 { animation-delay: 0.2s; }
+        .fade-up-3 { animation-delay: 0.3s; }
+        .fade-up-4 { animation-delay: 0.4s; }
+
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(26, 138, 138, 0.3); }
+            50% { box-shadow: 0 0 0 12px rgba(26, 138, 138, 0); }
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 1024px) {
+            .top-row { grid-template-columns: 1fr; }
+            .packages-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-top-row { grid-template-columns: 1fr 1fr; gap: 28px; }
+        }
+        @media (max-width: 768px) {
+            .dash-nav { display: none; }
+            .page-header h1 { font-size: 22px; }
+            .packages-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+            .tabs { display: flex; overflow-x: auto; }
+            .history-table { font-size: 13px; }
+            .history-table thead th,
+            .history-table tbody td { padding: 12px 16px; }
+            .footer-top-row { grid-template-columns: 1fr; }
+            .balance-amount { font-size: 40px; }
+            .modal-body { padding: 20px; }
+            .modal-top { padding: 20px; }
+        }
+        @media (max-width: 480px) {
+            .packages-grid { grid-template-columns: 1fr; }
+            .dash-header-inner { padding: 0 16px; }
+            .page-main { padding: 20px 16px 60px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- ===== Header ===== -->
+    <header class="dash-header" id="header">
+        <div class="dash-header-accent"></div>
+        <div class="dash-header-inner">
+            <a href="index.html" class="logo" id="logo">
+                <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="logo-text">
+                    <span class="logo-name">VOVANTHANHNHA</span>
+                    <span class="logo-tagline">Nền tảng AI Giáo dục</span>
+                </div>
+            </a>
+            <nav class="dash-nav">
+                <a href="index.html" class="dash-nav-link" id="nav-home"><i class="fas fa-home"></i><span>Trang chủ</span></a>
+                <a href="nap-diem.html" class="dash-nav-link active" id="nav-napdiem-link"><i class="fas fa-coins"></i><span>Nạp điểm</span></a>
+                <a href="#" class="dash-nav-link"><i class="fas fa-compass"></i><span>Hướng dẫn</span></a>
+                <a href="#" class="dash-nav-link"><i class="fas fa-users"></i><span>Cộng đồng</span></a>
+                <a href="#" class="dash-nav-link"><i class="fas fa-comments"></i><span>Nhóm Zalo hỗ trợ</span></a>
+            </nav>
+            <div class="dash-header-right">
+                <div class="wallet-badge">
+                    <i class="fas fa-wallet"></i>
+                    <span id="header-points">0 <small>điểm</small></span>
+                </div>
+                <button class="notif-btn" title="Thông báo">
+                    <i class="fas fa-bell"></i>
+                    <span class="notif-dot"></span>
+                </button>
+                <div class="user-chip">
+                    <div class="avatar-circle">
+                        <span>A</span>
+                        <span class="status-dot"></span>
+                    </div>
+                </div>
+                <button class="btn-logout" id="btn-logout" title="Đăng xuất">
+                    <i class="fas fa-sign-out-alt"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== Main Content ===== -->
+    <main class="page-main">
+        <!-- Page Header -->
+        <div class="page-header fade-up">
+            <h1>Trung tâm hoạt động</h1>
+            <p>Quản lý nội dung đã tạo và lịch sử giao dịch điểm.</p>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs fade-up fade-up-1">
+            <button class="tab-btn" onclick="window.location.href='index.html'">Lịch sử tạo nội dung</button>
+            <button class="tab-btn active">Ví điểm & Giao dịch</button>
+        </div>
+
+        <!-- Top Row: Balance + Exchange -->
+        <div class="top-row fade-up fade-up-2">
+            <div class="balance-card">
+                <div class="balance-label">Số dư hiện tại</div>
+                <div class="balance-amount" id="balance-display">0</div>
+                <div class="balance-unit">điểm</div>
+                <div class="balance-actions">
+                    <button class="btn-recharge" id="btn-open-recharge" onclick="openRechargePackages()">
+                        <i class="fas fa-wallet"></i> Nạp thêm điểm
+                    </button>
+                </div>
+            </div>
+            <div class="exchange-card">
+                <div class="exchange-header">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Thông tin quy đổi</h3>
+                </div>
+                <div class="exchange-rate">
+                    <span class="rate-amount">1.000</span>
+                    <span class="rate-currency">VNĐ</span>
+                    <span class="rate-equals">= 1 ĐIỂM HỆ THỐNG</span>
+                </div>
+                <div class="usage-list">
+                    <div class="usage-item">
+                        <i></i> <span>Soạn giáo án: <strong>5 điểm</strong> / bài</span>
+                    </div>
+                    <div class="usage-item">
+                        <i></i> <span>Tạo dàn ý SKKN: <strong>2 điểm</strong> / lần</span>
+                    </div>
+                    <div class="usage-item">
+                        <i></i> <span>Soạn tự động SKKN: <strong>15 điểm</strong> / bài</span>
+                    </div>
+                    <div class="usage-item">
+                        <i></i> <span>Tạo đề thi THPT: <strong>5 điểm</strong> / đề</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing Packages -->
+        <section class="packages-section fade-up fade-up-3" id="packages">
+            <div class="section-title-row">
+                <h2><i class="fas fa-gem"></i> Chọn gói nạp điểm</h2>
+            </div>
+            <div class="packages-grid">
+                <div class="package-card" data-points="50" data-price="50000" onclick="selectPackage(this)">
+                    <div class="pkg-icon blue"><i class="fas fa-coins"></i></div>
+                    <div class="pkg-points">50 <small>điểm</small></div>
+                    <div class="pkg-price">50.000đ</div>
+                    <div class="pkg-unit-price">1.000đ / điểm</div>
+                    <button class="pkg-btn">Chọn gói này</button>
+                </div>
+                <div class="package-card popular" data-points="100" data-price="90000" onclick="selectPackage(this)">
+                    <div class="popular-badge">Phổ biến</div>
+                    <div class="pkg-icon teal"><i class="fas fa-star"></i></div>
+                    <div class="pkg-points">100 <small>điểm</small></div>
+                    <div class="pkg-price">90.000đ</div>
+                    <div class="pkg-unit-price">Tiết kiệm 10% · 900đ / điểm</div>
+                    <button class="pkg-btn">Chọn gói này</button>
+                </div>
+                <div class="package-card" data-points="200" data-price="160000" onclick="selectPackage(this)">
+                    <div class="pkg-icon purple"><i class="fas fa-crown"></i></div>
+                    <div class="pkg-points">200 <small>điểm</small></div>
+                    <div class="pkg-price">160.000đ</div>
+                    <div class="pkg-unit-price">Tiết kiệm 20% · 800đ / điểm</div>
+                    <button class="pkg-btn">Chọn gói này</button>
+                </div>
+                <div class="package-card" data-points="500" data-price="350000" onclick="selectPackage(this)">
+                    <div class="savings-badge">Tiết kiệm nhất</div>
+                    <div class="pkg-icon orange"><i class="fas fa-fire-flame-curved"></i></div>
+                    <div class="pkg-points">500 <small>điểm</small></div>
+                    <div class="pkg-price">350.000đ</div>
+                    <div class="pkg-unit-price">Tiết kiệm 30% · 700đ / điểm</div>
+                    <button class="pkg-btn">Chọn gói này</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Transaction History: Nạp điểm -->
+        <div class="history-section fade-up fade-up-3">
+            <div class="history-header">
+                <h3><i class="fas fa-receipt"></i> Lịch sử nạp điểm</h3>
+                <div class="history-filter">
+                    <button class="filter-btn active">Tất cả</button>
+                    <button class="filter-btn">7 ngày</button>
+                    <button class="filter-btn">30 ngày</button>
+                </div>
+            </div>
+            <table class="history-table">
+                <thead>
+                    <tr>
+                        <th>Thời gian</th>
+                        <th>Số điểm</th>
+                        <th>Thành tiền</th>
+                        <th>Trạng thái</th>
+                    </tr>
+                </thead>
+                <tbody id="recharge-history">
+                    <!-- Sample data rows -->
+                    <tr>
+                        <td>09/04/2026 · 08:30</td>
+                        <td><span class="cost-badge plus">+100 điểm</span></td>
+                        <td>90.000đ</td>
+                        <td><span class="status-badge success"><i class="fas fa-check-circle"></i> Thành công</span></td>
+                    </tr>
+                    <tr>
+                        <td>07/04/2026 · 14:15</td>
+                        <td><span class="cost-badge plus">+50 điểm</span></td>
+                        <td>50.000đ</td>
+                        <td><span class="status-badge success"><i class="fas fa-check-circle"></i> Thành công</span></td>
+                    </tr>
+                    <tr>
+                        <td>05/04/2026 · 09:45</td>
+                        <td><span class="cost-badge plus">+200 điểm</span></td>
+                        <td>160.000đ</td>
+                        <td><span class="status-badge pending"><i class="fas fa-clock"></i> Đang xử lý</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Usage History -->
+        <div class="history-section fade-up fade-up-4">
+            <div class="history-header">
+                <h3><i class="fas fa-clock-rotate-left"></i> Lịch sử sử dụng dịch vụ</h3>
+                <div class="history-filter">
+                    <button class="filter-btn active">Tất cả</button>
+                    <button class="filter-btn">7 ngày</button>
+                    <button class="filter-btn">30 ngày</button>
+                </div>
+            </div>
+            <table class="history-table">
+                <thead>
+                    <tr>
+                        <th>Thời gian</th>
+                        <th>Dịch vụ</th>
+                        <th>Nội dung / Prompt</th>
+                        <th>Chi phí</th>
+                    </tr>
+                </thead>
+                <tbody id="usage-history">
+                    <tr>
+                        <td>09/04/2026 · 10:20</td>
+                        <td>Soạn giáo án</td>
+                        <td style="max-width: 280px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">KHBD Toán 10 – Bài 3: Hàm số bậc hai, chương 2, SGK Cánh Diều</td>
+                        <td><span class="cost-badge">−5 ★</span></td>
+                    </tr>
+                    <tr>
+                        <td>09/04/2026 · 09:45</td>
+                        <td>Đề thi THPT – Toán</td>
+                        <td style="max-width: 280px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Đề kiểm tra Đại số 11 – Chương Tổ hợp & Xác suất</td>
+                        <td><span class="cost-badge">−5 ★</span></td>
+                    </tr>
+                    <tr>
+                        <td>08/04/2026 · 16:30</td>
+                        <td>SKKN Tự động</td>
+                        <td style="max-width: 280px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Ứng dụng CNTT trong dạy học Vật Lí THPT</td>
+                        <td><span class="cost-badge">−15 ★</span></td>
+                    </tr>
+                    <tr>
+                        <td>07/04/2026 · 11:00</td>
+                        <td>Đề thi THPT – Vật Lí</td>
+                        <td style="max-width: 280px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Đề kiểm tra Vật lí 12 – Chương Dao động cơ</td>
+                        <td><span class="cost-badge">−5 ★</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="dash-footer">
+        <div class="dash-footer-inner">
+            <div class="footer-top-row">
+                <div class="footer-brand-block">
+                    <div class="footer-logo-row">
+                        <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <span class="logo-name">VOVANTHANHNHA<span class="accent">.IO.VN</span></span>
+                    </div>
+                    <p>Hệ sinh thái AI đồng hành cùng giáo viên Việt Nam.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Sản phẩm</h4>
+                    <a href="#">Soạn giáo án AI</a>
+                    <a href="#">Trợ lý giáo viên</a>
+                    <a href="#">Kho học liệu số</a>
+                    <a href="#">Cộng đồng giáo viên</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Hỗ trợ</h4>
+                    <a href="#">Hướng dẫn sử dụng</a>
+                    <a href="#">Câu hỏi thường gặp</a>
+                    <a href="#">Liên hệ hỗ trợ</a>
+                    <a href="#">Chính sách sử dụng</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Thông tin liên hệ</h4>
+                    <p><strong>Hotline:</strong> 0943 265 527</p>
+                    <p><strong>Phụ trách:</strong> Thầy Giới</p>
+                    <p><strong>Địa chỉ:</strong> Tổ 8 Hùng Vương, P. Phúc Yên, TP. Phú Thọ</p>
+                </div>
+            </div>
+            <div class="footer-bottom-row">
+                <p>&copy; 2026 VOVANTHANHNHA.IO.VN — Bản quyền thuộc về VÕ VĂN THANH NHÃ.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== Payment Modal ===== -->
+    <div class="modal-overlay" id="payment-modal">
+        <div class="modal-box">
+            <div class="modal-top">
+                <h3 id="modal-title"><i class="fas fa-coins"></i> Xác nhận nạp điểm</h3>
+                <p id="modal-subtitle">Chọn phương thức thanh toán</p>
+                <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <!-- Step 1: Payment Method -->
+                <div id="step-method" class="qr-step active">
+                    <div class="payment-summary">
+                        <div>
+                            <div class="label">Gói nạp</div>
+                            <div class="value" id="modal-points">100 điểm</div>
+                        </div>
+                        <div style="text-align:right">
+                            <div class="label">Thành tiền</div>
+                            <div class="value highlight" id="modal-price">90.000đ</div>
+                        </div>
+                    </div>
+                    <div class="payment-methods">
+                        <h4>Phương thức thanh toán</h4>
+                        <div class="method-options">
+                            <div class="method-option selected" onclick="selectMethod(this, 'bank')">
+                                <div class="method-radio"></div>
+                                <div class="method-icon bank"><i class="fas fa-building-columns"></i></div>
+                                <div class="method-info">
+                                    <div class="name">Chuyển khoản ngân hàng</div>
+                                    <div class="desc">Quét mã QR hoặc chuyển khoản thủ công</div>
+                                </div>
+                            </div>
+                            <div class="method-option" onclick="selectMethod(this, 'momo')">
+                                <div class="method-radio"></div>
+                                <div class="method-icon momo"><i class="fas fa-mobile-screen-button"></i></div>
+                                <div class="method-info">
+                                    <div class="name">Ví MoMo</div>
+                                    <div class="desc">Thanh toán qua ví điện tử MoMo</div>
+                                </div>
+                            </div>
+                            <div class="method-option" onclick="selectMethod(this, 'zalo')">
+                                <div class="method-radio"></div>
+                                <div class="method-icon zalo"><i class="fas fa-credit-card"></i></div>
+                                <div class="method-info">
+                                    <div class="name">ZaloPay</div>
+                                    <div class="desc">Thanh toán qua ZaloPay</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-pay" onclick="goToPayStep()">
+                        <i class="fas fa-arrow-right"></i> Tiếp tục thanh toán
+                    </button>
+                </div>
+
+                <!-- Step 2: QR / Bank Info -->
+                <div id="step-qr" class="qr-step">
+                    <div class="qr-center">
+                        <div class="qr-box">
+                            <i class="fas fa-qrcode"></i>
+                            <span>Mã QR thanh toán</span>
+                        </div>
+                        <p style="font-size:13px; color:var(--text-secondary); margin-top:8px;">
+                            Quét mã QR bằng app ngân hàng hoặc chuyển khoản theo thông tin bên dưới
+                        </p>
+                    </div>
+                    <div class="bank-info">
+                        <div class="bank-info-row">
+                            <span class="label">Ngân hàng</span>
+                            <span class="value">Vietcombank</span>
+                        </div>
+                        <div class="bank-info-row">
+                            <span class="label">Số tài khoản</span>
+                            <span class="value">
+                                1234567890
+                                <button class="copy-btn" onclick="copyText('1234567890')" title="Sao chép"><i class="fas fa-copy"></i></button>
+                            </span>
+                        </div>
+                        <div class="bank-info-row">
+                            <span class="label">Chủ tài khoản</span>
+                            <span class="value">VO VAN THANH NHA</span>
+                        </div>
+                        <div class="bank-info-row">
+                            <span class="label">Số tiền</span>
+                            <span class="value" id="bank-amount" style="color:var(--primary)">90.000đ</span>
+                        </div>
+                        <div class="bank-info-row">
+                            <span class="label">Nội dung CK</span>
+                            <span class="value">
+                                <span id="transfer-content">NAPDIEM ADMIN 100</span>
+                                <button class="copy-btn" onclick="copyTransferContent()" title="Sao chép"><i class="fas fa-copy"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="transfer-note">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <span>Vui lòng ghi đúng <strong>nội dung chuyển khoản</strong> để hệ thống tự động cộng điểm. Thời gian xử lý: <strong>1–5 phút</strong>.</span>
+                    </div>
+                    <button class="btn-confirm-done" onclick="confirmPayment()">
+                        <i class="fas fa-check-circle"></i> Tôi đã chuyển khoản xong
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ===== State =====
+        let selectedPoints = 100;
+        let selectedPrice = 90000;
+        let selectedMethod = 'bank';
+
+        // ===== Header scroll effect =====
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // ===== Select Package =====
+        function selectPackage(card) {
+            selectedPoints = parseInt(card.dataset.points);
+            selectedPrice = parseInt(card.dataset.price);
+
+            // Update modal content
+            document.getElementById('modal-points').textContent = selectedPoints + ' điểm';
+            document.getElementById('modal-price').textContent = formatPrice(selectedPrice);
+            document.getElementById('bank-amount').textContent = formatPrice(selectedPrice);
+            document.getElementById('transfer-content').textContent = 'NAPDIEM ADMIN ' + selectedPoints;
+
+            // Open modal
+            openModal();
+        }
+
+        // ===== Open/Close Packages scroll =====
+        function openRechargePackages() {
+            document.getElementById('packages').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // ===== Select Payment Method =====
+        function selectMethod(el, method) {
+            document.querySelectorAll('.method-option').forEach(m => m.classList.remove('selected'));
+            el.classList.add('selected');
+            selectedMethod = method;
+        }
+
+        // ===== Modal Steps =====
+        function openModal() {
+            document.getElementById('payment-modal').classList.add('active');
+            document.getElementById('step-method').classList.add('active');
+            document.getElementById('step-qr').classList.remove('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('payment-modal').classList.remove('active');
+            document.body.style.overflow = '';
+            // Reset to step 1
+            setTimeout(() => {
+                document.getElementById('step-method').classList.add('active');
+                document.getElementById('step-qr').classList.remove('active');
+            }, 300);
+        }
+
+        function goToPayStep() {
+            document.getElementById('step-method').classList.remove('active');
+            document.getElementById('step-qr').classList.add('active');
+            document.getElementById('modal-title').innerHTML = '<i class="fas fa-qrcode"></i> Thanh toán';
+            document.getElementById('modal-subtitle').textContent = 'Quét mã QR hoặc chuyển khoản ngân hàng';
+        }
+
+        function confirmPayment() {
+            closeModal();
+            showToast('Yêu cầu nạp điểm đã được ghi nhận! Hệ thống sẽ xử lý trong 1-5 phút.', 'success');
+
+            // Prepend to history
+            const tbody = document.getElementById('recharge-history');
+            const now = new Date();
+            const dateStr = now.toLocaleDateString('vi-VN', { day:'2-digit', month:'2-digit', year:'numeric' })
+                + ' · ' + now.toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' });
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${dateStr}</td>
+                <td><span class="cost-badge plus">+${selectedPoints} điểm</span></td>
+                <td>${formatPrice(selectedPrice)}</td>
+                <td><span class="status-badge pending"><i class="fas fa-clock"></i> Đang xử lý</span></td>
+            `;
+            row.style.animation = 'fadeInUp 0.5s ease';
+            tbody.insertBefore(row, tbody.firstChild);
+        }
+
+        // ===== Copy =====
+        function copyText(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                showToast('Đã sao chép: ' + text, 'success');
+            });
+        }
+
+        function copyTransferContent() {
+            const text = document.getElementById('transfer-content').textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                showToast('Đã sao chép nội dung chuyển khoản!', 'success');
+            });
+        }
+
+        // ===== Format =====
+        function formatPrice(amount) {
+            return amount.toLocaleString('vi-VN') + 'đ';
+        }
+
+        // ===== Toast =====
+        function showToast(message, type = 'success') {
+            const existing = document.querySelector('.toast-notification');
+            if (existing) existing.remove();
+
+            const toast = document.createElement('div');
+            toast.className = `toast-notification toast-${type}`;
+            toast.innerHTML = `
+                <i class="fas fa-${type === 'success' ? 'check-circle' : 'times-circle'}"></i>
+                <span>${message}</span>
+            `;
+            document.body.appendChild(toast);
+
+            requestAnimationFrame(() => toast.classList.add('show'));
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => toast.remove(), 300);
+            }, 3500);
+        }
+
+        // ===== Close modal on backdrop click =====
+        document.getElementById('payment-modal').addEventListener('click', (e) => {
+            if (e.target === e.currentTarget) closeModal();
+        });
+
+        // ===== Filter buttons =====
+        document.querySelectorAll('.history-filter').forEach(group => {
+            group.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    group.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                });
+            });
+        });
+
+        // ===== Logout =====
+        document.getElementById('btn-logout').addEventListener('click', () => {
+            sessionStorage.removeItem('isLoggedIn');
+            showToast('Đã đăng xuất thành công!', 'success');
+            setTimeout(() => {
+                window.location.href = 'index.html';
+            }, 500);
+        });
+    </script>
+</body>
+</html>

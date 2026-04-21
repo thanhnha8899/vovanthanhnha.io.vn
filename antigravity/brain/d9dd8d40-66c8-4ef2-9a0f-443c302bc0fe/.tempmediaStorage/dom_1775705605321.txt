@@ -1,0 +1,102 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (33,73)<a class='back-btn' href='index.html' id='back-btn' title='Quay lại' />
+	[1] (33,73)<i  />
+Đề thi THPT – Toán
+Công cụ tạo đề thi PPKT THPT
+[2] (65,183)<div  />
+	[3] (40,183)<i  />
+	[4] (74,183)<span >Cấu hình />
+[5] (159,183)<div  />
+	[6] (137,183)<i  />
+	[7] (167,183)<span >Ma trận />
+[8] (246,183)<div  />
+	[9] (227,183)<i  />
+	[10] (254,183)<span >Đặc tả />
+[11] (327,183)<div  />
+	[12] (310,183)<i  />
+	[13] (334,183)<span >Đề thi />
+[14] (915,183)<div  />
+	[15] (871,183)<i  />
+	[16] (924,183)<span >Nguồn ứng dụng />
+Trắc nghiệm Đúng/Sai
+Trả lời ngắn
+Tự luận
+—
+Tổng điểm TNKQ
+5.5
+Điểm tự luận
+4.5
+MỨC ĐỘ NHẬN THỨC (%)
+[17] (74,555)<label >Biết />
+[18] (74,607)<input id='biet' />
+[19] (156,555)<label >Hiểu />
+[20] (156,607)<input id='hieu' />
+[21] (237,555)<label >Vận dụng />
+[22] (237,607)<input id='vandung' />
+Tổng nên bằng 100% (tự chuẩn hoá nếu khác)
+Ma trận tự động hình thành theo cấu hình trên và danh sách đơn vị đã chọn.
+[23] (144,876)<button class='generate-btn' id='btn-generate' />
+	[24] (71,876)<i  />
+	[25] (120,876)<span >Tạo ma trận />
+	[26] (192,876)<span >trừ 5 điểm />
+[27] (463,182)<div class='topic-list' id='topic-list' scrollable='true' />
+	Phương trình bậc hai
+	4
+	Hệ phương trình bậc nhất
+	4
+	Bất đẳng thức và bất phương trình
+	4
+	Thống kê
+	5
+	[28] (459,310)<div  />
+		[29] (322,306)<div  />
+			[30] (322,306)<i  />
+		[31] (338,306)<div  />
+		[32] (451,305)<span >Xác suất />
+		[33] (571,310)<span >5 />
+		[34] (596,306)<span  />
+			[35] (596,306)<i  />
+	[36] (459,382)<div  />
+		[37] (322,378)<div  />
+			[38] (322,378)<i  />
+		[39] (338,378)<div  />
+		[40] (451,377)<span >Dãy số, cấp số cộng, cấp số nhân />
+		[41] (571,382)<span >5 />
+		[42] (596,378)<span  />
+			[43] (596,378)<i  />
+	[44] (459,454)<div  />
+		[45] (322,450)<div  />
+			[46] (322,450)<i  />
+		[47] (338,450)<div  />
+		[48] (451,449)<span >Lượng giác và hàm số lượng giác />
+		[49] (571,454)<span >5 />
+		[50] (596,450)<span  />
+			[51] (596,450)<i  />
+	[52] (459,525)<div  />
+		[53] (322,522)<div  />
+			[54] (322,522)<i  />
+		[55] (338,522)<div  />
+		[56] (451,520)<span >Vectơ />
+		[57] (571,525)<span >5 />
+		[58] (596,522)<span  />
+			[59] (596,522)<i  />
+	Phương pháp tọa độ trong mặt phẳng
+	5
+	Hàm số mũ và hàm số logarit
+	5
+	Giới hạn và hàm số liên tục
+	4
+	Đạo hàm và ứng dụng
+	5
+	Nguyên hàm và tích phân
+	5
+	Hình học không gian
+	5
+Chọn một mạch nội dung bên trái để hiện đơn vị kiến thức.
+Đã chọn:
+Chưa chọn đơn vị nào
+
+</current_dom>

@@ -1,0 +1,15 @@
+# Testing Groq API with de-thi-tinhoc.html
+
+## Plan
+1. [ ] Navigate to http://127.0.0.1:8080/de-thi-tinhoc.html
+2. [ ] Wait 4 seconds for page load
+3. [ ] Resize browser window to 1200x800
+4. [ ] Scroll down to section 3 "Chọn nội dung kiểm tra"
+5. [ ] Select a topic checkbox
+6. [ ] Click "Đề thi" tab
+7. [ ] Click "Tạo đề thi (trừ 2 điểm)"
+8. [ ] Wait for Groq API response
+9. [ ] Take screenshots and report findings
+
+## Observations
+- 
