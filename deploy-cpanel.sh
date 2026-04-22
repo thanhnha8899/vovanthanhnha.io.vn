@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# One-command deploy script for cPanel shared hosting.
-# It updates source code, builds the Vite app, and syncs dist to public_html.
-
 REPO_DIR="/home/dtthoith/vovanthanhnha.io.vn"
 APP_SUBDIR="orbis-nft"
 BRANCH="main"
@@ -31,20 +28,28 @@ git -C "$REPO_DIR" fetch origin
 git -C "$REPO_DIR" checkout "$BRANCH"
 git -C "$REPO_DIR" pull --ff-only origin "$BRANCH"
 
-echo "==> Installing dependencies"
-cd "$APP_DIR"
-npm install
-
-echo "==> Building production bundle"
-npm run build
+if command -v npm >/dev/null 2>&1; then
+  echo "==> npm found, building on server"
+  cd "$APP_DIR"
+  npm install
+  npm run build
+else
+  echo "==> npm not found on server, using prebuilt dist from repo"
+fi
 
 if [ ! -d "$APP_DIR/dist" ]; then
-  echo "ERROR: Build completed but dist folder was not found."
+  echo "ERROR: dist folder not found at $APP_DIR/dist"
+  echo "Build locally with 'npm run build' in orbis-nft and push the dist folder."
   exit 1
 fi
 
 echo "==> Syncing dist to web root"
 mkdir -p "$DEPLOY_DIR"
-rsync -av --delete "$APP_DIR/dist/" "$DEPLOY_DIR/"
+if command -v rsync >/dev/null 2>&1; then
+  rsync -av --delete "$APP_DIR/dist/" "$DEPLOY_DIR/"
+else
+  rm -rf "$DEPLOY_DIR"/*
+  cp -r "$APP_DIR/dist/." "$DEPLOY_DIR/"
+fi
 
 echo "==> Deploy completed successfully at $(date)"
