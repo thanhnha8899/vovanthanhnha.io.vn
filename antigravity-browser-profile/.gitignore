@@ -1,0 +1,2 @@
+# Single blob ~107MB — GitHub rejects plain Git blobs >100MB (cannot split across pushes)
+component_crx_cache/a5042083bcd24fc462450ffb38f4a6eb63bb4a778e8c579c3afe5182562bda00
