@@ -2346,6 +2346,39 @@ input {
 .tile.tile--free {
     border: 1.5px solid rgba(34, 197, 94, 0.35);
     background: linear-gradient(135deg, rgba(34, 197, 94, 0.08), rgba(255, 255, 255, 0.02));
+    align-items: flex-start;
+}
+
+.tile.tile--free .tile-icon {
+    margin-top: 3px;
+}
+
+.tile.tile--free .tile-desc {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.55;
+    max-width: 560px;
+}
+
+.tile.tile--free .tile-price {
+    align-self: flex-start;
+    margin-top: 2px;
+}
+
+.tile-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #22c55e;
+    letter-spacing: 0.01em;
+}
+
+.tile.tile--free:hover .tile-cta {
+    color: #16a34a;
 }
 
 .tile-price--free {
