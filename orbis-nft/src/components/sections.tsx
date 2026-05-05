@@ -1,12 +1,15 @@
 import {
   ArrowRight,
   CircleDollarSign,
+  ExternalLink,
+  Gift,
   Mail,
   MessageSquareQuote,
   Phone,
+  Sparkles,
 } from 'lucide-react'
 import { FeatureCard } from './tool-ui'
-import { faqs, features, pricing, projects, services, testimonials } from '../data/site-content'
+import { faqs, features, freeTools, pricing, projects, services, testimonials } from '../data/site-content'
 
 function SectionHeading({
   badge,
@@ -141,6 +144,87 @@ export function FeaturesSection() {
               href={`/tool/${feature.slug}`}
             />
           ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export function FreeToolsSection() {
+  return (
+    <section id="free-tools" className="relative overflow-hidden py-20">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_15%_15%,rgba(34,211,238,0.12),transparent_38%),radial-gradient(circle_at_85%_85%,rgba(37,99,235,0.18),transparent_40%)]"
+      />
+      <div className="section-shell relative">
+        <div className="mb-10 flex flex-wrap items-end justify-between gap-6">
+          <div className="max-w-2xl">
+            <span className="eyebrow inline-flex items-center gap-2">
+              <Gift size={12} />
+              Free tools
+            </span>
+            <h2 className="font-heading text-3xl font-extrabold text-white sm:text-4xl">
+              Công cụ miễn phí cho thầy cô & người làm nội dung
+            </h2>
+            <p className="mt-4 text-muted">
+              Bộ công cụ web chạy ngay trên trình duyệt, không cần đăng ký. Dữ liệu của bạn không
+              được gửi đi đâu cả — đây là cách Nexa Studio đóng góp lại cho cộng đồng.
+            </p>
+          </div>
+          <div className="hidden items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-accent sm:inline-flex">
+            <Sparkles size={14} />
+            100% miễn phí
+          </div>
+        </div>
+
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {freeTools.map((tool) => {
+            const linkProps = tool.external
+              ? { href: tool.href, target: '_blank' as const, rel: 'noreferrer' }
+              : { href: tool.href }
+            return (
+              <a
+                key={tool.title}
+                {...linkProps}
+                className="card group relative flex flex-col p-6 transition hover:-translate-y-0.5 hover:border-accent/50"
+              >
+                <div className="flex items-start justify-between gap-3">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-accent/30 bg-accent/10 text-accent">
+                    <Sparkles size={20} />
+                  </div>
+                  {tool.badge ? (
+                    <span className="rounded-full border border-primary/40 bg-primary/15 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-white">
+                      {tool.badge}
+                    </span>
+                  ) : null}
+                </div>
+                <h3 className="mt-5 font-heading text-xl font-bold text-white">{tool.title}</h3>
+                <p className="mt-3 flex-1 text-muted">{tool.description}</p>
+                <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-accent">
+                  Mở công cụ
+                  <ExternalLink size={14} className="transition group-hover:translate-x-0.5" />
+                </span>
+              </a>
+            )
+          })}
+
+          <div className="card relative flex flex-col items-start justify-between gap-4 border-dashed p-6 text-muted">
+            <div>
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-muted">
+                <Gift size={20} />
+              </div>
+              <h3 className="mt-5 font-heading text-xl font-bold text-white">Đề xuất công cụ mới</h3>
+              <p className="mt-3 text-sm">
+                Bạn cần một tool nào để hỗ trợ giảng dạy, marketing hay vận hành? Gửi ý tưởng và
+                Nexa Studio sẽ ưu tiên xây miễn phí cho cộng đồng.
+              </p>
+            </div>
+            <a href="#contact" className="btn-secondary px-4 py-2 text-sm">
+              Gửi ý tưởng
+              <ArrowRight size={14} />
+            </a>
+          </div>
         </div>
       </div>
     </section>

@@ -1,0 +1,1 @@
+var e=[`Toán`,`Văn`,`Anh`,`Lý`,`Hóa`,`Sinh`,`Sử`,`Địa`,`GDCD`,`Tin`,`Công nghệ`,`Thể dục`],t={gioi:8,kha:6.5,tb:5};export{e as n,t};

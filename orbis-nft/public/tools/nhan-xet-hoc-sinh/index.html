@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/tools/nhan-xet-hoc-sinh/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hệ thống Nhận xét Học sinh - Tự động tạo nhận xét cho từng học sinh dựa trên bảng điểm."
+    />
+    <title>Hệ thống Nhận xét Học sinh</title>
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (t === 'dark' || (!t && prefersDark)) {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="/tools/nhan-xet-hoc-sinh/assets/index-Cb-h6PMj.js"></script>
+    <link rel="modulepreload" crossorigin href="/tools/nhan-xet-hoc-sinh/assets/utils-CrorO4Je.js">
+    <link rel="modulepreload" crossorigin href="/tools/nhan-xet-hoc-sinh/assets/types-D6Yf75If.js">
+    <link rel="stylesheet" crossorigin href="/tools/nhan-xet-hoc-sinh/assets/index-C4h8K1Ic.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

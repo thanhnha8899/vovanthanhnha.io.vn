@@ -5,6 +5,7 @@ import {
   CtaStripSection,
   FaqSection,
   FeaturesSection,
+  FreeToolsSection,
   HeroSection,
   PricingSection,
   ProjectsSection,
@@ -20,6 +21,7 @@ export function HomePage() {
       <AboutSection />
       <ServicesSection />
       <FeaturesSection />
+      <FreeToolsSection />
       <ProjectsSection />
       <TestimonialsSection />
       <PricingSection />

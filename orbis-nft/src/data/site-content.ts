@@ -3,11 +3,31 @@ export const navItems = [
   { label: 'Giới thiệu', href: '#about' },
   { label: 'Dịch vụ', href: '#services' },
   { label: 'Năng lực', href: '#features' },
+  { label: 'Miễn phí', href: '#free-tools' },
   { label: 'Dự án', href: '#projects' },
   { label: 'Đánh giá', href: '#testimonials' },
   { label: 'Bảng giá', href: '#pricing' },
   { label: 'FAQ', href: '#faq' },
   { label: 'Liên hệ', href: '#contact' },
+]
+
+export type FreeTool = {
+  title: string
+  description: string
+  href: string
+  badge?: string
+  external?: boolean
+}
+
+export const freeTools: FreeTool[] = [
+  {
+    title: 'Hệ thống Nhận xét Học sinh',
+    description:
+      'Tạo nhận xét cá nhân hóa cho từng học sinh từ bảng điểm Excel/CSV. Có sẵn 58+ mẫu, xuất Word/Excel, in trực tiếp. Hoàn toàn miễn phí, dữ liệu chạy ngay trên trình duyệt.',
+    href: '/tools/nhan-xet-hoc-sinh/',
+    badge: 'Mới',
+    external: true,
+  },
 ]
 
 export const services = [
