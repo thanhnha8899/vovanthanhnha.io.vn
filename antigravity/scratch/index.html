@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css?v=20260505-vvh">
+    <link rel="stylesheet" href="style.css?v=20260505-free">
     <style>
     /* Dropdown Cong dong */
     .dash-nav-dropdown { position: relative; }
@@ -51,15 +51,6 @@
     }
     .dd-item:hover { background: #f1f5f9; color: #3b82f6; }
     .dd-item i { font-size: 18px; width: 22px; text-align: center; flex-shrink: 0; }
-    /* Công cụ miễn phí — nổi bật trên thanh nav */
-    .dash-nav-link--highlight {
-        color: #34d399 !important;
-        background: rgba(52, 211, 153, 0.12);
-        border-radius: 999px;
-        padding-left: 14px;
-        padding-right: 14px;
-    }
-    .dash-nav-link--highlight:hover { background: rgba(52, 211, 153, 0.2) !important; }
     </style>
 </head>
 <body>
@@ -84,8 +75,8 @@
                 <h1 class="login-screen-title">Chào mừng trở lại!</h1>
                 <p class="login-screen-desc">Đăng nhập để truy cập nền tảng AI giáo dục hàng đầu cho giáo viên Việt Nam.</p>
                 <p class="login-screen-desc" style="margin-top:14px;font-size:14px;">
-                    <a href="tools/nhan-xet-hoc-sinh/" target="_blank" rel="noopener noreferrer" style="color:#34d399;font-weight:600;text-decoration:none;">
-                        <i class="fas fa-gift"></i> Công cụ miễn phí: Nhận xét học sinh (chạy trên trình duyệt, không cần đăng nhập)
+                    <a href="tools/nhan-xet-hoc-sinh/" style="color:#34d399;font-weight:600;text-decoration:none;">
+                        <i class="fas fa-gift"></i> Công cụ miễn phí: Nhận xét học sinh (có nút Trang chủ trong công cụ để quay lại)
                     </a>
                 </p>
                 <div class="login-screen-features">
@@ -165,7 +156,7 @@
             </a>
             <nav class="dash-nav" id="main-nav">
                 <a href="#" class="dash-nav-link active" id="nav-home"><i class="fas fa-home"></i><span>Trang chủ</span></a>
-                <a href="tools/nhan-xet-hoc-sinh/" class="dash-nav-link dash-nav-link--highlight" id="nav-free-tools" target="_blank" rel="noopener noreferrer"><i class="fas fa-gift"></i><span>Công cụ miễn phí</span></a>
+                <a href="#cat-free-tools" class="dash-nav-link" id="nav-free-tools"><i class="fas fa-gift"></i><span>Công cụ miễn phí</span></a>
                 <a href="#" class="dash-nav-link" id="nav-huongdan"><i class="fas fa-compass"></i><span>Hướng dẫn</span></a>
                 <a href="https://www.facebook.com/share/g/18P1cQjhou/" target="_blank" class="dash-nav-link" id="nav-congdong"><i class="fab fa-facebook"></i><span>Cộng đồng</span></a>
                 <a href="https://zalo.me/g/ioouc1kyhugjrtwmij5k" target="_blank" class="dash-nav-link" id="nav-zalo"><i class="fas fa-comments"></i><span>Hỗ trợ Zalo</span></a>
@@ -204,7 +195,7 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobile-menu">
         <a href="#" class="mobile-nav-link">Trang chủ</a>
-        <a href="tools/nhan-xet-hoc-sinh/" class="mobile-nav-link" target="_blank" rel="noopener noreferrer">Công cụ miễn phí</a>
+        <a href="#cat-free-tools" class="mobile-nav-link">Công cụ miễn phí</a>
         <a href="#" class="mobile-nav-link">Nạp điểm</a>
         <a href="#" class="mobile-nav-link">Hướng dẫn</a>
         <a href="#" class="mobile-nav-link">Cộng đồng</a>
@@ -223,11 +214,8 @@
                     <h1>Chào mừng trở lại!</h1>
                     <p>Khám phá bộ công cụ AI hỗ trợ soạn giáo án, tạo đề thi và phát triển sáng kiến kinh nghiệm chuyên nghiệp.</p>
                     <div class="hero-actions">
-                        <a href="#" class="hero-btn primary" id="free-tools-btn">
-                            <i class="fas fa-rocket"></i> Bắt đầu ngay
-                        </a>
-                        <a href="tools/nhan-xet-hoc-sinh/" class="hero-btn outline" target="_blank" rel="noopener noreferrer" style="border-color:rgba(52,211,153,0.5);color:#6ee7b7;">
-                            <i class="fas fa-gift"></i> Nhận xét học sinh
+                        <a href="#cat-free-tools" class="hero-btn primary" id="free-tools-btn">
+                            <i class="fas fa-gift"></i> Công cụ miễn phí
                         </a>
                         <a href="#" class="hero-btn outline">
                             <i class="fas fa-play-circle"></i> Video hướng dẫn
@@ -253,6 +241,27 @@
 
         <!-- Tools Grid - Two column layout -->
         <div class="tools-layout">
+
+            <!-- ===== CÔNG CỤ MIỄN PHÍ ===== -->
+            <section class="tool-section" id="cat-free-tools">
+                <div class="section-bar green"></div>
+                <div class="section-content">
+                    <div class="section-top">
+                        <h2><i class="fas fa-gift"></i> Công cụ miễn phí</h2>
+                        <span class="section-tag">Không trừ điểm · Dữ liệu trên trình duyệt</span>
+                    </div>
+                    <div class="tile-list">
+                        <a href="tools/nhan-xet-hoc-sinh/" class="tile tile--free" id="tool-nhan-xet-hoc-sinh">
+                            <div class="tile-icon green"><i class="fas fa-comments"></i></div>
+                            <div class="tile-body">
+                                <span class="tile-title">Hệ thống Nhận xét Học sinh</span>
+                                <span class="tile-desc">Tạo nhận xét từ bảng điểm Excel/CSV, xuất Word/Excel — có nút Trang chủ trong công cụ.</span>
+                            </div>
+                            <span class="tile-price tile-price--free"><i class="fas fa-check-circle"></i> Miễn phí</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
 
             <!-- ===== SÁNG KIẾN KINH NGHIỆM ===== -->
             <section class="tool-section" id="cat-skkn">
