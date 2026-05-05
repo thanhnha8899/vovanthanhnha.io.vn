@@ -49,6 +49,21 @@ export function HeroSection() {
             <a href="#projects" className="btn-secondary">
               Xem dự án gần đây
             </a>
+            <a href="#free-tools" className="btn-secondary">
+              <Gift size={16} />
+              Công cụ miễn phí
+            </a>
+            {freeTools[0] ? (
+              <a
+                href={freeTools[0].href}
+                target="_blank"
+                rel="noreferrer"
+                className="btn-secondary border-accent/30 bg-accent/5 text-accent hover:bg-accent/10"
+              >
+                {freeTools[0].title}
+                <ExternalLink size={14} />
+              </a>
+            ) : null}
           </div>
         </div>
         <div className="card p-6">
