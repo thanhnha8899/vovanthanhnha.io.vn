@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "preview:8001": "vite preview --host 127.0.0.1 --port 8001 --strictPort",
+    "serve:8001": "npm run build && npm run preview:8001"
   },
   "dependencies": {
     "lucide-react": "^1.8.0",
