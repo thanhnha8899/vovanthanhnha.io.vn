@@ -1,9 +1,9 @@
 export const navItems = [
   { label: 'Trang chủ', href: '#hero' },
+  { label: 'Công cụ miễn phí', href: '#free-tools' },
   { label: 'Giới thiệu', href: '#about' },
   { label: 'Dịch vụ', href: '#services' },
   { label: 'Năng lực', href: '#features' },
-  { label: 'Miễn phí', href: '#free-tools' },
   { label: 'Dự án', href: '#projects' },
   { label: 'Đánh giá', href: '#testimonials' },
   { label: 'Bảng giá', href: '#pricing' },
