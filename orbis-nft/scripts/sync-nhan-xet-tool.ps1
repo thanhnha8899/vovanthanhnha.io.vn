@@ -44,6 +44,15 @@ Remove-Item $dest -Recurse -Force -ErrorAction SilentlyContinue
 New-Item -ItemType Directory -Force -Path $dest | Out-Null
 Copy-Item -Path (Join-Path $dist '*') -Destination $dest -Recurse -Force
 
+$geminiRoot = Split-Path -Parent $orbisRoot
+$scratchDest = Join-Path $geminiRoot 'antigravity\scratch\tools\nhan-xet-hoc-sinh'
+if (Test-Path (Split-Path $scratchDest)) {
+    Write-Host "==> Copy vao scratch VOVANTHANHNHA: $scratchDest" -ForegroundColor Cyan
+    Remove-Item $scratchDest -Recurse -Force -ErrorAction SilentlyContinue
+    New-Item -ItemType Directory -Force -Path $scratchDest | Out-Null
+    Copy-Item -Path (Join-Path $dist '*') -Destination $scratchDest -Recurse -Force
+}
+
 if (-not $SkipSiteBuild) {
     Write-Host "==> Build trang vovanthanhnha (orbis-nft)" -ForegroundColor Cyan
     Push-Location $orbisRoot
